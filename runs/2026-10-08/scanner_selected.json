@@ -1,0 +1,125 @@
+[
+  {
+    "theme": 12,
+    "size": 22,
+    "terms": "bitcoin, crypto, price, updates bitcoin, live updates, mode, updates, gold",
+    "new_signals": 11,
+    "new_representatives": [
+      "[news, new] Bitcoin slips below $83,000 as Ethereum researcher's 'bunker mode' call divides crypto",
+      "[news, new] Live updates: Bitcoin adds to declines, testing $80,000 level",
+      "[news, new] Bitcoin breaks below $83,000 as oil jumps on Iran strike-plan report",
+      "[news, new] Bitcoin Price Could Drop Below $50K Without Quantum Computing Fix by 2028 — Exec - CoinMarketCap",
+      "[news, new] Bitcoin mined for pennies in 2010 moves after 16 years, now worth $8.5 million",
+      "[news, new] Crypto for Advisors: Digital assets outran stocks and gold in Q3"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.9545454545454546,
+    "push": 46,
+    "patent_density": 0,
+    "representatives": [
+      "[news] Bitcoin slips below $83,000 as Ethereum researcher's 'bunker mode' call divides crypto",
+      "[news] Bitcoin stalls near $83,000 while lighter drops 17% on Robinhood perps plan",
+      "[news] Live updates: Bitcoin below $84,000 ahead of PCE inflation data, Micron earnings",
+      "[news] Live updates: Bitcoin adds to declines, testing $80,000 level",
+      "[news] Bitcoin bulls have one price level to defend",
+      "[news] Bitcoin holds $83,000 as ZEC drops 12% and oil climbs again",
+      "[news] Bitcoin surging to $100,000 may be in play, after outperforming gold",
+      "[news] Bitcoin breaks below $83,000 as oil jumps on Iran strike-plan report"
+    ],
+    "uspto_hits": 0,
+    "whitespace": 1.1884634241784937,
+    "opportunity": 0.9842140715464232
+  },
+  {
+    "theme": 26,
+    "size": 28,
+    "terms": "swift, ledger, tokenized, blockchain, chainlink, swift blockchain, ibm, deposits",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Introducing CCIP Vault Adapters: Enabling 1-Click Deposits From Any Chain - Chainlink",
+      "[news, new] Swift Announces New Supervisory Board Members as It Continues to Reinforce the Cooperative and Accelerate Its Strategy - Financial IT"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.9285714285714286,
+    "push": 107,
+    "patent_density": 186,
+    "representatives": [
+      "[news] IBM Connects Banks To Swift’s Blockchain Ledger For Tokenized Deposits - TradingView",
+      "[news] Oracle Integration with Swift's Ledger Helps Banks Connect Tokenized Deposit Infrastructures Across Institutions - PR Newswire",
+      "[news] Tech giant Oracle integrates with Swift blockchain ledger to connect banks’ tokenized deposits - Cryptonews.net",
+      "[news] Oracle Links Tokenised Deposits to Swift’s Ledger - FinTech Magazine",
+      "[news] IBM Connects Digital Asset Platform to Swift's Blockchain Ledger for Tokenized Deposits - BigGo Finance",
+      "[news] IBM Connects Digital Asset Haven to Swift Blockchain Ledger for Tokenized Deposit Transactions: 12 outlets compared - NewsCord",
+      "[news] Oracle adds Swift ledger support to banking suite for tokenised deposits - Yahoo Finance",
+      "[news] Chainlink Is Enabling Financial Institutions to Connect to Swift’s Blockchain Ledger - Chainlink"
+    ],
+    "uspto_hits": 4,
+    "whitespace": -0.22873874844140418,
+    "opportunity": -0.49375856934726453
+  },
+  {
+    "theme": 6,
+    "size": 106,
+    "terms": "payments, payment, fintech, data, finance, cross border, border, cross",
+    "new_signals": 11,
+    "new_representatives": [
+      "[news, new] The Future of RWA Payment Rails: Tokenization, Stablecoins and Programmable Finance",
+      "[news, new] Coinbax Joins the U.S. Faster Payments Council as It Extends Payment Controls to FedNow and RTP - StreetInsider",
+      "[news, new] Payroll compliance belongs on the finance risk register",
+      "[news, new] Managing banks' five-second decision window in instant payments - American Banker",
+      "[news, new] Sibos 2026: Is USD's position as prime global currency in jeopardy?",
+      "[news, new] AML vendor Armalytix appoints legal and compliance head"
+    ],
+    "pain": 5.0,
+    "pull": 0,
+    "momentum": 0.7358490566037735,
+    "push": 1247,
+    "patent_density": 810,
+    "representatives": [
+      "[news] The Future of RWA Payment Rails: Tokenization, Stablecoins and Programmable Finance",
+      "[news] The digitalisation of money, payments and finance",
+      "[news] Beyond connectivity: Creating more value across the payments lifecycle",
+      "[news] The State of Fintech: The Top Insights into European Payments Evolution",
+      "[news] Fintech Recap: What Can We Learn From Coastal’s Earnings Miss?",
+      "[news] Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "[news] Are Fintech Standards Fit For Purpose?",
+      "[news] How Can Banks Serve SME’s Growing Cross-Border Needs?"
+    ],
+    "uspto_hits": 2327,
+    "whitespace": -1.5915214839118277,
+    "opportunity": -0.7854046595539612
+  },
+  {
+    "theme": 17,
+    "size": 36,
+    "terms": "quantum, post quantum, post, security, threat, quantum security, quantum threat, bankinfosecurity",
+    "new_signals": 5,
+    "new_representatives": [
+      "[news, new] From ‘quantum-enhanced’ to ‘quantum-safe’: Why banks are preparing in advance for the new big threat - The Indian Express",
+      "[news, new] SpecterAI Quantum Security Holds Quantum-Safe Banking Workshop at Asia Fintech Forum - The Quantum Insider",
+      "[news, new] Government Directs Banks to Develop Quantum-Safe Systems and AI Security Framework - The420.in",
+      "[news, new] Banks Assess Quantum Threat In Live SpecterAI Workshop - Quantum Zeitgeist",
+      "[news, new] Quantum Data Technologies clears all banking debt after settling liabilities with two banks - Profit by Pakistan Today"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.6111111111111112,
+    "push": 275,
+    "patent_density": 95,
+    "representatives": [
+      "[news] From ‘quantum-enhanced’ to ‘quantum-safe’: Why banks are preparing in advance for the new big threat - The Indian Express",
+      "[news] RBI Says India’s Payment Systems Must Prepare for a Quantum Computing Threat - The420.in",
+      "[news] Post-Quantum Cryptography Migration Faces a Hardware Problem - BankInfoSecurity",
+      "[news] Quantum threat to Bitcoin could materialize before commercial viability, EU regulators warn - CoinDesk",
+      "[news] RBI asks fintechs, payment firms to start ‘quantum-proofing’ systems - Moneycontrol.com",
+      "[news] Crypto’s Post-Quantum Shift and Privacy Renaissance Take Center Stage at Quantus and NEAR's Quantum + Privacy Day at TOKEN2049 Singapore - F",
+      "[news] Making the Case to the Board for Post-Quantum Readiness - BankInfoSecurity",
+      "[news] For banks, quantum computing is both a threat to security and a chance to build resilience - The World Economic Forum"
+    ],
+    "uspto_hits": 275,
+    "whitespace": -0.7631161542368966,
+    "opportunity": -1.4232361323214386
+  }
+]

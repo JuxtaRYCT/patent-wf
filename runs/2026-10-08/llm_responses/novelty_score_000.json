@@ -1,0 +1,162 @@
+{
+ "scores": [
+  {
+   "id": "news:99f462098638dcb8",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Trading platform market-data feed",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:8bd60aaccabfe379",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Phone maker builds USDC remittances into 82M devices",
+   "tags": [
+    "device-wallet",
+    "stablecoin-remittance"
+   ]
+  },
+  {
+   "id": "news:f2b18c6af685c972",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Payments leader joins Swift board",
+   "tags": [
+    "governance"
+   ]
+  },
+  {
+   "id": "news:dc739f346c29ab41",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "A third-party software error made thousands of clients pay wrong tax amounts through a money app",
+   "tags": [
+    "systematic-error",
+    "third-party-software",
+    "payment-amount-integrity"
+   ]
+  },
+  {
+   "id": "news:db8dae245241457c",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Cash fund product",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:8e83090540056464",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Orchestration partnership",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:c1530df043e14db6",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Bitcoin-backed loans for tuition and working capital",
+   "tags": [
+    "crypto-lending"
+   ]
+  },
+  {
+   "id": "news:2f95c498043b5544",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Identity vendor partners with credit bureau",
+   "tags": [
+    "identity"
+   ]
+  },
+  {
+   "id": "news:bf99403d283ad5da",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Board appointments",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:40d4d8ddd194b5ca",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Bank M&A",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:92bc0dc348fcce55",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Vendor appointment",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:b961e624450b1648",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Exchange investment",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:0507254167f82cc1",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Corporate debt settlement",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:681cdb137d34b95a",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Programmable payment controls extended to FedNow and RTP",
+   "tags": [
+    "payment-controls",
+    "instant-payments"
+   ]
+  },
+  {
+   "id": "news:6ce08bc06942f26a",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Digital-asset infrastructure partnership",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:64831dcb3099060b",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "A fraud control that works perfectly but seconds too late is the most expensive one",
+   "tags": [
+    "control-latency",
+    "instant-payments"
+   ]
+  },
+  {
+   "id": "s2:49ec3db39774465f094aef9c2bf2fa9e5acd7ff5",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Central bank consultation process on stablecoins",
+   "tags": [
+    "regulation"
+   ]
+  }
+ ]
+}

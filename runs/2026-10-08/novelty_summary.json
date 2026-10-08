@@ -1,0 +1,16 @@
+{
+  "incoming": 136,
+  "kb": 13637,
+  "eligible": 85,
+  "shortlisted": 17,
+  "near_duplicates": 6,
+  "by_pool": [
+    {
+      "pool": "finance",
+      "n": 136,
+      "shortlisted": 17,
+      "novelty_mean": 0.39501035537320534
+    }
+  ],
+  "llm_pending": 0
+}
