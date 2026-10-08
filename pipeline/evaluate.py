@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 
 from . import embed, llm, store
-from .common import EXPORTS, IDEAS, dump_json, log, run_dir
+from .common import EXPORTS, IDEAS, RUNS, dump_json, log, run_dir, today
 from .prior_art import idea_text, load_ideas
 
 L = log("evaluate")
@@ -112,39 +112,21 @@ def judge(ideas: list[dict], pa: dict, batch: int = 8) -> dict:
     return res
 
 
-def main():
-    out = run_dir()
-    ideas = load_ideas()
-    pa = {r["id"]: r for r in json.loads((out / "prior_art.json").read_text())}
-    J = judge(ideas, pa)
-    X = embed.encode([idea_text(i) for i in ideas])
-    LC = length_controlled(ideas)
-    arms = np.array([i["arm"] for i in ideas])
-    S = X @ X.T
-    rows = []
-    for n, i in enumerate(ideas):
-        other = S[n][arms != i["arm"]]
-        p = pa.get(i["id"], {})
-        j = J.get(i["id"], {})
-        row = {"id": i["id"], "arm": i["arm"], "title": i["title"], "domain": i.get("domain", ""),
-               "problem": i.get("problem", ""), "mechanism": i.get("mechanism", ""),
-               "claim_core": i.get("claim_core", ""),
-               "novelty_pa": p.get("novelty_pa"), "max_sim_patent": p.get("max_sim_patent"),
-               "max_sim_paper": p.get("max_sim_paper"),
-               "closest_prior_art": " || ".join(f"{c['id']} ({c['sim']:.2f}) {c['title'][:80]}"
-                                                for c in p.get("closest", [])[:3]),
-               "cross_arm_sim": float(other.max()) if other.size else None,
-               "words": len(idea_text(i).split()), **LC[i["id"]]}
-        row.update({f"judge_{k}": j.get(k) for k in list(W) + ["crazy"]})
-        row["verdict"], row["rationale"] = j.get("verdict"), j.get("rationale")
-        if j:
-            npa = row["novelty_pa"] or 0
-            # automatic prior-art term: 10 at max_sim <= 0.65 (random-pair level), 0 at >= 0.85 (same invention)
-            auto = float(np.clip((0.82 - row["max_sim_patent_sf"]) / 0.20 * 10, 0, 10))
-            row["final_score"] = round(sum(W[k] * j[k] for k in W) + 0.05 * auto, 3)
-        rows.append(row)
-    df = pd.DataFrame(rows)
+def all_runs_state() -> tuple[list[dict], dict, dict]:
+    """Ideas, prior-art results and judgments from every run up to the as-of date."""
+    ideas, pa, J = load_ideas(), {}, {}
+    for d in sorted(x for x in RUNS.iterdir() if x.is_dir() and x.name <= today()):
+        f = d / "prior_art.json"
+        if f.exists():
+            pa.update({r["id"]: r for r in json.loads(f.read_text())})
+        for jf in sorted((d / "llm_responses").glob("judge_*.json")):
+            J.update({x["id"]: x for x in json.loads(jf.read_text())["judgments"]})
+    return ideas, pa, J
+
+
+def arm_summary(df: pd.DataFrame, X: np.ndarray, ideas: list[dict]) -> list[dict]:
     summary = []
+    arms = np.array([i["arm"] for i in ideas])
     for arm, g in df.groupby("arm"):
         Xa = X[arms == arm]
         summary.append({
@@ -159,18 +141,64 @@ def main():
             "overlap_rate_sf": round((g.max_sim_patent_sf >= OVERLAP_SF).mean(), 3),
             "vendi": round(vendi(Xa), 2), "vendi_per_idea": round(vendi(Xa) / len(g), 3),
             "vendi_sf_per_idea": round(vendi(embed.encode([short_form(i) for i in ideas if i["arm"] == arm])) / len(g), 3),
-            "cross_arm_sim_mean": round(g.cross_arm_sim.mean(), 4),
+            "cross_arm_sim_mean": round(g.cross_arm_sim.mean(), 4) if g.cross_arm_sim.notna().any() else None,
             **{f"judge_{k}_mean": round(g[f"judge_{k}"].mean(), 2) for k in list(W) + ["crazy"] if g[f"judge_{k}"].notna().any()},
             "pursue": int((g.verdict == "pursue").sum()), "refine": int((g.verdict == "refine").sum()),
             "drop_anticipated": int((g.verdict == "drop-anticipated").sum()),
             "drop_weak": int((g.verdict == "drop-weak").sum()),
-            "final_score_mean": round(g.final_score.mean(), 3) if "final_score" in g else None})
-    df = df.sort_values("final_score", ascending=False) if "final_score" in df else df
+            "repeats_earlier_run": int(g.dup_of.notna().sum()),
+            "final_score_mean": round(g.final_score.mean(), 3) if g.final_score.notna().any() else None})
+    return summary
+
+
+def main():
+    out, run = run_dir(), today()
+    ideas, pa, J = all_runs_state()
+    cur = [i for i in ideas if i["run"] == run]
+    J.update(judge(cur, pa))                       # only today's ideas are judged today
+    X = embed.encode([idea_text(i) for i in ideas])
+    LC = length_controlled(ideas)
+    arms = np.array([i["arm"] for i in ideas])
+    runs = np.array([i["run"] for i in ideas])
+    S = X @ X.T
+    rows = []
+    for n, i in enumerate(ideas):
+        other = S[n][(arms != i["arm"]) & (runs == i["run"])]
+        earlier = np.where(runs < i["run"])[0]
+        prev = int(earlier[S[n][earlier].argmax()]) if earlier.size else None
+        prev_sim = float(S[n][prev]) if prev is not None else None
+        p = pa.get(i["id"], {})
+        j = J.get(i["id"], {})
+        row = {"id": i["id"], "run": i["run"], "arm": i["arm"], "title": i["title"], "domain": i.get("domain", ""),
+               "problem": i.get("problem", ""), "mechanism": i.get("mechanism", ""),
+               "claim_core": i.get("claim_core", ""),
+               "novelty_pa": p.get("novelty_pa"), "max_sim_patent": p.get("max_sim_patent"),
+               "max_sim_paper": p.get("max_sim_paper"),
+               "closest_prior_art": " || ".join(f"{c['id']} ({c['sim']:.2f}) {c['title'][:80]}"
+                                                for c in p.get("closest", [])[:3]),
+               "cross_arm_sim": float(other.max()) if other.size else None,
+               "earlier_run_sim": prev_sim,
+               "dup_of": ideas[prev]["id"] if prev_sim is not None and prev_sim >= 0.88 else None,
+               "words": len(idea_text(i).split()), **LC[i["id"]]}
+        row.update({f"judge_{k}": j.get(k) for k in list(W) + ["crazy"]})
+        row["verdict"], row["rationale"] = j.get("verdict"), j.get("rationale")
+        row["final_score"] = None
+        if j:
+            # automatic prior-art term: 10 at short-form max_sim <= 0.62, 0 at >= 0.82
+            auto = float(np.clip((0.82 - row["max_sim_patent_sf"]) / 0.20 * 10, 0, 10))
+            row["final_score"] = round(sum(W[k] * j[k] for k in W) + 0.05 * auto, 3)
+        rows.append(row)
+    df = pd.DataFrame(rows)
+    cur_mask = (df.run == run).values
+    run_summary = arm_summary(df[cur_mask], X[cur_mask], [i for i in ideas if i["run"] == run]) if cur_mask.any() else []
+    all_summary = arm_summary(df, X, ideas)
+    df = df.sort_values(["final_score"], ascending=False, na_position="last")
     EXPORTS.mkdir(exist_ok=True)
     df.to_csv(EXPORTS / "idea_register.csv", index=False)
-    dump_json({"arms": summary, "judged": len(J), "pending": len(llm.pending())}, out / "evaluation.json")
-    L.info("evaluation: %s", json.dumps(summary, default=str))
-    return df, summary
+    dump_json({"run": run, "arms": run_summary, "cumulative_arms": all_summary,
+               "judged_today": len(cur), "pending": len(llm.pending())}, out / "evaluation.json")
+    L.info("evaluation %s: %s", run, json.dumps(run_summary, default=str)[:600])
+    return df, run_summary
 
 
 if __name__ == "__main__":

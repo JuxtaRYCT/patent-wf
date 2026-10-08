@@ -113,10 +113,13 @@ def themes_chart(themes: pd.DataFrame, top: int = 15):
 
 
 def main():
+    """Figures for the arm comparison documented in docs/ (pinned to the first, full 45-day run)."""
     FIG.mkdir(parents=True, exist_ok=True)
-    out = run_dir()
+    out = ROOT / "runs" / "2026-09-30"
     if (EXPORTS / "idea_register.csv").exists():
         df = pd.read_csv(EXPORTS / "idea_register.csv")
+        if "run" in df:
+            df = df[df.run == "2026-09-30"]
         novelty_strip(df)
     if (out / "evaluation.json").exists():
         arm_metrics(json.loads((out / "evaluation.json").read_text())["arms"])

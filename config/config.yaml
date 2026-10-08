@@ -258,6 +258,11 @@ github:
 
 # ---------------------------------------------------------------- Approach 2
 scanner:
+  # daily delta mode: ideate only on themes with fresh signals that day, skipping themes already ideated
+  themes_per_day: 4
+  min_new_signals: 2
+  reuse_theme_if_new_signals: 8
+  theme_reuse_similarity: 0.90
   cfpb_window_days: 120
   cfpb_baseline_days: 365
   cfpb_narratives_per_issue: 60
@@ -298,9 +303,12 @@ novelty:
   lexical_weight: 0.25
   shortlist_percentile: 80      # items above this novelty percentile go to LLM scoring
   near_duplicate_threshold: 0.92
+  # LLM-scoring caps per (pool, genre). First (full 45-day) run used 90/70/150; a daily run sees one day of data.
+  llm_caps: {finance_paper: 30, finance_news: 30, crossdomain_paper: 60}
+  llm_batch: 30
 
 synthesis:
   min_usefulness: 4             # only LLM-scored items with usefulness >= this enter the P / M pools
   distance_band: [0.55, 0.85]   # percentile band of problem-mechanism distance ("far but bridgeable")
-  pairs: 60
+  pairs: 18                    # per daily run (first full run used 60)
   mmr_lambda: 0.6

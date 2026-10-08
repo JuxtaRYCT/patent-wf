@@ -90,3 +90,14 @@ No Anthropic API key was configured on this machine, so `pipeline/llm.py` ran in
 
 ## Daily operation
 `scripts/run_daily.sh` runs every stage. Schedule it with launchd (`scripts/com.patentswf.daily.plist`, 06:30 daily) or GitHub Actions (`.github/workflows/daily.yml`). Because first-seen dates are stored, each day's novelty filter compares only that day's new items against everything seen before.
+
+## Daily runs and catch-up after missed days (added 2026-10-09)
+- **As-of date.** `PATENTS_WF_DATE=YYYY-MM-DD` makes every stage behave as if it ran on that day. Each stored item has a `seen_day`, the day it entered the knowledge base, and every database read is filtered to `seen_day <= as-of`. A catch-up run therefore never learns from data that arrived later.
+- **Catch-up gather.** One gather covers the whole gap (`PATENTS_WF_BACKFILL_FROM`). Each new item is assigned to the day it would have been seen: its publication date, clamped into the gap. arXiv cross-domain categories are sampled over the full date range instead of only the newest papers.
+- **Daily novelty.** The incoming items are those first seen on the run day; the knowledge base is everything seen before. LLM scoring caps are sized for one day of data (`novelty.llm_caps`).
+- **Daily synthesis.** Up to 18 problem × mechanism pairs per day, all built from that day's new items.
+- **Scanner delta mode.** Themes are re-clustered daily from all signals so far. Ideation runs only on themes with fresh signals that day (`min_new_signals`). Themes already ideated on earlier runs (`ideas/scanner_theme_registry.json`, seeded from the first run's 12) are skipped unless at least 8 new signals arrived. CFPB complaint trends are recomputed as of each day.
+- **Evaluation.** Only the day's ideas are judged that day. `exports/idea_register.csv` is cumulative across runs and flags ideas that repeat an earlier run's idea (`dup_of`, similarity ≥ 0.88).
+- **Digest.** Each run writes `runs/<date>/DIGEST.md`, and `docs/DAILY_LOG.md` gets one row per run.
+- **Automation.** `scripts/backfill.sh FROM TO` reproduces a catch-up unattended when an API key is set.
+- **Limitation.** Live prior-art searches during a catch-up use today's patent databases, so a catch-up day can only be *stricter* than the original day would have been.

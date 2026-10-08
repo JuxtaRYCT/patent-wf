@@ -31,12 +31,25 @@ def idea_text(i: dict) -> str:
     return ". ".join(str(i.get(k, "")) for k in ("title", "problem", "mechanism", "claim_core") if i.get(k))
 
 
-def load_ideas() -> list[dict]:
+FIRST_RUN = "2026-09-30"   # first run kept its idea files at the top of ideas/; later runs use ideas/<date>/
+
+
+def idea_files(run: str | None = None) -> list:
+    files = [(FIRST_RUN, f) for f in sorted(IDEAS.glob("A*.json"))]
+    files += [(d.name, f) for d in sorted(IDEAS.iterdir()) if d.is_dir() for f in sorted(d.glob("A*.json"))]
+    return [(r, f) for r, f in files if run is None or r == run]
+
+
+def load_ideas(run: str | None = None) -> list[dict]:
+    """Ideas of one run, or of every run up to the as-of date (run=None)."""
+    from .common import today
     ideas = []
-    for f in sorted(IDEAS.glob("A*.json")):
+    for r, f in idea_files(run):
+        if r > today():
+            continue
         d = json.loads(f.read_text())
         for i in d["ideas"]:
-            i["arm"] = d["arm"]
+            i["arm"], i["run"] = d["arm"], r
             ideas.append(i)
     return ideas
 
@@ -131,7 +144,8 @@ def check(ideas: list[dict], per_query: int = 40, fetch_top: int = 12) -> list[d
 
 
 def main(arms: list[str] | None = None):
-    ideas = [i for i in load_ideas() if not arms or i["arm"] in arms]
+    from .common import today
+    ideas = [i for i in load_ideas(today()) if not arms or i["arm"] in arms]
     res = check(ideas)
     out = run_dir()
     prev = {}

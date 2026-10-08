@@ -8,7 +8,7 @@ import concurrent.futures as cf
 import time
 
 from . import store
-from .common import dump_json, load_config, log, run_dir
+from .common import dump_json, load_config, log, run_dir, seen_day_for
 from .sources import news, papers, patents, signals
 
 L = log("gather")
@@ -38,6 +38,8 @@ def main(only: list[str] | None = None):
             except Exception as e:
                 L.exception("family %s crashed: %s", name, e)
                 continue
+            for it in items:
+                it.setdefault("seen_day", seen_day_for(it.get("published")))
             n = store.upsert(items)
             by_src = collections.Counter(i["source"].split(":")[0] for i in items)
             manifest[name] = {"items": n, "by_source": dict(by_src)}

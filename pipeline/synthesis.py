@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 
 from . import embed, llm, store
-from .common import IDEAS, dump_json, load_config, log, run_dir
+from .common import IDEAS, dump_json, load_config, log, run_dir, today
 
 L = log("synthesis")
 
@@ -137,7 +137,13 @@ def main():
     cfg = load_config()
     out = run_dir()
     nov = pd.read_csv(out / "novelty_incoming.csv")
+    if "llm_usefulness" not in nov or nov.llm_usefulness.notna().sum() == 0:
+        L.info("no LLM-scored items yet - run novelty and answer its packets first")
+        return
     P, M = build_pools(nov)
+    if not P or not M:
+        L.info("problem pool %d | mechanism pool %d - nothing to pair today", len(P), len(M))
+        return
     L.info("problem pool %d | mechanism pool %d", len(P), len(M))
     pairs = select_pairs(P, M, cfg)
     pairs["p_id"] = [P[i]["id"] for i in pairs.p]
@@ -146,11 +152,12 @@ def main():
     pairs["m_title"] = [M[j]["title"][:100] for j in pairs.m]
     pairs.to_csv(out / "synthesis_pairs.csv")
     ideas = generate(pairs, P, M)
+    tag = today()[5:].replace("-", "")
     for n, idea in enumerate(ideas, 1):
-        idea["id"] = f"A1-{n:02d}"
+        idea["id"] = f"A1-{tag}-{n:02d}"
     if ideas:
         dump_json({"arm": "A1", "name": "Approach 1 - literature cross-pollination (bisociation)",
-                   "run": out.name, "ideas": ideas}, IDEAS / "A1_cross_pollination.json")
+                   "run": out.name, "ideas": ideas}, IDEAS / today() / "A1_cross_pollination.json")
     L.info("pairs %d -> ideas %d (pending LLM tasks: %d)", len(pairs), len(ideas), len(llm.pending()))
 
 

@@ -27,12 +27,12 @@ L = log("novelty")
 
 def split_incoming_kb(lookback: int) -> tuple[list[dict], list[dict]]:
     since = days_ago(lookback).isoformat()
-    rows = store.fetch("kind != 'idea'")
+    rows = store.fetch("kind != 'idea'")          # as-of: nothing first seen after the run day is visible
     incoming, kb = [], []
     for r in rows:
         pub = (r.get("published") or "")[:10]
         is_new = r["kind"] in ("paper", "news", "repo", "post") and (not pub or pub >= since)
-        first_seen_today = (r.get("fetched") or "")[:10] >= today()
+        first_seen_today = (r.get("seen_day") or "") == today()
         if is_new and first_seen_today and r["pool"] in ("finance", "crossdomain"):
             incoming.append(r)
         else:
@@ -99,11 +99,16 @@ LLM_SCHEMA = {
             "tags": {"type": "array", "items": {"type": "string"}}}}}}}
 
 
-CAPS = {("finance", "paper"): 90, ("finance", "news"): 70, ("crossdomain", "paper"): 150}
+def _caps() -> dict:
+    c = load_config()["novelty"].get("llm_caps", {})
+    return {("finance", "paper"): c.get("finance_paper", 90), ("finance", "news"): c.get("finance_news", 70),
+            ("crossdomain", "paper"): c.get("crossdomain_paper", 150)}
 
 
-def llm_score(df: pd.DataFrame, items_by_id: dict, batch: int = 30) -> pd.DataFrame:
+def llm_score(df: pd.DataFrame, items_by_id: dict, batch: int | None = None) -> pd.DataFrame:
     """LLM-score the most novel shortlisted items (capped per pool x genre to bound cost / reading load)."""
+    CAPS = _caps()
+    batch = batch or load_config()["novelty"].get("llm_batch", 30)
     parts = []
     for k, g in df[df.shortlisted].groupby(["pool", "genre"]):
         g = g.sort_values("novelty", ascending=False)
@@ -111,7 +116,7 @@ def llm_score(df: pd.DataFrame, items_by_id: dict, batch: int = 30) -> pd.DataFr
             per = int(np.ceil(CAPS[k] / max(g.field.nunique(), 1)))
             g = g.groupby("field").head(per)
         parts.append(g.head(CAPS.get(k, 50)))
-    sl = pd.concat(parts)
+    sl = pd.concat(parts) if parts else df.iloc[0:0]
     results = {}
     ids = list(sl.id)
     for b in range(0, len(ids), batch):

@@ -17,7 +17,7 @@ from typing import Iterable
 
 import numpy as np
 
-from .common import DB_PATH
+from .common import DB_PATH, today
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS items(
@@ -36,6 +36,12 @@ def connect() -> sqlite3.Connection:
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
+    cols = {r[1] for r in con.execute("PRAGMA table_info(items)")}
+    if "seen_day" not in cols:   # migration: day the item entered the knowledge base
+        con.execute("ALTER TABLE items ADD COLUMN seen_day TEXT")
+        con.execute("UPDATE items SET seen_day = substr(fetched, 1, 10)")
+        con.execute("CREATE INDEX IF NOT EXISTS items_seen ON items(seen_day)")
+        con.commit()
     return con
 
 
@@ -48,21 +54,26 @@ def upsert(items: Iterable[dict]) -> int:
         if not it.get("id") or not (it.get("title") or it.get("text")):
             continue
         con.execute(
-            """INSERT INTO items(id,source,kind,pool,title,text,url,published,fetched,query,meta)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?)
+            """INSERT INTO items(id,source,kind,pool,title,text,url,published,fetched,query,meta,seen_day)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
                ON CONFLICT(id) DO UPDATE SET text=excluded.text, meta=excluded.meta,
                  title=excluded.title, url=excluded.url""",
             (it["id"], it.get("source"), it.get("kind"), it.get("pool"), (it.get("title") or "").strip(),
              (it.get("text") or "").strip(), it.get("url"), it.get("published"), now,
-             it.get("query"), json.dumps(it.get("meta") or {}, default=str)))
+             it.get("query"), json.dumps(it.get("meta") or {}, default=str),
+             it.get("seen_day") or today()))
         n += 1
     con.commit()
     con.close()
     return n
 
 
-def fetch(where: str = "1=1", params: tuple = ()) -> list[dict]:
+def fetch(where: str = "1=1", params: tuple = (), as_of: bool = True) -> list[dict]:
+    """Items matching `where`. With as_of (default) only items already seen by the run date are visible,
+    so a backfilled day never learns from data that arrived on later days."""
     con = connect()
+    if as_of:
+        where, params = f"({where}) AND (seen_day IS NULL OR seen_day <= ?)", (*params, today())
     rows = [dict(r) for r in con.execute(f"SELECT * FROM items WHERE {where}", params)]
     con.close()
     for r in rows:

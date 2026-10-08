@@ -27,16 +27,19 @@ L = log("graph")
 
 
 def build(scores: pd.DataFrame | None = None) -> nx.MultiDiGraph:
-    out = run_dir()
+    from .common import RUNS, today
     ideas = load_ideas()
-    pa = {r["id"]: r for r in json.loads((out / "prior_art.json").read_text())} if (out / "prior_art.json").exists() else {}
+    pa = {}
+    for d in sorted(x for x in RUNS.iterdir() if x.is_dir() and x.name <= today()):
+        if (d / "prior_art.json").exists():
+            pa.update({r["id"]: r for r in json.loads((d / "prior_art.json").read_text())})
     items = {x["id"]: x for x in store.fetch("kind != 'idea'")}
     G = nx.MultiDiGraph()
     for arm in sorted({i["arm"] for i in ideas}):
         G.add_node(f"arm:{arm}", kind="arm", label=arm)
     for i in ideas:
         nid = f"idea:{i['id']}"
-        attrs = {"kind": "idea", "label": i["title"], "arm": i["arm"], "domain": i.get("domain", ""),
+        attrs = {"kind": "idea", "label": i["title"], "arm": i["arm"], "run": i["run"], "domain": i.get("domain", ""),
                  "problem": i.get("problem", ""), "mechanism": i.get("mechanism", "")}
         if i["id"] in pa:
             attrs["novelty_pa"] = pa[i["id"]]["novelty_pa"]
@@ -52,7 +55,7 @@ def build(scores: pd.DataFrame | None = None) -> nx.MultiDiGraph:
             G.add_node(s, kind="source", label=src["title"][:120], src_kind=src.get("kind"), url=src.get("url") or "")
             G.add_edge(nid, s, rel="DERIVED_FROM")
         if i.get("theme"):
-            t = f"theme:{i['theme']}"
+            t = f"theme:{i['run']}:{i['theme']}"
             G.add_node(t, kind="theme", label=i["theme"])
             G.add_edge(nid, t, rel="ADDRESSES")
         for c in pa.get(i["id"], {}).get("closest", [])[:5]:

@@ -25,7 +25,7 @@ from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from . import embed, llm, store
-from .common import IDEAS, days_ago, dump_json, load_config, log, run_dir
+from .common import IDEAS, RUNS, days_ago, dump_json, load_config, log, run_dir, today
 
 L = log("scanner")
 WEIGHTS = {"pain": 1.0, "pull": 0.8, "momentum": 0.5, "push": 0.7, "whitespace": 1.2}
@@ -116,8 +116,12 @@ def build_themes(k: int = 30) -> tuple[pd.DataFrame, list[dict], np.ndarray, np.
         pain = sum(m["meta"]["recent"] * min(m["meta"]["lift"], 5) for m in cf) ** 0.5 + \
             sum(1 + np.log1p(m["meta"].get("syndication", 1) - 1) for m in members
                 if m["kind"] in ("post",) or "scam" in m["title"].lower() or "fraud" in m["title"].lower())
+        fresh = [m for m in members if m["kind"] != "complaint_trend" and (m.get("seen_day") or "") == today()]
+        fresh = sorted(fresh, key=lambda m: -float(X[corpus.index(m)] @ C[c]))
         rows.append({
-            "theme": c, "size": len(idx), "terms": ", ".join(terms),
+            "theme": c, "size": len(idx), "terms": ", ".join(terms), "new_signals": len(fresh),
+            "new_representatives": [f"[{m['kind']}, new] {m['title'][:140]}" for m in fresh[:6]],
+            "centroid": [round(float(v), 4) for v in C[c]],
             "pain": pain, "pull": sum(1 for m in members if m["kind"] == "regulation"),
             "momentum": np.mean([(m.get("published") or "") >= recent for m in members]),
             "push": int(((Xpap @ C[c]) > 0.72).sum()),
@@ -180,17 +184,59 @@ IDEA_SCHEMA = {
                         "claim_core", "keywords", "domain"]}}}}}
 
 
-def generate(df: pd.DataFrame, top: int = 12, per_packet: int = 4) -> list[dict]:
+REGISTRY = IDEAS / "scanner_theme_registry.json"
+
+
+def load_registry() -> list[dict]:
+    """Themes already ideated on earlier runs (seeded from the first run's top-12 themes)."""
+    if not REGISTRY.exists():
+        seed = []
+        f = RUNS / "2026-09-30" / "scanner_themes.json"
+        if f.exists():
+            for t in json.loads(f.read_text())[:12]:
+                ids = [i for i in t["member_ids"] if not i.startswith("cfpbtrend:")]
+                vecs = list(store.load_vectors(ids, embed.model_name()).values())
+                labels = [i.split(":", 1)[1] for i in t["member_ids"] if i.startswith("cfpbtrend:")]
+                if labels:
+                    vecs += list(embed.encode(labels))
+                if vecs:
+                    c = np.mean(vecs, axis=0)
+                    seed.append({"run": "2026-09-30", "theme": int(t["theme"]), "terms": t["terms"],
+                                 "centroid": [round(float(v), 4) for v in c / np.linalg.norm(c)]})
+        dump_json(seed, REGISTRY)
+    return json.loads(REGISTRY.read_text())
+
+
+def select_themes(df: pd.DataFrame, cfg: dict) -> pd.DataFrame:
+    """Daily delta: themes with fresh signals today, not already ideated unless much new evidence arrived."""
+    sc = cfg["scanner"]
+    used = [r for r in load_registry() if r["run"] < today()]
+    U = np.array([r["centroid"] for r in used]) if used else np.zeros((0, 768))
+    keep = []
+    for r in df.itertuples():
+        if r.new_signals < sc.get("min_new_signals", 2):
+            continue
+        reuse = float((U @ np.array(r.centroid)).max()) if len(U) else 0.0
+        if reuse > sc.get("theme_reuse_similarity", 0.90) and r.new_signals < sc.get("reuse_theme_if_new_signals", 8):
+            continue
+        keep.append(r.Index)
+    return df.loc[keep].head(sc.get("themes_per_day", 4))
+
+
+def generate(sel: pd.DataFrame, per_packet: int = 4) -> list[dict]:
     ideas = []
-    sel = df.head(top)
     for b in range(0, len(sel), per_packet):
         chunk = sel.iloc[b:b + per_packet]
         blocks = []
         for r in chunk.itertuples():
+            reps = list(r.new_representatives) + [x for x in r.representatives if "[complaint_trend]" in x][:3]
+            reps += [x for x in r.representatives if x not in reps][:max(0, 8 - len(reps))]
             blocks.append(f"### THEME T{r.theme:02d}  opportunity={r.opportunity:.2f} whitespace={r.whitespace:.2f} "
-                          f"pain={r.pain:.1f} regulatory_pull={r.pull} tech_push={r.push} patent_density={r.patent_density}\n"
-                          f"Key terms: {r.terms}\nRepresentative signals:\n" + "\n".join(f"  - {x}" for x in r.representatives))
-        prompt = "Propose 2-3 invention concepts per theme.\n\n" + "\n\n".join(blocks)
+                          f"pain={r.pain:.1f} regulatory_pull={r.pull} tech_push={r.push} patent_density={r.patent_density} "
+                          f"new_signals_today={r.new_signals}\n"
+                          f"Key terms: {r.terms}\nSignals (today's first):\n" + "\n".join(f"  - {x}" for x in reps))
+        prompt = ("Propose 1-3 invention concepts per theme, driven by what is NEW today. Do not repeat inventions "
+                  "already proposed on earlier runs.\n\n" + "\n\n".join(blocks))
         ans = llm.ask_json(f"scanner_{b // per_packet:03d}", SYSTEM, prompt, IDEA_SCHEMA, effort="high")
         if ans:
             ideas += ans["ideas"]
@@ -198,18 +244,30 @@ def generate(df: pd.DataFrame, top: int = 12, per_packet: int = 4) -> list[dict]
 
 
 def main(k: int = 30):
+    cfg = load_config()
     out = run_dir()
+    if not (out / "cfpb_trends.json").exists():      # complaint trends as of the run day
+        from .sources.signals import cfpb_issue_trends
+        dump_json(cfpb_issue_trends(cfg), out / "cfpb_trends.json")
     df, corpus, X, C = build_themes(k)
     df = score(live_whitespace(df))
-    df.drop(columns=["member_ids"]).to_csv(out / "scanner_themes.csv", index=False)
-    dump_json(df.to_dict("records"), out / "scanner_themes.json")
-    ideas = generate(df)
+    df.drop(columns=["member_ids", "centroid"]).to_csv(out / "scanner_themes.csv", index=False)
+    dump_json(df.drop(columns=["centroid"]).to_dict("records"), out / "scanner_themes.json")
+    sel = select_themes(df, cfg)
+    dump_json(sel.drop(columns=["member_ids", "centroid"]).to_dict("records"), out / "scanner_selected.json")
+    ideas = generate(sel)
+    tag = today()[5:].replace("-", "")
     for n, idea in enumerate(ideas, 1):
-        idea["id"] = f"A2b-{n:02d}"
+        idea["id"] = f"A2b-{tag}-{n:02d}"
     if ideas:
         dump_json({"arm": "A2b", "name": "Approach 2 - AI Opportunity Scanner, signal-grounded", "run": out.name,
-                   "ideas": ideas}, IDEAS / "A2b_signal_scanner.json")
-    L.info("themes %d -> ideas %d (pending LLM tasks: %d)", len(df), len(ideas), len(llm.pending()))
+                   "ideas": ideas}, IDEAS / today() / "A2b_signal_scanner.json")
+        reg = [r for r in load_registry() if r["run"] != today()]
+        reg += [{"run": today(), "theme": int(r.theme), "terms": r.terms, "centroid": r.centroid}
+                for r in sel.itertuples()]
+        dump_json(reg, REGISTRY)
+    L.info("themes %d, selected %d -> ideas %d (pending LLM tasks: %d)", len(df), len(sel), len(ideas),
+           len(llm.pending()))
 
 
 if __name__ == "__main__":

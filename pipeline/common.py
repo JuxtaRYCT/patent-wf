@@ -5,6 +5,7 @@ import datetime as dt
 import json
 import logging
 import os
+import re
 import subprocess
 import time
 from pathlib import Path
@@ -34,12 +35,48 @@ def load_config() -> dict:
         return yaml.safe_load(f)
 
 
+def as_of() -> dt.date:
+    """Run date. PATENTS_WF_DATE=YYYY-MM-DD makes every stage behave as if run on that day (backfill)."""
+    v = os.environ.get("PATENTS_WF_DATE")
+    return dt.date.fromisoformat(v) if v else dt.date.today()
+
+
 def today() -> str:
-    return dt.date.today().isoformat()
+    return as_of().isoformat()
 
 
 def days_ago(n: int) -> dt.date:
-    return dt.date.today() - dt.timedelta(days=n)
+    return as_of() - dt.timedelta(days=n)
+
+
+def backfill_from() -> dt.date | None:
+    """PATENTS_WF_BACKFILL_FROM=YYYY-MM-DD: a gather that catches up missed days assigns each new item to the
+    day it would have been first seen (its publication day, clamped into [from, as_of])."""
+    v = os.environ.get("PATENTS_WF_BACKFILL_FROM")
+    return dt.date.fromisoformat(v) if v else None
+
+
+def norm_date(s: str | None) -> str | None:
+    """'2026-8-28' / '2026-09' / '2026-09-30T10:00Z' -> ISO day, or None."""
+    m = re.match(r"(\d{4})-(\d{1,2})(?:-(\d{1,2}))?", str(s or ""))
+    if not m:
+        return None
+    try:
+        return dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3) or 1)).isoformat()
+    except ValueError:
+        return None
+
+
+def seen_day_for(published: str | None) -> str:
+    """Day an item counts as first seen. Normal runs: the run day. Backfill: publication day clamped
+    into the backfill window (undated items -> run day)."""
+    start, end = backfill_from(), as_of()
+    if not start:
+        return end.isoformat()
+    d = norm_date(published)
+    if not d:
+        return end.isoformat()
+    return min(max(d, start.isoformat()), end.isoformat())
 
 
 def run_dir(date: str | None = None) -> Path:

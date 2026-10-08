@@ -10,7 +10,7 @@ import os
 import re
 import urllib.parse as up
 
-from ..common import Http, load_config, log
+from ..common import Http, load_config, log, seen_day_for
 from .ppubs import PPUBS, to_item
 
 L = log("patents")
@@ -129,6 +129,8 @@ def collect_ppubs(cfg: dict) -> list[dict]:
     items = []
     for b in range(0, len(todo), 300):         # save incrementally: a crash never loses more than a chunk
         chunk = [to_item(d, *seen[d["doc_id"]]) for d in api.details(todo[b:b + 300])]
+        for it in chunk:   # incremental save happens before gather tags items, so tag here
+            it["seen_day"] = seen_day_for(it.get("published"))
         store.upsert(chunk)
         items += chunk
         L.info("ppubs: stored %d/%d", b + len(chunk), len(todo))

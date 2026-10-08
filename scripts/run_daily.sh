@@ -34,6 +34,7 @@ python -m pipeline.evaluate >>"$LOG" 2>&1
 
 step "4  knowledge graph + exports"
 python -m pipeline.graph >>"$LOG" 2>&1
+python -m pipeline.digest >>"$LOG" 2>&1
 python -m pipeline.report >>"$LOG" 2>&1 || true
 python -m integrations.sync --min-score 6.5 >>"$LOG" 2>&1 || true
 

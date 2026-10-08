@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 
 import feedparser
 
-from ..common import Http, days_ago, load_config, log
+from ..common import Http, as_of, backfill_from, days_ago, load_config, log
 
 L = log("papers")
 _http = Http(min_interval=3.1)        # arXiv asks for >=3s between calls
@@ -60,8 +60,15 @@ def arxiv_all(cfg: dict) -> list[dict]:
     items = []
     for q in a["finance_queries"]:
         items += arxiv_query(q, a["max_per_query"], "finance", since)
+    bf = backfill_from()
     for cat in a["crossdomain_categories"]:
-        items += arxiv_query(f"cat:{cat}", a["crossdomain_per_category"], "crossdomain")
+        if bf:   # catching up several days: sample every day of the window, not just the newest
+            ndays = (as_of() - bf).days + 1
+            rng = f"submittedDate:[{bf:%Y%m%d}0000 TO {as_of():%Y%m%d}2359]"
+            items += arxiv_query(f"cat:{cat} AND {rng}", min(400, a["crossdomain_per_category"] * max(1, ndays // 3)),
+                                 "crossdomain")
+        else:
+            items += arxiv_query(f"cat:{cat}", a["crossdomain_per_category"], "crossdomain")
     return items
 
 
