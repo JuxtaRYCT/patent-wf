@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-02",
+  "mode": "catch-up",
+  "executed_on": "2026-10-09",
+  "new_items": 301,
+  "new_patents": 12,
+  "competitor_filings": 0,
+  "shortlisted": 55,
+  "themes": 2,
+  "ideas_A1": 1,
+  "ideas_A2b": 0,
+  "pursue": 0,
+  "refine": 1,
+  "dropped": 0,
+  "top_idea": "A1-1002-01 Delegation-residue sweep: proving that revoked access by an AI agent or a person is actually gone"
+}

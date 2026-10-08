@@ -1,0 +1,15 @@
+"""Operator answers, synthesis packets of run 2026-10-02. 8 pairs -> 1 invention."""
+import sys; sys.path.insert(0, "scripts/operator")
+from answer import write
+
+write("2026-10-02", "synthesis", {
+"X004": [dict(
+    title="Delegation-residue sweep: proving that revoked access by an AI agent or a person is actually gone",
+    problem="Banks are starting to give accounts and spending authority to AI agents (a stablecoin firm now wants to be 'a bank for people and their AI agents'), and to human delegates (family members, carers). Smart-home research shows that 'temporary' access quietly becomes persistent surveillance, because revocation removes the visible grant but not the residue: tokens, sessions, linked devices and copied data. In banking that residue includes network tokens on another device, OAuth refresh tokens, standing mandates, notification endpoints and data already shared.",
+    mechanism="Each delegation is registered as a capability graph listing everything it created: network tokens and the devices holding them, API and refresh tokens, payees and standing instructions it set up, notification endpoints (email, phone, push), consented data shares, and copies of statements delivered. On revocation, a sweep walks the graph and revokes each element. It then actively probes for residue: it attempts a zero-value token authorisation, an OAuth refresh and a notification-delivery check on every endpoint. For data held by an agent, it requires a deletion attestation produced inside the agent's trusted execution environment, with classical attestation now and certified-deletion cryptography later. The account holder receives a signed residue report; anything that cannot be confirmed revoked is listed and blocked at the network level. A 'safety reset' mode runs the same sweep for people leaving coercive relationships, where an abuser may still hold access.",
+    technical_effect="Verifiable, complete revocation across heterogeneous credential stores, with active probing instead of assuming revocation propagated.",
+    why_non_obvious="Revocation in banking is a status flag on the grant. Modelling a delegation as a graph of derived capabilities, then probing for residue and requiring deletion attestations, comes from smart-home access and certified-deletion research, not from payments.",
+    claim_core="A method comprising recording, for a delegation of account authority, a graph of credentials, devices, endpoints, instructions and data shares created under the delegation; upon revocation, revoking each element and issuing probe requests to confirm each credential and endpoint is inoperative; requiring a deletion attestation from a trusted execution environment of the delegate for shared data; and generating a signed report identifying any element not confirmed revoked.",
+    keywords="delegation revocation, AI agent access, token revocation, residual access, certified deletion, coercive control, financial abuse, safety reset",
+    domain="identity")],
+})

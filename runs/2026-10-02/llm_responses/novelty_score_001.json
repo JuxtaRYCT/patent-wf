@@ -1,0 +1,214 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.04128",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Gradients leak extra text in split learning; per-token accounting",
+   "tags": [
+    "split-learning",
+    "privacy-leakage"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03643",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Contactless radar vital-sign localisation robust to multipath",
+   "tags": [
+    "radar",
+    "vital-signs"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03105",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Gesture generation benchmark",
+   "tags": [
+    "hci"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03032",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "NOMA secrecy",
+   "tags": [
+    "comms"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03995",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Pen crossing selection",
+   "tags": [
+    "hci"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04037",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Cross-GPU fault injection",
+   "tags": [
+    "reliability"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06918",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Federated Q-learning robust to adversarial agents' trajectories",
+   "tags": [
+    "federated-rl",
+    "byzantine-robust"
+   ]
+  },
+  {
+   "id": "news:cb6784f470aac7a0",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "ECB council decisions",
+   "tags": [
+    "central-bank"
+   ]
+  },
+  {
+   "id": "news:e15bf7944e5e2a86",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Tokenized deposits settle digital green bonds",
+   "tags": [
+    "tokenized-deposits",
+    "green-bonds"
+   ]
+  },
+  {
+   "id": "news:4918caec7d83900d",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Robocall scams on small businesses",
+   "tags": [
+    "scams",
+    "smb"
+   ]
+  },
+  {
+   "id": "news:8bd82f7e7b80af57",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Free instant payments lack a revenue model",
+   "tags": [
+    "instant-payments",
+    "economics"
+   ]
+  },
+  {
+   "id": "news:a3bc7f71eb49297d",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "AI deepfakes impersonating the central bank to lure victims",
+   "tags": [
+    "central-bank-impersonation",
+    "deepfake"
+   ]
+  },
+  {
+   "id": "news:ec8f2871a4e8e539",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Committee appointments",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:7147222c0cb848a1",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Stablecoin firm wants to bank AI agents as account holders",
+   "tags": [
+    "agent-accounts",
+    "stablecoins"
+   ]
+  },
+  {
+   "id": "news:32479552c4380bb4",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Cross-border payments startup",
+   "tags": [
+    "cross-border"
+   ]
+  },
+  {
+   "id": "news:7dabdc4c4905ee00",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Retail broker launches agentic trading with guardrails",
+   "tags": [
+    "agentic-trading",
+    "guardrails"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03369",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "MoE order execution tail risk",
+   "tags": [
+    "execution"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03259",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Credit-default benchmark with late, scarce labels",
+   "tags": [
+    "credit-risk",
+    "benchmark"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03841",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Algorithmic stablecoin with an algorithmic central bank",
+   "tags": [
+    "stablecoins"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03922",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Shorter sequential priority auctions change searcher competition",
+   "tags": [
+    "mev",
+    "auctions"
+   ]
+  },
+  {
+   "id": "s2:51f983ce3e69e2cfc043edbe9f59372519757e24",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Insurer digital transformation",
+   "tags": [
+    "insurance"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03951",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Evolve LLM-generated features into interpretable classifiers for regulated decisions",
+   "tags": [
+    "interpretable-features",
+    "credit"
+   ]
+  }
+ ]
+}

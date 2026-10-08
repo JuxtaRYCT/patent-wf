@@ -1,0 +1,16 @@
+{
+ "judgments": [
+  {
+   "id": "A1-1002-01",
+   "novelty": 6,
+   "non_obviousness": 5,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 7,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "Adjacent work: 'Agent memory is a surface for endogenous authorization laundering' (revoked permissions surviving in agent memory), agent-access receipts, OAuth token revocation (RFC 7009) and device unbinding. No art found for a capability graph per delegation, with active probing for residual tokens and endpoints plus TEE deletion attestations and a signed residue report. Claim the probe-and-attest loop; the safety-reset embodiment adds social value."
+  }
+ ]
+}

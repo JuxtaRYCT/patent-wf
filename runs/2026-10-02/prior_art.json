@@ -1,0 +1,94 @@
+[
+  {
+    "id": "A1-1002-01",
+    "arm": "A1",
+    "title": "Delegation-residue sweep: proving that revoked access by an AI agent or a person is actually gone",
+    "terms": [
+      "residue",
+      "revoked",
+      "sweep",
+      "revocation",
+      "delegation",
+      "endpoints"
+    ],
+    "queries": [
+      "residue AND revoked",
+      "residue AND sweep",
+      "residue AND revocation",
+      "revoked AND sweep",
+      "revoked AND revocation",
+      "(residue OR revoked OR sweep) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 216,
+    "fetched": 12,
+    "max_sim_patent": 0.7138,
+    "max_sim_paper": 0.7412,
+    "novelty_pa": 0.2588,
+    "closest": [
+      {
+        "id": "arxiv:2609.01836",
+        "type": "paper",
+        "sim": 0.7412,
+        "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering",
+        "url": "https://www.semanticscholar.org/paper/321ff40ee3edf9c85616321af56a0e73615d689d",
+        "who": null
+      },
+      {
+        "id": "s2:899c00b8a21efa78c2b018dc1ae4519d621c87a2",
+        "type": "paper",
+        "sim": 0.7395,
+        "title": "Agent-access receipts for artificial intelligence-mediated content and application programming interface access: a reproducible synthetic security experiment",
+        "url": "https://www.semanticscholar.org/paper/899c00b8a21efa78c2b018dc1ae4519d621c87a2",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.29381",
+        "type": "paper",
+        "sim": 0.7308,
+        "title": "Safe to Resume? Breaking Execution Continuity of Agent Execution via Rollback",
+        "url": "https://www.semanticscholar.org/paper/e84fff2ee07bbc0a9eec8eb96b413fdc1adc6f80",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.25474",
+        "type": "paper",
+        "sim": 0.727,
+        "title": "Separating Disclosure from Authorization: Field-Tier Minimization for Agent Action Mediation",
+        "url": "https://www.semanticscholar.org/paper/7e3f035505fe7034cfed6bec3f633e705faaaee8",
+        "who": null
+      },
+      {
+        "id": "arxiv:2609.14744",
+        "type": "paper",
+        "sim": 0.7195,
+        "title": "Runtime Authorization for Resources Acquired by AI Agents",
+        "url": "https://www.semanticscholar.org/paper/4f49bc0f157c057391ce6b2ce363f2ed35572728",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.30519",
+        "type": "paper",
+        "sim": 0.7174,
+        "title": "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance",
+        "url": "https://arxiv.org/abs/2608.30519",
+        "who": null
+      },
+      {
+        "id": "patent:US20260300944A1",
+        "type": "patent",
+        "sim": 0.7138,
+        "title": "EXECUTING INTELLIGENT SWEEPING PROTOCOLS ACROSS DIGITAL ASSET ACCOUNTS",
+        "url": "https://patents.google.com/patent/US20260300944A1/en",
+        "who": "Chime Financial, Inc."
+      },
+      {
+        "id": "arxiv:2609.22944",
+        "type": "paper",
+        "sim": 0.7128,
+        "title": "NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems",
+        "url": "https://www.semanticscholar.org/paper/a5c902176b9f78393945a2a6b435286705059cb8",
+        "who": null
+      }
+    ]
+  }
+]

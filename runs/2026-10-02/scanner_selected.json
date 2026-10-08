@@ -1,0 +1,59 @@
+[
+  {
+    "theme": 22,
+    "size": 28,
+    "terms": "payments, instant, moonpay, instant payments, global, ipid, payment, international",
+    "new_signals": 3,
+    "new_representatives": [
+      "[news, new] How Stripe, Zerohash alums are looking to speed international payments - Banking Dive",
+      "[post, new] European payments groups join forces to challenge US dominance",
+      "[news, new] Free Instant Payments Still Need a Revenue Model - PYMNTS.com"
+    ],
+    "pain": 8.693147180559945,
+    "pull": 0,
+    "momentum": 0.8214285714285714,
+    "push": 341,
+    "patent_density": 276,
+    "representatives": [
+      "[news] Citi and HSBC Back IPID’s $16M Series A to Combat Global Instant Payment Fraud - FF News",
+      "[news] Instant payments require fraud controls built for real-time decisions - Electronic Payments International",
+      "[news] DeeMoney, Thailand’s Leading Cross-Border Payments Fintech, Selects SEON for Real-Time Fraud and AML Protection - The Manila Times",
+      "[news] How Stripe, Zerohash alums are looking to speed international payments - Banking Dive",
+      "[news] Citi to offer instant cross-border payments for Japan firms via blockchain - Nikkei Asia",
+      "[news] Citi Rewires Global Payments Through Single Swift Connection",
+      "[news] SEON partners with Thailand’s DeeMoney for real-time fraud, AML protection - FutureCFO",
+      "[news] ITSS and Feedzai unite to outpace payment fraud - FinTech Global"
+    ],
+    "uspto_hits": 234,
+    "whitespace": -0.9389457686487264,
+    "opportunity": -0.18433217477511865
+  },
+  {
+    "theme": 28,
+    "size": 29,
+    "terms": "swift, ledger, oracle, tokenized, ibm, swift ledger, swift blockchain, blockchain",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Oracle Links Tokenised Deposits to Swift’s Ledger - FinTech Magazine",
+      "[news, new] Record-Breaking CNY 2.55 Billion in Digital Green Bonds; Tokenized Deposits Emerge as a New Solution - Moomoo"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.896551724137931,
+    "push": 107,
+    "patent_density": 185,
+    "representatives": [
+      "[news] Oracle Integration with Swift's Ledger Helps Banks Connect Tokenized Deposit Infrastructures Across Institutions - PR Newswire",
+      "[news] Oracle Links Tokenised Deposits to Swift’s Ledger - FinTech Magazine",
+      "[news] IBM Connects Banks To Swift’s Blockchain Ledger For Tokenized Deposits - TradingView",
+      "[news] Tech giant Oracle integrates with Swift blockchain ledger to connect banks’ tokenized deposits - Cryptonews.net",
+      "[news] IBM Connects Digital Asset Platform to Swift's Blockchain Ledger for Tokenized Deposits - BigGo Finance",
+      "[news] Oracle adds Swift ledger support to banking suite for tokenised deposits - Yahoo Finance",
+      "[news] IBM Connects Digital Asset Haven to Swift Blockchain Ledger for Tokenized Deposit Transactions: 12 outlets compared - NewsCord",
+      "[news] Oracle Links Banking Systems to SWIFT Ledger for 24/7 Tokenized Payments - BigGo Finance"
+    ],
+    "uspto_hits": 0,
+    "whitespace": -0.0297704961469612,
+    "opportunity": -0.5467262098790353
+  }
+]

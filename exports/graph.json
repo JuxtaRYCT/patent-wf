@@ -3883,6 +3883,63 @@
    "url": "https://www.semanticscholar.org/paper/59200ae2db09394286e9de72baa1eb146352d752",
    "owner": "",
    "id": "s2:59200ae2db09394286e9de72baa1eb146352d752"
+  },
+  {
+   "kind": "idea",
+   "label": "Delegation-residue sweep: proving that revoked access by an AI agent or a person is actually gone",
+   "arm": "A1",
+   "run": "2026-10-02",
+   "domain": "identity",
+   "problem": "Banks are starting to give accounts and spending authority to AI agents (a stablecoin firm now wants to be 'a bank for people and their AI agents'), and to human delegates (family members, carers). Smart-home research shows that 'temporary' access quietly becomes persistent surveillance, because revocation removes the visible grant but not the residue: tokens, sessions, linked devices and copied data. In banking that residue includes network tokens on another device, OAuth refresh tokens, standing mandates, notification endpoints and data already shared.",
+   "mechanism": "Each delegation is registered as a capability graph listing everything it created: network tokens and the devices holding them, API and refresh tokens, payees and standing instructions it set up, notification endpoints (email, phone, push), consented data shares, and copies of statements delivered. On revocation, a sweep walks the graph and revokes each element. It then actively probes for residue: it attempts a zero-value token authorisation, an OAuth refresh and a notification-delivery check on every endpoint. For data held by an agent, it requires a deletion attestation produced inside the agent's trusted execution environment, with classical attestation now and certified-deletion cryptography later. The account holder receives a signed residue report; anything that cannot be confirmed revoked is listed and blocked at the network level. A 'safety reset' mode runs the same sweep for people leaving coercive relationships, where an abuser may still hold access.",
+   "novelty_pa": 0.2588,
+   "id": "idea:A1-1002-01"
+  },
+  {
+   "kind": "source",
+   "label": "Stablecoin firm Fasset aims to be a bank for people and their AI agents - Yahoo Finance",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZjN1TVNQZk5tNjlpU09iTV9RMWVlaGNIdExVS3lRTnFLLVNXQnVvV0xxeElHQ1lyNi0tV3BKbWRHd1JPNGNkZjF6MFNXNEU2dWVNdVZrRjFOV3I3djhncXZmSkY0ZGc5SUZKMG1TOHNZTC1CbkZJejhOZ2hfWjdaYldTU1k1c2U3WS1TRzJrUHVfZGpRSERTN2ZZNHlhdw?oc=5",
+   "id": "news:7147222c0cb848a1"
+  },
+  {
+   "kind": "source",
+   "label": "From Temporary Access to Persistent Surveillance: Why Matter Matters in Smart Homes",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.04141",
+   "id": "arxiv:2610.04141"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Agent Memory Is a Surface for Endogenous Authorization Laundering",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/321ff40ee3edf9c85616321af56a0e73615d689d",
+   "owner": "",
+   "id": "arxiv:2609.01836"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Agent-access receipts for artificial intelligence-mediated content and application programming interface access: a reproducible synthetic security experiment",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/899c00b8a21efa78c2b018dc1ae4519d621c87a2",
+   "owner": "",
+   "id": "s2:899c00b8a21efa78c2b018dc1ae4519d621c87a2"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Safe to Resume? Breaking Execution Continuity of Agent Execution via Rollback",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/e84fff2ee07bbc0a9eec8eb96b413fdc1adc6f80",
+   "owner": "",
+   "id": "arxiv:2608.29381"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Separating Disclosure from Authorization: Field-Tier Minimization for Agent Action Mediation",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/7e3f035505fe7034cfed6bec3f633e705faaaee8",
+   "owner": "",
+   "id": "arxiv:2608.25474"
   }
  ],
  "links": [
@@ -7922,6 +7979,65 @@
    "sim": 0.7266,
    "source": "idea:A2b-1001-03",
    "target": "s2:59200ae2db09394286e9de72baa1eb146352d752",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1002-01",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1002-01",
+   "target": "domain:identity",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1002-01",
+   "target": "news:7147222c0cb848a1",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1002-01",
+   "target": "arxiv:2610.04141",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7412,
+   "source": "idea:A1-1002-01",
+   "target": "arxiv:2609.01836",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7395,
+   "source": "idea:A1-1002-01",
+   "target": "s2:899c00b8a21efa78c2b018dc1ae4519d621c87a2",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7308,
+   "source": "idea:A1-1002-01",
+   "target": "arxiv:2608.29381",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.727,
+   "source": "idea:A1-1002-01",
+   "target": "arxiv:2608.25474",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7195,
+   "source": "idea:A1-1002-01",
+   "target": "arxiv:2609.14744",
    "key": 0
   }
  ]

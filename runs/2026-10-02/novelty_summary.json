@@ -1,0 +1,22 @@
+{
+  "incoming": 279,
+  "kb": 11368,
+  "eligible": 267,
+  "shortlisted": 55,
+  "near_duplicates": 3,
+  "by_pool": [
+    {
+      "pool": "crossdomain",
+      "n": 196,
+      "shortlisted": 40,
+      "novelty_mean": 0.3559796879895686
+    },
+    {
+      "pool": "finance",
+      "n": 83,
+      "shortlisted": 15,
+      "novelty_mean": 0.3401838457225286
+    }
+  ],
+  "llm_pending": 0
+}

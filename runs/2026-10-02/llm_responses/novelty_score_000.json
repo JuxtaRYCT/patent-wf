@@ -1,0 +1,288 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.02879",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Exclusive leases stay safe even when participants disagree about simultaneity",
+   "tags": [
+    "leases",
+    "distributed-locking"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03042",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Body-area network routing",
+   "tags": [
+    "wban"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03398",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Microtonal harmony app",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02742",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Piezoelectric isolated power conversion",
+   "tags": [
+    "power-electronics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03685",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Calibrated test for background-mortality term",
+   "tags": [
+    "actuarial"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03263",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Capsule endoscope antenna",
+   "tags": [
+    "antennas"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03182",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Recover design intent from an IC's clock network (hardware reverse engineering)",
+   "tags": [
+    "hardware-re",
+    "tamper"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03440",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Estimate a blockchain's energy use from network mapping for MiCA sustainability reporting",
+   "tags": [
+    "mica",
+    "sustainability-disclosure"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03147",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Real-time detection and imputation of missing streaming data",
+   "tags": [
+    "streaming",
+    "imputation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03859",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Magnetometer calibration with inertial sensors",
+   "tags": [
+    "sensors"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02688",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "Technology-facilitated abuse: abusers exploit shared accounts, tracking and messaging channels to control victims",
+   "tags": [
+    "tech-facilitated-abuse",
+    "financial-abuse",
+    "coercive-control"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04035",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ising chain Casimir force",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04016",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Verifying treaty compliance with active interrogation",
+   "tags": [
+    "verification"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02694",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Forensic reconstruction of who went where when to identify misbehaving independently operated agents",
+   "tags": [
+    "agent-forensics",
+    "byzantine",
+    "attribution"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04141",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Temporary smart-home access silently becomes persistent surveillance; revocation fails",
+   "tags": [
+    "delegated-access",
+    "revocation",
+    "persistence"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02936",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Timing-robust ADC",
+   "tags": [
+    "hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06911",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Sensor-network data gathering",
+   "tags": [
+    "wsn"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03249",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Self-repairing ensembles recover a controller from sensor drift",
+   "tags": [
+    "drift",
+    "robustness"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03338",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Fibre sensor placement for failure prediction",
+   "tags": [
+    "optical-networks"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03210",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Classroom noise and EEG",
+   "tags": [
+    "acoustics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03504",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Magnetic B-H modelling",
+   "tags": [
+    "magnetics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02924",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Evaluator-in-the-loop tree search for protein design",
+   "tags": [
+    "search"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03470",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Estimate a black-box guardrail's accuracy in production without humans viewing the data",
+   "tags": [
+    "eyes-off-evaluation",
+    "guardrails",
+    "privacy-audit"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02645",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Zero-determinant strategies without discounting",
+   "tags": [
+    "game-theory"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02849",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Nonlinear electrostatics",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03972",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Probabilistic algorithms for Ising-machine hardware",
+   "tags": [
+    "optimisation-hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02745",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "GPU stochastic variational method",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02908",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Separating overlapping RF interference",
+   "tags": [
+    "rf"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03590",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Certified deletion: cryptographic proof that encrypted data was deleted, now at constant rate",
+   "tags": [
+    "certified-deletion",
+    "data-erasure-proof"
+   ]
+  },
+  {
+   "id": "arxiv:2610.03478",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Minimax entropy production",
+   "tags": [
+    "physics"
+   ]
+  }
+ ]
+}
