@@ -3552,6 +3552,86 @@
   <data key="d9">https://patents.google.com/patent/US20250097309A1/en</data>
   <data key="d11">JPMORGAN CHASE BANK, N.A.</data>
 </node>
+<node id="idea:A1-1006-01">
+  <data key="d0">idea</data>
+  <data key="d1">Session-continuity chain: proving at payment time that the device holds the history of earlier sessions, which cloned or remote devices lack</data>
+  <data key="d2">A1</data>
+  <data key="d3">2026-10-06</data>
+  <data key="d4">identity</data>
+  <data key="d5">Banks are moving to real-time fraud warnings before payments clear, but the strongest attacks run from a device that looks legitimate: cloned app credentials, a replayed device binding, or a fresh device enrolled with stolen OTPs. Device binding proves possession of a key, and keys can be extracted or re-enrolled.</data>
+  <data key="d6">The banking app keeps a rolling local chain. After each session it stores a small context record (hashes of the session's transaction IDs, UI event digests, server nonces and coarse timing), keyed by a ratchet that advances every session, and sends the server only a commitment. On a high-risk payment the server challenges the device to open a random subset of past records, chosen at different depths in the chain. The genuine long-lived installation answers instantly. A cloned or newly enrolled device lacks the history, and a remote-access attacker would need to have exfiltrated the whole store. This makes storage and history, not computational hardness, the attacker's bottleneck. The response feeds the pre-clearing risk decision as a continuity score, and a failed proof escalates to an out-of-band check.</data>
+  <data key="d7">0.2064</data>
+</node>
+<node id="news:abae7c82421f8712">
+  <data key="d0">source</data>
+  <data key="d1">Malaysia's Banks to Test Real-Time Fraud Warnings Before Payments Clear - https://www.briefasia.com/</data>
+  <data key="d8">news</data>
+  <data key="d9">https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRERpOHVkR0NNRE1vRG54VTcyRnk1VDk3WWwwNXo2VWQ0dnRkVmJfSUxCTjk3aE5RT3dJT3RIUWRzWHFPU0w1eWhwcE5RMkpyZGdRVkFfZTFpNTJSUkxFa1l2MVZyTkZCNkFEQjJ6N3RGSVlzXzYwYlo1bHJwMjdNT2FKME1GbXlvZVU4?oc=5</data>
+</node>
+<node id="arxiv:2610.08262">
+  <data key="d0">prior_art</data>
+  <data key="d1">Contextual Chain: Lightweight Continuity Authentication for Intermittently Connected Devices</data>
+  <data key="d8">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.08262</data>
+  <data key="d10">paper</data>
+  <data key="d11"></data>
+</node>
+<node id="arxiv:2610.02838">
+  <data key="d0">prior_art</data>
+  <data key="d1">Axient: Manifest-Bound Evidence for On-Chain Financial Protocols: Seven-Layer Derivation, Correlation, Tamper Rejection, and Reproducible Claim Promotion</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.02838</data>
+  <data key="d11"></data>
+</node>
+<node id="idea:A2b-1006-01">
+  <data key="d0">idea</data>
+  <data key="d1">Read-time coupling: detecting autonomous LLM attack agents from how their next-request delay scales with the length of the response they just read</data>
+  <data key="d2">A2b</data>
+  <data key="d3">2026-10-06</data>
+  <data key="d4">fraud</data>
+  <data key="d5">South Korea reports AI agents appear to have been used to hack its banks. LLM-driven attack agents now probe bank web and API surfaces with human-like, varied requests that defeat rate limits and bot signatures built for scripts.</data>
+  <data key="d6">An LLM agent has to ingest each server response before it acts, so its think time scales with the token count of what it just read and with its tool-call loop. Scripts react almost instantly regardless of length; humans skim and scale only weakly with length. For every session the edge gateway records pairs of (tokenised length of response k, delay before request k+1) and fits a per-session coupling slope, intercept and residual pattern. It adds secondary features: whether request k+1 quotes or paraphrases content from response k, and burstiness typical of tool-call loops. A classifier labels sessions as human, script or LLM agent. Unregistered LLM-agent sessions on sensitive surfaces (login, password reset, payee management, internal APIs) get tarpitted with deliberately long responses, which raises their cost because think time grows with length. Registered agents carrying valid agent credentials are allowed.</data>
+  <data key="d7">0.1919</data>
+</node>
+<node id="theme:2026-10-06:T13">
+  <data key="d0">theme</data>
+  <data key="d1">T13</data>
+</node>
+<node id="s2:f0888a645148559fc788a0efb5a1c3f4cfd99d92">
+  <data key="d0">prior_art</data>
+  <data key="d1">LLM-Based Agents for Cybersecurity: A Systematic Review of Architectures, Applications, and Open Challenges</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://www.semanticscholar.org/paper/f0888a645148559fc788a0efb5a1c3f4cfd99d92</data>
+  <data key="d11"></data>
+</node>
+<node id="arxiv:2609.05911">
+  <data key="d0">prior_art</data>
+  <data key="d1">Structurally Close, Temporally Distant: Measuring Security Exposure in Long-Horizon LLM Agents</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://arxiv.org/abs/2609.05911</data>
+  <data key="d11"></data>
+</node>
+<node id="s2:c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5">
+  <data key="d0">prior_art</data>
+  <data key="d1">Security Risk Assessment and Layered Protection Strategies for Large Language Model Banking Chatbots with Privacy Considerations</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://www.semanticscholar.org/paper/c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5</data>
+  <data key="d11"></data>
+</node>
+<node id="arxiv:2610.07089">
+  <data key="d0">prior_art</data>
+  <data key="d1">Towards a Unified Misuse Monitoring Benchmark</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.07089</data>
+  <data key="d11"></data>
+</node>
+<node id="arxiv:2609.36879">
+  <data key="d0">prior_art</data>
+  <data key="d1">SKILLLITE: Evidence-Guided Malicious Skill Auditing with Compact LLMs</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://arxiv.org/abs/2609.36879</data>
+  <data key="d11"></data>
+</node>
 <edge source="idea:A1-01" target="arm:A1" id="0">
   <data key="d12">FROM_ARM</data>
 </edge>
@@ -5862,5 +5942,66 @@
 <edge source="idea:A1-1005-01" target="patent:US20250097309A1" id="0">
   <data key="d12">SIMILAR_TO</data>
   <data key="d13">0.7105</data>
+</edge>
+<edge source="idea:A1-1006-01" target="arm:A1" id="0">
+  <data key="d12">FROM_ARM</data>
+</edge>
+<edge source="idea:A1-1006-01" target="domain:identity" id="0">
+  <data key="d12">IN_DOMAIN</data>
+</edge>
+<edge source="idea:A1-1006-01" target="news:abae7c82421f8712" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1006-01" target="arxiv:2610.08262" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1006-01" target="arxiv:2610.08262" id="1">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7936</data>
+</edge>
+<edge source="idea:A1-1006-01" target="arxiv:2610.02838" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7782</data>
+</edge>
+<edge source="idea:A1-1006-01" target="patent:US20260289570A1" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7679</data>
+</edge>
+<edge source="idea:A1-1006-01" target="patent:US20260253061A1" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7665</data>
+</edge>
+<edge source="idea:A1-1006-01" target="patent:US12493879B2" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7638</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="arm:A2b" id="0">
+  <data key="d12">FROM_ARM</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="domain:fraud" id="0">
+  <data key="d12">IN_DOMAIN</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="theme:2026-10-06:T13" id="0">
+  <data key="d12">ADDRESSES</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="s2:f0888a645148559fc788a0efb5a1c3f4cfd99d92" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.8081</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="arxiv:2609.05911" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.8006</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="s2:c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7989</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="arxiv:2610.07089" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7894</data>
+</edge>
+<edge source="idea:A2b-1006-01" target="arxiv:2609.36879" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7876</data>
 </edge>
 </graph></graphml>

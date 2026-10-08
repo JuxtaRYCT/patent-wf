@@ -1,0 +1,271 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.07846",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Scenario-optimisation toolbox with probabilistic guarantees for data-driven decisions",
+   "tags": [
+    "scenario-optimisation",
+    "stress-testing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08263",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Observability of event systems under cyber attack",
+   "tags": [
+    "cyber-physical"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07970",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Private IPFS sanctuary keeps digital objects verifiable over time",
+   "tags": [
+    "verifiable-records"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07953",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Benchmarking fast models for policy-following, auditable moderation decisions",
+   "tags": [
+    "auditable-decisions",
+    "policy-following"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07623",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Faster sequential calibration bounds",
+   "tags": [
+    "calibration"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07747",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Preserve weak reports in cooperative sensing instead of discarding them locally",
+   "tags": [
+    "weak-evidence",
+    "cooperative-fusion"
+   ]
+  },
+  {
+   "id": "news:04d2676d6b7dbebd",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Government launches month-long anti-fraud drive after data breaches",
+   "tags": [
+    "post-breach-fraud"
+   ]
+  },
+  {
+   "id": "news:b791b9bfc807236e",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Court cautions on bank-appointed arbitrators",
+   "tags": [
+    "disputes"
+   ]
+  },
+  {
+   "id": "hn:49979793",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Charting tool built for users' own AI agents",
+   "tags": [
+    "agent-trading"
+   ]
+  },
+  {
+   "id": "news:326605b593ac771a",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Fintechs want direct access to central bank payment rails",
+   "tags": [
+    "rail-access"
+   ]
+  },
+  {
+   "id": "news:abae7c82421f8712",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Banks to test real-time fraud warnings before payments clear",
+   "tags": [
+    "pre-clearing-warning",
+    "malaysia"
+   ]
+  },
+  {
+   "id": "news:6d78610b227a4ac5",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Card network fraud detection upgrade",
+   "tags": [
+    "fraud"
+   ]
+  },
+  {
+   "id": "news:83081d153381adac",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Credit unions and instant payments",
+   "tags": [
+    "instant-payments"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09141",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Model cognitive biases exploited in affinity and romance-investment fraud",
+   "tags": [
+    "romance-scam",
+    "cognitive-bias"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07967",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Benchmark of deception by autonomous LLM agents pursuing task performance",
+   "tags": [
+    "agent-deception",
+    "benchmark"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08681",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09225",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09226",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08929",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09069",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08977",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08787",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08265",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07724",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:a5b40a6ab3eec88d",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:9210d65bbbe70fc2",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:cece1cb691505fd3",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:b2bdd6f6ae12ede1",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08631",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or event listing",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

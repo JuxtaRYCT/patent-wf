@@ -1,0 +1,186 @@
+[
+  {
+    "id": "A1-1006-01",
+    "arm": "A1",
+    "title": "Session-continuity chain: proving at payment time that the device holds the history of earlier sessions, which cloned or remote devices lack",
+    "terms": [
+      "cloned",
+      "session",
+      "history",
+      "attacker",
+      "chain",
+      "continuity"
+    ],
+    "queries": [
+      "cloned AND session",
+      "cloned AND history",
+      "cloned AND attacker",
+      "session AND history",
+      "session AND attacker",
+      "(cloned OR session OR history) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 233,
+    "fetched": 11,
+    "max_sim_patent": 0.7679,
+    "max_sim_paper": 0.7936,
+    "novelty_pa": 0.2064,
+    "closest": [
+      {
+        "id": "arxiv:2610.08262",
+        "type": "paper",
+        "sim": 0.7936,
+        "title": "Contextual Chain: Lightweight Continuity Authentication for Intermittently Connected Devices",
+        "url": "https://arxiv.org/abs/2610.08262",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.02838",
+        "type": "paper",
+        "sim": 0.7782,
+        "title": "Axient: Manifest-Bound Evidence for On-Chain Financial Protocols: Seven-Layer Derivation, Correlation, Tamper Rejection, and Reproducible Claim Promotion",
+        "url": "https://arxiv.org/abs/2610.02838",
+        "who": null
+      },
+      {
+        "id": "patent:US20260289570A1",
+        "type": "patent",
+        "sim": 0.7679,
+        "title": "SYSTEMS AND METHODS FOR TRANSACTION-TRIGGERED ISSUANCE AND AUTOMATED ROTATION OF VIRTUAL PAYMENT CARDS TO PREVENT PAYMENT FRAUD",
+        "url": "https://patents.google.com/patent/US20260289570A1/en",
+        "who": "Secure Purchase LLC"
+      },
+      {
+        "id": "patent:US20260253061A1",
+        "type": "patent",
+        "sim": 0.7665,
+        "title": "Next-Generation Comprehensive Financial Service System Integrating Cross-Chain Multi-Currency Payments, AI-Based Risk Control, Hardware Security, and Metaverse/",
+        "url": "https://patents.google.com/patent/US20260253061A1/en",
+        "who": "BEI; FURONG"
+      },
+      {
+        "id": "patent:US12493879B2",
+        "type": "patent",
+        "sim": 0.7638,
+        "title": "User authentication and transaction verification via a shared video stream",
+        "url": "https://patents.google.com/patent/US12493879B2/en",
+        "who": "IRONVEST, INC."
+      },
+      {
+        "id": "patent:US20230230085A1",
+        "type": "patent",
+        "sim": 0.7621,
+        "title": "User Authentication and Transaction Verification via a Shared Video Stream",
+        "url": "https://patents.google.com/patent/US20230230085A1/en",
+        "who": "IRONVEST, INC."
+      },
+      {
+        "id": "patent:US20260141387A1",
+        "type": "patent",
+        "sim": 0.7584,
+        "title": "SYSTEM AND METHOD FOR REAL-TIME VIDEO BROADCASTING, AUTHENTICATION, AND ELECTRONIC TRANSACTION PROCESSING IN A DISTRIBUTED NETWORK EVENT SETTING",
+        "url": "https://patents.google.com/patent/US20260141387A1/en",
+        "who": "Minina; Darya, Minin; Mikhail"
+      },
+      {
+        "id": "patent:US20260268330A1",
+        "type": "patent",
+        "sim": 0.7576,
+        "title": "PREVENTING FRAUDULENT ROLLBACK OF A TRUSTED APPLICATION",
+        "url": "https://patents.google.com/patent/US20260268330A1/en",
+        "who": "CRUNCHFISH DIGITAL CASH AB"
+      }
+    ]
+  },
+  {
+    "id": "A2b-1006-01",
+    "arm": "A2b",
+    "title": "Read-time coupling: detecting autonomous LLM attack agents from how their next-request delay scales with the length of the response they just read",
+    "terms": [
+      "length",
+      "delay",
+      "coupling",
+      "agents",
+      "response",
+      "llm agent"
+    ],
+    "queries": [
+      "length AND delay",
+      "length AND coupling",
+      "length AND agents",
+      "delay AND coupling",
+      "delay AND agents",
+      "(length OR delay OR coupling) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 240,
+    "fetched": 10,
+    "max_sim_patent": 0.7367,
+    "max_sim_paper": 0.8081,
+    "novelty_pa": 0.1919,
+    "closest": [
+      {
+        "id": "s2:f0888a645148559fc788a0efb5a1c3f4cfd99d92",
+        "type": "paper",
+        "sim": 0.8081,
+        "title": "LLM-Based Agents for Cybersecurity: A Systematic Review of Architectures, Applications, and Open Challenges",
+        "url": "https://www.semanticscholar.org/paper/f0888a645148559fc788a0efb5a1c3f4cfd99d92",
+        "who": null
+      },
+      {
+        "id": "arxiv:2609.05911",
+        "type": "paper",
+        "sim": 0.8006,
+        "title": "Structurally Close, Temporally Distant: Measuring Security Exposure in Long-Horizon LLM Agents",
+        "url": "https://arxiv.org/abs/2609.05911",
+        "who": null
+      },
+      {
+        "id": "s2:c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5",
+        "type": "paper",
+        "sim": 0.7989,
+        "title": "Security Risk Assessment and Layered Protection Strategies for Large Language Model Banking Chatbots with Privacy Considerations",
+        "url": "https://www.semanticscholar.org/paper/c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.07089",
+        "type": "paper",
+        "sim": 0.7894,
+        "title": "Towards a Unified Misuse Monitoring Benchmark",
+        "url": "https://arxiv.org/abs/2610.07089",
+        "who": null
+      },
+      {
+        "id": "arxiv:2609.36879",
+        "type": "paper",
+        "sim": 0.7876,
+        "title": "SKILLLITE: Evidence-Guided Malicious Skill Auditing with Compact LLMs",
+        "url": "https://arxiv.org/abs/2609.36879",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.03448",
+        "type": "paper",
+        "sim": 0.7856,
+        "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+        "url": "https://arxiv.org/abs/2610.03448",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.08871",
+        "type": "paper",
+        "sim": 0.781,
+        "title": "CredLeakBench: Evaluating Credential Leakage and Recovery in LLM Agents",
+        "url": "https://arxiv.org/abs/2610.08871",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.07256",
+        "type": "paper",
+        "sim": 0.7728,
+        "title": "Efficient Auditing of Adversarial AI Agent Behavior from Agent Traces",
+        "url": "https://arxiv.org/abs/2610.07256",
+        "who": null
+      }
+    ]
+  }
+]

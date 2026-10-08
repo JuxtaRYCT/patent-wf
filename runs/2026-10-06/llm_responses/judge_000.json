@@ -1,0 +1,28 @@
+{
+ "judgments": [
+  {
+   "id": "A1-1006-01",
+   "novelty": 5,
+   "non_obviousness": 4,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 8,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "The mechanism source itself (Contextual Chain, arXiv 2610.08262) gives the continuity-authentication primitive; device binding and transaction-history knowledge questions are known. Residue: a ratcheted per-session context chain with random-depth challenges used as a payment-time continuity factor against cloned or re-enrolled banking apps. Narrow but technically eligible."
+  },
+  {
+   "id": "A2b-1006-01",
+   "novelty": 5,
+   "non_obviousness": 4,
+   "utility": 7,
+   "feasibility": 8,
+   "commercial": 7,
+   "eligibility": 8,
+   "crazy": 7,
+   "verdict": "refine",
+   "rationale": "DEEP CHECK: LLM-agent traffic and timing fingerprinting is published: FP-Agent (arXiv 2605.01247), 'Whose Agent Are You?' (2606.20910), 'Known By Their Actions' UI-trace timing (2605.14786), and inter-request-interval analysis (2510.07176). The coupling between response length and next-request delay is a narrower feature that is likely obvious next to those. The length-inflation tarpit that exploits reading cost is the most defensible element. Keep as a dependent-claim set or a defensive publication."
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "theme": 13,
+    "size": 70,
+    "terms": "ai, fraud, scams, shopping, ai shopping, agents, warn, risks",
+    "new_signals": 9,
+    "new_representatives": [
+      "[news, new] Banks face $66bn global arms race as AI eases banking fraud - Businessamlive",
+      "[news, new] ANZ releases advice on AI scams and fraud - Cyber Daily",
+      "[news, new] AI arms race is radically reshaping the fraud threat in EMEA: FICO - Yahoo Finance",
+      "[post, new] South Korea says AI agents appear to have been used to hack the country's banks",
+      "[news, new] IRCC Issues Warning Against AI Deepfake Visa Scams Targeting Migrants - LatestLY",
+      "[news, new] AI deepfakes and identity theft changing methods of proving identity - Independent Australia"
+    ],
+    "pain": 63.2034055210831,
+    "pull": 0,
+    "momentum": 0.7857142857142857,
+    "push": 467,
+    "patent_density": 68,
+    "representatives": [
+      "[news] Banks raise red flags over AI shopping bots and scam risks: What to know - The News International",
+      "[news] Banks issue urgent warning using AI to shop online raises scam and fraud risks - The Independent",
+      "[news] Bank of America warns AI shopping bots could expose you to fraud - Yahoo Tech",
+      "[news] Banks warn AI shopping bots raise scam, fraud and data-privacy risks - Reuters",
+      "[news] Two banks warn AI shopping bots can be used by scammers - ConsumerAffairs",
+      "[news] Banks Flag Scam, Fraud Risks As AI Shopping Agents Take Over Online Buying - News Mobile",
+      "[news] Big banks are worried AI agents could increase the risk of scams and fraud - sea.mashable.com",
+      "[news] AI Shopping Agents Raise New Fraud and Payment Risks for Banks - The420.in"
+    ],
+    "uspto_hits": 25,
+    "whitespace": -0.2149575712270696,
+    "opportunity": 1.4904912520704037
+  },
+  {
+    "theme": 7,
+    "size": 16,
+    "terms": "quant, clearing house, house, clearing, tokenized, tokenized deposit, deposit, network",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Quant Powers UK Banks’ Tokenized Deposit Trial as Wild $10,000 QNT Call Goes Viral - Yahoo Finance",
+      "[news, new] The Clearing House targets cross border and treasury as first tokenized deposit use cases - Ledger Insights"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 1.0,
+    "push": 25,
+    "patent_density": 6,
+    "representatives": [
+      "[news] The Clearing House Selects Quant to Power Its Tokenized Deposit Network - Cryptonews.net",
+      "[news] The Clearing House Picks Quant For US Tokenized Deposit Network - CryptoRank",
+      "[news] The Clearing House Picks Quant For US Tokenized Deposit Network - TradingView",
+      "[news] The Clearing House Taps Quant to Power Tokenized Deposits Network - pymnts.com",
+      "[news] The Clearing House selects Quant for tokenized deposit interoperability - ledgerinsights.com",
+      "[news] Quant Jumps 36% After Clearing House Picks It for Tokenized Deposits - CoinMarketCap",
+      "[news] Quant Jumps as US and UK Banks Put Tokenized Deposits to Work - Altcoin Buzz",
+      "[news] US bank group taps Quant for tokenized deposits, but QNT’s role is left in doubt - CryptoSlate"
+    ],
+    "uspto_hits": 4,
+    "whitespace": 0.5825901473091921,
+    "opportunity": -0.09094539782133193
+  },
+  {
+    "theme": 27,
+    "size": 30,
+    "terms": "tokenized, japan, asia, moonpay, dollar, deposits, yahoo finance, yahoo",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Canadian payment transactions total more than $12 trillion in 2025; real-time payments appeal to over half of Canadians: Payments Canada Res",
+      "[news, new] Retail Payments up 5.7% in Canada and other Digital Transactions News briefs from 10/6/26 - Digital Transactions"
+    ],
+    "pain": 3.0,
+    "pull": 0,
+    "momentum": 0.6666666666666666,
+    "push": 251,
+    "patent_density": 137,
+    "representatives": [
+      "[news] C Pushes Tokenized Deposits Deeper Into Asia With Japan Expansion - Yahoo Finance",
+      "[news] Citi Japan’s Tokenized Deposit Launch Extends the Institutional Pivot Into Asia’s Deepest Regulatory Framework - Yahoo Finance",
+      "[news] Citi to offer instant cross-border payments for Japan firms via blockchain - Nikkei Asia",
+      "[news] Citi Adds Japan And UAE To 24/7 Tokenized Deposit Network - Crowdfund Insider",
+      "[news] Citigroup (C) Enters Japan Tokenized Deposits Market - simplywall.st",
+      "[news] Citigroup (C) Completed a Weekend Tokenized-Dollar Transfer. Can the Network Scale? - Yahoo Finance",
+      "[news] Record-Breaking CNY 2.55 Billion in Digital Green Bonds; Tokenized Deposits Emerge as a New Solution - Moomoo",
+      "[news] MoonPay launches South Korean subsidiary to expand in Asia-Pacific - Crypto Briefing"
+    ],
+    "uspto_hits": 195,
+    "whitespace": -0.6825758105301023,
+    "opportunity": -0.7824698608801326
+  },
+  {
+    "theme": 1,
+    "size": 88,
+    "terms": "payments, fintech, banking, payment, instant, european, finance, cross",
+    "new_signals": 9,
+    "new_representatives": [
+      "[news, new] How Can Banks Serve SME’s Growing Cross-Border Needs?",
+      "[news, new] Fintechs press for Fed access",
+      "[news, new] Payments conferences for 2027",
+      "[news, new] Top bank conferences to attend in 2027",
+      "[news, new] Bancassurance advantage deepens as career banker takes ICICI Life helm - Insurance Business",
+      "[news, new] Credit Unions Must Offer Instant Payments to Keep Up With Gen Z: Report - CUTimes"
+    ],
+    "pain": 2.0,
+    "pull": 0,
+    "momentum": 0.7045454545454546,
+    "push": 1119,
+    "patent_density": 555,
+    "representatives": [
+      "[news] The digitalisation of money, payments and finance",
+      "[news] How Can Banks Serve SME’s Growing Cross-Border Needs?",
+      "[news] Beyond connectivity: Creating more value across the payments lifecycle",
+      "[news] Building the next generation of market infrastructure",
+      "[news] Are Fintech Standards Fit For Purpose?",
+      "[news] How Can Digital Assets Bridge the Bank Modernisation Gap?",
+      "[news] How Banks and PSPs Can Ensure Innovation Without Excluding Vulnerable Adults",
+      "[news] What defines the issuer of tomorrow?"
+    ],
+    "uspto_hits": 283,
+    "whitespace": -1.0741679756877434,
+    "opportunity": -0.8548906359375973
+  }
+]

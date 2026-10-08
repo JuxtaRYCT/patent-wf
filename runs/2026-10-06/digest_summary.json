@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-06",
+  "mode": "catch-up",
+  "executed_on": "2026-10-09",
+  "new_items": 635,
+  "new_patents": 126,
+  "competitor_filings": 47,
+  "shortlisted": 94,
+  "themes": 4,
+  "ideas_A1": 1,
+  "ideas_A2b": 1,
+  "pursue": 0,
+  "refine": 2,
+  "dropped": 0,
+  "top_idea": "A2b-1006-01 Read-time coupling: detecting autonomous LLM attack agents from how their next-request delay scales with the length of the response they just read"
+}

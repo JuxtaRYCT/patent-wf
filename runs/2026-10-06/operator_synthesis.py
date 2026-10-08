@@ -1,0 +1,14 @@
+"""Operator answers, synthesis packet of run 2026-10-06. 4 pairs -> 1 invention."""
+import sys; sys.path.insert(0, "scripts/operator")
+from answer import write
+write("2026-10-06", "synthesis", {
+"X000": [dict(
+    title="Session-continuity chain: proving at payment time that the device holds the history of earlier sessions, which cloned or remote devices lack",
+    problem="Banks are moving to real-time fraud warnings before payments clear, but the strongest attacks run from a device that looks legitimate: cloned app credentials, a replayed device binding, or a fresh device enrolled with stolen OTPs. Device binding proves possession of a key, and keys can be extracted or re-enrolled.",
+    mechanism="The banking app keeps a rolling local chain. After each session it stores a small context record (hashes of the session's transaction IDs, UI event digests, server nonces and coarse timing), keyed by a ratchet that advances every session, and sends the server only a commitment. On a high-risk payment the server challenges the device to open a random subset of past records, chosen at different depths in the chain. The genuine long-lived installation answers instantly. A cloned or newly enrolled device lacks the history, and a remote-access attacker would need to have exfiltrated the whole store. This makes storage and history, not computational hardness, the attacker's bottleneck. The response feeds the pre-clearing risk decision as a continuity score, and a failed proof escalates to an out-of-band check.",
+    technical_effect="A possession factor tied to accumulated device history that gets stronger with tenure and resists key extraction and re-enrolment attacks, at negligible computational cost.",
+    why_non_obvious="Continuity authentication for intermittently connected devices comes from IoT security research. Using a ratcheted session-history chain with random-depth challenge-response as a payment-time device-continuity factor differs from device binding and from user-facing transaction-history questions.",
+    claim_core="A method comprising storing on a client device, after each session, a context record ratcheted from a prior record and transmitting a commitment to a server; upon a payment request, issuing a challenge identifying randomly selected prior records; receiving openings of the records; verifying them against stored commitments; and conditioning payment authorisation on a continuity score derived from the verification.",
+    keywords="device continuity, session history, challenge response, device binding, cloned app, remote access, ratchet, payment authorization",
+    domain="identity")],
+})

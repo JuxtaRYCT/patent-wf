@@ -1,0 +1,284 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.08410",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Invariant descriptors admit decoys: distinct surfaces with the same descriptor, measured by fibre radius",
+   "tags": [
+    "descriptor-collisions",
+    "decoys",
+    "biometric-templates"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08730",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "A static sliding-scale correction cannot control a shifted system however it is tuned",
+   "tags": [
+    "static-rules",
+    "control-failure"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07854",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Real-time backup triggers placed by ransomware lifecycle stage",
+   "tags": [
+    "ransomware",
+    "resilience"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08262",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Continuity authentication for intermittently connected devices that makes memory, not computation, the attacker's bottleneck",
+   "tags": [
+    "continuity-auth",
+    "offline-devices",
+    "memory-hard"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07976",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Privacy posture of operator network profiles",
+   "tags": [
+    "telecom-privacy"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08067",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Frontline staff do invisible work bridging automated decisions and user expectations",
+   "tags": [
+    "human-mediation",
+    "automated-decisions"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08229",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Contextual priors reverse confidence ordering when confidence is read from reshaped scores",
+   "tags": [
+    "calibration",
+    "priors"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08297",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Concept-drift mitigation using historic data",
+   "tags": [
+    "drift"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08274",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Multi-cloud network telescope",
+   "tags": [
+    "measurement"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08962",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Detect and fix Go deadlocks",
+   "tags": [
+    "concurrency"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07759",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "A replica that loses its state can sign conflicting values and break Byzantine quorum safety; tight conditions",
+   "tags": [
+    "bft",
+    "stateless-recovery",
+    "validator-safety"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08542",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07542",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09022",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09006",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09028",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08488",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08692",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07934",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08305",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07669",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08469",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08603",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09068",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09224",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07827",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08391",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07794",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07619",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.08041",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

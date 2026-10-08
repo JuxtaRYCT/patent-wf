@@ -4030,6 +4030,97 @@
    "url": "https://patents.google.com/patent/US20250097309A1/en",
    "owner": "JPMORGAN CHASE BANK, N.A.",
    "id": "patent:US20250097309A1"
+  },
+  {
+   "kind": "idea",
+   "label": "Session-continuity chain: proving at payment time that the device holds the history of earlier sessions, which cloned or remote devices lack",
+   "arm": "A1",
+   "run": "2026-10-06",
+   "domain": "identity",
+   "problem": "Banks are moving to real-time fraud warnings before payments clear, but the strongest attacks run from a device that looks legitimate: cloned app credentials, a replayed device binding, or a fresh device enrolled with stolen OTPs. Device binding proves possession of a key, and keys can be extracted or re-enrolled.",
+   "mechanism": "The banking app keeps a rolling local chain. After each session it stores a small context record (hashes of the session's transaction IDs, UI event digests, server nonces and coarse timing), keyed by a ratchet that advances every session, and sends the server only a commitment. On a high-risk payment the server challenges the device to open a random subset of past records, chosen at different depths in the chain. The genuine long-lived installation answers instantly. A cloned or newly enrolled device lacks the history, and a remote-access attacker would need to have exfiltrated the whole store. This makes storage and history, not computational hardness, the attacker's bottleneck. The response feeds the pre-clearing risk decision as a continuity score, and a failed proof escalates to an out-of-band check.",
+   "novelty_pa": 0.2064,
+   "id": "idea:A1-1006-01"
+  },
+  {
+   "kind": "source",
+   "label": "Malaysia's Banks to Test Real-Time Fraud Warnings Before Payments Clear - https://www.briefasia.com/",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRERpOHVkR0NNRE1vRG54VTcyRnk1VDk3WWwwNXo2VWQ0dnRkVmJfSUxCTjk3aE5RT3dJT3RIUWRzWHFPU0w1eWhwcE5RMkpyZGdRVkFfZTFpNTJSUkxFa1l2MVZyTkZCNkFEQjJ6N3RGSVlzXzYwYlo1bHJwMjdNT2FKME1GbXlvZVU4?oc=5",
+   "id": "news:abae7c82421f8712"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Contextual Chain: Lightweight Continuity Authentication for Intermittently Connected Devices",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.08262",
+   "pa_type": "paper",
+   "owner": "",
+   "id": "arxiv:2610.08262"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Axient: Manifest-Bound Evidence for On-Chain Financial Protocols: Seven-Layer Derivation, Correlation, Tamper Rejection, and Reproducible Claim Promotion",
+   "pa_type": "paper",
+   "url": "https://arxiv.org/abs/2610.02838",
+   "owner": "",
+   "id": "arxiv:2610.02838"
+  },
+  {
+   "kind": "idea",
+   "label": "Read-time coupling: detecting autonomous LLM attack agents from how their next-request delay scales with the length of the response they just read",
+   "arm": "A2b",
+   "run": "2026-10-06",
+   "domain": "fraud",
+   "problem": "South Korea reports AI agents appear to have been used to hack its banks. LLM-driven attack agents now probe bank web and API surfaces with human-like, varied requests that defeat rate limits and bot signatures built for scripts.",
+   "mechanism": "An LLM agent has to ingest each server response before it acts, so its think time scales with the token count of what it just read and with its tool-call loop. Scripts react almost instantly regardless of length; humans skim and scale only weakly with length. For every session the edge gateway records pairs of (tokenised length of response k, delay before request k+1) and fits a per-session coupling slope, intercept and residual pattern. It adds secondary features: whether request k+1 quotes or paraphrases content from response k, and burstiness typical of tool-call loops. A classifier labels sessions as human, script or LLM agent. Unregistered LLM-agent sessions on sensitive surfaces (login, password reset, payee management, internal APIs) get tarpitted with deliberately long responses, which raises their cost because think time grows with length. Registered agents carrying valid agent credentials are allowed.",
+   "novelty_pa": 0.1919,
+   "id": "idea:A2b-1006-01"
+  },
+  {
+   "kind": "theme",
+   "label": "T13",
+   "id": "theme:2026-10-06:T13"
+  },
+  {
+   "kind": "prior_art",
+   "label": "LLM-Based Agents for Cybersecurity: A Systematic Review of Architectures, Applications, and Open Challenges",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/f0888a645148559fc788a0efb5a1c3f4cfd99d92",
+   "owner": "",
+   "id": "s2:f0888a645148559fc788a0efb5a1c3f4cfd99d92"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Structurally Close, Temporally Distant: Measuring Security Exposure in Long-Horizon LLM Agents",
+   "pa_type": "paper",
+   "url": "https://arxiv.org/abs/2609.05911",
+   "owner": "",
+   "id": "arxiv:2609.05911"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Security Risk Assessment and Layered Protection Strategies for Large Language Model Banking Chatbots with Privacy Considerations",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5",
+   "owner": "",
+   "id": "s2:c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Towards a Unified Misuse Monitoring Benchmark",
+   "pa_type": "paper",
+   "url": "https://arxiv.org/abs/2610.07089",
+   "owner": "",
+   "id": "arxiv:2610.07089"
+  },
+  {
+   "kind": "prior_art",
+   "label": "SKILLLITE: Evidence-Guided Malicious Skill Auditing with Compact LLMs",
+   "pa_type": "paper",
+   "url": "https://arxiv.org/abs/2609.36879",
+   "owner": "",
+   "id": "arxiv:2609.36879"
   }
  ],
  "links": [
@@ -8253,6 +8344,118 @@
    "sim": 0.7105,
    "source": "idea:A1-1005-01",
    "target": "patent:US20250097309A1",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1006-01",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1006-01",
+   "target": "domain:identity",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1006-01",
+   "target": "news:abae7c82421f8712",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1006-01",
+   "target": "arxiv:2610.08262",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7936,
+   "source": "idea:A1-1006-01",
+   "target": "arxiv:2610.08262",
+   "key": 1
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7782,
+   "source": "idea:A1-1006-01",
+   "target": "arxiv:2610.02838",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7679,
+   "source": "idea:A1-1006-01",
+   "target": "patent:US20260289570A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7665,
+   "source": "idea:A1-1006-01",
+   "target": "patent:US20260253061A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7638,
+   "source": "idea:A1-1006-01",
+   "target": "patent:US12493879B2",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A2b-1006-01",
+   "target": "arm:A2b",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A2b-1006-01",
+   "target": "domain:fraud",
+   "key": 0
+  },
+  {
+   "rel": "ADDRESSES",
+   "source": "idea:A2b-1006-01",
+   "target": "theme:2026-10-06:T13",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.8081,
+   "source": "idea:A2b-1006-01",
+   "target": "s2:f0888a645148559fc788a0efb5a1c3f4cfd99d92",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.8006,
+   "source": "idea:A2b-1006-01",
+   "target": "arxiv:2609.05911",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7989,
+   "source": "idea:A2b-1006-01",
+   "target": "s2:c95ac9afc251c89f70846c87b2b2a1bb4aaf57c5",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7894,
+   "source": "idea:A2b-1006-01",
+   "target": "arxiv:2610.07089",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7876,
+   "source": "idea:A2b-1006-01",
+   "target": "arxiv:2609.36879",
    "key": 0
   }
  ]
