@@ -1,0 +1,261 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.04514",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Sub-THz CMOS frequency multiplier",
+   "tags": [
+    "rf-hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04192",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Perceptual thresholds for layered opacity",
+   "tags": [
+    "visualisation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04762",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "EHR satisfaction trends",
+   "tags": [
+    "health-it"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04388",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ga2O3 Schottky diodes",
+   "tags": [
+    "semiconductors"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06935",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Persistent random walk bounds",
+   "tags": [
+    "probability"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04186",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Schedule-dependent reliability in multi-pass dispensing",
+   "tags": [
+    "scheduling"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04775",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Distributed force control of soft robots",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04222",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Respiratory mask dynamics",
+   "tags": [
+    "medical"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04319",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Sanitise least-significant bits of model weights to strip hidden payloads in third-party transformers (model supply chain)",
+   "tags": [
+    "model-supply-chain",
+    "steganography",
+    "sanitisation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04526",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Generative stress tests of network overload monitoring from proxy records",
+   "tags": [
+    "stress-testing",
+    "generative"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04764",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Robots coordinate pushing without any communication, using only local force",
+   "tags": [
+    "communication-free-coordination"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04582",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Category-theoretic model hierarchies for control",
+   "tags": [
+    "control-theory"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04242",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Predictive control for chronic disease management",
+   "tags": [
+    "mpc",
+    "health"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04662",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Differentiable three-valued temporal-logic specifications for learning controllers",
+   "tags": [
+    "temporal-logic",
+    "specification"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04163",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Fully homomorphic encryption for collaborative statistical modelling",
+   "tags": [
+    "fhe",
+    "privacy"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04798",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Forecast cyber incidents from geopolitical signals with LLMs",
+   "tags": [
+    "cyber-risk",
+    "forecasting"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04747",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Formal ethics of lying in speech acts",
+   "tags": [
+    "ethics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04213",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Vital-sign sensing in 6G FR3 band",
+   "tags": [
+    "rf-sensing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04337",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Smoothing calibration landscapes for traffic twins",
+   "tags": [
+    "calibration"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04630",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Relay energy minimisation",
+   "tags": [
+    "telecom"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04818",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Hardware-accelerated malicious-secure function secret sharing for private lookups",
+   "tags": [
+    "function-secret-sharing",
+    "private-retrieval"
+   ]
+  },
+  {
+   "id": "news:42c50560a1d1703e",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Central bank cautious on private crypto, open to the technology",
+   "tags": [
+    "crypto-policy",
+    "india"
+   ]
+  },
+  {
+   "id": "gh:ltoinel/Carbure",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Household budget app exposes synced bank data to AI agents through a read-only MCP server",
+   "tags": [
+    "agent-data-access",
+    "mcp",
+    "least-privilege"
+   ]
+  },
+  {
+   "id": "s2:8f9459269f44ea3bbb70023c490fe465ebb53c0a",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "HR analytics",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04699",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "LLMs cannot decide which agent rules a fixed check can verify and which need a judge",
+   "tags": [
+    "agent-verification",
+    "rule-decidability"
+   ]
+  },
+  {
+   "id": "s2:bb24df99a2bcbf5ed20e009f60f68c4d5110da87",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Silk carbon credits",
+   "tags": [
+    "carbon-credits"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04693",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Adversarial search finds regulatory-obligation violations by agents where breaches leave no lexical trace",
+   "tags": [
+    "agent-compliance",
+    "adversarial-search",
+    "regulatory-obligations"
+   ]
+  }
+ ]
+}

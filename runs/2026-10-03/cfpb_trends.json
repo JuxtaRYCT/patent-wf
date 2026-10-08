@@ -1,0 +1,3467 @@
+[
+  {
+    "field": "product",
+    "key": "Credit reporting or other personal consumer reports",
+    "recent": 2372081,
+    "baseline": 5727916,
+    "share_recent": 0.4618167312123716,
+    "share_baseline": 0.44937442052365756,
+    "lift": 1.0276819105172175
+  },
+  {
+    "field": "product",
+    "key": "Credit reporting or other personal consumer reports > Credit reporting",
+    "recent": 2365283,
+    "baseline": 5708037,
+    "share_recent": 0.4604932392494995,
+    "share_baseline": 0.44781484560922274,
+    "lift": 1.0283053659965935
+  },
+  {
+    "field": "product",
+    "key": "Credit reporting or other personal consumer reports > Other personal consumer report",
+    "recent": 6798,
+    "baseline": 19879,
+    "share_recent": 0.0013234919628721373,
+    "share_baseline": 0.0015595749144348115,
+    "lift": 0.8577449264210678
+  },
+  {
+    "field": "product",
+    "key": "Debt collection",
+    "recent": 89953,
+    "baseline": 329909,
+    "share_recent": 0.017512808551961953,
+    "share_baseline": 0.025882479020387053,
+    "lift": 0.6778725208684718
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > I do not know",
+    "recent": 57802,
+    "baseline": 198058,
+    "share_recent": 0.011253380764627136,
+    "share_baseline": 0.015538321263802501,
+    "lift": 0.7259974119412949
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Credit card debt",
+    "recent": 10630,
+    "baseline": 38810,
+    "share_recent": 0.0020695380355002673,
+    "share_baseline": 0.003044776016359728,
+    "lift": 0.6898863461861557
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Other debt",
+    "recent": 9144,
+    "baseline": 46525,
+    "share_recent": 0.0017802310250813213,
+    "share_baseline": 0.0036500439103616684,
+    "lift": 0.5013890690415902
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Telecommunications debt",
+    "recent": 3738,
+    "baseline": 12016,
+    "share_recent": 0.0007277453599905927,
+    "share_baseline": 0.0009426959189017906,
+    "lift": 0.7938511554379225
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Rental debt",
+    "recent": 3302,
+    "baseline": 12498,
+    "share_recent": 0.0006428612035015883,
+    "share_baseline": 0.0009805104522665263,
+    "lift": 0.6875095025164542
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Medical debt",
+    "recent": 2248,
+    "baseline": 8502,
+    "share_recent": 0.0004376595958423896,
+    "share_baseline": 0.0006670107109273489,
+    "lift": 0.7009805576148161
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Auto debt",
+    "recent": 1617,
+    "baseline": 8029,
+    "share_recent": 0.00031481119505211033,
+    "share_baseline": 0.0006299022580611249,
+    "lift": 0.5683106066201159
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Payday loan debt",
+    "recent": 817,
+    "baseline": 3028,
+    "share_recent": 0.0001590604492007261,
+    "share_baseline": 0.0002375568610548121,
+    "lift": 0.7674572171076688
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Private student loan debt",
+    "recent": 250,
+    "baseline": 915,
+    "share_recent": 4.867210807855756e-05,
+    "share_baseline": 7.178485068201885e-05,
+    "lift": 0.8654552918275433
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Federal student loan debt",
+    "recent": 226,
+    "baseline": 892,
+    "share_recent": 4.399958570301604e-05,
+    "share_baseline": 6.998042274137793e-05,
+    "lift": 0.8471539450287681
+  },
+  {
+    "field": "product",
+    "key": "Debt collection > Mortgage debt",
+    "recent": 179,
+    "baseline": 636,
+    "share_recent": 3.484922938424721e-05,
+    "share_baseline": 4.989635522815736e-05,
+    "lift": 0.899616466184205
+  },
+  {
+    "field": "product",
+    "key": "Credit card",
+    "recent": 29903,
+    "baseline": 95871,
+    "share_recent": 0.005821768191492427,
+    "share_baseline": 0.007521404830312381,
+    "lift": 0.7769916863541954
+  },
+  {
+    "field": "product",
+    "key": "Credit card > General-purpose credit card or charge card",
+    "recent": 26310,
+    "baseline": 85030,
+    "share_recent": 0.005122252654187398,
+    "share_baseline": 0.0066708916431607234,
+    "lift": 0.7712799036538112
+  },
+  {
+    "field": "product",
+    "key": "Credit card > Store credit card",
+    "recent": 3593,
+    "baseline": 10841,
+    "share_recent": 0.0006995155373050293,
+    "share_baseline": 0.0008505131871516571,
+    "lift": 0.8411409206229816
+  },
+  {
+    "field": "product",
+    "key": "Checking or savings account",
+    "recent": 29198,
+    "baseline": 82597,
+    "share_recent": 0.005684512846710895,
+    "share_baseline": 0.006480014548396405,
+    "lift": 0.8791033521530163
+  },
+  {
+    "field": "product",
+    "key": "Checking or savings account > Checking account",
+    "recent": 24254,
+    "baseline": 68444,
+    "share_recent": 0.004721973237349341,
+    "share_baseline": 0.005369663737792457,
+    "lift": 0.8815849508320008
+  },
+  {
+    "field": "product",
+    "key": "Checking or savings account > Other banking product or service",
+    "recent": 2379,
+    "baseline": 7298,
+    "share_recent": 0.00046316378047555376,
+    "share_baseline": 0.0005725528309042334,
+    "lift": 0.8373524793857334
+  },
+  {
+    "field": "product",
+    "key": "Checking or savings account > Savings account",
+    "recent": 2137,
+    "baseline": 5674,
+    "share_recent": 0.00041604917985551003,
+    "share_baseline": 0.00044514452761724034,
+    "lift": 0.9466281943819512
+  },
+  {
+    "field": "product",
+    "key": "Checking or savings account > CD (Certificate of Deposit)",
+    "recent": 428,
+    "baseline": 1181,
+    "share_recent": 8.332664903049055e-05,
+    "share_baseline": 9.26534520824746e-05,
+    "lift": 0.9515876671237052
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service",
+    "recent": 12232,
+    "baseline": 37152,
+    "share_recent": 0.002381428904067664,
+    "share_baseline": 0.0029147002978561357,
+    "lift": 0.8231096490196055
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > Mobile or digital wallet",
+    "recent": 6575,
+    "baseline": 17725,
+    "share_recent": 0.0012800764424660638,
+    "share_baseline": 0.0013905863151243542,
+    "lift": 0.9258614737456039
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > Domestic (US) money transfer",
+    "recent": 2600,
+    "baseline": 9752,
+    "share_recent": 0.0005061899240169986,
+    "share_baseline": 0.0007650774468317462,
+    "lift": 0.700734860488046
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > Virtual currency",
+    "recent": 1526,
+    "baseline": 5186,
+    "share_recent": 0.00029709454771151533,
+    "share_baseline": 0.00040685927392016365,
+    "lift": 0.7834414168656652
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > International money transfer",
+    "recent": 928,
+    "baseline": 2693,
+    "share_recent": 0.00018067086518760566,
+    "share_baseline": 0.0002112749758324336,
+    "lift": 0.9016814295367487
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > Money order, traveler's check or cashier's check",
+    "recent": 356,
+    "baseline": 977,
+    "share_recent": 6.930908190386597e-05,
+    "share_baseline": 7.664896078287695e-05,
+    "lift": 0.9584493514907649
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > Check cashing service",
+    "recent": 165,
+    "baseline": 521,
+    "share_recent": 3.2123591331847994e-05,
+    "share_baseline": 4.0874215524952806e-05,
+    "lift": 0.9378834220265466
+  },
+  {
+    "field": "product",
+    "key": "Money transfer, virtual currency, or money service > Foreign currency exchange",
+    "recent": 82,
+    "baseline": 298,
+    "share_recent": 1.596445144976688e-05,
+    "share_baseline": 2.3379109839608323e-05,
+    "lift": 0.9399034536763927
+  },
+  {
+    "field": "product",
+    "key": "Mortgage",
+    "recent": 10936,
+    "baseline": 29784,
+    "share_recent": 0.002129112695788422,
+    "share_baseline": 0.002336655729741256,
+    "lift": 0.9148246379578322
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > Conventional home mortgage",
+    "recent": 5644,
+    "baseline": 16107,
+    "share_recent": 0.0010988215119815156,
+    "share_baseline": 0.0012636487321697023,
+    "lift": 0.8791278015373285
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > FHA mortgage",
+    "recent": 2667,
+    "baseline": 6207,
+    "share_recent": 0.0005192340489820521,
+    "share_baseline": 0.00048696018380687536,
+    "lift": 1.0549847605775515
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > VA mortgage",
+    "recent": 1273,
+    "baseline": 3518,
+    "share_recent": 0.0002478383743360151,
+    "share_baseline": 0.00027599902152933585,
+    "lift": 0.9251044668180776
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > Home equity loan or line of credit (HELOC)",
+    "recent": 693,
+    "baseline": 1961,
+    "share_recent": 0.00013491908359376155,
+    "share_baseline": 0.00015384709528681853,
+    "lift": 0.9254353819898137
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > Other type of mortgage",
+    "recent": 269,
+    "baseline": 984,
+    "share_recent": 5.2371188292527936e-05,
+    "share_baseline": 7.719813450394158e-05,
+    "lift": 0.8598916050616695
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > Manufactured home loan",
+    "recent": 145,
+    "baseline": 366,
+    "share_recent": 2.8229822685563384e-05,
+    "share_baseline": 2.871394027280754e-05,
+    "lift": 0.9962388099826787
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > USDA mortgage",
+    "recent": 129,
+    "baseline": 299,
+    "share_recent": 2.51148077685357e-05,
+    "share_baseline": 2.3457563228331842e-05,
+    "lift": 1.013423596715082
+  },
+  {
+    "field": "product",
+    "key": "Mortgage > Reverse mortgage",
+    "recent": 116,
+    "baseline": 342,
+    "share_recent": 2.2583858148450707e-05,
+    "share_baseline": 2.6831058943443108e-05,
+    "lift": 0.9665129280605761
+  },
+  {
+    "field": "product",
+    "key": "Vehicle loan or lease",
+    "recent": 7909,
+    "baseline": 24113,
+    "share_recent": 0.001539790811173247,
+    "share_baseline": 0.0018917465622901861,
+    "lift": 0.823292903936409
+  },
+  {
+    "field": "product",
+    "key": "Vehicle loan or lease > Loan",
+    "recent": 6826,
+    "baseline": 20881,
+    "share_recent": 0.0013289432389769356,
+    "share_baseline": 0.0016381852099357766,
+    "lift": 0.8220891714006318
+  },
+  {
+    "field": "product",
+    "key": "Vehicle loan or lease > Lease",
+    "recent": 1083,
+    "baseline": 3232,
+    "share_recent": 0.00021084757219631136,
+    "share_baseline": 0.0002535613523544097,
+    "lift": 0.8791899061544428
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan",
+    "recent": 6590,
+    "baseline": 16234,
+    "share_recent": 0.0012829967689507774,
+    "share_baseline": 0.001273612312537589,
+    "lift": 1.0068319542039135
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Installment loan",
+    "recent": 4238,
+    "baseline": 9615,
+    "share_recent": 0.0008250895761477078,
+    "share_baseline": 0.0007543293325766242,
+    "lift": 1.0828254876344623
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Payday loan",
+    "recent": 1019,
+    "baseline": 2477,
+    "share_recent": 0.0001983875125282006,
+    "share_baseline": 0.00019432904386815374,
+    "lift": 1.013788882696418
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Personal line of credit",
+    "recent": 819,
+    "baseline": 2546,
+    "share_recent": 0.00015944982606535456,
+    "share_baseline": 0.00019974232769007648,
+    "lift": 0.8655762036171847
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Title loan",
+    "recent": 305,
+    "baseline": 984,
+    "share_recent": 5.9379971855840224e-05,
+    "share_baseline": 7.719813450394158e-05,
+    "lift": 0.8994449761111621
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Other advances of future income",
+    "recent": 107,
+    "baseline": 329,
+    "share_recent": 2.0831662257622637e-05,
+    "share_baseline": 2.5811164890037375e-05,
+    "lift": 0.9604208208646112
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Earned wage access",
+    "recent": 81,
+    "baseline": 189,
+    "share_recent": 1.576976301745265e-05,
+    "share_baseline": 1.4827690468744877e-05,
+    "lift": 1.008204227959842
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Pawn loan",
+    "recent": 18,
+    "baseline": 59,
+    "share_recent": 3.5043917816561443e-06,
+    "share_baseline": 4.628749934687554e-06,
+    "lift": 0.9892538317266214
+  },
+  {
+    "field": "product",
+    "key": "Payday loan, title loan, personal loan, or advance loan > Tax refund anticipation loan or check",
+    "recent": 3,
+    "baseline": 35,
+    "share_recent": 5.840652969426908e-07,
+    "share_baseline": 2.745868605323125e-06,
+    "lift": 0.9789597057504613
+  },
+  {
+    "field": "product",
+    "key": "Student loan",
+    "recent": 6028,
+    "baseline": 19040,
+    "share_recent": 0.0011735818699901799,
+    "share_baseline": 0.00149375252129578,
+    "lift": 0.7991089287530729
+  },
+  {
+    "field": "product",
+    "key": "Student loan > Federal student loan servicing",
+    "recent": 4898,
+    "baseline": 15205,
+    "share_recent": 0.0009535839414750997,
+    "share_baseline": 0.001192883775541089,
+    "lift": 0.8149100185236379
+  },
+  {
+    "field": "product",
+    "key": "Student loan > Private student loan",
+    "recent": 1130,
+    "baseline": 3835,
+    "share_recent": 0.00021999792851508019,
+    "share_baseline": 0.000300868745754691,
+    "lift": 0.7982611064193585
+  },
+  {
+    "field": "product",
+    "key": "Prepaid card",
+    "recent": 2002,
+    "baseline": 6335,
+    "share_recent": 0.000389766241493089,
+    "share_baseline": 0.0004970022175634856,
+    "lift": 0.8203759166790814
+  },
+  {
+    "field": "product",
+    "key": "Prepaid card > General-purpose prepaid card",
+    "recent": 1001,
+    "baseline": 3300,
+    "share_recent": 0.0001948831207465445,
+    "share_baseline": 0.00025889618278760894,
+    "lift": 0.8216390557741131
+  },
+  {
+    "field": "product",
+    "key": "Prepaid card > Government benefit card",
+    "recent": 658,
+    "baseline": 1988,
+    "share_recent": 0.0001281049884627635,
+    "share_baseline": 0.0001559653367823535,
+    "lift": 0.8911557765211015
+  },
+  {
+    "field": "product",
+    "key": "Prepaid card > Gift card",
+    "recent": 203,
+    "baseline": 657,
+    "share_recent": 3.952175175978874e-05,
+    "share_baseline": 5.154387639135124e-05,
+    "lift": 0.9206690173312168
+  },
+  {
+    "field": "product",
+    "key": "Prepaid card > Payroll card",
+    "recent": 136,
+    "baseline": 388,
+    "share_recent": 2.6477626794735314e-05,
+    "share_baseline": 3.043991482472493e-05,
+    "lift": 0.9696236536545286
+  },
+  {
+    "field": "product",
+    "key": "Prepaid card > Student prepaid card",
+    "recent": 4,
+    "baseline": 2,
+    "share_recent": 7.78753729256921e-07,
+    "share_baseline": 1.5690677744703572e-07,
+    "lift": 1.0062087276036953
+  },
+  {
+    "field": "product",
+    "key": "Debt or credit management",
+    "recent": 1374,
+    "baseline": 4260,
+    "share_recent": 0.00026750190599975234,
+    "share_baseline": 0.0003342114359621861,
+    "lift": 0.8463662528495834
+  },
+  {
+    "field": "product",
+    "key": "Debt or credit management > Debt settlement",
+    "recent": 752,
+    "baseline": 2363,
+    "share_recent": 0.00014640570110030114,
+    "share_baseline": 0.00018538535755367272,
+    "lift": 0.8634139579286556
+  },
+  {
+    "field": "product",
+    "key": "Debt or credit management > Credit repair services",
+    "recent": 571,
+    "baseline": 1671,
+    "share_recent": 0.00011116709485142548,
+    "share_baseline": 0.00013109561255699836,
+    "lift": 0.9137650538447258
+  },
+  {
+    "field": "product",
+    "key": "Debt or credit management > Mortgage modification or foreclosure avoidance",
+    "recent": 41,
+    "baseline": 152,
+    "share_recent": 7.98222572488344e-06,
+    "share_baseline": 1.1924915085974716e-05,
+    "lift": 0.9647738007389801
+  },
+  {
+    "field": "product",
+    "key": "Debt or credit management > Student loan debt relief",
+    "recent": 10,
+    "baseline": 74,
+    "share_recent": 1.9468843231423023e-06,
+    "share_baseline": 5.8055507655403214e-06,
+    "lift": 0.9635305859240918
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report",
+    "recent": 1432025,
+    "baseline": 3406353,
+    "share_recent": 0.28024619746600804,
+    "share_baseline": 0.2688494782050861,
+    "lift": 1.0423749446809911
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Information belongs to someone else",
+    "recent": 922546,
+    "baseline": 2278346,
+    "share_recent": 0.1805415467519602,
+    "share_baseline": 0.17982050987394588,
+    "lift": 1.0040075302060867
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Account information incorrect",
+    "recent": 310675,
+    "baseline": 616945,
+    "share_recent": 0.06079885993453469,
+    "share_baseline": 0.0486929397309195,
+    "lift": 1.2481080310056376
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Account status incorrect",
+    "recent": 122077,
+    "baseline": 304970,
+    "share_recent": 0.023890375550746572,
+    "share_baseline": 0.024070031898691977,
+    "lift": 0.9925669792783712
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Personal information incorrect",
+    "recent": 50762,
+    "baseline": 118905,
+    "share_recent": 0.009934084583557897,
+    "share_baseline": 0.009384684208000687,
+    "lift": 1.057925004513463
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Information is missing that should be on the report",
+    "recent": 13324,
+    "baseline": 41699,
+    "share_recent": 0.0026074966114677405,
+    "share_baseline": 0.003291131128122624,
+    "lift": 0.7984051660563911
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Public record information inaccurate",
+    "recent": 6464,
+    "baseline": 25446,
+    "share_recent": 0.0012649998571395583,
+    "share_baseline": 0.002008348466059337,
+    "lift": 0.647426115328481
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Old information reappears or never goes away",
+    "recent": 5274,
+    "baseline": 16346,
+    "share_recent": 0.0010321177671030368,
+    "share_baseline": 0.0012901227708168642,
+    "lift": 0.8144012822966575
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Information is incorrect",
+    "recent": 836,
+    "baseline": 3407,
+    "share_recent": 0.0001636045607315394,
+    "share_baseline": 0.00026890054326275887,
+    "lift": 0.7145681012016843
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect information on your report > Information that should be on the report is missing",
+    "recent": 67,
+    "baseline": 289,
+    "share_recent": 1.3111848766762129e-05,
+    "share_baseline": 2.2809585266491725e-05,
+    "lift": 0.9210343681343285
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing problem",
+    "recent": 481425,
+    "baseline": 1038168,
+    "share_recent": 0.09421450436624564,
+    "share_baseline": 0.08193834434928436,
+    "lift": 1.14963929506786
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing problem > Investigation took more than 30 days",
+    "recent": 244738,
+    "baseline": 433866,
+    "share_recent": 0.047895039454922836,
+    "share_baseline": 0.034243264779348435,
+    "lift": 1.3975095193565754
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing problem > Their investigation did not fix an error on your report",
+    "recent": 213949,
+    "baseline": 532724,
+    "share_recent": 0.04186965569850733,
+    "share_baseline": 0.04204572145850013,
+    "lift": 0.9958224523415462
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing problem > Was not notified of investigation status or results",
+    "recent": 13087,
+    "baseline": 39712,
+    "share_recent": 0.0025611158926957607,
+    "share_baseline": 0.0031343053636779215,
+    "lift": 0.8227781837116478
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing problem > Difficulty submitting a dispute or getting information about a dispute over the phone",
+    "recent": 5047,
+    "baseline": 14133,
+    "share_recent": 0.0009876940406843054,
+    "share_baseline": 0.0011154597528419638,
+    "lift": 0.8948828113321572
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing problem > Problem with personal statement of dispute",
+    "recent": 4604,
+    "baseline": 17733,
+    "share_recent": 0.0009009992794354155,
+    "share_baseline": 0.0013995929949159093,
+    "lift": 0.6675139740110264
+  },
+  {
+    "field": "issue",
+    "key": "Improper use of your report",
+    "recent": 446273,
+    "baseline": 1265618,
+    "share_recent": 0.08733528484610799,
+    "share_baseline": 0.09989004043531738,
+    "lift": 0.8744399388724026
+  },
+  {
+    "field": "issue",
+    "key": "Improper use of your report > Reporting company used your report improperly",
+    "recent": 366822,
+    "baseline": 1047401,
+    "share_recent": 0.07178678490031667,
+    "share_baseline": 0.08266706718930346,
+    "lift": 0.8685433390541484
+  },
+  {
+    "field": "issue",
+    "key": "Improper use of your report > Credit inquiries on your report that you don't recognize",
+    "recent": 78488,
+    "baseline": 214796,
+    "share_recent": 0.015360041582173523,
+    "share_baseline": 0.016952967740143102,
+    "lift": 0.9065895049915685
+  },
+  {
+    "field": "issue",
+    "key": "Improper use of your report > Report provided to employer without your written authorization",
+    "recent": 692,
+    "baseline": 1463,
+    "share_recent": 0.00013542387084476706,
+    "share_baseline": 0.00011546859254282835,
+    "lift": 1.0926133969987866
+  },
+  {
+    "field": "issue",
+    "key": "Improper use of your report > Received unsolicited financial product or insurance offers after opting out",
+    "recent": 271,
+    "baseline": 1958,
+    "share_recent": 5.303449277302294e-05,
+    "share_baseline": 0.00015453691332799585,
+    "lift": 0.6012271099391503
+  },
+  {
+    "field": "issue",
+    "key": "Attempts to collect debt not owed",
+    "recent": 42316,
+    "baseline": 137161,
+    "share_recent": 0.00828120884200457,
+    "share_baseline": 0.010825555448917895,
+    "lift": 0.7671197021689798
+  },
+  {
+    "field": "issue",
+    "key": "Attempts to collect debt not owed > Debt is not yours",
+    "recent": 30466,
+    "baseline": 79641,
+    "share_recent": 0.005962172903405597,
+    "share_baseline": 0.006285737647780856,
+    "lift": 0.9493300911778448
+  },
+  {
+    "field": "issue",
+    "key": "Attempts to collect debt not owed > Debt was result of identity theft",
+    "recent": 8583,
+    "baseline": 44641,
+    "share_recent": 0.0016796865367928262,
+    "share_baseline": 0.0035233311276174984,
+    "lift": 0.4911741362051692
+  },
+  {
+    "field": "issue",
+    "key": "Attempts to collect debt not owed > Debt was paid",
+    "recent": 2583,
+    "baseline": 9824,
+    "share_recent": 0.0005054911248439787,
+    "share_baseline": 0.0007753680472595664,
+    "lift": 0.6916989108061845
+  },
+  {
+    "field": "issue",
+    "key": "Attempts to collect debt not owed > Debt was already discharged in bankruptcy and is no longer owed",
+    "recent": 684,
+    "baseline": 3055,
+    "share_recent": 0.0001338582769621686,
+    "share_baseline": 0.00024111862625997307,
+    "lift": 0.6855629067406619
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action",
+    "recent": 18177,
+    "baseline": 75815,
+    "share_recent": 0.003557225000499033,
+    "share_baseline": 0.005983767152176713,
+    "lift": 0.6011448020640489
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Threatened or suggested your credit would be damaged",
+    "recent": 16558,
+    "baseline": 69555,
+    "share_recent": 0.003240387938508169,
+    "share_baseline": 0.005489691014570352,
+    "lift": 0.5975979584204129
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Threatened to sue you for very old debt",
+    "recent": 555,
+    "baseline": 2180,
+    "share_recent": 0.00010861307560526838,
+    "share_baseline": 0.00017205846325588913,
+    "lift": 0.7667950230574295
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Sued you without properly notifying you of lawsuit",
+    "recent": 376,
+    "baseline": 1693,
+    "share_recent": 7.358291248212777e-05,
+    "share_baseline": 0.00013362154967533043,
+    "lift": 0.7430089934912262
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Seized or attempted to seize your property",
+    "recent": 212,
+    "baseline": 836,
+    "share_recent": 4.148823788885927e-05,
+    "share_baseline": 6.59820528816162e-05,
+    "lift": 0.852430943180184
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Threatened to arrest you or take you to jail if you do not pay",
+    "recent": 183,
+    "baseline": 586,
+    "share_recent": 3.581296006443984e-05,
+    "share_baseline": 4.6250577737592216e-05,
+    "lift": 0.9286319559579457
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Collected or attempted to collect exempt funds",
+    "recent": 180,
+    "baseline": 554,
+    "share_recent": 3.522586235846542e-05,
+    "share_baseline": 4.372494891915715e-05,
+    "lift": 0.9408656143237016
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Sued you in a state where you do not live or did not sign for the debt",
+    "recent": 80,
+    "baseline": 314,
+    "share_recent": 1.565593882598463e-05,
+    "share_baseline": 2.4782732780894124e-05,
+    "lift": 0.9268585183902389
+  },
+  {
+    "field": "issue",
+    "key": "Took or threatened to take negative or legal action > Threatened to turn you in to immigration or deport you",
+    "recent": 33,
+    "baseline": 97,
+    "share_recent": 6.458074765718661e-06,
+    "share_baseline": 7.655812355881306e-06,
+    "lift": 0.9888743806400045
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account",
+    "recent": 17176,
+    "baseline": 47150,
+    "share_recent": 0.0033613300659389002,
+    "share_baseline": 0.0037213562121629234,
+    "lift": 0.9057857665615933
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Deposits and withdrawals",
+    "recent": 5574,
+    "baseline": 16185,
+    "share_recent": 0.0010908275377004791,
+    "share_baseline": 0.0012774157008241128,
+    "lift": 0.8645375081669264
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Problem using a debit or ATM card",
+    "recent": 4785,
+    "baseline": 12298,
+    "share_recent": 0.0009364208410292058,
+    "share_baseline": 0.0009706307252848277,
+    "lift": 0.9680469806743862
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Funds not handled or disbursed as instructed",
+    "recent": 1959,
+    "baseline": 5579,
+    "share_recent": 0.00038337480200129867,
+    "share_baseline": 0.0004403275993140392,
+    "lift": 0.8945958019078728
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Banking errors",
+    "recent": 1407,
+    "baseline": 3894,
+    "share_recent": 0.0002753488241020047,
+    "share_baseline": 0.00030733745684331754,
+    "lift": 0.9214689633769249
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Problem accessing account",
+    "recent": 1380,
+    "baseline": 3742,
+    "share_recent": 0.00027006494474823487,
+    "share_baseline": 0.000295340719955751,
+    "lift": 0.9360658441398468
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Problem making or receiving payments",
+    "recent": 1344,
+    "baseline": 3134,
+    "share_recent": 0.0002630197722765418,
+    "share_baseline": 0.00024735377240548464,
+    "lift": 1.0451009924624322
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Cashing a check",
+    "recent": 322,
+    "baseline": 1118,
+    "share_recent": 6.301515377458815e-05,
+    "share_baseline": 8.823915684407525e-05,
+    "lift": 0.8660002334669349
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Fee problem",
+    "recent": 267,
+    "baseline": 792,
+    "share_recent": 5.225169583172371e-05,
+    "share_baseline": 6.250931325626798e-05,
+    "lift": 0.9368798180300683
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Deposits or withdrawals",
+    "recent": 87,
+    "baseline": 292,
+    "share_recent": 1.7025833473258286e-05,
+    "share_baseline": 2.3046362968220014e-05,
+    "lift": 0.9510710487516264
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Problem with renewal",
+    "recent": 28,
+    "baseline": 77,
+    "share_recent": 5.479578589094621e-06,
+    "share_baseline": 6.077294344359387e-06,
+    "lift": 0.994365280911819
+  },
+  {
+    "field": "issue",
+    "key": "Managing an account > Problem with fees or penalties",
+    "recent": 23,
+    "baseline": 39,
+    "share_recent": 4.501082412470581e-06,
+    "share_baseline": 3.0781101224677412e-06,
+    "lift": 1.013804796074668
+  },
+  {
+    "field": "issue",
+    "key": "Written notification about debt",
+    "recent": 14907,
+    "baseline": 61284,
+    "share_recent": 0.0029172885009869113,
+    "share_baseline": 0.0048368948909054636,
+    "lift": 0.6111713065929824
+  },
+  {
+    "field": "issue",
+    "key": "Written notification about debt > Didn't receive enough information to verify debt",
+    "recent": 10438,
+    "baseline": 28805,
+    "share_recent": 0.002042708618320345,
+    "share_baseline": 0.002273460566094443,
+    "lift": 0.9027782677030934
+  },
+  {
+    "field": "issue",
+    "key": "Written notification about debt > Didn't receive notice of right to dispute",
+    "recent": 2374,
+    "baseline": 9751,
+    "share_recent": 0.00046458998466109393,
+    "share_baseline": 0.0007696064565175114,
+    "lift": 0.6492476917916313
+  },
+  {
+    "field": "issue",
+    "key": "Written notification about debt > Notification didn't disclose it was an attempt to collect a debt",
+    "recent": 2095,
+    "baseline": 22728,
+    "share_recent": 0.00040998989800547253,
+    "share_baseline": 0.0017938278682935083,
+    "lift": 0.2692905234650574
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase shown on your statement",
+    "recent": 10188,
+    "baseline": 26809,
+    "share_recent": 0.0019937838094891427,
+    "share_baseline": 0.002115924468544556,
+    "lift": 0.9448804953466502
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase shown on your statement > Credit card company isn't resolving a dispute about a purchase on your statement",
+    "recent": 7985,
+    "baseline": 20720,
+    "share_recent": 0.001562658394068591,
+    "share_baseline": 0.0016353446599367077,
+    "lift": 0.9581142192982185
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase shown on your statement > Card was charged for something you did not purchase with the card",
+    "recent": 1974,
+    "baseline": 5417,
+    "share_recent": 0.0003863102905311708,
+    "share_baseline": 0.00042754160342071165,
+    "lift": 0.9218425378734364
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase shown on your statement > Overcharged for something you did purchase with the card",
+    "recent": 229,
+    "baseline": 672,
+    "share_recent": 4.4815124889381006e-05,
+    "share_baseline": 5.303820518713647e-05,
+    "lift": 0.946267794452371
+  },
+  {
+    "field": "issue",
+    "key": "False statements or representation",
+    "recent": 9710,
+    "baseline": 38882,
+    "share_recent": 0.0019002395750038845,
+    "share_baseline": 0.003068796866199762,
+    "lift": 0.6312299776421796
+  },
+  {
+    "field": "issue",
+    "key": "False statements or representation > Attempted to collect wrong amount",
+    "recent": 9284,
+    "baseline": 36852,
+    "share_recent": 0.0018168717007555164,
+    "share_baseline": 0.0029085772880302874,
+    "lift": 0.6371356017283806
+  },
+  {
+    "field": "issue",
+    "key": "False statements or representation > Impersonated attorney, law enforcement, or government official",
+    "recent": 205,
+    "baseline": 1094,
+    "share_recent": 4.011834324158562e-05,
+    "share_baseline": 8.634493523024896e-05,
+    "lift": 0.7519299790383599
+  },
+  {
+    "field": "issue",
+    "key": "False statements or representation > Indicated you were committing crime by not paying debt",
+    "recent": 162,
+    "baseline": 634,
+    "share_recent": 3.170327612261888e-05,
+    "share_baseline": 5.003902096524482e-05,
+    "lift": 0.8777934918218825
+  },
+  {
+    "field": "issue",
+    "key": "False statements or representation > Told you not to respond to a lawsuit they filed against you",
+    "recent": 59,
+    "baseline": 302,
+    "share_recent": 1.1546254884163666e-05,
+    "share_baseline": 2.3835621973980974e-05,
+    "lift": 0.9007606462993385
+  },
+  {
+    "field": "issue",
+    "key": "Unable to get your credit report or credit score",
+    "recent": 6770,
+    "baseline": 17312,
+    "share_recent": 0.0013248838231489494,
+    "share_baseline": 0.0013663651907733728,
+    "lift": 0.9717114345829869
+  },
+  {
+    "field": "issue",
+    "key": "Unable to get your credit report or credit score > Other problem getting your report or credit score",
+    "recent": 6172,
+    "baseline": 15040,
+    "share_recent": 0.0012078556804247143,
+    "share_baseline": 0.0011870455446644829,
+    "lift": 1.0161689194655938
+  },
+  {
+    "field": "issue",
+    "key": "Unable to get your credit report or credit score > Problem getting your free annual credit report",
+    "recent": 598,
+    "baseline": 2272,
+    "share_recent": 0.00011702814272423512,
+    "share_baseline": 0.00017931964610888996,
+    "lift": 0.7769884637460441
+  },
+  {
+    "field": "issue",
+    "key": "Problem with fraud alerts or security freezes",
+    "recent": 6682,
+    "baseline": 19707,
+    "share_recent": 0.0013076622904403664,
+    "share_baseline": 0.0015553927226531225,
+    "lift": 0.8503494495156927
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process",
+    "recent": 5251,
+    "baseline": 14611,
+    "share_recent": 0.0010276166846905663,
+    "share_baseline": 0.0011531863333173378,
+    "lift": 0.8997996983462362
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Escrow, taxes, or insurance",
+    "recent": 1749,
+    "baseline": 4694,
+    "share_recent": 0.000342277962583089,
+    "share_baseline": 0.0003704781773041943,
+    "lift": 0.9400605254792253
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Trying to communicate with the company to fix an issue while managing or servicing your loan",
+    "recent": 1367,
+    "baseline": 3834,
+    "share_recent": 0.00026752085468901237,
+    "share_baseline": 0.0003026019028087518,
+    "lift": 0.9128641770567985
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Payment process",
+    "recent": 1046,
+    "baseline": 2923,
+    "share_recent": 0.00020470140014974906,
+    "share_baseline": 0.0002307004073839284,
+    "lift": 0.9213819921183354
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Loan sold or transferred to another company",
+    "recent": 303,
+    "baseline": 858,
+    "share_recent": 5.9296868303416794e-05,
+    "share_baseline": 6.771842269429031e-05,
+    "lift": 0.9497875411920375
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Fees charged",
+    "recent": 256,
+    "baseline": 722,
+    "share_recent": 5.009900424315082e-05,
+    "share_baseline": 5.698450021594126e-05,
+    "lift": 0.956139007587889
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Paying off the loan",
+    "recent": 249,
+    "baseline": 651,
+    "share_recent": 4.872910959587717e-05,
+    "share_baseline": 5.138076127503845e-05,
+    "lift": 0.9824835622649327
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Private mortgage insurance (PMI)",
+    "recent": 162,
+    "baseline": 493,
+    "share_recent": 3.170327612261888e-05,
+    "share_baseline": 3.89104689840153e-05,
+    "lift": 0.9481162729194602
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Lien release",
+    "recent": 93,
+    "baseline": 264,
+    "share_recent": 1.8200028885207135e-05,
+    "share_baseline": 2.0836437752089326e-05,
+    "lift": 0.9781820044025866
+  },
+  {
+    "field": "issue",
+    "key": "Trouble during payment process > Interest rate",
+    "recent": 26,
+    "baseline": 172,
+    "share_recent": 5.088180118445005e-06,
+    "share_baseline": 1.35752548990885e-05,
+    "lift": 0.9252735572710425
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a lender or other company charging your account",
+    "recent": 4037,
+    "baseline": 11621,
+    "share_recent": 0.0007900378130062495,
+    "share_baseline": 0.0009171978905948108,
+    "lift": 0.8749898335768236
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a lender or other company charging your account > Transaction was not authorized",
+    "recent": 3253,
+    "baseline": 9537,
+    "share_recent": 0.0006366096125116,
+    "share_baseline": 0.0007527163137942269,
+    "lift": 0.8638390055351455
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a lender or other company charging your account > Money was taken from your account on the wrong day or for the wrong amount",
+    "recent": 536,
+    "baseline": 1504,
+    "share_recent": 0.00010489479013409703,
+    "share_baseline": 0.00011870455446644828,
+    "lift": 0.9368565306468283
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a lender or other company charging your account > Can't stop withdrawals from your account",
+    "recent": 248,
+    "baseline": 580,
+    "share_recent": 4.853341036055236e-05,
+    "share_baseline": 4.577702233413564e-05,
+    "lift": 1.018908247557004
+  },
+  {
+    "field": "issue",
+    "key": "Closing an account",
+    "recent": 3901,
+    "baseline": 11104,
+    "share_recent": 0.0007634227170020756,
+    "share_baseline": 0.0008763931999969692,
+    "lift": 0.8842981669728504
+  },
+  {
+    "field": "issue",
+    "key": "Closing an account > Company closed your account",
+    "recent": 1813,
+    "baseline": 5397,
+    "share_recent": 0.0003548027136438767,
+    "share_baseline": 0.00042596308540918977,
+    "lift": 0.8647046271128485
+  },
+  {
+    "field": "issue",
+    "key": "Closing an account > Funds not received from closed account",
+    "recent": 1398,
+    "baseline": 3871,
+    "share_recent": 0.00027358753098408146,
+    "share_baseline": 0.00030552216113006737,
+    "lift": 0.9212505919356078
+  },
+  {
+    "field": "issue",
+    "key": "Closing an account > Can't close your account",
+    "recent": 611,
+    "baseline": 1606,
+    "share_recent": 0.00011957223278345762,
+    "share_baseline": 0.00012675499632521008,
+    "lift": 0.9683236812499999
+  },
+  {
+    "field": "issue",
+    "key": "Closing an account > Fees charged for closing account",
+    "recent": 79,
+    "baseline": 230,
+    "share_recent": 1.5460239590659823e-05,
+    "share_baseline": 1.8152957132502065e-05,
+    "lift": 0.9772099014092173
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer",
+    "recent": 3704,
+    "baseline": 10546,
+    "share_recent": 0.0007248699676430884,
+    "share_baseline": 0.0008323525474755077,
+    "lift": 0.8847189508695553
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Received bad information about your loan",
+    "recent": 1630,
+    "baseline": 4506,
+    "share_recent": 0.00031898975357943685,
+    "share_baseline": 0.0003556401079958883,
+    "lift": 0.9195629318550198
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Trouble with how payments are being handled",
+    "recent": 1124,
+    "baseline": 2945,
+    "share_recent": 0.00021996594050508408,
+    "share_baseline": 0.00023243677719660252,
+    "lift": 0.9624865912950925
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Problem with customer service",
+    "recent": 434,
+    "baseline": 1218,
+    "share_recent": 8.493346813096663e-05,
+    "share_baseline": 9.613174690168485e-05,
+    "lift": 0.9429043031145202
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Need information about your loan balance or loan terms",
+    "recent": 263,
+    "baseline": 784,
+    "share_recent": 5.146889889042447e-05,
+    "share_baseline": 6.187790605165921e-05,
+    "lift": 0.9356984074286644
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Don't agree with the fees charged",
+    "recent": 184,
+    "baseline": 812,
+    "share_recent": 3.600865929976465e-05,
+    "share_baseline": 6.40878312677899e-05,
+    "lift": 0.8288771827192946
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Keep getting calls about your loan",
+    "recent": 54,
+    "baseline": 174,
+    "share_recent": 1.0567758707539627e-05,
+    "share_baseline": 1.3733106700240693e-05,
+    "lift": 0.972168631592525
+  },
+  {
+    "field": "issue",
+    "key": "Dealing with your lender or servicer > Co-signer",
+    "recent": 15,
+    "baseline": 107,
+    "share_recent": 2.9354885298721186e-06,
+    "share_baseline": 8.445071361642266e-06,
+    "lift": 0.94919471431397
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems",
+    "recent": 3641,
+    "baseline": 9795,
+    "share_recent": 0.0007125409158176255,
+    "share_baseline": 0.0007730791961428596,
+    "lift": 0.9306611810329651
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Other problem",
+    "recent": 1526,
+    "baseline": 4611,
+    "share_recent": 0.00029863703310565687,
+    "share_baseline": 0.00036392732755637834,
+    "lift": 0.8592661165389376
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Problem with rewards from credit card",
+    "recent": 1118,
+    "baseline": 2495,
+    "share_recent": 0.00021879174509313522,
+    "share_baseline": 0.00019692012193735936,
+    "lift": 1.07366164008376
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Problem with customer service",
+    "recent": 386,
+    "baseline": 1042,
+    "share_recent": 7.553990483537585e-05,
+    "share_baseline": 8.224078840029196e-05,
+    "lift": 0.9632306048292679
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Problem with balance transfer",
+    "recent": 259,
+    "baseline": 650,
+    "share_recent": 5.0686101949125244e-05,
+    "share_baseline": 5.1301835374462356e-05,
+    "lift": 0.995930429899854
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Privacy issues",
+    "recent": 177,
+    "baseline": 478,
+    "share_recent": 3.4638764652491e-05,
+    "share_baseline": 3.7726580475373854e-05,
+    "lift": 0.9775801024593436
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Add-on products and services",
+    "recent": 98,
+    "baseline": 256,
+    "share_recent": 1.9178525061831174e-05,
+    "share_baseline": 2.0205030547480558e-05,
+    "lift": 0.991460378313835
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Problem with cash advances",
+    "recent": 41,
+    "baseline": 102,
+    "share_recent": 8.023668648317124e-06,
+    "share_baseline": 8.050441858761786e-06,
+    "lift": 0.9997522156320318
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Credit card company forcing arbitration",
+    "recent": 27,
+    "baseline": 126,
+    "share_recent": 5.2838793537698135e-06,
+    "share_baseline": 9.944663472588088e-06,
+    "lift": 0.9576079095464207
+  },
+  {
+    "field": "issue",
+    "key": "Other features, terms, or problems > Problem with convenience check",
+    "recent": 9,
+    "baseline": 35,
+    "share_recent": 1.761293117923271e-06,
+    "share_baseline": 2.762406520163358e-06,
+    "lift": 0.9902579801686169
+  },
+  {
+    "field": "issue",
+    "key": "Fraud or scam",
+    "recent": 3530,
+    "baseline": 10875,
+    "share_recent": 0.0006908183006965719,
+    "share_baseline": 0.0008583191687650432,
+    "lift": 0.8252139020819915
+  },
+  {
+    "field": "issue",
+    "key": "Getting a credit card",
+    "recent": 3464,
+    "baseline": 11058,
+    "share_recent": 0.0006779021511651345,
+    "share_baseline": 0.0008727626085704689,
+    "lift": 0.7996834420972522
+  },
+  {
+    "field": "issue",
+    "key": "Getting a credit card > Card opened without my consent or knowledge",
+    "recent": 2353,
+    "baseline": 7899,
+    "share_recent": 0.000460480300719273,
+    "share_baseline": 0.0006234356886505817,
+    "lift": 0.7747479278562162
+  },
+  {
+    "field": "issue",
+    "key": "Getting a credit card > Application denied",
+    "recent": 579,
+    "baseline": 1743,
+    "share_recent": 0.00011330985725306376,
+    "share_baseline": 0.0001375678447041352,
+    "lift": 0.8978902743286572
+  },
+  {
+    "field": "issue",
+    "key": "Getting a credit card > Delay in processing application",
+    "recent": 219,
+    "baseline": 475,
+    "share_recent": 4.285813253613293e-05,
+    "share_baseline": 3.7489802773645566e-05,
+    "lift": 1.0390452939359107
+  },
+  {
+    "field": "issue",
+    "key": "Getting a credit card > Problem getting a working replacement card",
+    "recent": 187,
+    "baseline": 432,
+    "share_recent": 3.659575700573908e-05,
+    "share_baseline": 3.4095989048873445e-05,
+    "lift": 1.0186416310778286
+  },
+  {
+    "field": "issue",
+    "key": "Getting a credit card > Sent card you never applied for",
+    "recent": 126,
+    "baseline": 509,
+    "share_recent": 2.4658103650925794e-05,
+    "share_baseline": 4.017328339323283e-05,
+    "lift": 0.8893142875252357
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay mortgage",
+    "recent": 3392,
+    "baseline": 7758,
+    "share_recent": 0.0006638118062217484,
+    "share_baseline": 0.0006123071366693522,
+    "lift": 1.072306827913061
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay mortgage > Trying to communicate with the company to fix an issue related to modification, forbearance, short sale, deed-in-lieu, bankruptcy, or foreclosure",
+    "recent": 1462,
+    "baseline": 3284,
+    "share_recent": 0.00028611228204486916,
+    "share_baseline": 0.00025919265749189903,
+    "lift": 1.0749448074494041
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay mortgage > Applying for or obtaining a modification, forbearance plan, short sale, or deed-in-lieu",
+    "recent": 795,
+    "baseline": 1699,
+    "share_recent": 0.00015558089208322229,
+    "share_baseline": 0.000134095105078787,
+    "lift": 1.0917822993231918
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay mortgage > Foreclosure",
+    "recent": 572,
+    "baseline": 1637,
+    "share_recent": 0.00011193996260579011,
+    "share_baseline": 0.00012920169924306903,
+    "lift": 0.9246875712776771
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay mortgage > An existing modification, forbearance plan, short sale, or other loss mitigation relief",
+    "recent": 563,
+    "baseline": 1138,
+    "share_recent": 0.00011017866948786684,
+    "share_baseline": 8.981767485559717e-05,
+    "lift": 1.1072660628034727
+  },
+  {
+    "field": "issue",
+    "key": "Fees or interest",
+    "recent": 3261,
+    "baseline": 8881,
+    "share_recent": 0.0006381752063941985,
+    "share_baseline": 0.000700940923016308,
+    "lift": 0.9216350234849575
+  },
+  {
+    "field": "issue",
+    "key": "Fees or interest > Problem with fees",
+    "recent": 1978,
+    "baseline": 5324,
+    "share_recent": 0.00038709308747247,
+    "share_baseline": 0.00042020149466713477,
+    "lift": 0.9363546480852575
+  },
+  {
+    "field": "issue",
+    "key": "Fees or interest > Charged too much interest",
+    "recent": 969,
+    "baseline": 2649,
+    "share_recent": 0.00018963255902973886,
+    "share_baseline": 0.00020907471062607812,
+    "lift": 0.937095624689072
+  },
+  {
+    "field": "issue",
+    "key": "Fees or interest > Unexpected increase in interest rate",
+    "recent": 314,
+    "baseline": 908,
+    "share_recent": 6.144955989198968e-05,
+    "share_baseline": 7.16647177230951e-05,
+    "lift": 0.940493550645724
+  },
+  {
+    "field": "issue",
+    "key": "Problem when making payments",
+    "recent": 2735,
+    "baseline": 6992,
+    "share_recent": 0.0005352374086133496,
+    "share_baseline": 0.0005518498968280627,
+    "lift": 0.9745148564177881
+  },
+  {
+    "field": "issue",
+    "key": "Problem when making payments > Problem during payment process",
+    "recent": 1290,
+    "baseline": 4030,
+    "share_recent": 0.00025245201356900217,
+    "share_baseline": 0.0003180713793216666,
+    "lift": 0.8430426740545267
+  },
+  {
+    "field": "issue",
+    "key": "Problem when making payments > You never received your bill or did not know a payment was due",
+    "recent": 202,
+    "baseline": 638,
+    "share_recent": 3.9531245535611196e-05,
+    "share_baseline": 5.035472456754921e-05,
+    "lift": 0.9280137084945713
+  },
+  {
+    "field": "issue",
+    "key": "Communication tactics",
+    "recent": 2564,
+    "baseline": 9595,
+    "share_recent": 0.0005017728393728074,
+    "share_baseline": 0.0007572940160276405,
+    "lift": 0.7019445232584072
+  },
+  {
+    "field": "issue",
+    "key": "Communication tactics > Frequent or repeated calls",
+    "recent": 1309,
+    "baseline": 4860,
+    "share_recent": 0.00025617029904017355,
+    "share_baseline": 0.00038357987679982626,
+    "lift": 0.7365283712738262
+  },
+  {
+    "field": "issue",
+    "key": "Communication tactics > You told them to stop contacting you, but they keep trying",
+    "recent": 895,
+    "baseline": 3212,
+    "share_recent": 0.00017515081561570307,
+    "share_baseline": 0.00025350999265042016,
+    "lift": 0.7783395698457523
+  },
+  {
+    "field": "issue",
+    "key": "Communication tactics > Used obscene, profane, or other abusive language",
+    "recent": 244,
+    "baseline": 1088,
+    "share_recent": 4.7750613419253125e-05,
+    "share_baseline": 8.587137982679238e-05,
+    "lift": 0.7949078204344165
+  },
+  {
+    "field": "issue",
+    "key": "Communication tactics > Called before 8am or after 9pm",
+    "recent": 116,
+    "baseline": 435,
+    "share_recent": 2.2701111297677717e-05,
+    "share_baseline": 3.4332766750601734e-05,
+    "lift": 0.9134116289399518
+  },
+  {
+    "field": "issue",
+    "key": "Credit monitoring or identity theft protection services",
+    "recent": 2546,
+    "baseline": 7849,
+    "share_recent": 0.0004982502531369609,
+    "share_baseline": 0.000619489393621777,
+    "lift": 0.8314928037027474
+  },
+  {
+    "field": "issue",
+    "key": "Credit monitoring or identity theft protection services > Problem canceling credit monitoring or identify theft protection service",
+    "recent": 1095,
+    "baseline": 3075,
+    "share_recent": 0.00021429066268066464,
+    "share_baseline": 0.000242697144271495,
+    "lift": 0.9171090799393241
+  },
+  {
+    "field": "issue",
+    "key": "Credit monitoring or identity theft protection services > Didn't receive services that were advertised",
+    "recent": 896,
+    "baseline": 2398,
+    "share_recent": 0.00017534651485102788,
+    "share_baseline": 0.00018926430958147804,
+    "lift": 0.9518855445713745
+  },
+  {
+    "field": "issue",
+    "key": "Credit monitoring or identity theft protection services > Billing dispute for services",
+    "recent": 387,
+    "baseline": 1656,
+    "share_recent": 7.573560407070065e-05,
+    "share_baseline": 0.00013070129135401486,
+    "lift": 0.761745211911413
+  },
+  {
+    "field": "issue",
+    "key": "Credit monitoring or identity theft protection services > Problem with product or service terms changing",
+    "recent": 99,
+    "baseline": 555,
+    "share_recent": 1.937422429715598e-05,
+    "share_baseline": 4.380387481973324e-05,
+    "lift": 0.8301182735638989
+  },
+  {
+    "field": "issue",
+    "key": "Credit monitoring or identity theft protection services > Received unwanted marketing or advertising",
+    "recent": 69,
+    "baseline": 165,
+    "share_recent": 1.3503247237411744e-05,
+    "share_baseline": 1.3022773595055829e-05,
+    "lift": 1.0042511223806752
+  },
+  {
+    "field": "issue",
+    "key": "Managing the loan or lease",
+    "recent": 2334,
+    "baseline": 7093,
+    "share_recent": 0.0004567620152481016,
+    "share_baseline": 0.0005598214127862485,
+    "lift": 0.843807133959241
+  },
+  {
+    "field": "issue",
+    "key": "Managing the loan or lease > Billing problem",
+    "recent": 1147,
+    "baseline": 3399,
+    "share_recent": 0.00022446702291755466,
+    "share_baseline": 0.00026826913605815006,
+    "lift": 0.881059505530545
+  },
+  {
+    "field": "issue",
+    "key": "Managing the loan or lease > Problem with additional products or services purchased with the loan",
+    "recent": 569,
+    "baseline": 1433,
+    "share_recent": 0.0001113528648998157,
+    "share_baseline": 0.00011310081552554548,
+    "lift": 0.9917975413589151
+  },
+  {
+    "field": "issue",
+    "key": "Managing the loan or lease > Problem with fees charged",
+    "recent": 332,
+    "baseline": 1088,
+    "share_recent": 6.497214612783622e-05,
+    "share_baseline": 8.587137982679238e-05,
+    "lift": 0.8875607760676685
+  },
+  {
+    "field": "issue",
+    "key": "Managing the loan or lease > Problem with the interest rate",
+    "recent": 179,
+    "baseline": 761,
+    "share_recent": 3.5030163123140614e-05,
+    "share_baseline": 6.0062610338409006e-05,
+    "lift": 0.8436084032220637
+  },
+  {
+    "field": "issue",
+    "key": "Managing the loan or lease > Loan sold or transferred to another company",
+    "recent": 107,
+    "baseline": 412,
+    "share_recent": 2.0939818179754444e-05,
+    "share_baseline": 3.2517471037351526e-05,
+    "lift": 0.912633007806693
+  },
+  {
+    "field": "issue",
+    "key": "Opening an account",
+    "recent": 2329,
+    "baseline": 7345,
+    "share_recent": 0.00045578351907147756,
+    "share_baseline": 0.0005797107397314247,
+    "lift": 0.8176765300061101
+  },
+  {
+    "field": "issue",
+    "key": "Opening an account > Unable to open an account",
+    "recent": 913,
+    "baseline": 2989,
+    "share_recent": 0.0001786734018515496,
+    "share_baseline": 0.00023590951682195074,
+    "lift": 0.8296085341317102
+  },
+  {
+    "field": "issue",
+    "key": "Opening an account > Account opened without my consent or knowledge",
+    "recent": 690,
+    "baseline": 2387,
+    "share_recent": 0.00013503247237411743,
+    "share_baseline": 0.000188396124675141,
+    "lift": 0.8149640451613761
+  },
+  {
+    "field": "issue",
+    "key": "Opening an account > Didn't receive terms that were advertised",
+    "recent": 609,
+    "baseline": 1637,
+    "share_recent": 0.000119180834312808,
+    "share_baseline": 0.00012920169924306903,
+    "lift": 0.9562792729575975
+  },
+  {
+    "field": "issue",
+    "key": "Opening an account > Confusing or missing disclosures",
+    "recent": 117,
+    "baseline": 332,
+    "share_recent": 2.2896810533002524e-05,
+    "share_baseline": 2.620339899126385e-05,
+    "lift": 0.9737995292940548
+  },
+  {
+    "field": "issue",
+    "key": "Unauthorized transactions or other transaction problem",
+    "recent": 2309,
+    "baseline": 5918,
+    "share_recent": 0.00045186953436498144,
+    "share_baseline": 0.0004670834796093357,
+    "lift": 0.9731715950271815
+  },
+  {
+    "field": "issue",
+    "key": "Closing your account",
+    "recent": 2140,
+    "baseline": 6483,
+    "share_recent": 0.0004187963635950889,
+    "share_baseline": 0.0005116766134348299,
+    "lift": 0.8481546493690872
+  },
+  {
+    "field": "issue",
+    "key": "Closing your account > Company closed your account",
+    "recent": 1667,
+    "baseline": 5169,
+    "share_recent": 0.0003262306252864548,
+    "share_baseline": 0.00040796798007783987,
+    "lift": 0.8390895528909916
+  },
+  {
+    "field": "issue",
+    "key": "Closing your account > Can't close your account",
+    "recent": 473,
+    "baseline": 1314,
+    "share_recent": 9.256573830863414e-05,
+    "share_baseline": 0.00010370863335699005,
+    "lift": 0.9452998389674113
+  },
+  {
+    "field": "issue",
+    "key": "Repossession",
+    "recent": 2066,
+    "baseline": 6593,
+    "share_recent": 0.0004043146201810531,
+    "share_baseline": 0.0005203584624982005,
+    "lift": 0.812940663612719
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Loan balance remaining after the vehicle is repossessed and sold",
+    "recent": 372,
+    "baseline": 1456,
+    "share_recent": 7.280011554082854e-05,
+    "share_baseline": 0.00011491611123879568,
+    "lift": 0.8040351863096408
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Account reinstatement or redemption after repossession",
+    "recent": 361,
+    "baseline": 963,
+    "share_recent": 7.064742395225564e-05,
+    "share_baseline": 7.600564225478038e-05,
+    "lift": 0.9695565537906543
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Deficiency balance after repossession",
+    "recent": 320,
+    "baseline": 964,
+    "share_recent": 6.262375530393852e-05,
+    "share_baseline": 7.608456815535647e-05,
+    "lift": 0.9235548407652525
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Lender trying to repossess or disable the vehicle",
+    "recent": 233,
+    "baseline": 729,
+    "share_recent": 4.559792183068024e-05,
+    "share_baseline": 5.753698151997393e-05,
+    "lift": 0.9242142411635584
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Voluntary repossession",
+    "recent": 216,
+    "baseline": 690,
+    "share_recent": 4.227103483015851e-05,
+    "share_baseline": 5.4458871397506194e-05,
+    "lift": 0.9210933211082336
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Notice to repossess",
+    "recent": 201,
+    "baseline": 720,
+    "share_recent": 3.933554630028639e-05,
+    "share_baseline": 5.682664841478907e-05,
+    "lift": 0.8884685588112509
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Damage caused or loss of personal items in vehicle during the actual repossession",
+    "recent": 173,
+    "baseline": 509,
+    "share_recent": 3.3855967711191765e-05,
+    "share_baseline": 4.017328339323283e-05,
+    "lift": 0.9549320988342774
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Company communicating payment assistance or payment extension options",
+    "recent": 109,
+    "baseline": 268,
+    "share_recent": 2.133121665040406e-05,
+    "share_baseline": 2.115214135439371e-05,
+    "lift": 1.0014781026072543
+  },
+  {
+    "field": "issue",
+    "key": "Repossession > Company explaining amount owed",
+    "recent": 81,
+    "baseline": 294,
+    "share_recent": 1.585163806130944e-05,
+    "share_baseline": 2.3204214769372205e-05,
+    "lift": 0.9403220358830569
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing issue",
+    "recent": 1969,
+    "baseline": 3915,
+    "share_recent": 0.00038533179435454675,
+    "share_baseline": 0.00030899490075541556,
+    "lift": 1.1866450986507082
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing issue > Their investigation did not fix an error on your report",
+    "recent": 1034,
+    "baseline": 2644,
+    "share_recent": 0.00020235300932585135,
+    "share_baseline": 0.00020868008112319764,
+    "lift": 0.9795028180168803
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing issue > Investigation took more than 30 days",
+    "recent": 424,
+    "baseline": 242,
+    "share_recent": 8.297647577771855e-05,
+    "share_baseline": 1.9100067939415216e-05,
+    "lift": 1.536325536529471
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing issue > Problem with personal statement of dispute",
+    "recent": 332,
+    "baseline": 414,
+    "share_recent": 6.497214612783622e-05,
+    "share_baseline": 3.2675322838503714e-05,
+    "lift": 1.2434275085853392
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing issue > Difficulty submitting a dispute or getting information about a dispute over the phone",
+    "recent": 104,
+    "baseline": 375,
+    "share_recent": 2.035272047378002e-05,
+    "share_baseline": 2.9597212716035976e-05,
+    "lift": 0.9286675072054843
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a company's investigation into an existing issue > Was not notified of investigation status or results",
+    "recent": 75,
+    "baseline": 240,
+    "share_recent": 1.4677442649360592e-05,
+    "share_baseline": 1.8942216138263024e-05,
+    "lift": 0.964144156487341
+  },
+  {
+    "field": "issue",
+    "key": "Other transaction problem",
+    "recent": 1876,
+    "baseline": 7506,
+    "share_recent": 0.0003671317654693396,
+    "share_baseline": 0.0005924178097241761,
+    "lift": 0.6746385764621233
+  },
+  {
+    "field": "issue",
+    "key": "Problem caused by your funds being low",
+    "recent": 1543,
+    "baseline": 4710,
+    "share_recent": 0.00030196392010617857,
+    "share_baseline": 0.00037174099171341187,
+    "lift": 0.8520860539301539
+  },
+  {
+    "field": "issue",
+    "key": "Problem caused by your funds being low > Overdrafts and overdraft fees",
+    "recent": 830,
+    "baseline": 2700,
+    "share_recent": 0.00016243036531959055,
+    "share_baseline": 0.00021309993155545903,
+    "lift": 0.8381680699061622
+  },
+  {
+    "field": "issue",
+    "key": "Problem caused by your funds being low > Non-sufficient funds and associated fees",
+    "recent": 376,
+    "baseline": 1053,
+    "share_recent": 7.358291248212777e-05,
+    "share_baseline": 8.310897330662902e-05,
+    "lift": 0.9479760021997983
+  },
+  {
+    "field": "issue",
+    "key": "Problem caused by your funds being low > Late or other fees",
+    "recent": 173,
+    "baseline": 517,
+    "share_recent": 3.3855967711191765e-05,
+    "share_baseline": 4.08046905978416e-05,
+    "lift": 0.9506499189966876
+  },
+  {
+    "field": "issue",
+    "key": "Problem caused by your funds being low > Bounced checks or returned payments",
+    "recent": 164,
+    "baseline": 440,
+    "share_recent": 3.2094674593268495e-05,
+    "share_baseline": 3.472739625348221e-05,
+    "lift": 0.980458898981018
+  },
+  {
+    "field": "issue",
+    "key": "Charged fees or interest you didn't expect",
+    "recent": 1492,
+    "baseline": 3958,
+    "share_recent": 0.00029198325910461336,
+    "share_baseline": 0.0003123887144801877,
+    "lift": 0.9505188802237344
+  },
+  {
+    "field": "issue",
+    "key": "Advertising and marketing, including promotional offers",
+    "recent": 1485,
+    "baseline": 3716,
+    "share_recent": 0.00029061336445733975,
+    "share_baseline": 0.00029328864654077247,
+    "lift": 0.993197662564217
+  },
+  {
+    "field": "issue",
+    "key": "Advertising and marketing, including promotional offers > Didn't receive advertised or promotional terms",
+    "recent": 924,
+    "baseline": 2128,
+    "share_recent": 0.00018082609344012248,
+    "share_baseline": 0.00016795431642593214,
+    "lift": 1.0480372071847117
+  },
+  {
+    "field": "issue",
+    "key": "Advertising and marketing, including promotional offers > Confusing or misleading advertising about the credit card",
+    "recent": 561,
+    "baseline": 1588,
+    "share_recent": 0.00010978727101721722,
+    "share_baseline": 0.00012533433011484033,
+    "lift": 0.9310044808099163
+  },
+  {
+    "field": "issue",
+    "key": "Electronic communications",
+    "recent": 1414,
+    "baseline": 4627,
+    "share_recent": 0.00027671871874927837,
+    "share_baseline": 0.0003651901419655959,
+    "lift": 0.8098166421960408
+  },
+  {
+    "field": "issue",
+    "key": "Electronic communications > Frequent or repeated messages",
+    "recent": 868,
+    "baseline": 2881,
+    "share_recent": 0.00016986693626193326,
+    "share_baseline": 0.00022738551955973237,
+    "lift": 0.8243093238358555
+  },
+  {
+    "field": "issue",
+    "key": "Electronic communications > You told them to stop contacting you, but they keep trying",
+    "recent": 406,
+    "baseline": 1314,
+    "share_recent": 7.9453889541872e-05,
+    "share_baseline": 0.00010370863335699005,
+    "lift": 0.8809341390425377
+  },
+  {
+    "field": "issue",
+    "key": "Electronic communications > Contacted before 8am or after 9pm",
+    "recent": 125,
+    "baseline": 329,
+    "share_recent": 2.4462404415600987e-05,
+    "share_baseline": 2.596662128953556e-05,
+    "lift": 0.9880586074427041
+  },
+  {
+    "field": "issue",
+    "key": "Electronic communications > Used obscene, profane, or other abusive language",
+    "recent": 15,
+    "baseline": 103,
+    "share_recent": 2.9354885298721186e-06,
+    "share_baseline": 8.129367759337882e-06,
+    "lift": 0.9519660630863419
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease",
+    "recent": 1392,
+    "baseline": 3374,
+    "share_recent": 0.0002724133355721326,
+    "share_baseline": 0.00026629598854374767,
+    "lift": 1.0167005569804495
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Unable to receive car title or other problem after the loan is paid off",
+    "recent": 728,
+    "baseline": 1560,
+    "share_recent": 0.00014246904331646014,
+    "share_baseline": 0.00012312440489870965,
+    "lift": 1.0866988908117525
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Problem with paying off the loan",
+    "recent": 265,
+    "baseline": 768,
+    "share_recent": 5.186029736107409e-05,
+    "share_baseline": 6.061509164244168e-05,
+    "lift": 0.9454920817723821
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Problem while selling or giving up the vehicle",
+    "recent": 114,
+    "baseline": 293,
+    "share_recent": 2.23097128270281e-05,
+    "share_baseline": 2.3125288868796108e-05,
+    "lift": 0.9933760476888132
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Problem related to refinancing",
+    "recent": 109,
+    "baseline": 336,
+    "share_recent": 2.133121665040406e-05,
+    "share_baseline": 2.6519102593568235e-05,
+    "lift": 0.9589952360013981
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Excess mileage, damage, or wear fees, or other problem after the lease is finished",
+    "recent": 75,
+    "baseline": 180,
+    "share_recent": 1.4677442649360592e-05,
+    "share_baseline": 1.4206662103697268e-05,
+    "lift": 1.004122181114407
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Termination fees or other problem when ending the lease early",
+    "recent": 65,
+    "baseline": 158,
+    "share_recent": 1.2720450296112513e-05,
+    "share_baseline": 1.2470292291023158e-05,
+    "lift": 1.0022242140568292
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Problem when attempting to purchase vehicle at the end of the lease",
+    "recent": 24,
+    "baseline": 60,
+    "share_recent": 4.696781647795389e-06,
+    "share_baseline": 4.735554034565756e-06,
+    "lift": 0.9996298068298987
+  },
+  {
+    "field": "issue",
+    "key": "Problems at the end of the loan or lease > Problem extending the lease",
+    "recent": 12,
+    "baseline": 19,
+    "share_recent": 2.3483908238976945e-06,
+    "share_baseline": 1.4995921109458228e-06,
+    "lift": 1.0083625825020468
+  },
+  {
+    "field": "issue",
+    "key": "Trouble accessing funds in your mobile or digital wallet",
+    "recent": 1330,
+    "baseline": 3764,
+    "share_recent": 0.0002602799829819945,
+    "share_baseline": 0.0002970770897684251,
+    "lift": 0.907330068305148
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using your card",
+    "recent": 1294,
+    "baseline": 3425,
+    "share_recent": 0.0002532348105103014,
+    "share_baseline": 0.0002703212094731286,
+    "lift": 0.9538605985135534
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using your card > Can't use card to make purchases",
+    "recent": 908,
+    "baseline": 2290,
+    "share_recent": 0.00017769490567492557,
+    "share_baseline": 0.00018074031231925968,
+    "lift": 0.9891522289080065
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using your card > Credit card company won't increase or decrease your credit limit",
+    "recent": 357,
+    "baseline": 1075,
+    "share_recent": 6.986462701095641e-05,
+    "share_baseline": 8.484534311930313e-05,
+    "lift": 0.9189554042555573
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using your card > Account sold or transferred to another company",
+    "recent": 29,
+    "baseline": 60,
+    "share_recent": 5.675277824419429e-06,
+    "share_baseline": 4.735554034565756e-06,
+    "lift": 1.008972347532945
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan",
+    "recent": 1119,
+    "baseline": 3518,
+    "share_recent": 0.00021898744432846003,
+    "share_baseline": 0.00027766131822670547,
+    "lift": 0.8446389104032513
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan > Problem with forgiveness, cancellation, or discharge",
+    "recent": 592,
+    "baseline": 1924,
+    "share_recent": 0.00011585394731228628,
+    "share_baseline": 0.00015185343270840857,
+    "lift": 0.8570617640228798
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan > Problem with your payment plan",
+    "recent": 182,
+    "baseline": 495,
+    "share_recent": 3.5617260829115035e-05,
+    "share_baseline": 3.9068320785167485e-05,
+    "lift": 0.9751844277937056
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan > Can't temporarily delay making payments",
+    "recent": 135,
+    "baseline": 385,
+    "share_recent": 2.6419396768849064e-05,
+    "share_baseline": 3.0386471721796936e-05,
+    "lift": 0.9695744895880583
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan > Can't get other flexible options for repaying your loan",
+    "recent": 112,
+    "baseline": 374,
+    "share_recent": 2.1918314356378485e-05,
+    "share_baseline": 2.951828681545988e-05,
+    "lift": 0.9413212400662002
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan > Problem lowering your monthly payments",
+    "recent": 77,
+    "baseline": 232,
+    "share_recent": 1.5068841120010207e-05,
+    "share_baseline": 1.8310808933654256e-05,
+    "lift": 0.9725978729850282
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to repay your loan > Bankruptcy",
+    "recent": 21,
+    "baseline": 108,
+    "share_recent": 4.109683941820965e-06,
+    "share_baseline": 8.523997262218361e-06,
+    "lift": 0.9593240810165569
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your loan",
+    "recent": 1077,
+    "baseline": 2776,
+    "share_recent": 0.0002107680764448181,
+    "share_baseline": 0.0002190982999992423,
+    "lift": 0.9738944909626782
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your loan > Denied request to lower payments",
+    "recent": 368,
+    "baseline": 985,
+    "share_recent": 7.20173185995293e-05,
+    "share_baseline": 7.77420120674545e-05,
+    "lift": 0.9677921195932415
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your loan > Problem after you declared or threatened to declare bankruptcy",
+    "recent": 26,
+    "baseline": 98,
+    "share_recent": 5.088180118445005e-06,
+    "share_baseline": 7.734738256457402e-06,
+    "lift": 0.9754344960516599
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage",
+    "recent": 999,
+    "baseline": 3103,
+    "share_recent": 0.00019550353608948308,
+    "share_baseline": 0.00024490706948762566,
+    "lift": 0.8567627695438843
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Trying to communicate with the company to fix an issue with the application process",
+    "recent": 243,
+    "baseline": 736,
+    "share_recent": 4.755491418392832e-05,
+    "share_baseline": 5.808946282400661e-05,
+    "lift": 0.9333633725366889
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Delays in the application process",
+    "recent": 192,
+    "baseline": 474,
+    "share_recent": 3.757425318236311e-05,
+    "share_baseline": 3.741087687306947e-05,
+    "lift": 1.001188961987664
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Application denials",
+    "recent": 157,
+    "baseline": 543,
+    "share_recent": 3.072477994599484e-05,
+    "share_baseline": 4.285676401282009e-05,
+    "lift": 0.9150758863210948
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Confusing or misleading advertising or marketing",
+    "recent": 132,
+    "baseline": 470,
+    "share_recent": 2.5832299062874643e-05,
+    "share_baseline": 3.709517327076509e-05,
+    "lift": 0.9178463111487807
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Changes in loan terms during the application process",
+    "recent": 111,
+    "baseline": 341,
+    "share_recent": 2.1722615121053675e-05,
+    "share_baseline": 2.6913732096448715e-05,
+    "lift": 0.9590972789969644
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Fees or costs during the application process",
+    "recent": 75,
+    "baseline": 221,
+    "share_recent": 1.4677442649360592e-05,
+    "share_baseline": 1.7442624027317203e-05,
+    "lift": 0.9764550443175262
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Loan estimate or other related disclosures",
+    "recent": 50,
+    "baseline": 209,
+    "share_recent": 9.784961766240394e-06,
+    "share_baseline": 1.649551322040405e-05,
+    "lift": 0.9423964814724872
+  },
+  {
+    "field": "issue",
+    "key": "Applying for a mortgage or refinancing an existing mortgage > Negative impact of inaccurate appraisal",
+    "recent": 39,
+    "baseline": 109,
+    "share_recent": 7.632270177667508e-06,
+    "share_baseline": 8.602923162794457e-06,
+    "lift": 0.991062367781096
+  },
+  {
+    "field": "issue",
+    "key": "Money was not available when promised",
+    "recent": 926,
+    "baseline": 2674,
+    "share_recent": 0.0001812174919107721,
+    "share_baseline": 0.00021104785814048054,
+    "lift": 0.9040971816747377
+  },
+  {
+    "field": "issue",
+    "key": "Managing, opening, or closing your mobile wallet account",
+    "recent": 917,
+    "baseline": 2109,
+    "share_recent": 0.00017945619879284884,
+    "share_baseline": 0.00016645472431498631,
+    "lift": 1.048794310220197
+  },
+  {
+    "field": "issue",
+    "key": "Threatened to contact someone or share information improperly",
+    "recent": 865,
+    "baseline": 2545,
+    "share_recent": 0.00016927983855595882,
+    "share_baseline": 0.00020086641696616416,
+    "lift": 0.8950146090457226
+  },
+  {
+    "field": "issue",
+    "key": "Threatened to contact someone or share information improperly > Talked to a third-party about your debt",
+    "recent": 574,
+    "baseline": 1537,
+    "share_recent": 0.00011233136107643974,
+    "share_baseline": 0.00012130910918545945,
+    "lift": 0.9594334451841463
+  },
+  {
+    "field": "issue",
+    "key": "Threatened to contact someone or share information improperly > Contacted you after you asked them to stop",
+    "recent": 177,
+    "baseline": 609,
+    "share_recent": 3.4638764652491e-05,
+    "share_baseline": 4.8065873450842423e-05,
+    "lift": 0.9093166542335686
+  },
+  {
+    "field": "issue",
+    "key": "Threatened to contact someone or share information improperly > Contacted your employer",
+    "recent": 100,
+    "baseline": 374,
+    "share_recent": 1.9569923532480788e-05,
+    "share_baseline": 2.951828681545988e-05,
+    "lift": 0.9231895083884664
+  },
+  {
+    "field": "issue",
+    "key": "Threatened to contact someone or share information improperly > Contacted you instead of your attorney",
+    "recent": 14,
+    "baseline": 25,
+    "share_recent": 2.7397892945473107e-06,
+    "share_baseline": 1.9731475144023982e-06,
+    "lift": 1.007518075089686
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase or transfer",
+    "recent": 805,
+    "baseline": 2087,
+    "share_recent": 0.00015753788443647034,
+    "share_baseline": 0.00016471835450231222,
+    "lift": 0.9728750577974028
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase or transfer > Card company isn't resolving a dispute about a purchase or transfer",
+    "recent": 566,
+    "baseline": 1437,
+    "share_recent": 0.00011076576719384127,
+    "share_baseline": 0.00011341651912784985,
+    "lift": 0.9875794434993075
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase or transfer > Charged for a purchase or transfer you did not make with the card",
+    "recent": 218,
+    "baseline": 612,
+    "share_recent": 4.266243330080812e-05,
+    "share_baseline": 4.830265115257071e-05,
+    "lift": 0.9619681926929273
+  },
+  {
+    "field": "issue",
+    "key": "Problem with a purchase or transfer > Overcharged for a purchase or transfer you did make with the card",
+    "recent": 21,
+    "baseline": 38,
+    "share_recent": 4.109683941820965e-06,
+    "share_baseline": 2.9991842218916456e-06,
+    "lift": 1.0107816360713786
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage",
+    "recent": 797,
+    "baseline": 2520,
+    "share_recent": 0.0001559722905538719,
+    "share_baseline": 0.00019889326945176175,
+    "lift": 0.8564003164854911
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage > Trying to communicate with the company to fix an issue with the loan closing",
+    "recent": 229,
+    "baseline": 615,
+    "share_recent": 4.4815124889381006e-05,
+    "share_baseline": 4.8539428854299e-05,
+    "lift": 0.9749271692126195
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage > Delays with the closing process",
+    "recent": 179,
+    "baseline": 487,
+    "share_recent": 3.5030163123140614e-05,
+    "share_baseline": 3.843691358055872e-05,
+    "lift": 0.9753913145756773
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage > Closing disclosure or other related disclosures",
+    "recent": 173,
+    "baseline": 615,
+    "share_recent": 3.3855967711191765e-05,
+    "share_baseline": 4.8539428854299e-05,
+    "lift": 0.901147720464779
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage > Changes in loan terms during or after closing",
+    "recent": 123,
+    "baseline": 436,
+    "share_recent": 2.407100594495137e-05,
+    "share_baseline": 3.441169265117783e-05,
+    "lift": 0.923067059849753
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage > Fees or costs after closing",
+    "recent": 78,
+    "baseline": 311,
+    "share_recent": 1.5264540355335016e-05,
+    "share_baseline": 2.4545955079165836e-05,
+    "lift": 0.9254779914937324
+  },
+  {
+    "field": "issue",
+    "key": "Closing on a mortgage > Setting up an escrow account for taxes and insurance",
+    "recent": 15,
+    "baseline": 56,
+    "share_recent": 2.9354885298721186e-06,
+    "share_baseline": 4.419850432261372e-06,
+    "lift": 0.985784676991544
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease",
+    "recent": 771,
+    "baseline": 2745,
+    "share_recent": 0.0001508841104354269,
+    "share_baseline": 0.00021665159708138333,
+    "lift": 0.792303316161537
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Loan opened without my consent or knowledge",
+    "recent": 273,
+    "baseline": 887,
+    "share_recent": 5.3425891243672556e-05,
+    "share_baseline": 7.000727381099709e-05,
+    "lift": 0.9024666286587324
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Confusing or misleading advertising or marketing",
+    "recent": 130,
+    "baseline": 527,
+    "share_recent": 2.5440900592225026e-05,
+    "share_baseline": 4.159394960360256e-05,
+    "lift": 0.8859199206138497
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Changes in terms mid-deal or after closing",
+    "recent": 99,
+    "baseline": 368,
+    "share_recent": 1.937422429715598e-05,
+    "share_baseline": 2.9044731412003305e-05,
+    "lift": 0.9250608141143544
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Credit denial",
+    "recent": 80,
+    "baseline": 305,
+    "share_recent": 1.565593882598463e-05,
+    "share_baseline": 2.407239967570926e-05,
+    "lift": 0.9321649224829782
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Problem with signing the paperwork",
+    "recent": 66,
+    "baseline": 201,
+    "share_recent": 1.2916149531437322e-05,
+    "share_baseline": 1.5864106015795283e-05,
+    "lift": 0.9745567752971219
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > High-pressure sales tactics",
+    "recent": 59,
+    "baseline": 200,
+    "share_recent": 1.1546254884163666e-05,
+    "share_baseline": 1.5785180115219186e-05,
+    "lift": 0.9633897427387744
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Problem with additional add-on products or services purchased with the loan",
+    "recent": 48,
+    "baseline": 173,
+    "share_recent": 9.393563295590778e-06,
+    "share_baseline": 1.3654180799664597e-05,
+    "lift": 0.9625124436769826
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Did not receive car title",
+    "recent": 10,
+    "baseline": 38,
+    "share_recent": 1.9569923532480788e-06,
+    "share_baseline": 2.9991842218916456e-06,
+    "lift": 0.9898815522033809
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan or lease > Problem with a trade-in",
+    "recent": 6,
+    "baseline": 46,
+    "share_recent": 1.1741954119488473e-06,
+    "share_baseline": 3.630591426500413e-06,
+    "lift": 0.9762966129910224
+  },
+  {
+    "field": "issue",
+    "key": "Confusing or missing disclosures",
+    "recent": 714,
+    "baseline": 2031,
+    "share_recent": 0.00013972925402191283,
+    "share_baseline": 0.00016029850407005085,
+    "lift": 0.9209782241291617
+  },
+  {
+    "field": "issue",
+    "key": "Getting the loan",
+    "recent": 677,
+    "baseline": 1524,
+    "share_recent": 0.00013248838231489493,
+    "share_baseline": 0.0001202830724779702,
+    "lift": 1.0554073887731221
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card",
+    "recent": 609,
+    "baseline": 2305,
+    "share_recent": 0.000119180834312808,
+    "share_baseline": 0.00018192420082790113,
+    "lift": 0.7774459718930109
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Trouble using the card to spend money in a store or online",
+    "recent": 381,
+    "baseline": 1579,
+    "share_recent": 7.456140865875181e-05,
+    "share_baseline": 0.00012462399700965547,
+    "lift": 0.7771271590864278
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Trouble getting information about the card",
+    "recent": 88,
+    "baseline": 312,
+    "share_recent": 1.7221532708583093e-05,
+    "share_baseline": 2.462488097974193e-05,
+    "lift": 0.9405949420937679
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Problem using the card to withdraw money from an ATM",
+    "recent": 48,
+    "baseline": 149,
+    "share_recent": 9.393563295590778e-06,
+    "share_baseline": 1.1759959185838294e-05,
+    "lift": 0.9788260848743459
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Problem with direct deposit",
+    "recent": 43,
+    "baseline": 97,
+    "share_recent": 8.41506711896674e-06,
+    "share_baseline": 7.655812355881306e-06,
+    "lift": 1.0070526128266586
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Trouble using the card to pay a bill",
+    "recent": 31,
+    "baseline": 100,
+    "share_recent": 6.066676295069045e-06,
+    "share_baseline": 7.892590057609593e-06,
+    "lift": 0.983076560108849
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Problem with a check written from your prepaid card account",
+    "recent": 8,
+    "baseline": 14,
+    "share_recent": 1.5655938825984632e-06,
+    "share_baseline": 1.104962608065343e-06,
+    "lift": 1.004555970969682
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Trouble using the card to send money to another person",
+    "recent": 6,
+    "baseline": 38,
+    "share_recent": 1.1741954119488473e-06,
+    "share_baseline": 2.9991842218916456e-06,
+    "lift": 0.9822815217059271
+  },
+  {
+    "field": "issue",
+    "key": "Trouble using the card > Problem adding money",
+    "recent": 4,
+    "baseline": 16,
+    "share_recent": 7.827969412992316e-07,
+    "share_baseline": 1.2628144092175349e-06,
+    "lift": 0.9952596866804582
+  },
+  {
+    "field": "issue",
+    "key": "Problem with additional add-on products or services",
+    "recent": 604,
+    "baseline": 1297,
+    "share_recent": 0.00011820233813618396,
+    "share_baseline": 0.00010236689304719643,
+    "lift": 1.078251164755958
+  },
+  {
+    "field": "issue",
+    "key": "Problem with the payoff process at the end of the loan",
+    "recent": 447,
+    "baseline": 1226,
+    "share_recent": 8.747755819018913e-05,
+    "share_baseline": 9.676315410629361e-05,
+    "lift": 0.952808258445134
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your bill",
+    "recent": 435,
+    "baseline": 1365,
+    "share_recent": 8.512916736629143e-05,
+    "share_baseline": 0.00010773385428637095,
+    "lift": 0.8911843859166166
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your bill > Credit card company won't work with you while you're going through financial hardship",
+    "recent": 379,
+    "baseline": 1195,
+    "share_recent": 7.41700101881022e-05,
+    "share_baseline": 9.431645118843465e-05,
+    "lift": 0.8963214855092438
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your bill > Problem lowering your monthly payments",
+    "recent": 42,
+    "baseline": 113,
+    "share_recent": 8.21936788364193e-06,
+    "share_baseline": 8.918626765098841e-06,
+    "lift": 0.9935799880862897
+  },
+  {
+    "field": "issue",
+    "key": "Struggling to pay your bill > Filed for bankruptcy",
+    "recent": 14,
+    "baseline": 57,
+    "share_recent": 2.7397892945473107e-06,
+    "share_baseline": 4.498776332837468e-06,
+    "lift": 0.9831673910449666
+  },
+  {
+    "field": "issue",
+    "key": "Unexpected or other fees",
+    "recent": 377,
+    "baseline": 1318,
+    "share_recent": 7.377861171745258e-05,
+    "share_baseline": 0.00010402433695929444,
+    "lift": 0.851754326505292
+  },
+  {
+    "field": "issue",
+    "key": "Problem with customer service",
+    "recent": 365,
+    "baseline": 1217,
+    "share_recent": 7.143022089355488e-05,
+    "share_baseline": 9.605282100110875e-05,
+    "lift": 0.8744083355606772
+  },
+  {
+    "field": "issue",
+    "key": "Problem getting a card or closing an account",
+    "recent": 347,
+    "baseline": 1078,
+    "share_recent": 6.790763465770834e-05,
+    "share_baseline": 8.508212082103141e-05,
+    "lift": 0.9072061305158143
+  },
+  {
+    "field": "issue",
+    "key": "Problem getting a card or closing an account > Trouble getting, activating, or registering a card",
+    "recent": 130,
+    "baseline": 468,
+    "share_recent": 2.5440900592225026e-05,
+    "share_baseline": 3.6937321469612895e-05,
+    "lift": 0.9160461096068759
+  },
+  {
+    "field": "issue",
+    "key": "Problem getting a card or closing an account > Trouble closing card",
+    "recent": 119,
+    "baseline": 334,
+    "share_recent": 2.3288209003652138e-05,
+    "share_baseline": 2.636125079241604e-05,
+    "lift": 0.9756805051430504
+  },
+  {
+    "field": "issue",
+    "key": "Problem getting a card or closing an account > Trouble getting a working replacement card",
+    "recent": 91,
+    "baseline": 253,
+    "share_recent": 1.7808630414557518e-05,
+    "share_baseline": 1.9968252845752273e-05,
+    "lift": 0.9819983839060199
+  },
+  {
+    "field": "issue",
+    "key": "Problem getting a card or closing an account > Don't want a card provided by your employer or the government",
+    "recent": 7,
+    "baseline": 23,
+    "share_recent": 1.3698946472736553e-06,
+    "share_baseline": 1.8152957132502066e-06,
+    "lift": 0.9956254012439255
+  },
+  {
+    "field": "issue",
+    "key": "Other service problem",
+    "recent": 340,
+    "baseline": 1045,
+    "share_recent": 6.653774001043469e-05,
+    "share_baseline": 8.247756610202024e-05,
+    "lift": 0.9126477493530691
+  },
+  {
+    "field": "issue",
+    "key": "Didn't provide services promised",
+    "recent": 321,
+    "baseline": 1038,
+    "share_recent": 6.281945453926333e-05,
+    "share_baseline": 8.192508479798757e-05,
+    "lift": 0.8949807813477761
+  },
+  {
+    "field": "issue",
+    "key": "Confusing or misleading advertising or marketing",
+    "recent": 253,
+    "baseline": 812,
+    "share_recent": 4.9511906537176395e-05,
+    "share_baseline": 6.40878312677899e-05,
+    "lift": 0.9111699836727947
+  },
+  {
+    "field": "issue",
+    "key": "Charged upfront or unexpected fees",
+    "recent": 201,
+    "baseline": 634,
+    "share_recent": 3.933554630028639e-05,
+    "share_baseline": 5.003902096524482e-05,
+    "lift": 0.9286620600687752
+  },
+  {
+    "field": "issue",
+    "key": "Identity theft protection or other monitoring services",
+    "recent": 169,
+    "baseline": 565,
+    "share_recent": 3.307317076989254e-05,
+    "share_baseline": 4.45931338254942e-05,
+    "lift": 0.9203284225826047
+  },
+  {
+    "field": "issue",
+    "key": "Identity theft protection or other monitoring services > Problem canceling credit monitoring or identify theft protection service",
+    "recent": 58,
+    "baseline": 246,
+    "share_recent": 1.1350555648838859e-05,
+    "share_baseline": 1.9415771541719598e-05,
+    "lift": 0.93246104941789
+  },
+  {
+    "field": "issue",
+    "key": "Identity theft protection or other monitoring services > Billing dispute for services",
+    "recent": 57,
+    "baseline": 93,
+    "share_recent": 1.115485641351405e-05,
+    "share_baseline": 7.340108753576922e-06,
+    "lift": 1.035538883873266
+  },
+  {
+    "field": "issue",
+    "key": "Identity theft protection or other monitoring services > Didn't receive services that were advertised",
+    "recent": 21,
+    "baseline": 104,
+    "share_recent": 4.109683941820965e-06,
+    "share_baseline": 8.208293659913977e-06,
+    "lift": 0.9621229613787788
+  },
+  {
+    "field": "issue",
+    "key": "Identity theft protection or other monitoring services > Problem with product or service terms changing",
+    "recent": 21,
+    "baseline": 72,
+    "share_recent": 4.109683941820965e-06,
+    "share_baseline": 5.682664841478907e-06,
+    "lift": 0.9851159989008853
+  },
+  {
+    "field": "issue",
+    "key": "Identity theft protection or other monitoring services > Received unwanted marketing or advertising",
+    "recent": 12,
+    "baseline": 50,
+    "share_recent": 2.3483908238976945e-06,
+    "share_baseline": 3.9462950288047965e-06,
+    "lift": 0.9846275982759722
+  },
+  {
+    "field": "issue",
+    "key": "Can't stop withdrawals from your bank account",
+    "recent": 156,
+    "baseline": 266,
+    "share_recent": 3.052908071067003e-05,
+    "share_baseline": 2.0994289553241517e-05,
+    "lift": 1.0788036459624226
+  },
+  {
+    "field": "issue",
+    "key": "Unauthorized withdrawals or charges",
+    "recent": 122,
+    "baseline": 498,
+    "share_recent": 2.3875306709626563e-05,
+    "share_baseline": 3.9305098486895774e-05,
+    "lift": 0.8892374224284357
+  },
+  {
+    "field": "issue",
+    "key": "Getting a line of credit",
+    "recent": 118,
+    "baseline": 417,
+    "share_recent": 2.309250976832733e-05,
+    "share_baseline": 3.2912100540232e-05,
+    "lift": 0.9261196630555671
+  },
+  {
+    "field": "issue",
+    "key": "Lost or stolen money order",
+    "recent": 106,
+    "baseline": 266,
+    "share_recent": 2.0744118944429637e-05,
+    "share_baseline": 2.0994289553241517e-05,
+    "lift": 0.9979323767283927
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan",
+    "recent": 104,
+    "baseline": 394,
+    "share_recent": 2.035272047378002e-05,
+    "share_baseline": 3.1096804826981795e-05,
+    "lift": 0.918044651298851
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Loan opened without my consent or knowledge",
+    "recent": 27,
+    "baseline": 113,
+    "share_recent": 5.2838793537698135e-06,
+    "share_baseline": 8.918626765098841e-06,
+    "lift": 0.9666287804089931
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Confusing or misleading advertising",
+    "recent": 24,
+    "baseline": 127,
+    "share_recent": 4.696781647795389e-06,
+    "share_baseline": 1.0023589373164183e-05,
+    "lift": 0.9515848577953405
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > High pressure sales tactics or recruiting",
+    "recent": 22,
+    "baseline": 73,
+    "share_recent": 4.305383177145773e-06,
+    "share_baseline": 5.7615907420550035e-06,
+    "lift": 0.986231224826593
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Denied loan",
+    "recent": 9,
+    "baseline": 26,
+    "share_recent": 1.761293117923271e-06,
+    "share_baseline": 2.0520734149784943e-06,
+    "lift": 0.9971506674257091
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Issues with financial aid services",
+    "recent": 8,
+    "baseline": 17,
+    "share_recent": 1.5655938825984632e-06,
+    "share_baseline": 1.341740309793631e-06,
+    "lift": 1.002208898052476
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Changes in terms mid-deal or after closing",
+    "recent": 7,
+    "baseline": 18,
+    "share_recent": 1.3698946472736553e-06,
+    "share_baseline": 1.4206662103697267e-06,
+    "lift": 0.99949939627698
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Problem with the interest rate",
+    "recent": 5,
+    "baseline": 14,
+    "share_recent": 9.784961766240394e-07,
+    "share_baseline": 1.104962608065343e-06,
+    "lift": 0.9987491570326616
+  },
+  {
+    "field": "issue",
+    "key": "Getting a loan > Problem with signing the paperwork",
+    "recent": 2,
+    "baseline": 2,
+    "share_recent": 3.913984706496158e-07,
+    "share_baseline": 1.5785180115219186e-07,
+    "lift": 1.0023317859288865
+  },
+  {
+    "field": "issue",
+    "key": "Wrong amount charged or received",
+    "recent": 104,
+    "baseline": 356,
+    "share_recent": 2.035272047378002e-05,
+    "share_baseline": 2.809762060509015e-05,
+    "lift": 0.9395390789093051
+  },
+  {
+    "field": "issue",
+    "key": "Can't contact lender or servicer",
+    "recent": 97,
+    "baseline": 217,
+    "share_recent": 1.8982825826506367e-05,
+    "share_baseline": 1.7126920425012817e-05,
+    "lift": 1.0158452505603248
+  },
+  {
+    "field": "issue",
+    "key": "Received a loan you didn't apply for",
+    "recent": 78,
+    "baseline": 233,
+    "share_recent": 1.5264540355335016e-05,
+    "share_baseline": 1.8389734834230353e-05,
+    "lift": 0.9736024877218347
+  },
+  {
+    "field": "issue",
+    "key": "Issues with repayment",
+    "recent": 67,
+    "baseline": 172,
+    "share_recent": 1.3111848766762129e-05,
+    "share_baseline": 1.35752548990885e-05,
+    "lift": 0.9959198318970264
+  },
+  {
+    "field": "issue",
+    "key": "Problem adding money",
+    "recent": 63,
+    "baseline": 188,
+    "share_recent": 1.2329051825462897e-05,
+    "share_baseline": 1.4838069308306035e-05,
+    "lift": 0.9781516922223138
+  },
+  {
+    "field": "issue",
+    "key": "Vehicle was repossessed or sold the vehicle",
+    "recent": 51,
+    "baseline": 162,
+    "share_recent": 9.980661001565203e-06,
+    "share_baseline": 1.2785995893327542e-05,
+    "lift": 0.9751269218350866
+  },
+  {
+    "field": "issue",
+    "key": "Money was taken from your bank account on the wrong day or for the wrong amount",
+    "recent": 48,
+    "baseline": 162,
+    "share_recent": 9.393563295590778e-06,
+    "share_baseline": 1.2785995893327542e-05,
+    "lift": 0.9699215086867229
+  },
+  {
+    "field": "issue",
+    "key": "Loan payment wasn't credited to your account",
+    "recent": 41,
+    "baseline": 144,
+    "share_recent": 8.023668648317124e-06,
+    "share_baseline": 1.1365329682957814e-05,
+    "lift": 0.9699937041074278
+  },
+  {
+    "field": "issue",
+    "key": "Was approved for a loan, but didn't receive the money",
+    "recent": 39,
+    "baseline": 105,
+    "share_recent": 7.632270177667508e-06,
+    "share_baseline": 8.287219560490073e-06,
+    "lift": 0.9939517388526472
+  },
+  {
+    "field": "issue",
+    "key": "Overdraft, savings, or rewards features",
+    "recent": 30,
+    "baseline": 87,
+    "share_recent": 5.870977059744237e-06,
+    "share_baseline": 6.8665533501203465e-06,
+    "lift": 0.9906839300120931
+  },
+  {
+    "field": "issue",
+    "key": "Issue with income share agreement",
+    "recent": 29,
+    "baseline": 83,
+    "share_recent": 5.675277824419429e-06,
+    "share_baseline": 6.550849747815962e-06,
+    "lift": 0.9917825908899944
+  },
+  {
+    "field": "issue",
+    "key": "Issue with income share agreement > Dealing with provider of income share agreement",
+    "recent": 14,
+    "baseline": 35,
+    "share_recent": 2.7397892945473107e-06,
+    "share_baseline": 2.762406520163358e-06,
+    "lift": 0.999779907590899
+  },
+  {
+    "field": "issue",
+    "key": "Issue with income share agreement > Payment issues",
+    "recent": 6,
+    "baseline": 21,
+    "share_recent": 1.1741954119488473e-06,
+    "share_baseline": 1.6574439120980147e-06,
+    "lift": 0.995246304829708
+  },
+  {
+    "field": "issue",
+    "key": "Issue with income share agreement > Billing or statement issues",
+    "recent": 5,
+    "baseline": 11,
+    "share_recent": 9.784961766240394e-07,
+    "share_baseline": 8.681849063370553e-07,
+    "lift": 1.0010936180758028
+  },
+  {
+    "field": "issue",
+    "key": "Issue with income share agreement > Marketing or disclosure issues",
+    "recent": 4,
+    "baseline": 16,
+    "share_recent": 7.827969412992316e-07,
+    "share_baseline": 1.2628144092175349e-06,
+    "lift": 0.9952596866804582
+  },
+  {
+    "field": "issue",
+    "key": "Problem with cash advance",
+    "recent": 29,
+    "baseline": 42,
+    "share_recent": 5.675277824419429e-06,
+    "share_baseline": 3.3148878241960294e-06,
+    "lift": 1.0228465620970322
+  },
+  {
+    "field": "issue",
+    "key": "Problems receiving the advance",
+    "recent": 27,
+    "baseline": 98,
+    "share_recent": 5.2838793537698135e-06,
+    "share_baseline": 7.734738256457402e-06,
+    "lift": 0.9772509875426304
+  },
+  {
+    "field": "issue",
+    "key": "Advertising",
+    "recent": 26,
+    "baseline": 80,
+    "share_recent": 5.088180118445005e-06,
+    "share_baseline": 6.3140720460876745e-06,
+    "lift": 0.9884691470842051
+  },
+  {
+    "field": "issue",
+    "key": "Advertising > Changes in terms from what was offered or advertised",
+    "recent": 15,
+    "baseline": 40,
+    "share_recent": 2.9354885298721186e-06,
+    "share_baseline": 3.1570360230438373e-06,
+    "lift": 0.9978523278516627
+  },
+  {
+    "field": "issue",
+    "key": "Advertising > Confusing or misleading advertising about the card",
+    "recent": 11,
+    "baseline": 40,
+    "share_recent": 2.1526915885728866e-06,
+    "share_baseline": 3.1570360230438373e-06,
+    "lift": 0.9902639269875242
+  },
+  {
+    "field": "issue",
+    "key": "Unexpected fees",
+    "recent": 24,
+    "baseline": 82,
+    "share_recent": 4.696781647795389e-06,
+    "share_baseline": 6.471923847239867e-06,
+    "lift": 0.9833276028524538
+  },
+  {
+    "field": "issue",
+    "key": "Issue where my lender is my school",
+    "recent": 17,
+    "baseline": 80,
+    "share_recent": 3.3268870005217343e-06,
+    "share_baseline": 6.3140720460876745e-06,
+    "lift": 0.971902261026452
+  },
+  {
+    "field": "issue",
+    "key": "Issue where my lender is my school > Issues with fees connected to the loan",
+    "recent": 12,
+    "baseline": 54,
+    "share_recent": 2.3483908238976945e-06,
+    "share_baseline": 4.261998631109181e-06,
+    "lift": 0.9816461622418917
+  },
+  {
+    "field": "issue",
+    "key": "Issue where my lender is my school > Cannot graduate, receive diploma, or get transcript due to money owed",
+    "recent": 5,
+    "baseline": 26,
+    "share_recent": 9.784961766240394e-07,
+    "share_baseline": 2.0520734149784943e-06,
+    "lift": 0.9894801036134864
+  },
+  {
+    "field": "issue",
+    "key": "Credit limit changed",
+    "recent": 16,
+    "baseline": 35,
+    "share_recent": 3.1311877651969264e-06,
+    "share_baseline": 2.762406520163358e-06,
+    "lift": 1.0035886785598118
+  },
+  {
+    "field": "issue",
+    "key": "Vehicle was damaged or destroyed the vehicle",
+    "recent": 10,
+    "baseline": 34,
+    "share_recent": 1.9569923532480788e-06,
+    "share_baseline": 2.683480619587262e-06,
+    "lift": 0.9929249742806187
+  },
+  {
+    "field": "issue",
+    "key": "Was approved for a loan, but didn't receive money",
+    "recent": 9,
+    "baseline": 27,
+    "share_recent": 1.761293117923271e-06,
+    "share_baseline": 2.1309993155545903e-06,
+    "lift": 0.9963800785255313
+  },
+  {
+    "field": "issue",
+    "key": "Incorrect exchange rate",
+    "recent": 5,
+    "baseline": 27,
+    "share_recent": 9.784961766240394e-07,
+    "share_baseline": 2.1309993155545903e-06,
+    "lift": 0.9887154424547472
+  },
+  {
+    "field": "issue",
+    "key": "Problem with overdraft",
+    "recent": 4,
+    "baseline": 30,
+    "share_recent": 7.827969412992316e-07,
+    "share_baseline": 2.367777017282878e-06,
+    "lift": 0.984516806731907
+  },
+  {
+    "field": "issue",
+    "key": "Problem with overdraft > Overdraft charges",
+    "recent": 3,
+    "baseline": 27,
+    "share_recent": 5.870977059744236e-07,
+    "share_baseline": 2.1309993155545903e-06,
+    "lift": 0.9848831244193551
+  },
+  {
+    "field": "issue",
+    "key": "Problem with overdraft > Was signed up for overdraft on card, but don't want to be",
+    "recent": 1,
+    "baseline": 3,
+    "share_recent": 1.956992353248079e-07,
+    "share_baseline": 2.367777017282878e-07,
+    "lift": 0.999590185684882
+  },
+  {
+    "field": "issue",
+    "key": "Lost or stolen refund",
+    "recent": 1,
+    "baseline": 5,
+    "share_recent": 1.956992353248079e-07,
+    "share_baseline": 3.9462950288047966e-07,
+    "lift": 0.998018516841581
+  },
+  {
+    "field": "issue",
+    "key": "Property was damaged or destroyed property",
+    "recent": 1,
+    "baseline": 6,
+    "share_recent": 1.956992353248079e-07,
+    "share_baseline": 4.735554034565756e-07,
+    "lift": 0.9972345343307897
+  },
+  {
+    "field": "issue",
+    "key": "Property was sold",
+    "recent": 1,
+    "baseline": 11,
+    "share_recent": 1.956992353248079e-07,
+    "share_baseline": 8.681849063370553e-07,
+    "lift": 0.9933330249608765
+  }
+]

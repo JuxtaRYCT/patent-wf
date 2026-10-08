@@ -3473,6 +3473,28 @@
   <data key="d9">https://www.semanticscholar.org/paper/7e3f035505fe7034cfed6bec3f633e705faaaee8</data>
   <data key="d11"></data>
 </node>
+<node id="idea:A1-1003-01">
+  <data key="d0">idea</data>
+  <data key="d1">Per-agent canary fingerprints in bank data served to AI agents, to trace which agent leaked it</data>
+  <data key="d2">A1</data>
+  <data key="d3">2026-10-03</data>
+  <data key="d4">identity</data>
+  <data key="d5">Personal-finance tools now expose synced bank data to AI agents (for example a read-only MCP server). Once many agents read the same transactions, a leak or resale cannot be attributed. Model-supply-chain research shows how much can hide in low-order bits that nobody inspects.</data>
+  <data key="d6">When bank data is served to an agent through an agent interface (MCP or an open-banking endpoint for agents), the server embeds a per-agent fingerprint in non-authoritative, low-salience fields. Examples are deterministic variations in merchant-descriptor normalisation, ordering of tied timestamps, and synthetic canary records that are flagged in the bank's own view but look real to the consumer. Each fingerprint is keyed to the agent's token. Leaked data found later (dark-web dumps, scraped datasets, model outputs) is matched against the keys to identify the leaking agent and token. The agent's access is then revoked and its developer is notified. Authoritative fields such as amounts and dates are never altered.</data>
+  <data key="d7">0.2034</data>
+</node>
+<node id="gh:ltoinel/Carbure">
+  <data key="d0">source</data>
+  <data key="d1">ltoinel/Carbure</data>
+  <data key="d8">repo</data>
+  <data key="d9">https://github.com/ltoinel/Carbure</data>
+</node>
+<node id="arxiv:2610.04319">
+  <data key="d0">source</data>
+  <data key="d1">GrayShield: Bit-Level Sanitization for Transformer Model Supply-Chain Security</data>
+  <data key="d8">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.04319</data>
+</node>
 <edge source="idea:A1-01" target="arm:A1" id="0">
   <data key="d12">FROM_ARM</data>
 </edge>
@@ -5266,6 +5288,10 @@
   <data key="d12">SIMILAR_TO</data>
   <data key="d13">0.8145</data>
 </edge>
+<edge source="idea:A2b-09" target="idea:A1-1003-01" id="0">
+  <data key="d12">NEAR</data>
+  <data key="d13">0.8099737763404846</data>
+</edge>
 <edge source="idea:A2b-10" target="arm:A2b" id="0">
   <data key="d12">FROM_ARM</data>
 </edge>
@@ -5715,5 +5741,37 @@
 <edge source="idea:A1-1002-01" target="arxiv:2609.14744" id="0">
   <data key="d12">SIMILAR_TO</data>
   <data key="d13">0.7195</data>
+</edge>
+<edge source="idea:A1-1003-01" target="arm:A1" id="0">
+  <data key="d12">FROM_ARM</data>
+</edge>
+<edge source="idea:A1-1003-01" target="domain:identity" id="0">
+  <data key="d12">IN_DOMAIN</data>
+</edge>
+<edge source="idea:A1-1003-01" target="gh:ltoinel/Carbure" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1003-01" target="arxiv:2610.04319" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1003-01" target="arxiv:2609.00060" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7966</data>
+</edge>
+<edge source="idea:A1-1003-01" target="arxiv:2608.25474" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7804</data>
+</edge>
+<edge source="idea:A1-1003-01" target="arxiv:2607.21824" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7796</data>
+</edge>
+<edge source="idea:A1-1003-01" target="s2:35f675fa5cf991887bd1890340e10de87b3b565d" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7766</data>
+</edge>
+<edge source="idea:A1-1003-01" target="arxiv:2608.23858" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.77</data>
 </edge>
 </graph></graphml>

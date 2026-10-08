@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-03",
+  "mode": "catch-up",
+  "executed_on": "2026-10-09",
+  "new_items": 162,
+  "new_patents": 12,
+  "competitor_filings": 0,
+  "shortlisted": 30,
+  "themes": 0,
+  "ideas_A1": 1,
+  "ideas_A2b": 0,
+  "pursue": 0,
+  "refine": 0,
+  "dropped": 1,
+  "top_idea": "A1-1003-01 Per-agent canary fingerprints in bank data served to AI agents, to trace which agent leaked it"
+}

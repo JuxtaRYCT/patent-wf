@@ -1,0 +1,4 @@
+,p,m,dist,patent_proximity,prior,p_id,m_id,p_title,m_title
+0,0,0,0.49824202,0.72561115,0.77438884973526,gh:ltoinel/Carbure,arxiv:2610.04319,ltoinel/Carbure,GrayShield: Bit-Level Sanitization for Transformer Model Supply-Chain Security
+1,1,2,0.4109329,0.7760786,0.7239214181900024,arxiv:2610.04699,arxiv:2610.04798,Not Self-Decidable: LLMs Cannot Draw the Boundary of What an Agent Verifier Can Check,Forecasting Cybersecurity Incidents Using Geopolitical Data and Large Language Models
+2,0,1,0.49322152,0.7409539,0.7090460777282714,gh:ltoinel/Carbure,arxiv:2610.04163,ltoinel/Carbure,Fully Homomorphic Encryption for Statistical Modeling

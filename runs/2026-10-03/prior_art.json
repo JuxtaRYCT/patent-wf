@@ -1,0 +1,94 @@
+[
+  {
+    "id": "A1-1003-01",
+    "arm": "A1",
+    "title": "Per-agent canary fingerprints in bank data served to AI agents, to trace which agent leaked it",
+    "terms": [
+      "agent",
+      "fingerprint",
+      "fields",
+      "bank",
+      "mcp",
+      "leaked"
+    ],
+    "queries": [
+      "agent AND fingerprint",
+      "agent AND fields",
+      "agent AND bank",
+      "fingerprint AND fields",
+      "fingerprint AND bank",
+      "(agent OR fingerprint OR fields) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 234,
+    "fetched": 12,
+    "max_sim_patent": 0.7578,
+    "max_sim_paper": 0.7966,
+    "novelty_pa": 0.2034,
+    "closest": [
+      {
+        "id": "arxiv:2609.00060",
+        "type": "paper",
+        "sim": 0.7966,
+        "title": "A Formal Analysis of Agent Payment Protocols",
+        "url": "https://www.semanticscholar.org/paper/8740a3e9a12aa3eeb46a0f0b0e9bfa5b8350712c",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.25474",
+        "type": "paper",
+        "sim": 0.7804,
+        "title": "Separating Disclosure from Authorization: Field-Tier Minimization for Agent Action Mediation",
+        "url": "https://www.semanticscholar.org/paper/7e3f035505fe7034cfed6bec3f633e705faaaee8",
+        "who": null
+      },
+      {
+        "id": "arxiv:2607.21824",
+        "type": "paper",
+        "sim": 0.7796,
+        "title": "Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense",
+        "url": "https://www.semanticscholar.org/paper/242f6ce9c9198cabefd431f097a5d5793ee41d31",
+        "who": null
+      },
+      {
+        "id": "s2:35f675fa5cf991887bd1890340e10de87b3b565d",
+        "type": "paper",
+        "sim": 0.7766,
+        "title": "Agentic Payments Observatory: A Unified Framework for Linking Smart Contracts, Agent Identity, Anomaly Detection and Policy Breaches",
+        "url": "https://www.semanticscholar.org/paper/35f675fa5cf991887bd1890340e10de87b3b565d",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.23858",
+        "type": "paper",
+        "sim": 0.77,
+        "title": "Beyond the Mandate: A Systematic Security Analysis of the Agent Payments Protocol (AP2)",
+        "url": "https://www.semanticscholar.org/paper/41ebbd408ee914bb50a88053d671126855b50cf7",
+        "who": null
+      },
+      {
+        "id": "arxiv:2609.11757",
+        "type": "paper",
+        "sim": 0.7694,
+        "title": "Signing the Transaction but Not the Decision: Whisper Attacks and a Binding Defense for AP2",
+        "url": "https://www.semanticscholar.org/paper/d8ddbe48987f09c56e2c965db90a7eadd173d0ad",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.02838",
+        "type": "paper",
+        "sim": 0.7685,
+        "title": "Axient: Manifest-Bound Evidence for On-Chain Financial Protocols: Seven-Layer Derivation, Correlation, Tamper Rejection, and Reproducible Claim Promotion",
+        "url": "https://arxiv.org/abs/2610.02838",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.18136",
+        "type": "paper",
+        "sim": 0.7677,
+        "title": "FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud",
+        "url": "https://www.semanticscholar.org/paper/a86677d01c9d7e0ce1c66ba68948b8edaf66dec2",
+        "who": null
+      }
+    ]
+  }
+]

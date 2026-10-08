@@ -1,0 +1,16 @@
+{
+ "judgments": [
+  {
+   "id": "A1-1003-01",
+   "novelty": 4,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 5,
+   "eligibility": 6,
+   "crazy": 4,
+   "verdict": "drop-anticipated",
+   "rationale": "Per-recipient fingerprinting for leak attribution (canary traps, database watermarking, honey records) is long established. Field-tier minimisation for agent action mediation (arXiv 2608.25474) covers the agent-boundary data-handling context. Moving the known technique to an MCP/agent endpoint is an obvious step."
+  }
+ ]
+}

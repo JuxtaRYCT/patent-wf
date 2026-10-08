@@ -1,0 +1,14 @@
+"""Operator answers, synthesis packet of run 2026-10-03. 3 pairs -> 1 invention."""
+import sys; sys.path.insert(0, "scripts/operator")
+from answer import write
+write("2026-10-03", "synthesis", {
+"X000": [dict(
+    title="Per-agent canary fingerprints in bank data served to AI agents, to trace which agent leaked it",
+    problem="Personal-finance tools now expose synced bank data to AI agents (for example a read-only MCP server). Once many agents read the same transactions, a leak or resale cannot be attributed. Model-supply-chain research shows how much can hide in low-order bits that nobody inspects.",
+    mechanism="When bank data is served to an agent through an agent interface (MCP or an open-banking endpoint for agents), the server embeds a per-agent fingerprint in non-authoritative, low-salience fields. Examples are deterministic variations in merchant-descriptor normalisation, ordering of tied timestamps, and synthetic canary records that are flagged in the bank's own view but look real to the consumer. Each fingerprint is keyed to the agent's token. Leaked data found later (dark-web dumps, scraped datasets, model outputs) is matched against the keys to identify the leaking agent and token. The agent's access is then revoked and its developer is notified. Authoritative fields such as amounts and dates are never altered.",
+    technical_effect="Leak attribution across many agents reading identical underlying data, without changing authoritative values.",
+    why_non_obvious="Leak-tracing watermarks exist for documents and databases. Applying them per-agent at the agent-protocol boundary, restricted to non-authoritative fields and canary records, addresses the new many-agents-one-account setting.",
+    claim_core="A method comprising receiving a request for account data from an autonomous agent via an agent interface, generating a response in which non-authoritative fields and optional canary records encode a fingerprint keyed to the agent's credential while authoritative fields are unaltered, storing the key, and upon detection of the data outside authorised channels, decoding the fingerprint to identify the agent credential.",
+    keywords="data watermarking, canary records, leak attribution, AI agent data access, MCP, open banking, fingerprinting",
+    domain="identity")],
+})
