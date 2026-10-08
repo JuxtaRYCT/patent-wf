@@ -1,0 +1,23 @@
+{
+  "arm": "A1",
+  "name": "Approach 1 - literature cross-pollination (bisociation)",
+  "run": "2026-10-07",
+  "ideas": [
+    {
+      "pair": "X002",
+      "title": "Attention-bound approvals for agent-proposed payments: the human signature commits to proof that a critical field was actually read",
+      "problem": "Agentic payment products now bind each human approval to the exact payment. A binding is only as good as the attention behind it, though: when agents propose dozens of payments, approvals become rubber stamps. Recommender research shows exposure is not attention, so a field shown is not a field read.",
+      "mechanism": "For each agent-proposed payment, the approval screen renders the payment details and a risk engine selects one critical field to probe: payee name, amount, destination country or a changed field since the last mandate. Instead of a plain 'Approve' button, the user completes a lightweight attention task bound to that field, such as choosing the amount's last two digits from three options or confirming the payee's initial. The device's secure element signs an approval over the payment digest plus the attended-field identifier and the task outcome. Task frequency and difficulty adapt to risk and to the user's recent approval rate, so heavy approvers get more probes. The attention evidence is retained for disputes, separating 'user approved without looking' from 'agent changed details after approval'.",
+      "technical_effect": "Approval signatures carry verifiable evidence of attention to the specific fields that matter, reducing rubber-stamp approvals of agent payments while keeping friction proportional to risk.",
+      "why_non_obvious": "Approval binding (what-you-see-is-what-you-sign) proves what was shown, not what was read. Binding the signature to a field-specific attention probe, chosen by risk and adapted to approval fatigue, applies the exposure-versus-attention gap to agentic approvals.",
+      "claim_core": "A method comprising receiving a payment proposed by an autonomous agent for approval by a user, selecting a critical field of the payment based on a risk assessment, presenting an attention task whose correct completion requires reading the selected field, generating a signature over a digest of the payment, an identifier of the selected field and an outcome of the task, and authorising the payment only upon a correct outcome.",
+      "keywords": "agentic payment approval, human in the loop, approval fatigue, attention verification, what you see is what you sign, dispute evidence",
+      "domain": "payments",
+      "sources": [
+        "news:45d7100a082ef625",
+        "arxiv:2610.10173"
+      ],
+      "id": "A1-1007-01"
+    }
+  ]
+}

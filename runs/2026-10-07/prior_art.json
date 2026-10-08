@@ -1,0 +1,94 @@
+[
+  {
+    "id": "A1-1007-01",
+    "arm": "A1",
+    "title": "Attention-bound approvals for agent-proposed payments: the human signature commits to proof that a critical field was actually read",
+    "terms": [
+      "field",
+      "attention",
+      "approval",
+      "task",
+      "payment",
+      "critical"
+    ],
+    "queries": [
+      "field AND attention",
+      "field AND approval",
+      "field AND task",
+      "attention AND approval",
+      "attention AND task",
+      "(field OR attention OR approval) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 239,
+    "fetched": 10,
+    "max_sim_patent": 0.6983,
+    "max_sim_paper": 0.7541,
+    "novelty_pa": 0.2459,
+    "closest": [
+      {
+        "id": "arxiv:2609.00060",
+        "type": "paper",
+        "sim": 0.7541,
+        "title": "A Formal Analysis of Agent Payment Protocols",
+        "url": "https://www.semanticscholar.org/paper/8740a3e9a12aa3eeb46a0f0b0e9bfa5b8350712c",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.01756",
+        "type": "paper",
+        "sim": 0.7489,
+        "title": "SoK: Decentralized Agent Economic Infrastructure",
+        "url": "https://www.semanticscholar.org/paper/e525aca229f7a6a9ad24b9b295b5a64e5980dbcc",
+        "who": null
+      },
+      {
+        "id": "s2:5e0a34b62945a3672e9c63eb53d334d6b937a87d",
+        "type": "paper",
+        "sim": 0.7358,
+        "title": "Acceptance Conditions for Delegated Purchasing Decisions in the AI Agent Era and Mobile Shopping UX Design",
+        "url": "https://www.semanticscholar.org/paper/5e0a34b62945a3672e9c63eb53d334d6b937a87d",
+        "who": null
+      },
+      {
+        "id": "arxiv:2609.05901",
+        "type": "paper",
+        "sim": 0.7346,
+        "title": "From Review to Authorization: Key-Isolated Threshold Signing for LLM Agents",
+        "url": "https://www.semanticscholar.org/paper/e759f3c6ff08508d862b7d9b695e9dd5da849433",
+        "who": null
+      },
+      {
+        "id": "s2:35f675fa5cf991887bd1890340e10de87b3b565d",
+        "type": "paper",
+        "sim": 0.7316,
+        "title": "Agentic Payments Observatory: A Unified Framework for Linking Smart Contracts, Agent Identity, Anomaly Detection and Policy Breaches",
+        "url": "https://www.semanticscholar.org/paper/35f675fa5cf991887bd1890340e10de87b3b565d",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.27443",
+        "type": "paper",
+        "sim": 0.73,
+        "title": "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?",
+        "url": "https://www.semanticscholar.org/paper/0191aeccd83e52ea1d1c873df3b7741cc1317ba5",
+        "who": null
+      },
+      {
+        "id": "arxiv:2610.05532",
+        "type": "paper",
+        "sim": 0.7277,
+        "title": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+        "url": "https://arxiv.org/abs/2610.05532",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.23858",
+        "type": "paper",
+        "sim": 0.7229,
+        "title": "Beyond the Mandate: A Systematic Security Analysis of the Agent Payments Protocol (AP2)",
+        "url": "https://www.semanticscholar.org/paper/41ebbd408ee914bb50a88053d671126855b50cf7",
+        "who": null
+      }
+    ]
+  }
+]

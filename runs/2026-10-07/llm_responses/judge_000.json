@@ -1,0 +1,16 @@
+{
+ "judgments": [
+  {
+   "id": "A1-1007-01",
+   "novelty": 4,
+   "non_obviousness": 3,
+   "utility": 7,
+   "feasibility": 9,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 4,
+   "verdict": "drop-anticipated",
+   "rationale": "Double-entry confirmation (re-typing the amount or beneficiary account digits before high-value transfers) is established banking practice, and agent-payment acceptance UX is studied ('Acceptance conditions for delegated purchasing decisions'). Risk-selecting the probed field and binding it into the signature is an obvious adaptation to agentic approvals."
+  }
+ ]
+}

@@ -4121,6 +4121,55 @@
    "url": "https://arxiv.org/abs/2609.36879",
    "owner": "",
    "id": "arxiv:2609.36879"
+  },
+  {
+   "kind": "idea",
+   "label": "Attention-bound approvals for agent-proposed payments: the human signature commits to proof that a critical field was actually read",
+   "arm": "A1",
+   "run": "2026-10-07",
+   "domain": "payments",
+   "problem": "Agentic payment products now bind each human approval to the exact payment. A binding is only as good as the attention behind it, though: when agents propose dozens of payments, approvals become rubber stamps. Recommender research shows exposure is not attention, so a field shown is not a field read.",
+   "mechanism": "For each agent-proposed payment, the approval screen renders the payment details and a risk engine selects one critical field to probe: payee name, amount, destination country or a changed field since the last mandate. Instead of a plain 'Approve' button, the user completes a lightweight attention task bound to that field, such as choosing the amount's last two digits from three options or confirming the payee's initial. The device's secure element signs an approval over the payment digest plus the attended-field identifier and the task outcome. Task frequency and difficulty adapt to risk and to the user's recent approval rate, so heavy approvers get more probes. The attention evidence is retained for disputes, separating 'user approved without looking' from 'agent changed details after approval'.",
+   "novelty_pa": 0.2459,
+   "id": "idea:A1-1007-01"
+  },
+  {
+   "kind": "source",
+   "label": "Agentic Authority: ChainIT Ties Every Payment Approval to the Exact Payment - The Des Moines Register",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPb0ZVZS1VaU9OQ0twN0NZT2ZsSW5mZE9QVGZnRlVlODVtd1o3RmxGckJuWVpxamZwN2phSGMyRXBnTWtrYWx5eHEtdWRVNmFZaWU2NjM0b0JEZVkySlVSU2s4cHFtREY1T2lVYm1wbEhRYUtJekhrZjVISnJrM2FaRVByMDBZYVV4Z00tYVJBcUtvRkRlMkNPckJETUpMS013WFIteHRwTFB3NzEzNm5QUG53d1ZvYzVyQWcxcnZPa1FWcDI2VHhpS1YwSHVpRlZ0QVE?oc=5",
+   "id": "news:45d7100a082ef625"
+  },
+  {
+   "kind": "source",
+   "label": "When Exposure Is Not Attention: Auditing the Preference-Exposure-Consumption Gap in Personalized News Recommenders",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.10173",
+   "id": "arxiv:2610.10173"
+  },
+  {
+   "kind": "prior_art",
+   "label": "SoK: Decentralized Agent Economic Infrastructure",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/e525aca229f7a6a9ad24b9b295b5a64e5980dbcc",
+   "owner": "",
+   "id": "arxiv:2610.01756"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Acceptance Conditions for Delegated Purchasing Decisions in the AI Agent Era and Mobile Shopping UX Design",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/5e0a34b62945a3672e9c63eb53d334d6b937a87d",
+   "owner": "",
+   "id": "s2:5e0a34b62945a3672e9c63eb53d334d6b937a87d"
+  },
+  {
+   "kind": "prior_art",
+   "label": "From Review to Authorization: Key-Isolated Threshold Signing for LLM Agents",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/e759f3c6ff08508d862b7d9b695e9dd5da849433",
+   "owner": "",
+   "id": "arxiv:2609.05901"
   }
  ],
  "links": [
@@ -8456,6 +8505,65 @@
    "sim": 0.7876,
    "source": "idea:A2b-1006-01",
    "target": "arxiv:2609.36879",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1007-01",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1007-01",
+   "target": "domain:payments",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1007-01",
+   "target": "news:45d7100a082ef625",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1007-01",
+   "target": "arxiv:2610.10173",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7541,
+   "source": "idea:A1-1007-01",
+   "target": "arxiv:2609.00060",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7489,
+   "source": "idea:A1-1007-01",
+   "target": "arxiv:2610.01756",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7358,
+   "source": "idea:A1-1007-01",
+   "target": "s2:5e0a34b62945a3672e9c63eb53d334d6b937a87d",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7346,
+   "source": "idea:A1-1007-01",
+   "target": "arxiv:2609.05901",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7316,
+   "source": "idea:A1-1007-01",
+   "target": "s2:35f675fa5cf991887bd1890340e10de87b3b565d",
    "key": 0
   }
  ]

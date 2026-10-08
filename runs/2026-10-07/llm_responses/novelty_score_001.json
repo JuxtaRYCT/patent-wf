@@ -1,0 +1,228 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.09911",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Validated scale for perceived value alignment",
+   "tags": [
+    "hci"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10173",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Exposure is not attention: audit the gap between shown, noticed and consumed",
+   "tags": [
+    "exposure-attention-gap",
+    "audit"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10386",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Fault characterisation in self-stabilising protocols",
+   "tags": [
+    "distributed-systems"
+   ]
+  },
+  {
+   "id": "news:7ce7fb272a3f1e50",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Central bank studies local-currency stablecoin with a private issuer",
+   "tags": [
+    "stablecoins",
+    "central-bank"
+   ]
+  },
+  {
+   "id": "news:987173c42cad1f3f",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "ERP vendor adds wires and stablecoin payments",
+   "tags": [
+    "erp-payments"
+   ]
+  },
+  {
+   "id": "news:45d7100a082ef625",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Agent payment approvals bound to the exact payment executed",
+   "tags": [
+    "agentic-payments",
+    "approval-binding"
+   ]
+  },
+  {
+   "id": "news:ed190321ab8e7af3",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Recurring check-fraud pattern hitting insurance agencies weekly",
+   "tags": [
+    "check-fraud"
+   ]
+  },
+  {
+   "id": "news:2399e1ffd51bd1a2",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Agentic order-to-cash automation raises funding",
+   "tags": [
+    "agentic-finance-ops"
+   ]
+  },
+  {
+   "id": "news:1aa254b641506f27",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Logistics operational data used to extend SMB credit",
+   "tags": [
+    "alt-data-lending",
+    "smb"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10010",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "A secret issued for one purpose usually grants a larger capability; define and enforce purpose-limited secrets",
+   "tags": [
+    "purpose-limited-keys",
+    "least-privilege",
+    "cryptography"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10149",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Telegram pump-and-dump schemes combined with honeypot tokens that trap buyers",
+   "tags": [
+    "crypto-scams",
+    "honeypot-tokens"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09581",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Forensic reconstruction of agent logs must bind each finding to supporting evidence",
+   "tags": [
+    "agent-forensics",
+    "evidence-binding"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10430",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10044",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09928",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10054",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10486",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:a487a879854db8c7",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:a5c059701ac8434c",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:0580ce9fa226f474",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:837c4defe564bd14",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "gh:accomplish999/position-sizer",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:dc78d5a3bb8b0991",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10476",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic, duplicate or low-information",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

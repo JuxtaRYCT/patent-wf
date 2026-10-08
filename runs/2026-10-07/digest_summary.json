@@ -1,0 +1,16 @@
+{
+  "run": "2026-10-07",
+  "mode": "catch-up",
+  "executed_on": "2026-10-09",
+  "new_items": 445,
+  "new_patents": 10,
+  "competitor_filings": 0,
+  "shortlisted": 78,
+  "themes": 3,
+  "ideas_A1": 1,
+  "ideas_A2b": 0,
+  "pursue": 0,
+  "refine": 0,
+  "dropped": 1,
+  "top_idea": "A1-1007-01 Attention-bound approvals for agent-proposed payments: the human signature commits to proof that a critical field was actually read"
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "theme": 10,
+    "size": 20,
+    "terms": "trust, rain, national trust, occ, national, dakota, north dakota, north",
+    "new_signals": 3,
+    "new_representatives": [
+      "[news, new] Agora Secures OCC Conditional Approval for National Trust Bank to Power Stablecoin Ecosystem - FF News",
+      "[news, new] Rain is seeking a national trust bank charter to bypass third-party banks - CoinDesk",
+      "[news, new] North Dakota’s State-Owned Bank Just Launched a Stablecoin Pilot Inside the GENIUS Act Implementation Window - Yahoo Finance"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 1.0,
+    "push": 5,
+    "patent_density": 1,
+    "representatives": [
+      "[news] Rain Files OCC Application to Launch National Trust Bank for Stablecoin Payments - FF News",
+      "[news] Modern Treasury Seeks OCC Charter to Launch National Trust Bank for Stablecoins - FF News",
+      "[news] Rain Pushes Into U.S. Banking With Stablecoin Trust Charter as OCC Faces Legal Challenge - Bitcoin Foundation",
+      "[news] Rain Seeks US Trust Bank Charter for Stablecoin Issuance - The Defiant",
+      "[news] Rain Seeks OCC’s Approval to Create National Trust Bank - PYMNTS.com",
+      "[news] OCC conditionally approves national trust bank charters for three stablecoin and digital asset firms - JDSupra",
+      "[news] Agora Secures OCC Conditional Approval for National Trust Bank to Power Stablecoin Ecosystem - FF News",
+      "[news] Block Files for a National Trust Bank Charter to Hold Bitcoin and Stablecoins - Startup Fortune"
+    ],
+    "uspto_hits": 0,
+    "whitespace": 1.1760495889548688,
+    "opportunity": 0.1976994637289642
+  },
+  {
+    "theme": 12,
+    "size": 89,
+    "terms": "stablecoin, sofi, stablecoins, settlement, stablecoin settlement, payments, fiserv, banking",
+    "new_signals": 9,
+    "new_representatives": [
+      "[news, new] Tether Signs Deal With Kazakhstan's Central Bank to Explore a Stablecoin and Tokenized Assets - Yahoo Finance",
+      "[news, new] Tether tapped by Kazakhstan’s central bank to explore stablecoin and tokenization - CoinDesk",
+      "[news, new] Polygon taps TRON’s $94 billion stablecoin supply for seamless cross-border transfers - CoinDesk",
+      "[news, new] Noah raises $38m for stablecoin payments platform",
+      "[news, new] Kazakhstan's Central Bank Taps Tether to Study Tenge Stablecoin - Altcoin Buzz",
+      "[news, new] Tether Signs MoU with the National Bank of Kazakhstan and the Alatau City Authority to Explore Stablecoin Use Cases and Asset Tokenization -"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.8202247191011236,
+    "push": 143,
+    "patent_density": 91,
+    "representatives": [
+      "[news] US stablecoin adoption could surge with bank-like protections: Visa survey - TradingView",
+      "[news] These Banks Are Banding Together to Launch a Stablecoin - WSJ",
+      "[news] Fiserv Stablecoin Platform Goes Live, With 90-Plus Banks, CUs In First Use Case - CU Today",
+      "[news] SoFi Is Bypassing the Banking Bottleneck With Stablecoin Settlement - Yahoo Finance",
+      "[news] 'Crypto Hurdle' Solved: SoFi Is First Bank Deploying Stablecoin Settlement Across Mastercard Network - 24/7 Wall St.",
+      "[news] Bank-Style Protections Could Lift US Stablecoin Interest : Visa - Crowdfund Insider",
+      "[news] Coinbase partners with Moov to boost community bank stablecoin capabilities before Clarity vote - CNBC",
+      "[news] Fiserv Launches Digital Asset Platform Commercially; State-Owned Bank's Stablecoin Is First Adopter - BigGo Finance"
+    ],
+    "uspto_hits": 4,
+    "whitespace": 0.0023294056075356395,
+    "opportunity": -0.43013506809709584
+  },
+  {
+    "theme": 19,
+    "size": 31,
+    "terms": "quantum, post quantum, post, security, threat, quantum security, crypto, bankinfosecurity",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Making the Case to the Board for Post-Quantum Readiness - BankInfoSecurity",
+      "[news, new] Govt asks banks to develop a sector-wide quantum transition along with an AI resilience framework - The Economic Times"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.5806451612903226,
+    "push": 282,
+    "patent_density": 106,
+    "representatives": [
+      "[news] RBI Says India’s Payment Systems Must Prepare for a Quantum Computing Threat - The420.in",
+      "[news] Post-Quantum Cryptography Migration Faces a Hardware Problem - BankInfoSecurity",
+      "[news] Quantum threat to Bitcoin could materialize before commercial viability, EU regulators warn - CoinDesk",
+      "[news] Crypto’s Post-Quantum Shift and Privacy Renaissance Take Center Stage at Quantus and NEAR's Quantum + Privacy Day at TOKEN2049 Singapore - F",
+      "[news] RBI asks fintechs, payment firms to start ‘quantum-proofing’ systems - Moneycontrol.com",
+      "[news] EU warns Q-Day could arrive before quantum computers are commercially viable - Crypto Briefing",
+      "[news] Making the Case to the Board for Post-Quantum Readiness - BankInfoSecurity",
+      "[news] The Post-Quantum Imperative for Financial Services - PwC"
+    ],
+    "uspto_hits": 275,
+    "whitespace": -0.7024485094279015,
+    "opportunity": -1.4845321996158383
+  }
+]

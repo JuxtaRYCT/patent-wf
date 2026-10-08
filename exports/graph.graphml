@@ -3632,6 +3632,49 @@
   <data key="d9">https://arxiv.org/abs/2609.36879</data>
   <data key="d11"></data>
 </node>
+<node id="idea:A1-1007-01">
+  <data key="d0">idea</data>
+  <data key="d1">Attention-bound approvals for agent-proposed payments: the human signature commits to proof that a critical field was actually read</data>
+  <data key="d2">A1</data>
+  <data key="d3">2026-10-07</data>
+  <data key="d4">payments</data>
+  <data key="d5">Agentic payment products now bind each human approval to the exact payment. A binding is only as good as the attention behind it, though: when agents propose dozens of payments, approvals become rubber stamps. Recommender research shows exposure is not attention, so a field shown is not a field read.</data>
+  <data key="d6">For each agent-proposed payment, the approval screen renders the payment details and a risk engine selects one critical field to probe: payee name, amount, destination country or a changed field since the last mandate. Instead of a plain 'Approve' button, the user completes a lightweight attention task bound to that field, such as choosing the amount's last two digits from three options or confirming the payee's initial. The device's secure element signs an approval over the payment digest plus the attended-field identifier and the task outcome. Task frequency and difficulty adapt to risk and to the user's recent approval rate, so heavy approvers get more probes. The attention evidence is retained for disputes, separating 'user approved without looking' from 'agent changed details after approval'.</data>
+  <data key="d7">0.2459</data>
+</node>
+<node id="news:45d7100a082ef625">
+  <data key="d0">source</data>
+  <data key="d1">Agentic Authority: ChainIT Ties Every Payment Approval to the Exact Payment - The Des Moines Register</data>
+  <data key="d8">news</data>
+  <data key="d9">https://news.google.com/rss/articles/CBMi0gFBVV95cUxPb0ZVZS1VaU9OQ0twN0NZT2ZsSW5mZE9QVGZnRlVlODVtd1o3RmxGckJuWVpxamZwN2phSGMyRXBnTWtrYWx5eHEtdWRVNmFZaWU2NjM0b0JEZVkySlVSU2s4cHFtREY1T2lVYm1wbEhRYUtJekhrZjVISnJrM2FaRVByMDBZYVV4Z00tYVJBcUtvRkRlMkNPckJETUpMS013WFIteHRwTFB3NzEzNm5QUG53d1ZvYzVyQWcxcnZPa1FWcDI2VHhpS1YwSHVpRlZ0QVE?oc=5</data>
+</node>
+<node id="arxiv:2610.10173">
+  <data key="d0">source</data>
+  <data key="d1">When Exposure Is Not Attention: Auditing the Preference-Exposure-Consumption Gap in Personalized News Recommenders</data>
+  <data key="d8">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.10173</data>
+</node>
+<node id="arxiv:2610.01756">
+  <data key="d0">prior_art</data>
+  <data key="d1">SoK: Decentralized Agent Economic Infrastructure</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://www.semanticscholar.org/paper/e525aca229f7a6a9ad24b9b295b5a64e5980dbcc</data>
+  <data key="d11"></data>
+</node>
+<node id="s2:5e0a34b62945a3672e9c63eb53d334d6b937a87d">
+  <data key="d0">prior_art</data>
+  <data key="d1">Acceptance Conditions for Delegated Purchasing Decisions in the AI Agent Era and Mobile Shopping UX Design</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://www.semanticscholar.org/paper/5e0a34b62945a3672e9c63eb53d334d6b937a87d</data>
+  <data key="d11"></data>
+</node>
+<node id="arxiv:2609.05901">
+  <data key="d0">prior_art</data>
+  <data key="d1">From Review to Authorization: Key-Isolated Threshold Signing for LLM Agents</data>
+  <data key="d10">paper</data>
+  <data key="d9">https://www.semanticscholar.org/paper/e759f3c6ff08508d862b7d9b695e9dd5da849433</data>
+  <data key="d11"></data>
+</node>
 <edge source="idea:A1-01" target="arm:A1" id="0">
   <data key="d12">FROM_ARM</data>
 </edge>
@@ -6003,5 +6046,37 @@
 <edge source="idea:A2b-1006-01" target="arxiv:2609.36879" id="0">
   <data key="d12">SIMILAR_TO</data>
   <data key="d13">0.7876</data>
+</edge>
+<edge source="idea:A1-1007-01" target="arm:A1" id="0">
+  <data key="d12">FROM_ARM</data>
+</edge>
+<edge source="idea:A1-1007-01" target="domain:payments" id="0">
+  <data key="d12">IN_DOMAIN</data>
+</edge>
+<edge source="idea:A1-1007-01" target="news:45d7100a082ef625" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1007-01" target="arxiv:2610.10173" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1007-01" target="arxiv:2609.00060" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7541</data>
+</edge>
+<edge source="idea:A1-1007-01" target="arxiv:2610.01756" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7489</data>
+</edge>
+<edge source="idea:A1-1007-01" target="s2:5e0a34b62945a3672e9c63eb53d334d6b937a87d" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7358</data>
+</edge>
+<edge source="idea:A1-1007-01" target="arxiv:2609.05901" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7346</data>
+</edge>
+<edge source="idea:A1-1007-01" target="s2:35f675fa5cf991887bd1890340e10de87b3b565d" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7316</data>
 </edge>
 </graph></graphml>

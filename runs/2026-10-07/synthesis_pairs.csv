@@ -1,0 +1,6 @@
+,p,m,dist,patent_proximity,prior,p_id,m_id,p_title,m_title
+0,0,1,0.5357235,0.73333806,0.7166619420051574,news:45d7100a082ef625,arxiv:2610.10075,Agentic Authority: ChainIT Ties Every Payment Approval to the Exact Payment - The Des Moines Registe,BetweenCut: Private Heavy-Node Classification with Doubly Logarithmic Error in Tree Height
+1,2,0,0.5296328,0.7333181,0.6666819095611572,news:1aa254b641506f27,arxiv:2610.09730,"Stripe, FedEx team on SMB lending",Trust a Few: The Weakest Assumptions a Protocol Needs
+2,0,2,0.54105175,0.7452296,0.7047703981399536,news:45d7100a082ef625,arxiv:2610.10173,Agentic Authority: ChainIT Ties Every Payment Approval to the Exact Payment - The Des Moines Registe,When Exposure Is Not Attention: Auditing the Preference-Exposure-Consumption Gap in Personalized New
+3,1,0,0.5149379,0.73340285,0.6665971517562866,news:ed190321ab8e7af3,arxiv:2610.09730,The check fraud pattern costing agencies money every week - Insurance Business,Trust a Few: The Weakest Assumptions a Protocol Needs
+4,2,1,0.538391,0.73464376,0.6653562426567078,news:1aa254b641506f27,arxiv:2610.10075,"Stripe, FedEx team on SMB lending",BetweenCut: Private Heavy-Node Classification with Doubly Logarithmic Error in Tree Height

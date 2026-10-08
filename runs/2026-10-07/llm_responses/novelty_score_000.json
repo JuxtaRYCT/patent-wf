@@ -1,0 +1,278 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.09730",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Find the weakest trust assumptions under which a protocol still meets its security goal",
+   "tags": [
+    "minimal-trust",
+    "protocol-verification"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10075",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Differentially private heavy-node detection in hierarchies with tiny error",
+   "tags": [
+    "differential-privacy",
+    "hierarchical-counts"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09632",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Age of information when multiple server streams merge",
+   "tags": [
+    "data-freshness",
+    "queueing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09697",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Hardware attacks in automotive threat analysis",
+   "tags": [
+    "hardware-security"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10148",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Reconcile bottom-up and top-down carbon accounting",
+   "tags": [
+    "carbon-accounting",
+    "reconciliation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09262",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Reading-position baseline for highlights",
+   "tags": [
+    "recommender"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09398",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09617",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10001",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09379",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09327",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10517",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09883",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09285",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09334",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09580",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09766",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09315",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09855",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09776",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09747",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09405",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10441",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10096",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.10487",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09619",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09583",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09744",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09936",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.09815",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}
