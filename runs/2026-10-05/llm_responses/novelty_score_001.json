@@ -1,0 +1,217 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.06777",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Cooperative guard coverage with partial observability",
+   "tags": [
+    "coverage"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06028",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Near-exact tournament equity computation at scale",
+   "tags": [
+    "combinatorics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06179",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Explicit QUIC proxies let users appear in another country, bypassing server-side geo-checks",
+   "tags": [
+    "geo-evasion",
+    "quic-proxy",
+    "location-spoofing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07129",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "How handler-dog teams split sensing and search decisions",
+   "tags": [
+    "human-ai-teaming"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05673",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Low-complexity multi-AP indoor localisation",
+   "tags": [
+    "indoor-localisation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07407",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Simulated defence strategies against brand-targeted disinformation",
+   "tags": [
+    "disinformation",
+    "reputation-defence"
+   ]
+  },
+  {
+   "id": "news:87b0a3728b763a05",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Stablecoin card firm applies for a national trust bank charter",
+   "tags": [
+    "charters",
+    "stablecoins"
+   ]
+  },
+  {
+   "id": "news:666443a3dad5f405",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Community bank scam tips",
+   "tags": [
+    "scams"
+   ]
+  },
+  {
+   "id": "news:376b29f34c57e4e0",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Large bank's blockchain patent portfolio",
+   "tags": [
+    "competitor-ip"
+   ]
+  },
+  {
+   "id": "news:65e811b272a802ca",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Dollar stablecoins outside the banking system",
+   "tags": [
+    "stablecoins"
+   ]
+  },
+  {
+   "id": "news:03c658f6e6b05b4b",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "POS adds fuel payments",
+   "tags": [
+    "pos"
+   ]
+  },
+  {
+   "id": "news:16423d6544bd0d30",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Lawsuit against bank regulator",
+   "tags": [
+    "regulation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07531",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "People cannot verify an unexpected call claiming to be their bank; lightweight verifiable identity claims",
+   "tags": [
+    "caller-verification",
+    "impersonation",
+    "verifiable-claims"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05926",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Credit-card LGD via run-off triangles vs regression",
+   "tags": [
+    "credit-risk"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07478",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06202",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07157",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06720",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:0b6bfa356064cafd",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:9b76a22c742d5b68",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:85536a278758082bfc5bba8043d203b85c83ac9e",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:c54d2053bfabc12fc6ae93421a50c9f2fdc1fdbb",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05675",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Off-topic or duplicate",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

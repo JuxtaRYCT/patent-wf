@@ -1,0 +1,87 @@
+[
+  {
+    "theme": 5,
+    "size": 35,
+    "terms": "payments, moonpay, asia, apple, instant, citi, ipid, payment",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Why Fiserv pivoted on FIUSD - Payments Dive",
+      "[news, new] AWS Says Banks Face a 24/7 Payments Balancing Act - PYMNTS.com"
+    ],
+    "pain": 3.0,
+    "pull": 0,
+    "momentum": 0.7142857142857143,
+    "push": 331,
+    "patent_density": 214,
+    "representatives": [
+      "[news] C Pushes Tokenized Deposits Deeper Into Asia With Japan Expansion - Yahoo Finance",
+      "[news] Citi to offer instant cross-border payments for Japan firms via blockchain - Nikkei Asia",
+      "[news] Citi Rewires Global Payments Through Single Swift Connection",
+      "[news] Banks can soon test digital-dollar payments within systems they already use - Stock Titan",
+      "[news] How Stripe, Zerohash alums are looking to speed international payments - Banking Dive",
+      "[news] Citi and HSBC Back IPID’s $16M Series A to Combat Global Instant Payment Fraud - FF News",
+      "[news] Citi Adds Japan And UAE To 24/7 Tokenized Deposit Network - Crowdfund Insider",
+      "[news] Citi and DBS Just Settled a Weekend Dollar Payment on Swift's Blockchain - Startup Fortune"
+    ],
+    "uspto_hits": 0,
+    "whitespace": -0.011418502775801254,
+    "opportunity": 0.2349403648634419
+  },
+  {
+    "theme": 17,
+    "size": 38,
+    "terms": "bitcoin, stablecoins, crypto, money, monetary policy, monetary, policy, central",
+    "new_signals": 3,
+    "new_representatives": [
+      "[news, new] US Fight to Regulate Stablecoin Is a Tax and Economics Problem - Bloomberg Law News",
+      "[news, new] The Dollar Outside the Banking System - orfonline.org",
+      "[news, new] Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy"
+    ],
+    "pain": 2.0,
+    "pull": 0,
+    "momentum": 0.7894736842105263,
+    "push": 314,
+    "patent_density": 104,
+    "representatives": [
+      "[news] Is Europe ready to embrace stablecoins?",
+      "[news] US Crypto Rules Keep Changing. Why Bitcoin Needs a Lasting Law - Altcoin Buzz",
+      "[news] Deposits and stablecoins: The complete digital money proposition for banks",
+      "[news] The battle for the future of money: stablecoins, tokenised deposits, CBDCs or something else? - Chris Skinner's blog",
+      "[news] Homeland Security, Tether Illegally Seized Stablecoins, Two Legal Filings Allege",
+      "[news] Stablecoins Could Harm Monetary Policy Transmission, SNB Says - Bloomberg.com",
+      "[news] Basel crypto stats: banks shift away from Bitcoin as Ether, stablecoins gain ground - ledgerinsights.com",
+      "[news] How European investors can now buy bitcoin without taking on U.S. dollar risk"
+    ],
+    "uspto_hits": 202,
+    "whitespace": -0.5633514430391444,
+    "opportunity": -0.47247674767459097
+  },
+  {
+    "theme": 13,
+    "size": 42,
+    "terms": "digital, tokenized, launches, ledger, digital asset, finance, asset, financial",
+    "new_signals": 2,
+    "new_representatives": [
+      "[news, new] Fiserv launches digital asset platform for financial institutions - Financial Regulation News",
+      "[news, new] BofA's Hundreds of Blockchain Patents: What They Cover - FinanceFeeds"
+    ],
+    "pain": 1.0,
+    "pull": 0,
+    "momentum": 0.7857142857142857,
+    "push": 596,
+    "patent_density": 530,
+    "representatives": [
+      "[news] Building the next generation of market infrastructure",
+      "[news] The Path to 2027: Mapping the Tokenized Deposit Regulatory Landscape Before the Sprint Begins - Yahoo Finance",
+      "[news] The Path to 2027: Mapping the Tokenized Deposit Regulatory Landscape Before the Sprint Begins - forkast.news",
+      "[news] Fiserv Launches Digital Asset Platform Commercially; State-Owned Bank's Stablecoin Is First Adopter - BigGo Finance",
+      "[news] Building the Foundation for Digital Money",
+      "[news] Fiserv launches digital asset platform for financial institutions - Financial Regulation News",
+      "[news] Citi Japan’s Tokenized Deposit Launch Extends the Institutional Pivot Into Asia’s Deepest Regulatory Framework - Yahoo Finance",
+      "[news] IBM Digital Asset Haven advances tokenized payments and expands deployment flexibility with on-prem - IBM"
+    ],
+    "uspto_hits": 8274,
+    "whitespace": -1.5015126169391673,
+    "opportunity": -1.5731800695564881
+  }
+]

@@ -1,0 +1,280 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.06123",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Identification codes let dense ad hoc nodes signal identity with minimal transmission",
+   "tags": [
+    "identification-codes",
+    "low-bandwidth"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07343",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Identity-document transitions (name/gender changes) redistribute harm across linked ID systems",
+   "tags": [
+    "identity-mismatch",
+    "kyc",
+    "document-transition"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06071",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Passive resonator localisation by gradient-field frequency",
+   "tags": [
+    "sensing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06362",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Highly nonlinear vectorial Boolean maps (S-box quality)",
+   "tags": [
+    "cryptography"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06613",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Robust training of detectors with partially mislabelled data",
+   "tags": [
+    "noisy-labels"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06373",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Decremental check for Braess paradox: removing links can lower equilibrium latency",
+   "tags": [
+    "braess-paradox",
+    "network-routing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07476",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Limits of verifying covert compute from external power draw",
+   "tags": [
+    "analog-verification"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07345",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Interpretable IAM policy risk scoring using behavioural context",
+   "tags": [
+    "iam",
+    "cloud-security"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07108",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Token-level provenance of who added, moved and deleted content",
+   "tags": [
+    "provenance",
+    "edit-lineage"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06398",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "MRI glioma infiltration feature",
+   "tags": [
+    "medical"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07398",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Robotic trimaran",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07390",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Drone-deployable buoy",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07416",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Knitted strain sensors",
+   "tags": [
+    "wearables"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06661",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Kramers theorem footprint",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07422",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Matter-wave interferometer white paper",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07515",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Electrosurgical cutting topology",
+   "tags": [
+    "surgery"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06263",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ultrasonic vagus stimulation earpiece",
+   "tags": [
+    "medical"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05820",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06739",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07275",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05839",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07512",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07176",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06583",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06506",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06546",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06555",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07507",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07329",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06475",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "No transferable finance mechanism",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

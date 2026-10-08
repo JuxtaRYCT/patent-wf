@@ -378,3 +378,10 @@ arxiv:2608.29381,prior_art,Safe to Resume? Breaking Execution Continuity of Agen
 arxiv:2608.25474,prior_art,Separating Disclosure from Authorization: Field-Tier Minimization for Agent Action Mediation,,,,,,,,https://www.semanticscholar.org/paper/7e3f035505fe7034cfed6bec3f633e705faaaee8,paper,
 gh:ltoinel/Carbure,source,ltoinel/Carbure,,,,,,,repo,https://github.com/ltoinel/Carbure,,
 arxiv:2610.04319,source,GrayShield: Bit-Level Sanitization for Transformer Model Supply-Chain Security,,,,,,,paper,https://arxiv.org/abs/2610.04319,,
+arxiv:2610.07531,source,"BVI: Lightweight, Data-Centric Blockchain-Based Verification of Identity Claims",,,,,,,paper,https://arxiv.org/abs/2610.07531,,
+arxiv:2610.07343,source,Redistributing Harm: Document Transition and the Limits of Trans Inclusion in India's Identity Systems,,,,,,,paper,https://arxiv.org/abs/2610.07343,,
+patent:US20150280924A1,prior_art,REISSUE OF CRYPTOGRAPHIC CREDENTIALS,,,,,,,,https://patents.google.com/patent/US20150280924A1/en,patent,INTERNATIONAL BUSINESS MACHINES CORPORATION
+patent:US20160269397A1,prior_art,REISSUE OF CRYPTOGRAPHIC CREDENTIALS,,,,,,,,https://patents.google.com/patent/US20160269397A1/en,patent,International Business Machines Corporation
+patent:US20260212346A1,prior_art,"System, Method, and Computer Program Product for Automatically Updating Credentials",,,,,,,,https://patents.google.com/patent/US20260212346A1/en,patent,Visa International Service Association
+patent:US12737765B2,prior_art,Virtual credential to support continuity following migration of a deactivated credential,,,,,,,,https://patents.google.com/patent/US12737765B2/en,patent,"Capital One Services, LLC"
+patent:US20250097309A1,prior_art,SYSTEMS AND METHODS FOR REAL-TIME IDENTITY PROOFING WITH VERIFICATION,,,,,,,,https://patents.google.com/patent/US20250097309A1/en,patent,"JPMORGAN CHASE BANK, N.A."

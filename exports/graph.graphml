@@ -3495,6 +3495,63 @@
   <data key="d8">paper</data>
   <data key="d9">https://arxiv.org/abs/2610.04319</data>
 </node>
+<node id="idea:A1-1005-01">
+  <data key="d0">idea</data>
+  <data key="d1">Identity-transition continuity credentials: updating KYC across banks after a name or gender change without freezes or full re-KYC</data>
+  <data key="d2">A1</data>
+  <data key="d3">2026-10-05</data>
+  <data key="d4">identity</data>
+  <data key="d5">When a person's legal identity attributes change (gender transition, marriage, name correction, a PAN/Aadhaar update), linked identity systems fall out of sync. Banks see a KYC mismatch, freeze accounts or demand full re-KYC, and the harm falls on people least able to absorb it. People also cannot easily prove to a caller or a bank that the 'old' and 'new' identity are the same person.</data>
+  <data key="d6">The authority that records the change (a registrar, ID agency or first-updating bank) issues a signed transition credential. It binds a commitment to the old attribute set to the new attribute set and states the effective date and the issuing authority, but does not reveal the old attributes to anyone who has not already seen them. A bank holding the old record verifies the credential with a zero-knowledge equality proof that its stored old attributes match the commitment. It then updates the record in place and keeps account history, mandates and credit history continuous, with no freeze. Linked systems such as the credit bureau and payee-verification name tables receive the same credential, so confirmation-of-payee and bureau matching do not fail. The customer holds the credential in a wallet and can re-present it to any later institution.</data>
+  <data key="d7">0.2526</data>
+</node>
+<node id="arxiv:2610.07531">
+  <data key="d0">source</data>
+  <data key="d1">BVI: Lightweight, Data-Centric Blockchain-Based Verification of Identity Claims</data>
+  <data key="d8">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.07531</data>
+</node>
+<node id="arxiv:2610.07343">
+  <data key="d0">source</data>
+  <data key="d1">Redistributing Harm: Document Transition and the Limits of Trans Inclusion in India's Identity Systems</data>
+  <data key="d8">paper</data>
+  <data key="d9">https://arxiv.org/abs/2610.07343</data>
+</node>
+<node id="patent:US20150280924A1">
+  <data key="d0">prior_art</data>
+  <data key="d1">REISSUE OF CRYPTOGRAPHIC CREDENTIALS</data>
+  <data key="d10">patent</data>
+  <data key="d9">https://patents.google.com/patent/US20150280924A1/en</data>
+  <data key="d11">INTERNATIONAL BUSINESS MACHINES CORPORATION</data>
+</node>
+<node id="patent:US20160269397A1">
+  <data key="d0">prior_art</data>
+  <data key="d1">REISSUE OF CRYPTOGRAPHIC CREDENTIALS</data>
+  <data key="d10">patent</data>
+  <data key="d9">https://patents.google.com/patent/US20160269397A1/en</data>
+  <data key="d11">International Business Machines Corporation</data>
+</node>
+<node id="patent:US20260212346A1">
+  <data key="d0">prior_art</data>
+  <data key="d1">System, Method, and Computer Program Product for Automatically Updating Credentials</data>
+  <data key="d10">patent</data>
+  <data key="d9">https://patents.google.com/patent/US20260212346A1/en</data>
+  <data key="d11">Visa International Service Association</data>
+</node>
+<node id="patent:US12737765B2">
+  <data key="d0">prior_art</data>
+  <data key="d1">Virtual credential to support continuity following migration of a deactivated credential</data>
+  <data key="d10">patent</data>
+  <data key="d9">https://patents.google.com/patent/US12737765B2/en</data>
+  <data key="d11">Capital One Services, LLC</data>
+</node>
+<node id="patent:US20250097309A1">
+  <data key="d0">prior_art</data>
+  <data key="d1">SYSTEMS AND METHODS FOR REAL-TIME IDENTITY PROOFING WITH VERIFICATION</data>
+  <data key="d10">patent</data>
+  <data key="d9">https://patents.google.com/patent/US20250097309A1/en</data>
+  <data key="d11">JPMORGAN CHASE BANK, N.A.</data>
+</node>
 <edge source="idea:A1-01" target="arm:A1" id="0">
   <data key="d12">FROM_ARM</data>
 </edge>
@@ -5773,5 +5830,37 @@
 <edge source="idea:A1-1003-01" target="arxiv:2608.23858" id="0">
   <data key="d12">SIMILAR_TO</data>
   <data key="d13">0.77</data>
+</edge>
+<edge source="idea:A1-1005-01" target="arm:A1" id="0">
+  <data key="d12">FROM_ARM</data>
+</edge>
+<edge source="idea:A1-1005-01" target="domain:identity" id="0">
+  <data key="d12">IN_DOMAIN</data>
+</edge>
+<edge source="idea:A1-1005-01" target="arxiv:2610.07531" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1005-01" target="arxiv:2610.07343" id="0">
+  <data key="d12">DERIVED_FROM</data>
+</edge>
+<edge source="idea:A1-1005-01" target="patent:US20150280924A1" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7474</data>
+</edge>
+<edge source="idea:A1-1005-01" target="patent:US20160269397A1" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7428</data>
+</edge>
+<edge source="idea:A1-1005-01" target="patent:US20260212346A1" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7304</data>
+</edge>
+<edge source="idea:A1-1005-01" target="patent:US12737765B2" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7261</data>
+</edge>
+<edge source="idea:A1-1005-01" target="patent:US20250097309A1" id="0">
+  <data key="d12">SIMILAR_TO</data>
+  <data key="d13">0.7105</data>
 </edge>
 </graph></graphml>

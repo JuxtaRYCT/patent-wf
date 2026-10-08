@@ -1,0 +1,94 @@
+[
+  {
+    "id": "A1-1005-01",
+    "arm": "A1",
+    "title": "Identity-transition continuity credentials: updating KYC across banks after a name or gender change without freezes or full re-KYC",
+    "terms": [
+      "attributes",
+      "credential",
+      "commitment",
+      "identity",
+      "gender",
+      "attribute set"
+    ],
+    "queries": [
+      "attributes AND credential",
+      "attributes AND commitment",
+      "attributes AND identity",
+      "credential AND commitment",
+      "credential AND identity",
+      "(attributes OR credential OR commitment) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 222,
+    "fetched": 12,
+    "max_sim_patent": 0.7474,
+    "max_sim_paper": 0.6875,
+    "novelty_pa": 0.2526,
+    "closest": [
+      {
+        "id": "patent:US20150280924A1",
+        "type": "patent",
+        "sim": 0.7474,
+        "title": "REISSUE OF CRYPTOGRAPHIC CREDENTIALS",
+        "url": "https://patents.google.com/patent/US20150280924A1/en",
+        "who": "INTERNATIONAL BUSINESS MACHINES CORPORATION"
+      },
+      {
+        "id": "patent:US20160269397A1",
+        "type": "patent",
+        "sim": 0.7428,
+        "title": "REISSUE OF CRYPTOGRAPHIC CREDENTIALS",
+        "url": "https://patents.google.com/patent/US20160269397A1/en",
+        "who": "International Business Machines Corporation"
+      },
+      {
+        "id": "patent:US20260212346A1",
+        "type": "patent",
+        "sim": 0.7304,
+        "title": "System, Method, and Computer Program Product for Automatically Updating Credentials",
+        "url": "https://patents.google.com/patent/US20260212346A1/en",
+        "who": "Visa International Service Association"
+      },
+      {
+        "id": "patent:US12737765B2",
+        "type": "patent",
+        "sim": 0.7261,
+        "title": "Virtual credential to support continuity following migration of a deactivated credential",
+        "url": "https://patents.google.com/patent/US12737765B2/en",
+        "who": "Capital One Services, LLC"
+      },
+      {
+        "id": "patent:US20250097309A1",
+        "type": "patent",
+        "sim": 0.7105,
+        "title": "SYSTEMS AND METHODS FOR REAL-TIME IDENTITY PROOFING WITH VERIFICATION",
+        "url": "https://patents.google.com/patent/US20250097309A1/en",
+        "who": "JPMORGAN CHASE BANK, N.A."
+      },
+      {
+        "id": "patent:US20250343840A1",
+        "type": "patent",
+        "sim": 0.7105,
+        "title": "SYSTEMS AND METHODS FOR REAL-TIME IDENTITY PROOFING WITH VERIFICATION",
+        "url": "https://patents.google.com/patent/US20250343840A1/en",
+        "who": "JPMORGAN CHASE BANK, N.A."
+      },
+      {
+        "id": "patent:US20180158137A1",
+        "type": "patent",
+        "sim": 0.7074,
+        "title": "Preempting identity theft with the coordinated freezing of redundant consumer credit files of particular consumers concurrently being maintained by a plurality ",
+        "url": "https://patents.google.com/patent/US20180158137A1/en",
+        "who": "Intersections, Inc."
+      },
+      {
+        "id": "patent:US20250348929A1",
+        "type": "patent",
+        "sim": 0.7049,
+        "title": "GAMING ESTABLISHMENT ACCOUNT AND LINKED FINANCIAL INSTITUTION ACCOUNT SYNCHRONIZATIONS BASED ON ENTITY RELATIONSHIPS",
+        "url": "https://patents.google.com/patent/US20250348929A1/en",
+        "who": "IGT"
+      }
+    ]
+  }
+]
