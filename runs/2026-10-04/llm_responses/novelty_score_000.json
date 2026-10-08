@@ -1,0 +1,279 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.05475",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "App-store tracking cookies",
+   "tags": [
+    "privacy"
+   ]
+  },
+  {
+   "id": "arxiv:2610.06994",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Measure defence cost against a never-poisoned twin, not the poisoned model",
+   "tags": [
+    "backdoor-defence",
+    "evaluation-baseline"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05339",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Tensor decomposition that handles clipped or saturated data",
+   "tags": [
+    "tensor",
+    "saturation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07013",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Electron emission model",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05246",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Measured limits of what a pre-execution policy gate can know about an agent's commands across platforms",
+   "tags": [
+    "agent-gating",
+    "policy-enforcement",
+    "limits"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07012",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Litz-wire insulation breakdown",
+   "tags": [
+    "hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05511",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Polynomial estimation variance",
+   "tags": [
+    "statistics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05458",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Same model and inputs give different logits on different GPU vendors; measured and reduced",
+   "tags": [
+    "reproducibility",
+    "cross-hardware",
+    "model-risk"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05455",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Robot social navigation",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05470",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Volunteer moderators shield students from fraudulent education agents",
+   "tags": [
+    "community-moderation",
+    "scams"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05561",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Per-attribute mechanisms for metric differential privacy on mixed records",
+   "tags": [
+    "differential-privacy",
+    "heterogeneous"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07026",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Voice-first AI that runs fully offline on low-power hardware",
+   "tags": [
+    "offline-ai",
+    "voice"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04869",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Temporal link prediction ignores who is active; modelling activity first transfers across models",
+   "tags": [
+    "temporal-graphs",
+    "activity"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05545",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Geolocate internet hosts reactively from constraints instead of stale databases",
+   "tags": [
+    "ip-geolocation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05031",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "LLM layered over diagnostic tools fails to realise their complementarity",
+   "tags": [
+    "tool-integration"
+   ]
+  },
+  {
+   "id": "arxiv:2610.04877",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Electricity consumer empowerment",
+   "tags": [
+    "energy"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05444",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Faith-aligned browser trust",
+   "tags": [
+    "hci"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05270",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Drone delivery plus monitoring",
+   "tags": [
+    "logistics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05510",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Power adequacy metrics",
+   "tags": [
+    "power"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05624",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ion crystal melting",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05605",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Missing data in HPC studies",
+   "tags": [
+    "statistics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05530",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Optimal control for multicore allocation with deadlines",
+   "tags": [
+    "real-time"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05122",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Drone road guidance",
+   "tags": [
+    "logistics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.07030",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "LLM multi-agent container placement",
+   "tags": [
+    "scheduling"
+   ]
+  },
+  {
+   "id": "arxiv:2610.05571",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Compositional statistical model checking across scenario combinations",
+   "tags": [
+    "scenario-testing",
+    "safety"
+   ]
+  },
+  {
+   "id": "news:69fcd4fc5fd03ef0",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Browser ships post-quantum TLS and native wallet digital-ID requests",
+   "tags": [
+    "digital-credentials",
+    "browser-wallet",
+    "pqc"
+   ]
+  },
+  {
+   "id": "news:25a9dbab44a919bd",
+   "novelty": 3,
+   "usefulness": 5,
+   "mechanism_or_problem": "Same borrowers or collateral defrauding several banks in one city",
+   "tags": [
+    "multiple-financing",
+    "loan-fraud"
+   ]
+  },
+  {
+   "id": "s2:f6d7343d560103a6ecad76b893cd57b5880c36b5",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Sanitation contracts",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:eb14e103d4f412856b2a5347f3ece68f15ed5334",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Enterprise value segmentation",
+   "tags": [
+    "valuation"
+   ]
+  }
+ ]
+}

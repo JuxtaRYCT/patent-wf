@@ -1,0 +1,4 @@
+,p,m,dist,patent_proximity,prior,p_id,m_id,p_title,m_title
+0,1,2,0.5431392,0.7181047,0.7818952798843384,news:25a9dbab44a919bd,arxiv:2610.05458,"Crime Branch finds pattern in alleged loan fraud in multiple banks in Kochi, suspects multi-crore sc",Measuring and Reducing Cross-Vendor Mismatch in Language Models
+1,0,7,0.5615231,0.72416073,0.7258392691612243,news:69fcd4fc5fd03ef0,arxiv:2610.05571,"Chrome 155 Adds JPEG XL, Post-Quantum Crypto and Wallet IDs - DigitBin",Scenario-Based Compositional Statistical Model Checking for Safety Specifications
+2,1,5,0.5466323,0.72754705,0.7724529504776001,news:25a9dbab44a919bd,arxiv:2610.04869,"Crime Branch finds pattern in alleged loan fraud in multiple banks in Kochi, suspects multi-crore sc",Your Temporal Link Predictor Is Blind to Who Is Active: A Missing Factor That Transfers Across Model
