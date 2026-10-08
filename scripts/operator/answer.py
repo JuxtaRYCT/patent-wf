@@ -38,3 +38,19 @@ def judge(run: str, J: dict):
         (r / f"{f.stem}.json").write_text(json.dumps({"judgments": out}, indent=1, ensure_ascii=False))
         print(f.stem, len(out))
     assert not set(J) - used, set(J) - used
+
+
+def scores(run: str, task: str, text: str):
+    """Compact novelty-score answers: 'id | novelty | usefulness | note | tag,tag' per line."""
+    rows = []
+    for line in text.strip().splitlines():
+        i, n, u, note, tags = [x.strip() for x in line.split("|")]
+        rows.append({"id": i, "novelty": int(n), "usefulness": int(u), "mechanism_or_problem": note,
+                     "tags": [t for t in tags.split(",") if t]})
+    q = (Path("runs") / run / "llm_queue" / f"{task}.md").read_text()
+    want = re.findall(r"^- id: (\S+)", q, re.M)
+    assert set(want) == {r["id"] for r in rows}, (task, set(want) ^ {r["id"] for r in rows})
+    r = Path("runs") / run / "llm_responses"
+    r.mkdir(parents=True, exist_ok=True)
+    (r / f"{task}.json").write_text(json.dumps({"scores": rows}, indent=1, ensure_ascii=False))
+    print(task, len(rows))
