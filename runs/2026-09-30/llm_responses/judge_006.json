@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A2a-26",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 5,
+   "feasibility": 6,
+   "commercial": 4,
+   "eligibility": 4,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "Cross-retailer return-fraud networks exist."
+  },
+  {
+   "id": "A2a-27",
+   "novelty": 1,
+   "non_obviousness": 1,
+   "utility": 7,
+   "feasibility": 9,
+   "commercial": 5,
+   "eligibility": 6,
+   "crazy": 1,
+   "verdict": "drop-anticipated",
+   "rationale": "SIM-swap checks via telco APIs (CAMARA SIM Swap, Prove) are deployed."
+  },
+  {
+   "id": "A2a-28",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 5,
+   "feasibility": 7,
+   "commercial": 4,
+   "eligibility": 3,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Savings-group credit scoring is known in fintech practice."
+  },
+  {
+   "id": "A2a-29",
+   "novelty": 1,
+   "non_obviousness": 1,
+   "utility": 5,
+   "feasibility": 8,
+   "commercial": 4,
+   "eligibility": 4,
+   "crazy": 1,
+   "verdict": "drop-anticipated",
+   "rationale": "Liquidity-saving mechanisms with queue optimisation are standard RTGS features."
+  },
+  {
+   "id": "A2a-30",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 5,
+   "eligibility": 4,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Chargeback prediction is standard."
+  },
+  {
+   "id": "A2b-01",
+   "novelty": 7,
+   "non_obviousness": 6,
+   "utility": 8,
+   "feasibility": 8,
+   "commercial": 7,
+   "eligibility": 6,
+   "crazy": 6,
+   "verdict": "pursue",
+   "rationale": "DEEP CHECK: BEC guidance recommends dual approval and out-of-band call-backs with fixed approvers. No VRF-based random co-approver selection triggered by instruction-topology novelty was found in USPTO or web sources. Confirmed."
+  },
+  {
+   "id": "A2b-02",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 7,
+   "feasibility": 6,
+   "commercial": 7,
+   "eligibility": 7,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "Deepfake detection is crowded (T-Mobile US20260112373A1); sharing generation-pipeline fingerprints as LSH threat intelligence across banks is a narrower new element."
+  },
+  {
+   "id": "A2b-03",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 8,
+   "feasibility": 6,
+   "commercial": 8,
+   "eligibility": 7,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "RWA-PoB (credential-based proof-of-backing covering eligibility, encumbrance and liquidity) is close. The residue is ZK over signed custodian feeds with regulatory constraints and automatic mint gating; merge with A1-23."
+  }
+ ]
+}

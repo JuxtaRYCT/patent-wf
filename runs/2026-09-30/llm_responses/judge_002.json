@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A1-17",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 5,
+   "feasibility": 6,
+   "commercial": 3,
+   "eligibility": 2,
+   "crazy": 6,
+   "verdict": "drop-weak",
+   "rationale": "Novel framing but essentially a statistical allocation rule; §101 / §3(k) exposure is high and the commercial buyer is unclear."
+  },
+  {
+   "id": "A1-18",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "DEEP CHECK: guidance describes victims' small first payments; the reverse-bait-edge inversion in payee reputation was not found. Survives as refine."
+  },
+  {
+   "id": "A1-19",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 7,
+   "feasibility": 6,
+   "commercial": 7,
+   "eligibility": 6,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "Close art: rollback governance for AI-agent payments, offline-verifiable evidence for agent messaging, AP2 analyses. Intent inference plus evidentiary bundle is incremental; combine with A1-07 into one agent-payment filing."
+  },
+  {
+   "id": "A1-20",
+   "novelty": 5,
+   "non_obviousness": 4,
+   "utility": 5,
+   "feasibility": 7,
+   "commercial": 4,
+   "eligibility": 2,
+   "crazy": 4,
+   "verdict": "drop-weak",
+   "rationale": "EWA patents (PayActiv US20160086261A1, US8751338B2) cover access mechanics; MPC sizing is a financial computation with weak eligibility."
+  },
+  {
+   "id": "A1-21",
+   "novelty": 4,
+   "non_obviousness": 4,
+   "utility": 5,
+   "feasibility": 5,
+   "commercial": 4,
+   "eligibility": 6,
+   "crazy": 6,
+   "verdict": "drop-anticipated",
+   "rationale": "Offline CBDC protocols (Fluency US11935065B2) and mesh or delay-tolerant payment relaying are known; the carrier-selection twist is obvious."
+  },
+  {
+   "id": "A1-22",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 7,
+   "feasibility": 8,
+   "commercial": 6,
+   "eligibility": 7,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "BioCatch's patent families on remote-access/automation detection through input-timing behaviour (and vishing detection US12101354B2) anticipate the core."
+  },
+  {
+   "id": "A1-23",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 7,
+   "feasibility": 6,
+   "commercial": 7,
+   "eligibility": 5,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "'Optimal Control of Reserve Asset Portfolios for Stablecoins' (arXiv 2508.09429) and RWA-PoB cover much of this. The residue is the adversarial invariant-set certificate published on-chain; merge with A2b-03."
+  },
+  {
+   "id": "A2a-01",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 8,
+   "feasibility": 8,
+   "commercial": 7,
+   "eligibility": 5,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "Vishing and coaching detection (BioCatch family), RBI's April 2026 trusted-person proposal and banks' active-call detection cover it."
+  }
+ ]
+}

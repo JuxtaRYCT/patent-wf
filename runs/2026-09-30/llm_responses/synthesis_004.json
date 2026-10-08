@@ -1,0 +1,26 @@
+{
+ "ideas": [
+  {
+   "pair": "X026",
+   "title": "Reachability-certified pre-emptive holds: intercepting stolen funds ahead of the money instead of chasing hops",
+   "problem": "Cyber-fraud reporting systems (India's 1930 helpline and CFCFRMS, UK APP reimbursement) place liens hop by hop after the money has moved. Mule layering outruns them within minutes, and the 'golden hour' is lost.",
+   "mechanism": "When fraud is reported, the system models the stolen funds as an adversary with bounded manoeuvring capability on the inter-bank payment graph. The bounds are per-rail latency, per-account velocity and limits, new-payee cooling periods, and cash-out points (ATMs, crypto on-ramps, merchant cash-back). From these it computes the forward reachable set of accounts over time. It then solves for the minimum set of accounts to place under short, auto-expiring holds now, such that every reachable cash-out path is covered before the funds could arrive: a capture certificate, analogous to robust safety certificates against manoeuvring obstacles. Hold requests are signed, scoped and time-limited, and are issued to participating banks. Each bank solves its part through a distributed ADMM formulation, so no raw transaction data leaves the bank. Unused holds release automatically.",
+   "technical_effect": "Guaranteed interception coverage with the fewest holds, computed in seconds and across institutions without pooling data.",
+   "why_non_obvious": "Fund tracing follows observed transactions. Computing adversarial reachable sets with bounded capabilities and issuing certified pre-emptive holds is a control-theory transfer, not an extension of tracing.",
+   "claim_core": "A method comprising: receiving a fraud report identifying a source account and amount; computing, over a payment graph with per-edge timing and capacity constraints, a time-indexed reachable set of accounts and cash-out nodes; selecting a minimal set of accounts whose temporary hold intercepts all reachable cash-out paths before the funds can arrive; and transmitting signed, time-limited hold requests to institutions holding the selected accounts.",
+   "keywords": "stolen funds recovery, lien marking, fraud reporting, reachable set, payment graph, mule layering, pre-emptive hold, APP fraud, 1930 helpline",
+   "domain": "fraud"
+  },
+  {
+   "pair": "X028",
+   "title": "Proportionality-bounded mass enforcement: compensatory review allocation before automated fraud actions hit hundreds of thousands of people",
+   "problem": "Mass automated fraud determinations (760,000 insurance cancellations; people jailed after AI flags) concentrate false positives on particular segments. The error accumulates across segments in the same way apportionment rounding bias accumulates across districts.",
+   "mechanism": "Before a batch of automated adverse actions is executed, the system computes for each segment (region, age band, channel, language) the gap between its share of actions and its share of evidence-weighted fraud likelihood. It uses probabilistic seat-vote discrepancy bounds to predict the accumulated disproportionality across all segments. It then allocates a fixed number of 'compensatory' human-review slots or deferred-action slots to over-actioned segments, so that the maximum disproportionality stays under a configured bound, and executes the rest. A signed proportionality certificate is logged for audit and appeal.",
+   "technical_effect": "A bounded disparity guarantee for large automated enforcement batches at a fixed review cost.",
+   "why_non_obvious": "Compensatory-seat theory from electoral systems has not been applied to capacity-constrained correction of automated enforcement.",
+   "claim_core": "A method comprising: receiving a batch of proposed automated adverse actions across segments; computing per-segment discrepancies between action shares and evidence shares; allocating a bounded number of review slots to segments to reduce a maximum discrepancy below a threshold; and executing the remaining actions while logging a certificate.",
+   "keywords": "automated fraud enforcement, false positives, disparate impact, fairness constraint, human review allocation, apportionment, audit certificate",
+   "domain": "regtech"
+  }
+ ]
+}

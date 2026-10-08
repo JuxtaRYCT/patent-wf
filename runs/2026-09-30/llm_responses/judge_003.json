@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A2a-02",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 8,
+   "feasibility": 8,
+   "commercial": 7,
+   "eligibility": 6,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "AP2 intent and cart mandates, Mastercard Agentic Tokens and Visa Intelligent Commerce controls implement this."
+  },
+  {
+   "id": "A2a-03",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 7,
+   "feasibility": 6,
+   "commercial": 6,
+   "eligibility": 3,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "Early-warning signals in finance are an academic literature and digital-run papers were retrieved; the automatic collateral pre-positioning link is modest. Weak eligibility."
+  },
+  {
+   "id": "A2a-04",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 7,
+   "crazy": 4,
+   "verdict": "drop-anticipated",
+   "rationale": "zkTLS income proofs exist (DECO 2020, Reclaim/zkPass products); income-verification patents (PointServ) are retrieved."
+  },
+  {
+   "id": "A2a-05",
+   "novelty": 4,
+   "non_obviousness": 3,
+   "utility": 7,
+   "feasibility": 8,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "Mosca's inequality (shelf-life + migration time > quantum horizon) and commercial crypto-inventory tools cover it."
+  },
+  {
+   "id": "A2a-06",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 6,
+   "feasibility": 6,
+   "commercial": 5,
+   "eligibility": 4,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "Mule detection via link prediction (Actimize US20250315834A1) is close; an R0 estimate for recruitment is a new metric but weakly eligible."
+  },
+  {
+   "id": "A2a-07",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 6,
+   "commercial": 5,
+   "eligibility": 8,
+   "crazy": 5,
+   "verdict": "drop-anticipated",
+   "rationale": "Pindrop 'Active voice liveness detection' (EP4706037A2) and Wells Fargo background-audio authentication are directly on point."
+  },
+  {
+   "id": "A2a-08",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 6,
+   "feasibility": 6,
+   "commercial": 5,
+   "eligibility": 6,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "IoT-attested blockchain escrow for trade finance is heavily patented (e.g. US20220300964A1, Wells Fargo trade-finance blockchain)."
+  },
+  {
+   "id": "A2a-09",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 6,
+   "eligibility": 3,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Cash-flow underwriting and dynamic limits are standard."
+  }
+ ]
+}

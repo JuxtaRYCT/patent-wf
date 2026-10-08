@@ -1,0 +1,48 @@
+{
+ "ideas": [
+  {
+   "theme": "T29",
+   "title": "Pass-through deposit-insurance ledger for fintech custodial accounts with instant per-owner coverage proofs",
+   "problem": "Post-Synapse, the FDIC's custodial-account recordkeeping proposals and the regulatory resets exist because owners of pooled for-benefit-of balances could not be identified or paid quickly after failure.",
+   "mechanism": "Each end-user balance held at a sponsor bank through a fintech is recorded in a per-owner pass-through ledger kept at the bank, not only at the fintech. It is updated from signed fintech sub-ledger deltas with Merkle inclusion proofs and reconciled daily. The ledger computes coverage per ownership category and per insured bank in real time. Each owner can obtain a signed coverage proof (insured amount, bank, category). The FDIC receives a machine-readable pass-through file that allows payout on day 1 after failure.",
+   "technical_effect": "Coverage determination in real time and verifiably, instead of reconstruction after failure.",
+   "why_non_obvious": "Coverage computation happens only at failure time. Continuous proof-carrying pass-through records bridge fintech and bank ledgers, which is not done today.",
+   "claim_core": "A system maintaining, at a depository institution, per-owner balances derived from signed sub-ledger deltas of a third party with inclusion proofs, computing deposit-insurance coverage per owner and category in real time, and issuing signed coverage proofs.",
+   "keywords": "pass-through deposit insurance, custodial account recordkeeping, FBO account, fintech sponsor bank, FDIC, Synapse, coverage proof",
+   "domain": "regtech"
+  },
+  {
+   "theme": "T10",
+   "title": "Debt chain-of-title ledger with open-banking proof-of-payment matching to stop collection of debts not owed",
+   "problem": "41,086 complaints in 120 days about attempts to collect debt not owed, many where the debt had already been paid. Debts are sold repeatedly with broken documentation.",
+   "mechanism": "Every debt assignment is recorded as a hash-linked title record containing the balance, payment history digest and the seller's signature. A collector's system must present a valid chain of title from the original creditor before any collection communication is generated. When a consumer disputes, the consumer app pulls payment evidence from their bank through open-banking APIs and matches it to the creditor account by payment reference, amount and date. It then issues a signed proof-of-payment object that the ledger attaches to the debt, and further collection is blocked automatically.",
+   "technical_effect": "Collection communications are gated on verifiable title, with dispute evidence generated automatically from bank data.",
+   "why_non_obvious": "Debt-sale documentation is contractual and paper-based. Coupling cryptographic chain of title with consumer-generated open-banking payment proofs as automatic collection gates is new.",
+   "claim_core": "A method comprising: recording debt assignments as hash-linked signed title records; verifying a chain of title prior to generating a collection communication; receiving a consumer-generated proof of payment derived from account data retrieved via an open-banking interface; and blocking collection upon verification of the proof.",
+   "keywords": "debt collection, debt not owed, chain of title, debt buyer, proof of payment, open banking, FDCPA",
+   "domain": "credit"
+  },
+  {
+   "theme": "T25",
+   "title": "Attenuable delegation chains for multi-agent payments: macaroon-style caveats that sub-agents can only narrow, verified by the issuer",
+   "problem": "'Agentic commerce is an authorisation problem.' A user's agent delegates to a travel agent-bot, which delegates to an airline's agent. Today's mandates are single-hop and cannot express how authority narrows along the chain.",
+   "mechanism": "The user's bank issues a root capability token for an agent: a chained-HMAC or signature caveat list covering budget, categories, merchants, time window and number of uses. Each agent can derive a child token for a sub-agent by appending caveats. It can only add restrictions, never remove them, and the chain structure proves this. The final agent presents the full caveat chain with the authorisation. The issuer verifies the chain against the root key in constant time per caveat and evaluates all caveats against the transaction. Revoking any link revokes all its descendants, and every hop is visible for dispute attribution.",
+   "technical_effect": "Cryptographically enforced monotone narrowing of payment authority across arbitrary agent-delegation depth, verifiable at authorisation.",
+   "why_non_obvious": "Macaroon-style attenuation is used for cloud authorisation. Applying it to issuer-verified payment authority across chains of heterogeneous AI agents, integrated with network tokens, is new.",
+   "claim_core": "A method comprising: issuing a root payment capability comprising caveats bound by a chained keyed hash; deriving child capabilities by appending caveats; receiving at an issuer an authorisation request with a capability chain; verifying the chain and evaluating all caveats against the transaction; and approving only if all caveats are satisfied.",
+   "keywords": "agentic payments, delegation, capability token, macaroon, caveats, multi-agent, authorization, issuer verification",
+   "domain": "payments"
+  },
+  {
+   "theme": "T07",
+   "title": "Consumer-signed permissible-purpose tokens for credit report pulls",
+   "problem": "356k complaints about improper use of reports. Pulls happen without verifiable consumer authorisation, and freezes are blunt on/off switches.",
+   "mechanism": "A consumer's wallet issues short-lived pull tokens bound to the requesting lender's identity, the permissible purpose, the product and the time window, signed by a device key. The bureau releases a report only against a valid token, or an explicit statutory exception, which is logged separately. Tokens can be one-time, limited to a soft or hard pull, and revoked. Consumers see a signed access log. Lenders integrate through a redirect or QR flow similar to account-aggregator consent artefacts.",
+   "technical_effect": "Cryptographically enforced, granular authorisation of credit data access with an auditable trail.",
+   "why_non_obvious": "US credit access relies on the lender's own assertion of permissible purpose. Consumer-held signed purpose tokens (inspired by consent-artefact architectures) invert that model.",
+   "claim_core": "A method comprising generating on a consumer device a signed access token specifying a requesting entity, purpose and validity, receiving at a credit bureau a report request with the token, verifying token signature and scope, and releasing report data only upon verification.",
+   "keywords": "credit report access, permissible purpose, consent token, credit freeze, FCRA, consent artefact, account aggregator",
+   "domain": "credit"
+  }
+ ]
+}

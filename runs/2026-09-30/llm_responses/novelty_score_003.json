@@ -1,0 +1,292 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2609.35662",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Wake-up protocol when collisions are costly",
+   "tags": [
+    "multiple-access"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36236",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Near-linear-time influence maximisation seed selection",
+   "tags": [
+    "influence-maximisation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.22300",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Transferring a measurement from one substrate to another requires re-declaring model, fit, unit, interval and decision rule",
+   "tags": [
+    "measurement-transfer",
+    "validation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38048",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Certifiable (globally optimal) estimation with inertial pre-integration",
+   "tags": [
+    "certifiable-estimation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.00614",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Reweighted quartet scores reconstruct phylogenetic trees efficiently",
+   "tags": [
+    "phylogenetics",
+    "lineage-reconstruction"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30905",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Review of communication network research",
+   "tags": [
+    "review"
+   ]
+  },
+  {
+   "id": "pubmed:41062022",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Virus hides from immune detection by entering a persistent latent state, later progressing",
+   "tags": [
+    "latent-infection",
+    "persistence",
+    "sleeper"
+   ]
+  },
+  {
+   "id": "arxiv:2609.32098",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Robust game-theoretic planning over long horizons",
+   "tags": [
+    "game-theory",
+    "planning"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36157",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "Hierarchical federated learning where clients share an encoder but solve different tasks with different output spaces",
+   "tags": [
+    "federated-multitask",
+    "shared-encoder"
+   ]
+  },
+  {
+   "id": "arxiv:2609.33687",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Parameter-efficient model updates fitted to tight uplink budgets for edge devices",
+   "tags": [
+    "peft",
+    "edge-update",
+    "bandwidth"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30472",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Control global graph structure by local edge edits via spectral moments",
+   "tags": [
+    "graph-sampling"
+   ]
+  },
+  {
+   "id": "news:4ec6c2fd5e8a7c90",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Bank holiday notice",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:06c301528ee43296",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Mass fraud determinations cancel coverage for 760k people; false-positive harm at scale",
+   "tags": [
+    "false-positives",
+    "mass-deactivation"
+   ]
+  },
+  {
+   "id": "news:bed8eeca800d4219",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Event promotion",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:4a3f4eae688fd57e",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Public ledger now carries official fund records from a $4T fund operator",
+   "tags": [
+    "fund-registry",
+    "tokenisation"
+   ]
+  },
+  {
+   "id": "news:1a2cd4870e5cc308",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Funding for global payee/account verification intelligence",
+   "tags": [
+    "payee-verification",
+    "cross-border"
+   ]
+  },
+  {
+   "id": "news:ef870829fd7d3811",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "AI fraud flag caused a months-long wrongful jailing: identity disambiguation and contestability failure",
+   "tags": [
+    "false-positive",
+    "identity-resolution",
+    "contestability"
+   ]
+  },
+  {
+   "id": "news:f1a015cfc91ac455",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Recruitment scam",
+   "tags": [
+    "scams"
+   ]
+  },
+  {
+   "id": "news:063a67665071188a",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Issuers sue over wallet pass-through fees",
+   "tags": [
+    "wallet-fees"
+   ]
+  },
+  {
+   "id": "news:6b938fbad2559306",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Bank-wide 'guardian' fraud protection rollout to 4M customers",
+   "tags": [
+    "scam-protection"
+   ]
+  },
+  {
+   "id": "news:5bdc455cceb76626",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Veterans targeted by smarter scams",
+   "tags": [
+    "scams",
+    "vulnerable"
+   ]
+  },
+  {
+   "id": "news:901a4387f423d0d2",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Switching offer terms",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:ca45d135c9b229d3",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Equity rating",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:3d0f7309baad0014",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "On-ramp expansion",
+   "tags": [
+    "crypto"
+   ]
+  },
+  {
+   "id": "news:3c4a723e5216b0b6",
+   "novelty": 3,
+   "usefulness": 5,
+   "mechanism_or_problem": "Fake hospital-appointment apps used to steal banking credentials",
+   "tags": [
+    "malicious-apps",
+    "credential-theft"
+   ]
+  },
+  {
+   "id": "news:3d4eb6b0e24f37c1",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Stablecoin issuer's bank partner caught in asset seizure: reserve custody concentration risk",
+   "tags": [
+    "stablecoin-reserves",
+    "custody-risk"
+   ]
+  },
+  {
+   "id": "news:cc3156e2e80b9214",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Branch openings",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:7b206fca21e31dfe",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Law firm hire",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:9fdad6db0e35ae4b",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Partner-lending loss; charter denial",
+   "tags": [
+    "bank-charters"
+   ]
+  },
+  {
+   "id": "news:ecd7907644b315a6",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "Chipmaker and card network put agentic commerce on-device",
+   "tags": [
+    "agentic-payments",
+    "on-device",
+    "secure-hardware"
+   ]
+  }
+ ]
+}

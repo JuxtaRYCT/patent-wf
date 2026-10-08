@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A2a-18",
+   "novelty": 1,
+   "non_obviousness": 1,
+   "utility": 5,
+   "feasibility": 9,
+   "commercial": 4,
+   "eligibility": 3,
+   "crazy": 1,
+   "verdict": "drop-anticipated",
+   "rationale": "ATM cash forecasting with exogenous data is standard."
+  },
+  {
+   "id": "A2a-19",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "RBI's proposed 1-hour cancellable delay (Apr 2026) and escrow patents (Capital One US11100482B2)."
+  },
+  {
+   "id": "A2a-20",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "x402 and Mastercard 'agentic microtransactions through verifiable payment delegation' cover it."
+  },
+  {
+   "id": "A2a-21",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 6,
+   "feasibility": 7,
+   "commercial": 5,
+   "eligibility": 7,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Offline CBDC with secure-element counters is the standard design (multiple papers and patents)."
+  },
+  {
+   "id": "A2a-22",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 5,
+   "eligibility": 3,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Event-driven or perpetual KYC is an established product category."
+  },
+  {
+   "id": "A2a-23",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 5,
+   "feasibility": 8,
+   "commercial": 4,
+   "eligibility": 3,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "RL-personalised nudging is well known."
+  },
+  {
+   "id": "A2a-24",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 7,
+   "feasibility": 8,
+   "commercial": 5,
+   "eligibility": 5,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Transliteration-aware fuzzy sanctions screening is a mature product area."
+  },
+  {
+   "id": "A2a-25",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 7,
+   "commercial": 5,
+   "eligibility": 5,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "Satellite collateral monitoring for agri and industrial lending exists."
+  }
+ ]
+}

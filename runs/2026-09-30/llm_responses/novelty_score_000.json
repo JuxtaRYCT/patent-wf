@@ -1,0 +1,286 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2609.33943",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Event report; no transferable mechanism",
+   "tags": [
+    "physics-education"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34529",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Casimir energy of conformal defects; no finance transfer",
+   "tags": [
+    "hep-th"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37099",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Black-hole microstate geometries; no transfer",
+   "tags": [
+    "hep-th"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38063",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Simple emission/decay model of CO2 isotopes; exponential decay attribution",
+   "tags": [
+    "climate",
+    "attribution"
+   ]
+  },
+  {
+   "id": "arxiv:2609.18858",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Science communication naming; none",
+   "tags": [
+    "climate"
+   ]
+  },
+  {
+   "id": "arxiv:2609.13442",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Rotating-fluid thermal spot dynamics",
+   "tags": [
+    "fluid-dynamics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35960",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Symmetry-resolved exact diagonalisation cutting compute cost",
+   "tags": [
+    "numerics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37512",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Exact non-Gaussian distribution of time-integrated currents; heavy-tail flow statistics",
+   "tags": [
+    "statistics",
+    "heavy-tails"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38088",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Boundary criticality in spin liquids",
+   "tags": [
+    "cond-mat"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34119",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Equivalence of topological indices",
+   "tags": [
+    "math-physics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38074",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Spectrum of spin chains",
+   "tags": [
+    "math-physics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.13286",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Scale analysis of equatorial flows",
+   "tags": [
+    "climate"
+   ]
+  },
+  {
+   "id": "arxiv:2609.18095",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Radiative cooler UV reflectance side-effects",
+   "tags": [
+    "materials"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36008",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Fermionic magic and entanglement",
+   "tags": [
+    "quantum"
+   ]
+  },
+  {
+   "id": "arxiv:2609.27093",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Lidar wind wave observation",
+   "tags": [
+    "atmosphere"
+   ]
+  },
+  {
+   "id": "arxiv:2609.25476",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Strike speed vs effective mass trade-off",
+   "tags": [
+    "biomechanics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30180",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Policy essay on collider climate cost",
+   "tags": [
+    "policy"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36542",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Symmetries emerging from ensemble averages",
+   "tags": [
+    "hep-th"
+   ]
+  },
+  {
+   "id": "arxiv:2609.31094",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "q-deformed spin model thermodynamics",
+   "tags": [
+    "cond-mat"
+   ]
+  },
+  {
+   "id": "arxiv:2609.33892",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Residual learned controller on top of a certified nominal controller keeps l2-stability guarantees under uncertainty",
+   "tags": [
+    "control",
+    "safe-learning",
+    "stability-certificate"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36083",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Vernier time-to-digital converter with self-calibrating delay loop gives <20 ps timestamps",
+   "tags": [
+    "hardware-timestamp",
+    "timing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37965",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Symmetry breaking in dephased mixed states",
+   "tags": [
+    "quantum"
+   ]
+  },
+  {
+   "id": "arxiv:2609.18710",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Compensatory seats bound the accumulated rounding bias of apportionment across many small districts",
+   "tags": [
+    "apportionment",
+    "fair-allocation",
+    "rounding-bias"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37133",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Stability of approximate isometries",
+   "tags": [
+    "math"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36978",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Network-level energy function with provable dissipation certifies transient stability of many coupled current-limited converters",
+   "tags": [
+    "network-stability",
+    "lyapunov",
+    "current-limiting"
+   ]
+  },
+  {
+   "id": "arxiv:2609.32974",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Electrostatic field enhancement formula",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30596",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Magnon crystals in frustrated tubes",
+   "tags": [
+    "cond-mat"
+   ]
+  },
+  {
+   "id": "arxiv:2609.21592",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Cheap drifting buoys reconstruct unresolved short-wave energy from acceleration spectra",
+   "tags": [
+    "low-cost-sensing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.19141",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Infrasound blast-radius normalisation",
+   "tags": [
+    "geophysics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34531",
+   "novelty": 7,
+   "usefulness": 7,
+   "mechanism_or_problem": "Inferred inertia depends on the averaging window used for rate-of-change-of-frequency; fast responses inside the window hide true inertia",
+   "tags": [
+    "rate-of-change",
+    "inertia",
+    "measurement-window",
+    "early-warning"
+   ]
+  }
+ ]
+}

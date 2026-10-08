@@ -1,0 +1,292 @@
+{
+ "scores": [
+  {
+   "id": "news:1e85773664d92e3a",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Transaction splitting (repeated small UPI payments for one purchase) as evasion pattern",
+   "tags": [
+    "structuring",
+    "upi",
+    "splitting"
+   ]
+  },
+  {
+   "id": "news:cbeab915dc24f05b",
+   "novelty": 4,
+   "usefulness": 6,
+   "mechanism_or_problem": "Facial-recognition false match led to false bank-fraud accusation",
+   "tags": [
+    "face-recognition",
+    "false-match",
+    "contestability"
+   ]
+  },
+  {
+   "id": "news:f14af63b5d2d3073",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Duplicate on-ramp news",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:ba57b101a6c2f397",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Payee name-check at 200M checks a month; name-matching at scale",
+   "tags": [
+    "confirmation-of-payee",
+    "name-matching"
+   ]
+  },
+  {
+   "id": "news:0a8fc48e1744b2c7",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "UPI merchant discount rate litigation",
+   "tags": [
+    "upi-economics"
+   ]
+  },
+  {
+   "id": "news:00d330544d621fe2",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Duplicate acquisition news",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:2eebc5fc297e37db",
+   "novelty": 3,
+   "usefulness": 5,
+   "mechanism_or_problem": "Canadian-dollar tokenized deposit consortium",
+   "tags": [
+    "tokenized-deposits"
+   ]
+  },
+  {
+   "id": "news:98d170fad608d39b",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Post-Synapse: ledger reconciliation failures between fintech and sponsor bank; regulators reset guidance",
+   "tags": [
+    "ledger-reconciliation",
+    "baas",
+    "synapse"
+   ]
+  },
+  {
+   "id": "news:1517bc72795f1a1b",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Central bank invests own funds in tokenised securities settled via DLT-to-RTGS bridge (Pontes)",
+   "tags": [
+    "tokenised-securities",
+    "rtgs-bridge"
+   ]
+  },
+  {
+   "id": "news:cc3452a5a7679984",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "Payment aggregator licence",
+   "tags": [
+    "licensing"
+   ]
+  },
+  {
+   "id": "news:7d46e2caea69d590",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Agency guidance on core service provider oversight",
+   "tags": [
+    "core-banking",
+    "third-party-risk"
+   ]
+  },
+  {
+   "id": "news:5cac257d33226773",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Instant payments platform choice",
+   "tags": [
+    "sepa-instant"
+   ]
+  },
+  {
+   "id": "news:8e5b6060ef1ecabd",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Large chip loan syndication",
+   "tags": [
+    "project-finance"
+   ]
+  },
+  {
+   "id": "news:060d132a9269cf24",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Crypto sentiment gauge",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:1d91143d02551437",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Institutional settlement for restaking",
+   "tags": [
+    "crypto-settlement"
+   ]
+  },
+  {
+   "id": "news:4f4357e6fce4f96d",
+   "novelty": 5,
+   "usefulness": 7,
+   "mechanism_or_problem": "AI-generated messaging scam costs top bank millions: authorised-instruction impersonation",
+   "tags": [
+    "ai-scam",
+    "instruction-fraud"
+   ]
+  },
+  {
+   "id": "news:ac85f85a216502df",
+   "novelty": 6,
+   "usefulness": 8,
+   "mechanism_or_problem": "Bank wired $108M after scammers cloned a lawyer's voice: high-value instruction authentication via voice is broken",
+   "tags": [
+    "voice-clone",
+    "deepfake",
+    "wire-fraud",
+    "instruction-verification"
+   ]
+  },
+  {
+   "id": "news:9f61e078214e4425",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Global bank adopts payment decision intelligence for payee verification",
+   "tags": [
+    "payee-verification"
+   ]
+  },
+  {
+   "id": "news:4c3e57e9cdf492a9",
+   "novelty": 3,
+   "usefulness": 5,
+   "mechanism_or_problem": "Malicious adult-content apps drain bank accounts",
+   "tags": [
+    "malicious-apps",
+    "device-compromise"
+   ]
+  },
+  {
+   "id": "news:f85abfdcc3573058",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "MDR and cash usage",
+   "tags": [
+    "upi-economics"
+   ]
+  },
+  {
+   "id": "news:455dd23b63c9e68b",
+   "novelty": 2,
+   "usefulness": 4,
+   "mechanism_or_problem": "Fake apps stealing OTPs (duplicate)",
+   "tags": [
+    "otp-theft"
+   ]
+  },
+  {
+   "id": "s2:f86b91fc4ecb01edde5ce07c268fe8984431beba",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Qualitative map of stablecoin spillover channels into banks (run risk, intermediation)",
+   "tags": [
+    "stablecoin-spillover"
+   ]
+  },
+  {
+   "id": "arxiv:2609.31345",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Asymptotic shape of quantile surfaces for sums of log-normals (portfolio VaR geometry)",
+   "tags": [
+    "quantiles",
+    "var"
+   ]
+  },
+  {
+   "id": "s2:1e464356cf23720af793e09b350f362d46fbcb37",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Construction dispute litigation",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35923",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Heavy-tail structure in rotated multiplicative processes",
+   "tags": [
+    "heavy-tails"
+   ]
+  },
+  {
+   "id": "arxiv:2609.17609",
+   "novelty": 6,
+   "usefulness": 4,
+   "mechanism_or_problem": "Capacity limits for libraries of mutually decorrelated trading signals (sphere packing)",
+   "tags": [
+    "alpha-signals",
+    "capacity"
+   ]
+  },
+  {
+   "id": "arxiv:2609.00438",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Adaptive quadrature for rough Heston pricing",
+   "tags": [
+    "derivatives-pricing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.25144",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Regression-tree-on-itself variance as model-free tail statistic",
+   "tags": [
+    "statistics"
+   ]
+  },
+  {
+   "id": "s2:e35d186a77f1627df30722f8bb3be036de30d3ca",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Construction contract law",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.29080",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Detecting delivery agents who fake failed-delivery attempts from GPS/behaviour traces",
+   "tags": [
+    "misconduct-detection",
+    "gps-traces",
+    "gig-workers"
+   ]
+  }
+ ]
+}

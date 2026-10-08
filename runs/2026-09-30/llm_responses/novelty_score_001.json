@@ -1,0 +1,292 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2609.37306",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Curvature-reconfigurable antenna channel model",
+   "tags": [
+    "antennas"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34737",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Integrated sensing and communication: the same radio waveform both communicates and senses the environment",
+   "tags": [
+    "ISAC",
+    "rf-sensing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37142",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Polariton coherence",
+   "tags": [
+    "photonics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.32307",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Energy policy essay",
+   "tags": [
+    "energy"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36212",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Inverse optimal control without solving HJB",
+   "tags": [
+    "control"
+   ]
+  },
+  {
+   "id": "arxiv:2609.28398",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Milestone-based public-private funding releases money only on verified technical milestones",
+   "tags": [
+    "milestone-funding",
+    "disbursement"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37163",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Optical programming of diamond cavities",
+   "tags": [
+    "photonics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.17612",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "ML timbre fingerprinting of an instrument",
+   "tags": [
+    "acoustic-fingerprint"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34574",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Robust variable-horizon MPC lands a vehicle on a moving, non-equilibrium target despite disturbances",
+   "tags": [
+    "mpc",
+    "moving-target",
+    "control"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36991",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Exploit periodicity to reduce big segmentation to annotating one representative cell",
+   "tags": [
+    "periodicity",
+    "registration"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37838",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Attosecond correlation interferometry",
+   "tags": [
+    "optics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37822",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Weak measurement anomalous values",
+   "tags": [
+    "quantum"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36179",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "RF exposure measurements",
+   "tags": [
+    "rf"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34580",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Synthetic inertia a converter can offer is bounded jointly by energy reserve, power rating and ride-through obligations",
+   "tags": [
+    "synthetic-inertia",
+    "reserve-sizing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.33729",
+   "novelty": 7,
+   "usefulness": 6,
+   "mechanism_or_problem": "Align latent representations of independently trained AI agents in the physical channel without retraining either agent",
+   "tags": [
+    "semantic-alignment",
+    "agent-interop"
+   ]
+  },
+  {
+   "id": "arxiv:2609.33553",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Grid-forming compensator absorbs fast step-like demand of AI data centres in weak networks",
+   "tags": [
+    "step-demand",
+    "buffering",
+    "stability"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36164",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Radar radiation measurement",
+   "tags": [
+    "rf"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36905",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Screen-to-event-camera ternary optical link beats frame-rate limit of camera communication",
+   "tags": [
+    "optical-camera-communication",
+    "screen-to-camera",
+    "event-camera"
+   ]
+  },
+  {
+   "id": "arxiv:2609.19621",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Position paper on geospatial model completeness",
+   "tags": [
+    "geoai"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35246",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Factor-graph neural net with hard physical constraints does state estimation from sparse non-Gaussian measurements",
+   "tags": [
+    "state-estimation",
+    "factor-graph",
+    "constraints"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37415",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Message-passing receiver for FTN waveforms",
+   "tags": [
+    "comms"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36196",
+   "novelty": 5,
+   "usefulness": 7,
+   "mechanism_or_problem": "Presence and movement of people measurably changes an indoor sub-GHz radio channel",
+   "tags": [
+    "rf-sensing",
+    "presence-detection",
+    "device-free"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37365",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Bias-compensated bilinear adaptive filters",
+   "tags": [
+    "signal-processing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37375",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ultrametric on quantum histories",
+   "tags": [
+    "quantum"
+   ]
+  },
+  {
+   "id": "arxiv:2609.33753",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Concurrent coded ranging across asynchronous half-duplex nodes cuts ranging cycle time",
+   "tags": [
+    "ranging",
+    "distance-bounding",
+    "uwb"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35524",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Metasurfaces as universal approximators",
+   "tags": [
+    "wave-computing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.26710",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Bounded normalised h-index linked to Pareto law",
+   "tags": [
+    "inequality-metric"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36784",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Manipulability shape tracking",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.32880",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Field experiment: a few vocal commenters shift engagement 15-43% for a million users",
+   "tags": [
+    "social-contagion",
+    "influence"
+   ]
+  },
+  {
+   "id": "arxiv:2609.31432",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "In-vehicle acoustic noise impulsiveness",
+   "tags": [
+    "acoustics"
+   ]
+  }
+ ]
+}

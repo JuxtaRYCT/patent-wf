@@ -1,0 +1,19 @@
+# environments & caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# local database (80 MB, fully regenerable with `python -m pipeline.gather`)
+data/*.sqlite
+data/*.sqlite-*
+
+# run logs (contain local machine paths and HTTP traces)
+*.log
+runs/launchd.*
+
+# secrets — never commit
+.env
+.env.*
+*.pem
+*.key

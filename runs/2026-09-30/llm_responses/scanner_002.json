@@ -1,0 +1,37 @@
+{
+ "ideas": [
+  {
+   "theme": "T04",
+   "title": "Purchase-session binding for UPI: aggregating split payments per merchant session for correct MDR and fewer false fraud flags",
+   "problem": "RBI backs MDR on UPI payments above ₹2,000, which gives merchants and payers an incentive to split payments. Banks already flag repeated ₹2,000 payments as suspicious, which hurts legitimate split payments.",
+   "mechanism": "A merchant QR or intent carries a session identifier signed by the merchant's PSP, derived from the cart/bill. Payments carrying the same session ID within a window are aggregated at the acquirer for MDR computation, removing the split-to-evade incentive. On the risk side, the payer's PSP treats payments sharing a verified session ID as one purchase, so legitimate splits (limits, multiple sources) are not flagged. Splits without a session ID, to the same payee in a short window, keep full scrutiny.",
+   "technical_effect": "MDR computation and risk scoring on correct purchase-level aggregates, preventing evasion and reducing false positives.",
+   "why_non_obvious": "UPI treats each payment independently. A signed session binding shared between acquirer pricing and issuer risk logic is a small but specific protocol change.",
+   "claim_core": "A method comprising generating a signed session identifier for a merchant purchase, receiving multiple payments referencing the identifier, aggregating their amounts for fee computation, and applying risk scoring at the aggregated purchase level.",
+   "keywords": "UPI MDR, transaction splitting, merchant discount rate, session identifier, payment aggregation, fraud false positives",
+   "domain": "payments"
+  },
+  {
+   "theme": "T16",
+   "title": "'Digital arrest' coercion-state detector with physically separated release ritual",
+   "problem": "Deepfake-backed 'digital arrest' rackets keep victims on long video calls with fake police while they transfer crores. The victim is coerced, so friction inside the app is simply overridden.",
+   "mechanism": "The banking app fuses on-device signals (with consent): concurrent long-duration video call, screen sharing active, repeated balance checks, a first-time high-value payee, typing hesitation and copy-paste of beneficiary details. From these it infers a coercion state. In that state the app does not ask 'are you sure?'. It requires a release ritual that the remote coercer cannot supervise and that breaks the call: end the call, then after a mandatory 30-minute gap confirm the transfer at an ATM or branch with the physical card, or have it confirmed by a pre-registered trusted person. Meanwhile the app plays a verified-number callback from the bank's anti-fraud line.",
+   "technical_effect": "Breaks the coercer's real-time control loop; physical separation defeats remote supervision.",
+   "why_non_obvious": "Scam friction is usually delays and warnings inside the same device. Requiring a separated physical channel, triggered by a multi-signal coercion state, targets the specific control loop of digital-arrest scams.",
+   "claim_core": "A method comprising determining a coercion state from concurrent communication-session and interaction signals on a user device, and upon the coercion state requiring confirmation of a pending transfer through a physically separate channel after a delay.",
+   "keywords": "digital arrest scam, coercion detection, APP fraud, video call, screen sharing, cooling off, trusted person, UPI fraud",
+   "domain": "fraud"
+  },
+  {
+   "theme": "T16",
+   "title": "Merchant-verifiable signed payment receipts to defeat fake 'frozen-screen' UPI success screens",
+   "problem": "In the 'frozen-screen' UPI scam, fraudsters show merchants a fake or frozen success screen. Merchants without a soundbox cannot verify that a credit really arrived.",
+   "mechanism": "On successful debit, the payer app renders a receipt code: a QR or ultrasonic burst carrying a token signed by the payee's PSP that includes the merchant's session nonce, amount and UTR. The merchant's phone, or a cheap verifier, checks the signature and nonce offline against the merchant PSP's public key. A static or fake screen cannot produce a valid signature for the live nonce.",
+   "technical_effect": "Offline-verifiable proof of credit bound to a live merchant nonce.",
+   "why_non_obvious": "Soundboxes rely on online push notifications. A payee-PSP-signed, nonce-bound receipt verifiable offline is a different trust path.",
+   "claim_core": "A method comprising receiving at a payer device a payee-PSP-signed confirmation including a merchant session nonce and amount, rendering it as a machine-readable code, and verifying at a merchant device the signature and nonce before releasing goods.",
+   "keywords": "UPI scam, fake payment screen, payment receipt verification, merchant nonce, signed confirmation, soundbox",
+   "domain": "payments"
+  }
+ ]
+}

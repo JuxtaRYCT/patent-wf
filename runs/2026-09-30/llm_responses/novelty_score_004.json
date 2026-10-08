@@ -1,0 +1,286 @@
+{
+ "scores": [
+  {
+   "id": "news:cba5af5689b76974",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "Consumer account advice",
+   "tags": [
+    "consumer"
+   ]
+  },
+  {
+   "id": "news:b3420b55cc7d3f68",
+   "novelty": 3,
+   "usefulness": 6,
+   "mechanism_or_problem": "Families cannot see that a loved one is being groomed by a scammer until large sums are gone",
+   "tags": [
+    "romance-scam",
+    "family-visibility",
+    "elder"
+   ]
+  },
+  {
+   "id": "news:f657a56c4007da96",
+   "novelty": 2,
+   "usefulness": 4,
+   "mechanism_or_problem": "India 1930 cyber-fraud helpline scaling; time-to-freeze is critical",
+   "tags": [
+    "fraud-reporting",
+    "golden-hour"
+   ]
+  },
+  {
+   "id": "news:d139d55e1e4a00fc",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Earned wage access classification as credit",
+   "tags": [
+    "ewa",
+    "regulation"
+   ]
+  },
+  {
+   "id": "news:fefcaf910263218b",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "First national-market agentic transaction by a bank with card network tokens",
+   "tags": [
+    "agentic-payments"
+   ]
+  },
+  {
+   "id": "news:37961fdee88f9cce",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Advisory firm administration",
+   "tags": [
+    "insolvency"
+   ]
+  },
+  {
+   "id": "news:4d14a1e5d55cfed1",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Credit union M&A",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:72ed58e415d5026c",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "RBI push for Unified Lending Interface adoption in underserved regions",
+   "tags": [
+    "uli",
+    "credit-access"
+   ]
+  },
+  {
+   "id": "news:df3d5d74b85869a5",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Market commentary",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:28ac19461e9b38b7",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Game controller patented as tap-to-pay terminal: any NFC device as acceptance point",
+   "tags": [
+    "softpos",
+    "nfc"
+   ]
+  },
+  {
+   "id": "news:d4279d0d4b0023a2",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Fintech sponsor-bank launch",
+   "tags": [
+    "baas"
+   ]
+  },
+  {
+   "id": "news:4504187370febcf5",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Sanctions tightening",
+   "tags": [
+    "sanctions"
+   ]
+  },
+  {
+   "id": "news:dd67dbf0ed8f8051",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Duplicate sanctions story",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:b05d66bdce0aab7a",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "Six largest Canadian banks jointly explore a shared tokenized-deposit network",
+   "tags": [
+    "tokenized-deposits",
+    "interbank"
+   ]
+  },
+  {
+   "id": "news:f67e88da159fbf40",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "Consumer confidence falls",
+   "tags": [
+    "macro"
+   ]
+  },
+  {
+   "id": "news:497b2e318c9a8b78",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Office news",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:3da74a7a04aebf4e",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Issuer processor deal",
+   "tags": [
+    "processing"
+   ]
+  },
+  {
+   "id": "news:d6f446d554badb93",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Wallet fee litigation",
+   "tags": [
+    "wallet-fees"
+   ]
+  },
+  {
+   "id": "news:e047dedfd41c38f3",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Crypto price",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:6c2eff0f635fb8e7",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Vendor roadshow",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:0b6c4ec57c479817",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Duplicate on-ramp news",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:d224f4398d02edb2",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Banks' extra checks on citizenship-by-investment passports",
+   "tags": [
+    "kyc",
+    "cbi-passports"
+   ]
+  },
+  {
+   "id": "news:1ee61e6a6de5a5ef",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "SME platform acquisition",
+   "tags": [
+    "m-and-a"
+   ]
+  },
+  {
+   "id": "news:b43456cf99f22cad",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "IPO plans",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:4adbdbb6ed51426b",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "Big bank's agentic AI is deliberately small, deterministic and supervised: control over autonomy",
+   "tags": [
+    "agentic-ai",
+    "bank-governance",
+    "determinism"
+   ]
+  },
+  {
+   "id": "news:a6198b47e92b311c",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Event promotion",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:41058bcc61dda361",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "ATM fee waiver",
+   "tags": [
+    "atm"
+   ]
+  },
+  {
+   "id": "news:8c125121870f8df5",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "$6.9B laundered through global banks by one network",
+   "tags": [
+    "aml",
+    "laundering-network"
+   ]
+  },
+  {
+   "id": "news:4767d8cf014a6d2e",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Document-AI digital trust platform acquisition",
+   "tags": [
+    "document-verification"
+   ]
+  },
+  {
+   "id": "news:740822da91e14469",
+   "novelty": 2,
+   "usefulness": 5,
+   "mechanism_or_problem": "Fraudsters impersonate bank officials: caller identity verification gap",
+   "tags": [
+    "impersonation",
+    "caller-verification"
+   ]
+  }
+ ]
+}

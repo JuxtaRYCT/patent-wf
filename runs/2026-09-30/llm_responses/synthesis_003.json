@@ -1,0 +1,26 @@
+{
+ "ideas": [
+  {
+   "pair": "X018",
+   "title": "Grid-forming liquidity buffer for DLT-to-RTGS settlement bridges (droop-controlled central bank money injection for atomic-settlement bursts)",
+   "problem": "Central banks now settle tokenised securities through DLT-RTGS bridges (e.g. the ECB's Pontes). Atomic DvP settlement creates step-like intraday liquidity demands that can gridlock participants.",
+   "mechanism": "A buffer agent at the bridge holds pre-positioned central-bank-money tokens and acts like a grid-forming inverter. It sets the reference intraday liquidity 'frequency', the internal price of immediate liquidity, and responds to the rate of change of pending DvP obligations with droop control: each participant's pre-agreed droop coefficient sets how much liquidity it automatically draws or supplies as the frequency deviates. Current-limiting caps per participant stop any single node from destabilising the network. A network energy function with provable dissipation certifies that the system returns to equilibrium after any bounded burst. Injections are collateralised automatically from pledged tokenised assets on the DLT side.",
+   "technical_effect": "Stable intraday liquidity under bursty atomic settlement, without gridlock, with certified stability of the multi-participant system.",
+   "why_non_obvious": "Grid-forming converter control for AI data-centre step loads and RTGS liquidity-saving mechanisms come from different disciplines. Droop-based automatic liquidity sharing with an energy-function stability certificate is not suggested by existing queue-optimisation LSMs.",
+   "claim_core": "A settlement system comprising a bridge between a distributed ledger and a real-time gross settlement system, and a liquidity buffer controller that computes a liquidity reference signal from a rate of change of pending settlement obligations and allocates automatic liquidity transfers to participants according to respective droop coefficients subject to per-participant limits.",
+   "keywords": "DLT RTGS interoperability, tokenised securities settlement, delivery versus payment, intraday liquidity, droop control, liquidity saving mechanism, central bank money",
+   "domain": "treasury"
+  },
+  {
+   "pair": "X020",
+   "title": "Forecast-sized offline mandates for machine and agent payments using physics-informed connectivity forecasts",
+   "problem": "Machine and agent payments (network 'Agent Pay for Machines', first bank agentic transactions) assume connectivity. Vehicles, drones, ships and rural IoT go offline. Over-sized offline allowances create double-spend and fraud exposure; under-sized ones strand the machine.",
+   "mechanism": "Before a mission or route, the issuer predicts the timing and length of connectivity gaps along the agent's planned path. The forecast is built from public satellite-constellation geometry, weather attenuation, cellular coverage maps and routing data, using a physics-informed link-state forecaster. The issuer then provisions time-boxed offline credentials (pre-authorised token bundles or offline CBDC value) sized to the expected consumption during each forecast gap plus a risk margin. Each credential expires at the forecast reconnection time plus tolerance and is valid only within the forecast geographic corridor. On reconnection, spend is reconciled and the forecaster is updated with the realised gaps.",
+   "technical_effect": "Offline payment exposure is kept at the minimum that still guarantees machine operation, and credentials are bound to predicted connectivity windows.",
+   "why_non_obvious": "Link-state forecasting is used for network planning. Using it to size and bound payment credentials in time and space is a cross-domain step not found in offline-payment art, which uses fixed offline limits.",
+   "claim_core": "A method comprising: obtaining a planned route of an autonomous payer; forecasting connectivity gaps along the route from orbital, weather and coverage data; provisioning offline payment credentials whose value, validity time and geographic scope are determined from the forecast gaps; and reconciling spend upon reconnection.",
+   "keywords": "offline payments, machine to machine payments, connectivity forecast, satellite link prediction, offline CBDC, pre-authorised tokens, autonomous agent payments",
+   "domain": "payments"
+  }
+ ]
+}

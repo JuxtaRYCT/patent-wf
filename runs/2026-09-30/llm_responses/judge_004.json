@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A2a-10",
+   "novelty": 4,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 7,
+   "commercial": 5,
+   "eligibility": 3,
+   "crazy": 4,
+   "verdict": "drop-weak",
+   "rationale": "Affordability simulation at checkout is a known BNPL practice; business-method exposure."
+  },
+  {
+   "id": "A2a-11",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 4,
+   "feasibility": 7,
+   "commercial": 4,
+   "eligibility": 4,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "SKU-level footprint from receipts is offered commercially (e.g. Doconomy/Cogo-style trackers)."
+  },
+  {
+   "id": "A2a-12",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 6,
+   "feasibility": 6,
+   "commercial": 5,
+   "eligibility": 6,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "Consent-chain certification (US12719671B1) and data-access consent patents are adjacent; signed deletion attestations in a transparency log are a moderately new combination."
+  },
+  {
+   "id": "A2a-13",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "Cross-chain burn/mint and atomic settlement patents and live products (CCTP) cover it."
+  },
+  {
+   "id": "A2a-14",
+   "novelty": 4,
+   "non_obviousness": 4,
+   "utility": 8,
+   "feasibility": 6,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 4,
+   "verdict": "drop-anticipated",
+   "rationale": "Cognitive-decline detection from device interaction (Panasonic US20210186410A1; finger-interaction frameworks) plus elder-exploitation monitoring exists."
+  },
+  {
+   "id": "A2a-15",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 7,
+   "feasibility": 8,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "Digital-footprint-age synthetic ID detection is a commercial product category."
+  },
+  {
+   "id": "A2a-16",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "MPC/privacy-enhancing-tech fraud consortia are known and deployed."
+  },
+  {
+   "id": "A2a-17",
+   "novelty": 2,
+   "non_obviousness": 2,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 5,
+   "eligibility": 3,
+   "crazy": 2,
+   "verdict": "drop-anticipated",
+   "rationale": "Counterfactual adverse-action explanations are well documented."
+  }
+ ]
+}

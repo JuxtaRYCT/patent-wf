@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A1-09",
+   "novelty": 6,
+   "non_obviousness": 7,
+   "utility": 6,
+   "feasibility": 3,
+   "commercial": 4,
+   "eligibility": 3,
+   "crazy": 9,
+   "verdict": "refine",
+   "rationale": "Mule-detection patents (BioCatch US12380455B2) are detection-only. Threshold-sized decoy seeding is conceptually new but legally constrained (entrapment, bank secrecy) and weak on eligibility. Better as a defensive publication or a law-enforcement methods paper."
+  },
+  {
+   "id": "A1-10",
+   "novelty": 4,
+   "non_obviousness": 4,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 7,
+   "crazy": 7,
+   "verdict": "drop-anticipated",
+   "rationale": "DEEP CHECK: predicting future malware-variant signatures from learned family evolution is published, with months of lead time (arXiv 2507.21538). Phishing-kit lineage and scam phylogenies exist, and phylogenetic attribution is patented (HRL US9224067B1, Triad US10783247B1). Extending this to multimodal banking scams is an obvious step."
+  },
+  {
+   "id": "A1-11",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 7,
+   "feasibility": 8,
+   "commercial": 6,
+   "eligibility": 7,
+   "crazy": 4,
+   "verdict": "refine",
+   "rationale": "Mobile threat defence is crowded; the hard-constraint factor graph encoding OS permission semantics is a modest technical twist. Worth a narrow claim."
+  },
+  {
+   "id": "A1-12",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 7,
+   "eligibility": 7,
+   "crazy": 7,
+   "verdict": "refine",
+   "rationale": "DEEP CHECK: out-of-band OTP guidance stresses delivery-path integrity, but no per-channel-distinct codes used to attribute leaks, nor coupling to shadow-ledger honey sessions, was found. Survives as refine; needs a check of bank-internal deception patents."
+  },
+  {
+   "id": "A1-13",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 7,
+   "feasibility": 6,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "No reconciliation-as-control art found. Eligibility is medium (a ledger-system control loop). Strong regulatory timing post-Synapse."
+  },
+  {
+   "id": "A1-14",
+   "novelty": 7,
+   "non_obviousness": 7,
+   "utility": 5,
+   "feasibility": 4,
+   "commercial": 5,
+   "eligibility": 5,
+   "crazy": 8,
+   "verdict": "refine",
+   "rationale": "BIS/PFMI papers discuss tokenised settlement risk; no droop-controlled liquidity buffer found. Adoption requires central banks. A good research or central-bank partnership concept rather than a near-term licensing asset."
+  },
+  {
+   "id": "A1-15",
+   "novelty": 7,
+   "non_obviousness": 6,
+   "utility": 6,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 7,
+   "verdict": "refine",
+   "rationale": "DEEP CHECK: offline terminal limits are static and manually configured (Square, Toast, Nexi docs). Forecast-sized, geo- and time-bounded offline credentials were not found. Survives as refine."
+  },
+  {
+   "id": "A1-16",
+   "novelty": 8,
+   "non_obviousness": 7,
+   "utility": 9,
+   "feasibility": 6,
+   "commercial": 8,
+   "eligibility": 6,
+   "crazy": 7,
+   "verdict": "pursue",
+   "rationale": "DEEP CHECK: industry practice predicts mule accounts and withholds inbound funds per account (NICE Actimize, Mastercard, Kumo), and Indian banks are seeking powers to freeze without LEA orders. No adversarial reachable-set computation of a minimal pre-emptive hold set across institutions was found. Confirmed; design holds as LEA/1930-authorised, time-limited requests."
+  }
+ ]
+}

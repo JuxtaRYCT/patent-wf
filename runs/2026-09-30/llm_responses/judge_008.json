@@ -1,0 +1,64 @@
+{
+ "judgments": [
+  {
+   "id": "A2b-12",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 8,
+   "feasibility": 8,
+   "commercial": 8,
+   "eligibility": 8,
+   "crazy": 5,
+   "verdict": "drop-anticipated",
+   "rationale": "DEEP CHECK: DeepMind 'Intelligent AI Delegation' (Delegation Capability Tokens built on macaroons), the IETF draft 'Attenuating Agent Tokens' (Mar 2026), AIP (arXiv 2603.24775) and Mastercard US20260154681A1 cover attenuable delegation for agents and payments."
+  },
+  {
+   "id": "A2b-13",
+   "novelty": 4,
+   "non_obviousness": 4,
+   "utility": 7,
+   "feasibility": 5,
+   "commercial": 5,
+   "eligibility": 6,
+   "crazy": 4,
+   "verdict": "drop-anticipated",
+   "rationale": "CreditRegistry's non-repudiation OTP for credit requests (US20190012732A1) and India's consent-artefact architecture anticipate the core."
+  },
+  {
+   "id": "A2b-14",
+   "novelty": 5,
+   "non_obviousness": 4,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 3,
+   "verdict": "refine",
+   "rationale": "No close art for signed purchase-session aggregation in UPI MDR; simple but useful. Better pitched to NPCI as a protocol change."
+  },
+  {
+   "id": "A2b-15",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 8,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 6,
+   "verdict": "refine",
+   "rationale": "RBI trusted-person proposals, BioCatch vishing detection and video-based transaction verification (Ironvest) are adjacent; the physically separated release ritual keyed to the coercion state is a narrow new element."
+  },
+  {
+   "id": "A2b-16",
+   "novelty": 3,
+   "non_obviousness": 3,
+   "utility": 6,
+   "feasibility": 8,
+   "commercial": 5,
+   "eligibility": 6,
+   "crazy": 3,
+   "verdict": "drop-anticipated",
+   "rationale": "US20130151419A1 (merchant verification of in-person electronic transactions via validation data rendered on the customer device) anticipates the core."
+  }
+ ]
+}

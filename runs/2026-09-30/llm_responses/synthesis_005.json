@@ -1,0 +1,15 @@
+{
+ "ideas": [
+  {
+   "pair": "X033",
+   "title": "Trust-farming-resistant payee reputation: semi-monotone graph centrality that turns scammers' bait payments into a risk signal",
+   "problem": "Romance and investment scammers 'groom' victims with small returns and route micro-payments through the payee to build reputation. Graph-based payee-trust scores rise with every added edge, so the grooming makes the scam payee look safer.",
+   "mechanism": "The payee-reputation engine uses a centrality measure constrained to be semi-monotone. Edges from clusters with synchronised creation, reciprocal micro-flows or shared devices contribute sub-linearly. Reverse 'bait' edges, where the prospective victim previously received small sums from the payee, are classified as trust-farming, and their contribution is inverted into risk. The trigger at payment time is: the payer received ≥1 small inbound payment from this payee within N weeks, the outbound amount is much larger, and the payee's recent centrality gain comes mostly from bait-like edges. This trigger produces friction and a tailored warning.",
+   "technical_effect": "Reputation scores that cannot be inflated by adding edges, with a specific detector for the grooming pattern.",
+   "why_non_obvious": "Monotonicity axioms of centrality are studied theoretically. Deliberately violating monotonicity for classified edge types, so that edge-adding manipulation becomes a detection signal, is a new use.",
+   "claim_core": "A method comprising: maintaining a payment graph; computing a reputation for a payee using a centrality measure in which contributions of edges classified as coordinated or reverse-bait are sub-linear or negative; and upon a payment request from a payer that previously received a bait-classified payment from the payee, applying an intervention.",
+   "keywords": "payee reputation, graph centrality, sybil resistance, romance scam, pig butchering, bait payment, trust farming, APP fraud",
+   "domain": "fraud"
+  }
+ ]
+}

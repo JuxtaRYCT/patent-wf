@@ -1,0 +1,100 @@
+{
+ "judgments": [
+  {
+   "id": "A2b-04",
+   "novelty": 4,
+   "non_obviousness": 4,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "ERC-3643 already provides partial-token freezing and taint analysis is well known; the residue is contract-level lineage accounting plus threshold court release."
+  },
+  {
+   "id": "A2b-05",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 5,
+   "feasibility": 7,
+   "commercial": 5,
+   "eligibility": 5,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "No close art, but modest technical depth; possibly better as a design standard than a patent."
+  },
+  {
+   "id": "A2b-06",
+   "novelty": 7,
+   "non_obviousness": 6,
+   "utility": 9,
+   "feasibility": 6,
+   "commercial": 8,
+   "eligibility": 7,
+   "crazy": 5,
+   "verdict": "pursue",
+   "rationale": "DEEP CHECK: Metro 2/e-OSCAR tooling validates format and automates code exchange, and State Farm US11893634B2 uses ML to correct reporting errors. No signed, field-level source-record provenance driving automatic dispute resolution was found. Confirmed."
+  },
+  {
+   "id": "A2b-07",
+   "novelty": 7,
+   "non_obviousness": 6,
+   "utility": 8,
+   "feasibility": 6,
+   "commercial": 7,
+   "eligibility": 6,
+   "crazy": 5,
+   "verdict": "pursue",
+   "rationale": "DEEP CHECK: mixed files are a well-known and litigated problem (about 15% of credit-reporting complaints in 2023 per CFPB), but no bureau or patent uses consumer-signed, credential-bound disownment as a hard negative constraint in entity resolution. Upgraded to pursue."
+  },
+  {
+   "id": "A2b-08",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 8,
+   "feasibility": 7,
+   "commercial": 8,
+   "eligibility": 6,
+   "crazy": 7,
+   "verdict": "pursue",
+   "rationale": "DEEP CHECK: industry commentary (MRC, Riskified, Signifyd) recommends 'networked intelligence and monitoring for transaction spikes', and Ballerine markets 'agentic detection' of merchant fraud. The specific signal survives: distinct-agent convergence on thin-history merchants normalised against a human-traffic baseline and by agent-platform concentration. Pursue with that narrowed claim."
+  },
+  {
+   "id": "A2b-09",
+   "novelty": 6,
+   "non_obviousness": 6,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 7,
+   "eligibility": 6,
+   "crazy": 7,
+   "verdict": "refine",
+   "rationale": "Attack taxonomies and benchmarks (AIP-Bench, AP2 security analysis) exist; a network-operated canary-merchant certification loop coupled to token scope is new but may be seen as an obvious operational use of red-teaming."
+  },
+  {
+   "id": "A2b-10",
+   "novelty": 4,
+   "non_obviousness": 4,
+   "utility": 7,
+   "feasibility": 7,
+   "commercial": 6,
+   "eligibility": 5,
+   "crazy": 3,
+   "verdict": "refine",
+   "rationale": "The FDIC's custodial-account recordkeeping proposal essentially requires this data; patentable residue is limited to the proof mechanism."
+  },
+  {
+   "id": "A2b-11",
+   "novelty": 5,
+   "non_obviousness": 5,
+   "utility": 7,
+   "feasibility": 5,
+   "commercial": 6,
+   "eligibility": 6,
+   "crazy": 5,
+   "verdict": "refine",
+   "rationale": "Electronic debt validation and dispute systems exist (GDR US20160328791A1); chain-of-title gating plus open-banking proof of payment is incremental."
+  }
+ ]
+}

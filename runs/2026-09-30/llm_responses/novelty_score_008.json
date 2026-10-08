@@ -1,0 +1,202 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2608.29669",
+   "novelty": 6,
+   "usefulness": 4,
+   "mechanism_or_problem": "Infer inter-firm interaction structure from news-embedding distributions via Wasserstein barycentres",
+   "tags": [
+    "text-embeddings",
+    "network-inference"
+   ]
+  },
+  {
+   "id": "arxiv:2609.33913",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Magic strikes for variance contracts",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "s2:6debca562a434a2eec1469d21b3ec55f42156f04",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Local government QR payment adoption",
+   "tags": [
+    "qr-payments"
+   ]
+  },
+  {
+   "id": "arxiv:2609.23272",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Exact robust-invariance set of controls that guarantee a maximum drawdown is never breached",
+   "tags": [
+    "drawdown",
+    "robust-invariance",
+    "hard-limits"
+   ]
+  },
+  {
+   "id": "arxiv:2609.21301",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "SV simulation schemes",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "s2:7cdabff1cb38158c54157372ffffc06bd2fe9a05",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Court booking system",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2608.15667",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Neural actor plus Pontryagin recovery for constrained portfolio control",
+   "tags": [
+    "portfolio",
+    "control"
+   ]
+  },
+  {
+   "id": "arxiv:2609.04801",
+   "novelty": 7,
+   "usefulness": 7,
+   "mechanism_or_problem": "Record authorisation: a retrieved true record can be bound to the wrong subject; require subject presence, edge validity and answer support",
+   "tags": [
+    "record-misbinding",
+    "identity-binding",
+    "personalisation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.09470",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Pooling disagreeing diffusion models",
+   "tags": [
+    "model-aggregation"
+   ]
+  },
+  {
+   "id": "s2:90f51732287cdf48ea2919cd1eb2e5a30a554118",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Photography booking app",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.18770",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Principal-agent regularity",
+   "tags": [
+    "math-econ"
+   ]
+  },
+  {
+   "id": "arxiv:2609.23768",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Risk measures under paired ambiguity",
+   "tags": [
+    "risk-measures"
+   ]
+  },
+  {
+   "id": "arxiv:2609.07486",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Cyber catastrophe losses plausibly follow a power law; small events inform tail",
+   "tags": [
+    "cyber-insurance",
+    "power-law"
+   ]
+  },
+  {
+   "id": "s2:a88cb9c4ccb2426f10241e7ec0c76ea3b4d326c9",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Term insurance choice survey",
+   "tags": [
+    "insurance"
+   ]
+  },
+  {
+   "id": "arxiv:2608.23274",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "What option quotes reveal about crash probability",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "arxiv:2609.09405",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Log S-fBM statistics",
+   "tags": [
+    "volatility"
+   ]
+  },
+  {
+   "id": "arxiv:2608.22276",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Exact structure-aware path search for virtual payment channels",
+   "tags": [
+    "payment-routing",
+    "path-selection"
+   ]
+  },
+  {
+   "id": "arxiv:2609.11905",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "EVaR parity portfolios",
+   "tags": [
+    "portfolio"
+   ]
+  },
+  {
+   "id": "arxiv:2608.22082",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Contamination-aware memory bank: a few trusted normals filter unverified references before anomaly scoring",
+   "tags": [
+    "anomaly-detection",
+    "contaminated-reference"
+   ]
+  },
+  {
+   "id": "s2:d661b3ff92ad69bc67a7b4dd97b39a3168d5a4e2",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Stablecoin cross-border payments startup vs incumbents (LatAm)",
+   "tags": [
+    "stablecoin-payments"
+   ]
+  },
+  {
+   "id": "s2:04b829a271dd57626103b75f31ce3370ad8d7df1",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Kiosk sales system",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

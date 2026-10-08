@@ -1,0 +1,375 @@
+{
+  "arm": "A1",
+  "name": "Approach 1 - literature cross-pollination (bisociation)",
+  "run": "2026-09-30",
+  "ideas": [
+    {
+      "pair": "X000",
+      "title": "Grid-hum liveness: real-time Electrical Network Frequency (ENF) matching to authenticate voice-confirmed high-value instructions",
+      "problem": "Voice clones now pass voice biometrics and human call-backs (a bank wired $108M after a cloned lawyer's voice confirmed the instruction). Every current check analyses the voice itself, which is exactly what generative models imitate.",
+      "mechanism": "When a high-value instruction is confirmed on a call, the bank media server isolates the mains-hum component that microphones pick up incidentally (fundamental 50/60 Hz and surviving harmonics 100-180 Hz in wideband/VoIP codecs), tracks its instantaneous frequency with a high-resolution estimator, and derives rate-of-change-of-frequency (RoCoF) features over several simultaneous windows (0.1 s, 1 s, 10 s). It compares these against live phasor-measurement-unit (PMU) grid-frequency data for the caller's claimed grid region over the same timestamps. Grid frequency random-walks unpredictably, so a live call from a powered room in the claimed region correlates, while synthetic TTS/voice-conversion audio carries no hum, a looped or stale hum, or a region-mismatched trajectory. Using multiple windows prevents the short-window grid events (steps) from being averaged away, which is the insight from inertia measurement. The ENF-consistency score is fused as an independent physical factor in the instruction's authorisation.",
+      "technical_effect": "Detects synthetic or replayed audio in real time using an external physical reference signal the attacker cannot predict or pre-record; independent of voice-model quality.",
+      "why_non_obvious": "ENF is used in audio forensics to date recordings after the fact; using live grid-frequency references as a real-time liveness factor for payment authorisation, with multi-window RoCoF matching robust to codec filtering, is a different function in a different field.",
+      "claim_core": "A method comprising: receiving call audio associated with a payment instruction; extracting an electrical-network-frequency trajectory and multi-window rate-of-change features; retrieving reference grid-frequency measurements for a region and time interval associated with the caller; computing a consistency score; and conditioning execution of the payment instruction on the score.",
+      "keywords": "electrical network frequency, ENF, mains hum, voice deepfake, liveness detection, payment instruction verification, grid frequency reference, phasor measurement",
+      "domain": "fraud",
+      "sources": [
+        "news:ac85f85a216502df",
+        "arxiv:2609.34531"
+      ],
+      "id": "A1-01"
+    },
+    {
+      "pair": "X001",
+      "title": "Camera-free RF occupancy sensing at ATMs to detect coercion and 'helper' card-swap fraud without biometric identification",
+      "problem": "Distraction and 'helper' frauds at ATMs (a second person watching the PIN, then swapping the card) and coerced withdrawals are common, especially against the elderly. Camera-based fixes create biometric-misidentification risk: people have been wrongly accused of bank fraud from face-recognition matches.",
+      "mechanism": "The ATM uses its existing Wi-Fi/BLE radio, or a low-cost 60 GHz radar module, to measure channel-state-information perturbations in a defined zone around the fascia during a session. A lightweight model estimates how many bodies are within 0.8 m, where they are relative to the PIN pad, and how they move (leaning in during PIN entry, lingering after card return, a hand approaching the card slot). The transaction state machine consumes this occupancy stream. If multiple occupancy coincides with PIN entry and a high withdrawal, or a second body approaches during card return, the ATM switches to privacy-PIN mode (a randomised keypad layout shown only at a narrow viewing angle), delays dispensing behind an on-screen prompt, requires in-app confirmation, or raises a silent alert. Only anonymous occupancy traces are retained as evidence, so a person can never be falsely identified from them.",
+      "technical_effect": "Detects multiple occupancy under occlusion, darkness or masks where cameras fail. No biometric data is processed, and the session control reacts in under a second.",
+      "why_non_obvious": "Research on indoor RF channel variation from human presence aims at link reliability. Turning the ATM's own radio into an occupancy sensor that drives transaction-flow control, deliberately non-identifying, runs against the industry trend of adding cameras.",
+      "claim_core": "A self-service terminal comprising a radio transceiver and a processor configured to obtain channel measurements during a transaction session, estimate an occupancy count and proximity of bodies relative to an input device, and modify the transaction flow based on the estimated occupancy and a transaction parameter.",
+      "keywords": "ATM occupancy detection, channel state information, radar, shoulder surfing, distraction fraud, card swap, coercion detection, device-free sensing",
+      "domain": "fraud",
+      "sources": [
+        "news:ef870829fd7d3811",
+        "arxiv:2609.36196"
+      ],
+      "id": "A1-02"
+    },
+    {
+      "pair": "X002",
+      "title": "Verification-aware payment scheduler using virtual output queues and iterative matching to remove urgency-driven verification bypass",
+      "problem": "Social-engineering scams (such as AI-generated executive messages) exploit cut-off pressure. Instructions awaiting out-of-band verification block FIFO payment queues, and operators under time pressure release them unverified.",
+      "mechanism": "The payment hub keeps a virtual queue per (verification resource, risk class) pair instead of one FIFO. Each scheduling slot, an iterative request-grant-accept matcher with rotating round-robin pointers (as in crossbar switch schedulers) allocates scarce verification resources to pending instructions: call-back agents, biometric re-authentication, dual-control approvers. This guarantees bounded wait, no starvation and no head-of-line blocking of clean payments. An instruction whose verification cannot complete before its cut-off is rescheduled deterministically to the next settlement cycle and the customer is told why. The scheduler has no code path that releases an unverified flagged instruction, so urgency cannot accelerate a flagged payment.",
+      "technical_effect": "Clean payments keep full throughput while flagged ones are verified with provably bounded delay. The scheduler structurally removes the operational bypass path.",
+      "why_non_obvious": "Crossbar scheduling (VOQ + iSLIP) is networking hardware theory; payment operations treat verification as a manual exception queue, not a matched resource-allocation problem.",
+      "claim_core": "A payment processing system comprising a plurality of virtual queues keyed by verification resource type and risk class, and a scheduler that iteratively matches pending instructions to available verification resources using rotating priority pointers, wherein instructions flagged for verification are released only upon a completed verification and are otherwise rescheduled to a subsequent settlement cycle.",
+      "keywords": "payment queue, verification scheduling, head-of-line blocking, virtual output queue, out-of-band verification, cut-off time, social engineering",
+      "domain": "payments",
+      "sources": [
+        "news:4f4357e6fce4f96d",
+        "arxiv:2609.30960"
+      ],
+      "id": "A1-03"
+    },
+    {
+      "pair": "X003",
+      "title": "Cryptographic co-presence receipts from concurrent UWB ranging for card-present, corporate-approval and exculpatory evidence",
+      "problem": "Remote impersonation (CEO fraud, relay attacks on cards) and false accusations after biometric misidentification both come down to one question: was this person's device physically there? Today there is no verifiable record of presence.",
+      "mechanism": "Terminals (ATMs, branch tablets, POS, and office anchors used for treasury approvals) run a concurrent coded ranging protocol with registered phones: binary transmit/listen codes let many phones in a busy lobby range at the same time instead of one after another, using IEEE 802.15.4z scrambled timestamp sequences for secure distance bounding. For each transaction, both secure elements sign a co-presence receipt {terminal id, device key id, distance upper bound, timestamp, transaction hash}. Receipts are used to (a) require the registered device within X m for card-present or cardless cash, which defeats relay and stolen-card use; (b) require approvers' devices near an office anchor for high-value corporate releases; and (c) serve as cryptographic alibi or corroboration in disputes and investigations. Only receipt hashes go into an append-only log, and the owner reveals a receipt with consent.",
+      "technical_effect": "Unforgeable, privacy-preserving proof of physical co-presence at scale (many devices ranged concurrently), usable both for real-time authorisation and for later evidence.",
+      "why_non_obvious": "Distance bounding is used to block relay attacks in the moment. Keeping mutually signed ranging results as evidentiary receipts that exonerate misidentified people, and ranging many devices concurrently in public spaces, is not suggested by that art.",
+      "claim_core": "A method comprising: performing, by a terminal, a concurrent coded ranging exchange with a plurality of mobile devices; determining a distance bound for a device associated with a transaction; generating a co-presence receipt signed by both terminal and device secure elements binding the distance bound, time and a transaction hash; conditioning the transaction on the receipt; and storing a commitment to the receipt in an append-only log.",
+      "keywords": "ultra-wideband secure ranging, distance bounding, co-presence proof, relay attack, ATM, corporate payment approval, evidentiary receipt, 802.15.4z",
+      "domain": "identity",
+      "sources": [
+        "news:cbeab915dc24f05b",
+        "arxiv:2609.33753"
+      ],
+      "id": "A1-04"
+    },
+    {
+      "pair": "X004",
+      "title": "Latent-space equalisation bridge: exchanging scam-risk embeddings between independently trained models of banks, telcos and platforms without retraining or raw data",
+      "problem": "Romance and investment scams are visible early on messaging platforms and telco networks, but the bank only sees the final transfer (e.g. 'Mum sent them £140,000'). Sharing raw conversations or call data is legally impossible, and participants will not co-train one shared model.",
+      "mechanism": "Each participant keeps its own, independently trained risk encoder. Using a small set of consented anchor entities that appear across participants (known scam numbers, payees, domains, plus benign controls), the bridge fits a lightweight equaliser for each directed pair (A→B): an orthogonal Procrustes or low-rank map with a nonlinear residual that sends A's latent vectors into B's latent space. At run time A sends only a latent vector for an entity (a phone number, payee account, URL), optionally with differential-privacy noise. B equalises it into its own space and feeds its existing classifier unchanged. The bridge monitors how well the anchors reconstruct; when drift passes a threshold after either side updates its model, it re-fits the equaliser automatically. In practice, a messaging platform's grooming-risk representation of the payee's contact reaches the bank's payment-risk model at the moment of transfer.",
+      "technical_effect": "Heterogeneous models interoperate without retraining, without raw-data transfer and with small payloads, while each party keeps full ownership of its model.",
+      "why_non_obvious": "Latent alignment (model stitching, relative representations, semantic equalisation in 6G) is studied for neural-network interoperability. Using it as the privacy-preserving transport for cross-sector fraud intelligence is new; existing sharing uses rules, hashed identifiers or federated training.",
+      "claim_core": "A system comprising a first model encoding entities into a first latent space, a second independently trained model operating in a second latent space, and an equaliser fitted on anchor entities to map first-space vectors into the second space, wherein a risk decision for a payment involving an entity uses the second model applied to an equalised vector received from the first party without receipt of underlying data.",
+      "keywords": "latent space alignment, embedding exchange, model stitching, cross-institution fraud data sharing, scam intelligence, privacy preserving, telco bank data sharing",
+      "domain": "fraud",
+      "sources": [
+        "news:b3420b55cc7d3f68",
+        "arxiv:2609.33729"
+      ],
+      "id": "A1-05"
+    },
+    {
+      "pair": "X005",
+      "title": "Living QR: flicker-coded payment codes read by event-based vision sensors to defeat QR swaps, stickers and screenshot replay",
+      "problem": "QR payments dominate India and much of Asia, and QR tampering is a volume fraud: stickers pasted over merchant codes, screenshot replay, fake 'receive money' QRs. A static optical code carries no liveness, and dynamic codes that change every 30 s can still be photographed and relayed.",
+      "mechanism": "The payee display renders a standard-looking QR, so ordinary cameras still work, but modulates a subset of modules with an imperceptible high-frequency ternary luminance flicker (+/0/−, 0.5–2 kHz). The flicker carries a rolling nonce stream and a MAC bound to the payment request and merchant key. The payer device reads it with an event-based vision sensor (or a high-speed camera mode), which captures polarity events asynchronously and is not limited by frame rate. Verification requires the nonce to be current to within milliseconds and the MAC to match the QR payload. A printed sticker, photograph or screenshot has no flicker channel, and a relayed live stream adds measurable latency, so both fail. The same channel carries larger payloads such as a signed invoice or merchant certificate without dense codes.",
+      "technical_effect": "Liveness and tamper evidence for optically presented payment codes, plus higher throughput than frame-based screen-to-camera links.",
+      "why_non_obvious": "Event-camera visible-light communication is optical telecom research. Using the flicker layer as an authenticity and liveness channel, while staying backward-compatible with legacy QR scanners, is not obvious from either QR-payment or VLC art.",
+      "claim_core": "A method comprising: displaying a machine-readable payment code while modulating a subset of its modules with a time-varying luminance pattern encoding a rolling nonce authenticated by a key of the payee; capturing, by a payer device, asynchronous brightness-change events; decoding and verifying the nonce freshness and authentication; and authorising the payment only upon successful verification.",
+      "keywords": "QR code payment fraud, dynamic QR, screen camera communication, event-based vision sensor, visible light communication, flicker watermark, liveness, QR tampering",
+      "domain": "payments",
+      "sources": [
+        "news:b05d66bdce0aab7a",
+        "arxiv:2609.36905"
+      ],
+      "id": "A1-06"
+    },
+    {
+      "pair": "X006",
+      "title": "Certified residual control of AI shopping agents: hardware-enforced bound on how far an agent's spending can drift from the user's mandate",
+      "problem": "On-device agentic commerce (chipmaker plus card-network partnerships) lets LLM agents pay. Mandates and limits are checked one transaction at a time, but prompt injection or hallucination can push many individually valid purchases that together drift far from what the user meant.",
+      "mechanism": "The signed user mandate is compiled into a deterministic nominal policy, a planned spending trajectory per category over time. The LLM agent may only propose residual actions relative to that plan. A safety filter inside the device TEE / secure element projects each proposed residual onto the set that keeps a certified ℓ2 (energy) bound on the cumulative deviation between actual and nominal trajectories. The bound comes from an offline stability certificate for the policy, as in residual learning on top of a certified controller. Only the projected action can request an agentic network token. The token carries an attestation of the certificate and the remaining deviation budget, so the issuer can verify compliance without seeing the prompt. Whatever the model outputs, total harm is capped by the certified budget.",
+      "technical_effect": "A model-agnostic, hardware-attested guarantee that an autonomous agent's financial actions stay within a bounded deviation of the mandate, which the issuer can verify at authorisation.",
+      "why_non_obvious": "Agent payment protocols check static per-transaction constraints. Applying control-theoretic residual certificates (stability guarantees around a nominal controller) to cumulative spending, and attesting them into network tokens, draws on a field (vehicle-platoon control) not linked to payments.",
+      "claim_core": "A device comprising a trusted execution environment storing a nominal spending policy derived from a signed mandate and a deviation budget, configured to receive an action proposed by an AI agent, project the action to satisfy a cumulative deviation bound relative to the nominal policy, and request a payment token only for the projected action together with an attestation of the remaining deviation budget.",
+      "keywords": "AI agent payment, agentic commerce, spending mandate, trusted execution environment, safety filter, residual policy, attestation, token",
+      "domain": "payments",
+      "sources": [
+        "news:ecd7907644b315a6",
+        "arxiv:2609.33892"
+      ],
+      "id": "A1-07"
+    },
+    {
+      "pair": "X009",
+      "title": "Body-area motion consensus: authorising wallet or tokenized-deposit payments only when co-worn earbuds, watch and phone agree they share one moving body",
+      "problem": "A phone can be stolen while unlocked, handed over under coercion, or operated by a 'helper'. Device-bound payment credentials then work for the wrong person. Biometric prompts add friction and are also coerced.",
+      "mechanism": "At authorisation, the phone collects 2–4 s IMU windows from enrolled co-worn devices over authenticated BLE: earbud head IMU, watch, and smart insoles if present. A reliability-gated fusion model scores each stream's reliability, dropping biased, drifting or disconnected ones, and tests a body-kinematic consensus hypothesis: gait phase, head-trunk coupling and step timing must be consistent with one body. If consensus holds with enrolled wearables, step-up is skipped. If the phone moves but the wearables are stationary or out of sync (phone snatched, handed over, or operated by another person), the payment is limited, delayed, or sent for confirmation on the wearable.",
+      "technical_effect": "Passive, continuous proof that the payment device is on the enrolled person's body, robust to unreliable consumer sensors.",
+      "why_non_obvious": "Reliability-gated fusion of consumer IMUs comes from pose estimation. Using cross-device kinematic consensus as a payment authorisation factor, rather than one device's gait biometric, is a distinct combination.",
+      "claim_core": "A method comprising: receiving motion data from a payment device and at least one wearable device enrolled to a user; estimating per-stream reliability; evaluating a consistency hypothesis that the devices are carried by a single moving body; and selecting an authorisation outcome for a payment based on the evaluation.",
+      "keywords": "wearable authentication, IMU correlation, co-location, earbuds, gait, continuous authentication, payment authorization, sensor fusion",
+      "domain": "identity",
+      "sources": [
+        "news:2eebc5fc297e37db",
+        "arxiv:2609.35764"
+      ],
+      "id": "A1-08"
+    },
+    {
+      "pair": "X010",
+      "title": "Threshold-calibrated decoy mule seeding: capturing laundering networks by pushing instrumented accounts past the network's own adoption threshold",
+      "problem": "Laundering networks (one allegedly moved $6.9B through global banks) route around individual freezes. Closing accounts one by one never reaches the network's structure.",
+      "mechanism": "Under law-enforcement authorisation, a bank consortium exposes instrumented decoy accounts to mule-recruitment channels (job-scam ads, recruiter channels). A threshold population model, adapted from gene-drive replacement dynamics where a trait spreads only after its release fraction crosses an unstable threshold, estimates the decoy share of the active mule pool above which recruiters' preferential reuse of 'reliable' accounts makes flows route predominantly through decoys. Decoys are engineered to be the most reliable: fast, never frozen, high limits. The optimiser schedules releases (count, timing, geography, persona mix) to cross the threshold at minimum cost. Past it, a growing share of laundered value passes through controlled settlement, exposing upstream and downstream nodes, and funds are held for recovery.",
+      "technical_effect": "Coverage of the laundering network becomes a controllable function of release size instead of reactive detection.",
+      "why_non_obvious": "Honeypot accounts are known as one-off stings. Using threshold-dependent population-replacement dynamics to size and schedule decoy releases so that the adversary's own routing preference takes over the network is a non-obvious transfer from genetic pest control.",
+      "claim_core": "A method comprising: estimating, from observed recruitment and routing behaviour of a laundering network, a threshold fraction of instrumented accounts above which routing preferentially selects instrumented accounts; scheduling creation and exposure of instrumented accounts to exceed the threshold; and monitoring flows through the instrumented accounts to identify network nodes and hold funds.",
+      "keywords": "money mule, decoy account, honeypot, money laundering network, mule recruitment, population threshold model, law enforcement",
+      "domain": "regtech",
+      "sources": [
+        "news:8c125121870f8df5",
+        "arxiv:2609.06687"
+      ],
+      "id": "A1-09"
+    },
+    {
+      "pair": "X013",
+      "title": "Scam-script phylogenetics: reconstructing the family tree of scam messages, calls and malicious apps to predict and pre-block the next variants",
+      "problem": "Bank anti-scam systems (such as newly launched 'guardian' protections) react to each new lure after victims report it. Scam operators mutate templates constantly (brand swaps, lure swaps, new APK wrappers).",
+      "mechanism": "Scam artefacts are collected from customer reports, telco and SMS gateways, call transcripts, phishing landing pages and APK static features, and embedded into aligned feature sequences. Lineage trees are reconstructed with quartet-based methods that reweight redundant quartets. These scale to millions of samples and tolerate missing features, which pairwise-distance clustering cannot. Ancestral-state reconstruction infers the template at each internal node. Mutation operators observed along branches (entity substitution, URL-shortener rotation, lure-theme shifts, permission-set drift) are learned per clade and applied forward to generate likely descendant variants. The system then pre-emptively deploys detection signatures and messaging-filter rules for those variants and attributes each new sample to an operator clade for coordinated takedown.",
+      "technical_effect": "Lower detection latency for unseen variants, and a clade-level attribution that consolidates many reports into one actionable operator entity.",
+      "why_non_obvious": "Phylogenetics is used for malware family analysis after the fact. Generating predictive signatures from ancestral reconstruction and branch mutation models, across multimodal scam artefacts (text, voice, apps) in banking, is a new use.",
+      "claim_core": "A method comprising: embedding scam artefacts into feature representations; reconstructing a lineage tree using weighted quartet scores; inferring ancestral templates and branch mutation operators; generating predicted descendant variants by applying the operators; and deploying detection rules for the predicted variants before they are observed.",
+      "keywords": "phylogenetic analysis, scam template lineage, phishing kit, malware family, ancestral reconstruction, variant prediction, fraud detection signatures",
+      "domain": "fraud",
+      "sources": [
+        "news:6b938fbad2559306",
+        "arxiv:2609.00614"
+      ],
+      "id": "A1-10"
+    },
+    {
+      "pair": "X015",
+      "title": "Constraint-aware factor-graph estimation of mobile device compromise for banking apps",
+      "problem": "Malicious apps (fake hospital-appointment apps, adult-content lures) empty accounts by abusing accessibility services, overlays and SMS access. Banking SDK signals are sparse, noisy and often missing, so rule engines misfire both ways.",
+      "mechanism": "The banking SDK observes a sparse set of signals: accessibility-service enablement and event rates, overlay-window presence, notification-listener or SMS-read capability, screen-share state, input-event timing, installed-package risk and OS patch level. A factor graph links hidden compromise-state variables (overlay attack, SMS interception, remote control, benign) to these observations. Hard factors encode OS permission logic, for example that SMS interception is impossible without READ_SMS or notification access, and overlays require SYSTEM_ALERT_WINDOW. Soft factors are learned likelihoods. Neural message passing with hard-constraint projection gives calibrated posteriors even when most observations are missing. These posteriors gate specific flows: SMS-OTP flows are disabled when P(SMS interception) is high, and payee addition when P(remote control) is high.",
+      "technical_effect": "Calibrated, explainable compromise estimates under missing data, which cut false blocks and missed attacks compared with rule lists.",
+      "why_non_obvious": "Hard-constrained factor-graph neural networks come from power-distribution state estimation. Encoding mobile-OS permission semantics as hard factors for fraud risk has no counterpart in mobile threat detection art.",
+      "claim_core": "A method comprising: collecting device observations by a banking application; performing inference on a factor graph linking hidden compromise states to the observations, the graph comprising hard factors encoding operating-system permission constraints and learned soft factors; and restricting a transaction flow according to posterior probabilities of the compromise states.",
+      "keywords": "mobile banking malware, device compromise estimation, factor graph, accessibility service abuse, overlay attack, SMS interception, probabilistic inference, OTP theft",
+      "domain": "fraud",
+      "sources": [
+        "news:4c3e57e9cdf492a9",
+        "arxiv:2609.35246"
+      ],
+      "id": "A1-11"
+    },
+    {
+      "pair": "X016",
+      "title": "Channel-watermarked OTPs with honey-session diversion: proving SMS interception and harvesting mule accounts instead of just blocking",
+      "problem": "Fake apps steal SMS OTPs. Blocking a suspicious login tips the attacker off, and the bank learns nothing about where the money was going.",
+      "mechanism": "Each authentication challenge is issued with a different code per delivery channel (SMS, push, email, voice), all valid for the same session. The code that comes back reveals which channel delivered it. If the SMS-channel code is submitted from a device other than the bound device, or from a known phishing relay, SMS interception is proven. The session is then diverted into a high-fidelity honey session: a sandboxed copy of the account with synthetic balances, where the attacker's actions run against a shadow ledger. Beneficiary accounts they add, device fingerprints and cash-out paths are harvested and shared with the mule-intelligence network, and the real account is locked quietly. In parallel, speculative pre-execution computes the risk of the pending transaction while the user is still entering the code, so honest users see no added latency.",
+      "technical_effect": "Converts an authentication-channel compromise into a positive, attributable signal and into mule-account intelligence without alerting the attacker.",
+      "why_non_obvious": "Transaction-bound OTPs and deception honeypots exist separately. Watermarking the OTP per delivery channel so that compromise of a specific channel is detected on submission, and pairing that with automatic diversion into a shadow-ledger session, is a new combination.",
+      "claim_core": "A method comprising: generating distinct authentication codes for respective delivery channels for a session; receiving a submitted code and identifying its delivery channel; determining channel compromise based on the channel and a submitting device; and in response routing the session to a sandboxed environment backed by a shadow ledger while recording beneficiary and device data.",
+      "keywords": "OTP interception, SMS OTP theft, honeypot session, deception, decoy environment, channel binding, mule account identification, malicious app",
+      "domain": "fraud",
+      "sources": [
+        "news:3c4a723e5216b0b6",
+        "arxiv:2609.34370"
+      ],
+      "id": "A1-12"
+    },
+    {
+      "pair": "X017",
+      "title": "Robust MPC ledger-convergence controller for sponsor-bank / fintech (BaaS) omnibus accounts",
+      "problem": "After Synapse, regulators are resetting guidance. The core failure was a divergence between fintech sub-ledgers and the bank's FBO (for-benefit-of) omnibus balance that nobody saw until it was too large to close.",
+      "mechanism": "The system models the gap between the omnibus balance and the sum of end-user sub-ledger balances as a dynamical state. Disturbances (pending card settlements, ACH returns, chargebacks, timing mismatches) are bounded by learned envelopes. A robust variable-horizon model-predictive controller recomputes funding transfers, holds and payout throttles every few minutes so that the gap 'lands' on a moving target: zero at each settlement cut-off event, whose timing moves. It keeps a guaranteed tube around the planned trajectory. Each sub-ledger update must carry a Merkle inclusion proof, so the controller's state is verifiable by the bank. If the MPC becomes infeasible, meaning the gap cannot be closed by the next cut-off under worst-case disturbances, the system raises a pre-shortfall alert days before a Synapse-style hole appears.",
+      "technical_effect": "Continuous, verifiable convergence of two independently operated ledgers with a formal early-warning condition (infeasibility) instead of after-the-fact reconciliation.",
+      "why_non_obvious": "Robust variable-horizon MPC for landing on moving targets is a UAV technique. Ledger reconciliation is treated as batch matching, not as closed-loop control with a feasibility certificate.",
+      "claim_core": "A system comprising a state estimator computing a divergence between an omnibus account balance and aggregated verified sub-ledger balances, and a robust model-predictive controller computing funding and hold actions over a variable horizon ending at a settlement event such that the divergence reaches a target within a guaranteed bound, and generating an alert upon infeasibility.",
+      "keywords": "banking as a service, FBO account, ledger reconciliation, sub-ledger, model predictive control, shortfall early warning, sponsor bank",
+      "domain": "regtech",
+      "sources": [
+        "news:98d170fad608d39b",
+        "arxiv:2609.34574"
+      ],
+      "id": "A1-13"
+    },
+    {
+      "pair": "X018",
+      "title": "Grid-forming liquidity buffer for DLT-to-RTGS settlement bridges (droop-controlled central bank money injection for atomic-settlement bursts)",
+      "problem": "Central banks now settle tokenised securities through DLT-RTGS bridges (e.g. the ECB's Pontes). Atomic DvP settlement creates step-like intraday liquidity demands that can gridlock participants.",
+      "mechanism": "A buffer agent at the bridge holds pre-positioned central-bank-money tokens and acts like a grid-forming inverter. It sets the reference intraday liquidity 'frequency', the internal price of immediate liquidity, and responds to the rate of change of pending DvP obligations with droop control: each participant's pre-agreed droop coefficient sets how much liquidity it automatically draws or supplies as the frequency deviates. Current-limiting caps per participant stop any single node from destabilising the network. A network energy function with provable dissipation certifies that the system returns to equilibrium after any bounded burst. Injections are collateralised automatically from pledged tokenised assets on the DLT side.",
+      "technical_effect": "Stable intraday liquidity under bursty atomic settlement, without gridlock, with certified stability of the multi-participant system.",
+      "why_non_obvious": "Grid-forming converter control for AI data-centre step loads and RTGS liquidity-saving mechanisms come from different disciplines. Droop-based automatic liquidity sharing with an energy-function stability certificate is not suggested by existing queue-optimisation LSMs.",
+      "claim_core": "A settlement system comprising a bridge between a distributed ledger and a real-time gross settlement system, and a liquidity buffer controller that computes a liquidity reference signal from a rate of change of pending settlement obligations and allocates automatic liquidity transfers to participants according to respective droop coefficients subject to per-participant limits.",
+      "keywords": "DLT RTGS interoperability, tokenised securities settlement, delivery versus payment, intraday liquidity, droop control, liquidity saving mechanism, central bank money",
+      "domain": "treasury",
+      "sources": [
+        "news:1517bc72795f1a1b",
+        "arxiv:2609.33553"
+      ],
+      "id": "A1-14"
+    },
+    {
+      "pair": "X020",
+      "title": "Forecast-sized offline mandates for machine and agent payments using physics-informed connectivity forecasts",
+      "problem": "Machine and agent payments (network 'Agent Pay for Machines', first bank agentic transactions) assume connectivity. Vehicles, drones, ships and rural IoT go offline. Over-sized offline allowances create double-spend and fraud exposure; under-sized ones strand the machine.",
+      "mechanism": "Before a mission or route, the issuer predicts the timing and length of connectivity gaps along the agent's planned path. The forecast is built from public satellite-constellation geometry, weather attenuation, cellular coverage maps and routing data, using a physics-informed link-state forecaster. The issuer then provisions time-boxed offline credentials (pre-authorised token bundles or offline CBDC value) sized to the expected consumption during each forecast gap plus a risk margin. Each credential expires at the forecast reconnection time plus tolerance and is valid only within the forecast geographic corridor. On reconnection, spend is reconciled and the forecaster is updated with the realised gaps.",
+      "technical_effect": "Offline payment exposure is kept at the minimum that still guarantees machine operation, and credentials are bound to predicted connectivity windows.",
+      "why_non_obvious": "Link-state forecasting is used for network planning. Using it to size and bound payment credentials in time and space is a cross-domain step not found in offline-payment art, which uses fixed offline limits.",
+      "claim_core": "A method comprising: obtaining a planned route of an autonomous payer; forecasting connectivity gaps along the route from orbital, weather and coverage data; provisioning offline payment credentials whose value, validity time and geographic scope are determined from the forecast gaps; and reconciling spend upon reconnection.",
+      "keywords": "offline payments, machine to machine payments, connectivity forecast, satellite link prediction, offline CBDC, pre-authorised tokens, autonomous agent payments",
+      "domain": "payments",
+      "sources": [
+        "news:fefcaf910263218b",
+        "arxiv:2609.26696"
+      ],
+      "id": "A1-15"
+    },
+    {
+      "pair": "X026",
+      "title": "Reachability-certified pre-emptive holds: intercepting stolen funds ahead of the money instead of chasing hops",
+      "problem": "Cyber-fraud reporting systems (India's 1930 helpline and CFCFRMS, UK APP reimbursement) place liens hop by hop after the money has moved. Mule layering outruns them within minutes, and the 'golden hour' is lost.",
+      "mechanism": "When fraud is reported, the system models the stolen funds as an adversary with bounded manoeuvring capability on the inter-bank payment graph. The bounds are per-rail latency, per-account velocity and limits, new-payee cooling periods, and cash-out points (ATMs, crypto on-ramps, merchant cash-back). From these it computes the forward reachable set of accounts over time. It then solves for the minimum set of accounts to place under short, auto-expiring holds now, such that every reachable cash-out path is covered before the funds could arrive: a capture certificate, analogous to robust safety certificates against manoeuvring obstacles. Hold requests are signed, scoped and time-limited, and are issued to participating banks. Each bank solves its part through a distributed ADMM formulation, so no raw transaction data leaves the bank. Unused holds release automatically.",
+      "technical_effect": "Guaranteed interception coverage with the fewest holds, computed in seconds and across institutions without pooling data.",
+      "why_non_obvious": "Fund tracing follows observed transactions. Computing adversarial reachable sets with bounded capabilities and issuing certified pre-emptive holds is a control-theory transfer, not an extension of tracing.",
+      "claim_core": "A method comprising: receiving a fraud report identifying a source account and amount; computing, over a payment graph with per-edge timing and capacity constraints, a time-indexed reachable set of accounts and cash-out nodes; selecting a minimal set of accounts whose temporary hold intercepts all reachable cash-out paths before the funds can arrive; and transmitting signed, time-limited hold requests to institutions holding the selected accounts.",
+      "keywords": "stolen funds recovery, lien marking, fraud reporting, reachable set, payment graph, mule layering, pre-emptive hold, APP fraud, 1930 helpline",
+      "domain": "fraud",
+      "sources": [
+        "news:f657a56c4007da96",
+        "arxiv:2609.37126"
+      ],
+      "id": "A1-16"
+    },
+    {
+      "pair": "X028",
+      "title": "Proportionality-bounded mass enforcement: compensatory review allocation before automated fraud actions hit hundreds of thousands of people",
+      "problem": "Mass automated fraud determinations (760,000 insurance cancellations; people jailed after AI flags) concentrate false positives on particular segments. The error accumulates across segments in the same way apportionment rounding bias accumulates across districts.",
+      "mechanism": "Before a batch of automated adverse actions is executed, the system computes for each segment (region, age band, channel, language) the gap between its share of actions and its share of evidence-weighted fraud likelihood. It uses probabilistic seat-vote discrepancy bounds to predict the accumulated disproportionality across all segments. It then allocates a fixed number of 'compensatory' human-review slots or deferred-action slots to over-actioned segments, so that the maximum disproportionality stays under a configured bound, and executes the rest. A signed proportionality certificate is logged for audit and appeal.",
+      "technical_effect": "A bounded disparity guarantee for large automated enforcement batches at a fixed review cost.",
+      "why_non_obvious": "Compensatory-seat theory from electoral systems has not been applied to capacity-constrained correction of automated enforcement.",
+      "claim_core": "A method comprising: receiving a batch of proposed automated adverse actions across segments; computing per-segment discrepancies between action shares and evidence shares; allocating a bounded number of review slots to segments to reduce a maximum discrepancy below a threshold; and executing the remaining actions while logging a certificate.",
+      "keywords": "automated fraud enforcement, false positives, disparate impact, fairness constraint, human review allocation, apportionment, audit certificate",
+      "domain": "regtech",
+      "sources": [
+        "news:06c301528ee43296",
+        "arxiv:2609.18710"
+      ],
+      "id": "A1-17"
+    },
+    {
+      "pair": "X033",
+      "title": "Trust-farming-resistant payee reputation: semi-monotone graph centrality that turns scammers' bait payments into a risk signal",
+      "problem": "Romance and investment scammers 'groom' victims with small returns and route micro-payments through the payee to build reputation. Graph-based payee-trust scores rise with every added edge, so the grooming makes the scam payee look safer.",
+      "mechanism": "The payee-reputation engine uses a centrality measure constrained to be semi-monotone. Edges from clusters with synchronised creation, reciprocal micro-flows or shared devices contribute sub-linearly. Reverse 'bait' edges, where the prospective victim previously received small sums from the payee, are classified as trust-farming, and their contribution is inverted into risk. The trigger at payment time is: the payer received ≥1 small inbound payment from this payee within N weeks, the outbound amount is much larger, and the payee's recent centrality gain comes mostly from bait-like edges. This trigger produces friction and a tailored warning.",
+      "technical_effect": "Reputation scores that cannot be inflated by adding edges, with a specific detector for the grooming pattern.",
+      "why_non_obvious": "Monotonicity axioms of centrality are studied theoretically. Deliberately violating monotonicity for classified edge types, so that edge-adding manipulation becomes a detection signal, is a new use.",
+      "claim_core": "A method comprising: maintaining a payment graph; computing a reputation for a payee using a centrality measure in which contributions of edges classified as coordinated or reverse-bait are sub-linear or negative; and upon a payment request from a payer that previously received a bait-classified payment from the payee, applying an intervention.",
+      "keywords": "payee reputation, graph centrality, sybil resistance, romance scam, pig butchering, bait payment, trust farming, APP fraud",
+      "domain": "fraud",
+      "sources": [
+        "news:b3420b55cc7d3f68",
+        "arxiv:2609.24683"
+      ],
+      "id": "A1-18"
+    },
+    {
+      "pair": "X050",
+      "title": "Principal-intent factor graph with evidentiary bundle for agent-initiated payments and dispute resolution",
+      "problem": "When an AI agent buys the wrong item or books the wrong dates, liability between merchant, issuer and agent platform is unresolved. There is no verifiable record of what the user actually intended.",
+      "mechanism": "For each agent-initiated payment, a factor graph over hidden intent variables (item class, budget, deadline, merchant constraints, substitutes allowed) combines noisy observations: the signed natural-language mandate, parsed into constraints; the user's historical approvals and rejections; context such as calendar and location; and the agent's proposed cart. Hard factors enforce explicit mandate constraints and soft factors are learned. The posterior probability that the proposed purchase lies within intent is computed. Low-probability purchases are routed to the user for confirmation. Every payment carries a signed evidentiary bundle with the posterior, the dominant factors and the hashes of the inputs, written in a form an auditor can check without trusting the agent platform's own logs. Dispute adjudication uses this bundle to allocate liability.",
+      "technical_effect": "Machine-verifiable intent compliance scores and tamper-evident evidence for agentic transactions.",
+      "why_non_obvious": "Agent payment protocols carry static mandates. Probabilistic intent inference with hard constraints, plus evidentiary bundles, fills the 'agent mistake' liability gap, which is not addressed by token-based controls.",
+      "claim_core": "A method comprising: receiving a proposed payment from an autonomous agent acting for a principal; performing inference on a factor graph relating hidden intent variables to a signed mandate, historical principal decisions and the proposed payment; routing the payment for confirmation when a posterior intent-compliance probability is below a threshold; and generating a signed evidentiary bundle for dispute resolution.",
+      "keywords": "agentic payments, intent verification, AI agent mistake, mandate, factor graph, dispute evidence, chargeback liability",
+      "domain": "payments",
+      "sources": [
+        "news:fefcaf910263218b",
+        "arxiv:2609.35246"
+      ],
+      "id": "A1-19"
+    },
+    {
+      "pair": "X051",
+      "title": "Payday-landing controller for earned wage access: advance sizing with a robust no-cycle guarantee",
+      "problem": "Earned wage access (EWA) products are being sued as disguised high-cost loans because users fall into repeat-advance cycles.",
+      "mechanism": "Before offering an advance, the provider runs a robust variable-horizon MPC over the worker's projected balance until payday. Inflows are the remaining earned wages, and outflows are known bills, typical spend and bounded disturbances. The controller computes the largest advance and the fee-free timing that guarantee the balance 'lands' non-negative at payday after repayment, with no second advance needed under worst-case disturbances. The feasibility certificate is stored per advance as ability-to-repay evidence.",
+      "technical_effect": "Advance sizing with a guaranteed no-cycle property under bounded uncertainty.",
+      "why_non_obvious": "Using moving-target MPC for consumer liquidity products is unusual; affordability checks are static.",
+      "claim_core": "A method computing an advance amount by solving a robust model-predictive control problem over a projected account balance trajectory ending at a pay date subject to a terminal non-negativity constraint and a no-repeat-advance constraint under bounded disturbances.",
+      "keywords": "earned wage access, advance sizing, affordability, cash flow forecast, model predictive control, ability to repay",
+      "domain": "credit",
+      "sources": [
+        "news:d139d55e1e4a00fc",
+        "arxiv:2609.34574"
+      ],
+      "id": "A1-20"
+    },
+    {
+      "pair": "X055",
+      "title": "Crowd-relayed settlement of offline payments via delay-tolerant store-carry-forward routing",
+      "problem": "Offline digital payments (offline CBDC, UPI Lite-style wallets) carry double-spend risk that grows with the time until settlement. Remote regions (e.g. RBI's push for credit and payments in J&K) can stay offline for days.",
+      "mechanism": "Each offline payment is packaged as an encrypted, signed bundle. Opted-in nearby devices act as carriers and store and forward bundles over BLE or Wi-Fi Direct. Routing is on-demand: a bundle goes to the carriers predicted, from their mobility history, to reach connectivity soonest, rather than flooding to everyone. The first carrier to reach the network submits the bundle. The ledger deduplicates by bundle ID and returns a signed receipt, which pays the carrier a micro-incentive and propagates back as a settlement acknowledgement. The payee's offline wallet can raise its offline limit when earlier bundles are acknowledged.",
+      "technical_effect": "Shorter time-to-settlement and therefore a smaller double-spend window, at low radio cost.",
+      "why_non_obvious": "DTN research targets vehicle warnings and messaging. Using store-carry-forward with delivery-predicted routing as a settlement accelerator with incentive receipts for offline money is new.",
+      "claim_core": "A method comprising: generating a signed encrypted bundle for an offline payment; selecting, from nearby devices, carrier devices based on predicted time-to-connectivity; transferring the bundle to selected carriers; receiving the bundle at a ledger from a first carrier and deduplicating; and issuing a signed receipt enabling carrier compensation and payee limit restoration.",
+      "keywords": "offline payments, delay tolerant networking, store carry forward, mesh relay, offline CBDC, double spending, settlement latency",
+      "domain": "payments",
+      "sources": [
+        "news:72ed58e415d5026c",
+        "arxiv:2609.36156"
+      ],
+      "id": "A1-21"
+    },
+    {
+      "pair": "X056",
+      "title": "Input-pipeline timing fingerprints to detect accessibility-service automation and remote-control malware in mobile banking without extra permissions",
+      "problem": "OTP-stealing and account-draining apps use accessibility services and remote-control tooling to operate the banking app as if they were the user.",
+      "mechanism": "The banking app timestamps each input event through the whole pipeline with high-resolution monotonic clocks: hardware MotionEvent timestamp, app dispatch, the view-hierarchy change, and the next vsync frame. Genuine touches show sensor-noise jitter and a characteristic hardware-to-dispatch latency distribution. Synthetic events injected through accessibility or remote-control frameworks show quantised timestamps, missing hardware noise, extra IPC hop latency and implausible inter-event regularity. A small on-device classifier on these timing features flags automated or remote sessions within a few events and triggers step-up or a block. It needs no special permissions and no data about other apps.",
+      "technical_effect": "Permissionless detection of synthetic input, based on physical timing properties of the input stack.",
+      "why_non_obvious": "Picosecond time-to-digital conversion and calibration loops show that timing is itself a signal. Applying fine-grained input-pipeline latency forensics as a malware discriminator is not done in mobile banking SDKs, which use permission and app scans.",
+      "claim_core": "A method comprising: recording, for input events received by a banking application, timestamps at multiple stages of an input pipeline; computing latency and jitter features; classifying the session as automated or remotely controlled based on the features; and restricting a transaction accordingly.",
+      "keywords": "accessibility service abuse, remote access trojan, synthetic touch detection, input event timing, mobile banking malware, overlay attack",
+      "domain": "fraud",
+      "sources": [
+        "news:455dd23b63c9e68b",
+        "arxiv:2609.36083"
+      ],
+      "id": "A1-22"
+    },
+    {
+      "pair": "X057",
+      "title": "Run-safe stablecoin redemption controller with an adversarial reachability certificate published on-chain",
+      "problem": "Stablecoin reserves spread across banks, and one partner bank can be hit by an asset seizure. The GENIUS Act requires redemption at par within 2 business days. Issuers publish point-in-time attestations, not forward-looking guarantees.",
+      "mechanism": "The issuer models redemption demand as an adversary with bounded capability: maximum redemption rate derived from holder concentration, on-chain liquidity, exchange balances and social-momentum signals. It computes the robust invariant set of reserve-liquidation policies that guarantee par redemption within the regulatory window under every admissible demand path, including single-custodian loss scenarios. A controller continuously re-tiers reserves across cash at multiple banks, T-bills and reverse repo to keep the state inside the invariant set. It publishes a machine-verifiable safety margin certificate on-chain; wallets and exchanges can read it and throttle programmatically.",
+      "technical_effect": "A forward-looking, verifiable liquidity guarantee instead of static attestations, with automatic rebalancing against custody concentration.",
+      "why_non_obvious": "Robust geometric safety certificates against manoeuvring obstacles are a robotics tool. Treating redemption demand as an adversarial manoeuvring agent and certifying reserve policies is a non-obvious transfer.",
+      "claim_core": "A method comprising: estimating bounds on a redemption-demand process; computing a set of reserve states from which par redemption within a time window is guaranteed under all demand paths within the bounds; rebalancing reserve assets across custodians to keep the reserve state within the set; and publishing a verifiable certificate of a safety margin.",
+      "keywords": "stablecoin redemption, reserve management, run risk, robust invariant set, proof of reserves, liquidity certificate, GENIUS Act",
+      "domain": "crypto",
+      "sources": [
+        "s2:f86b91fc4ecb01edde5ce07c268fe8984431beba",
+        "arxiv:2609.37126"
+      ],
+      "id": "A1-23"
+    }
+  ]
+}

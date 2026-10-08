@@ -1,0 +1,293 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2609.38105",
+   "novelty": 6,
+   "usefulness": 3,
+   "mechanism_or_problem": "Identify an unknown material's response law from one probing interaction",
+   "tags": [
+    "system-identification",
+    "single-probe"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36566",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Routing tables over rotating constellations are not periodic",
+   "tags": [
+    "routing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.08776",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Chromatin imaging protocol",
+   "tags": [
+    "biology"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30960",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "Virtual output queues plus iterative matching avoid head-of-line blocking in a crossbar switch carrying mixed packet sizes",
+   "tags": [
+    "queueing",
+    "head-of-line-blocking",
+    "switch-scheduling"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38054",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "RGB-D SLAM with learned priors",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30356",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Satellite foundation-model embeddings separate cities but compress within-city variation",
+   "tags": [
+    "satellite-embeddings",
+    "alt-data"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37069",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Group-based windowed quantized ADMM coordinates heterogeneous clients with low communication",
+   "tags": [
+    "distributed-optimization",
+    "federated"
+   ]
+  },
+  {
+   "id": "arxiv:2609.20101",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "A new crisis competes for a finite pool of attention and displaces older topics",
+   "tags": [
+    "attention-economy",
+    "crisis-dynamics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37560",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Sim-to-real surface finishing platform",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34956",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Species interact successfully without shared evolutionary history (ecological fitting)",
+   "tags": [
+    "ecology",
+    "novel-interactions"
+   ]
+  },
+  {
+   "id": "arxiv:2609.26696",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Forecast a location's satellite-link throughput and latency from public weather, orbit and routing data",
+   "tags": [
+    "connectivity-forecast",
+    "offline-planning"
+   ]
+  },
+  {
+   "id": "arxiv:2609.18289",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Parliament speaker linking",
+   "tags": [
+    "nlp"
+   ]
+  },
+  {
+   "id": "arxiv:2609.24683",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Which centrality measures stay monotone when edges are added (manipulation resistance)",
+   "tags": [
+    "graph-centrality",
+    "manipulation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.31864",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Phone reconstructs store-level visits in malls without radio maps or infrastructure",
+   "tags": [
+    "indoor-localisation",
+    "visit-verification"
+   ]
+  },
+  {
+   "id": "arxiv:2609.25908",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Blog influence analysis",
+   "tags": [
+    "social-networks"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37126",
+   "novelty": 6,
+   "usefulness": 4,
+   "mechanism_or_problem": "Safety certificate against obstacles that actively maneuver within bounded capability (worst-case adversary)",
+   "tags": [
+    "adversarial",
+    "control-barrier"
+   ]
+  },
+  {
+   "id": "arxiv:2609.02365",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Effective number of species vs area",
+   "tags": [
+    "diversity-metrics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36156",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Store-carry-forward dissemination of warnings on demand instead of flooding in delay-tolerant vehicle networks",
+   "tags": [
+    "delay-tolerant",
+    "store-carry-forward",
+    "alert-propagation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36898",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Segmentation volume rendering",
+   "tags": [
+    "visualisation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34953",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Early participation signals predict later completion",
+   "tags": [
+    "engagement-signal"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35331",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Reverse sequential proportional approval voting guarantees",
+   "tags": [
+    "social-choice"
+   ]
+  },
+  {
+   "id": "arxiv:2609.22322",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Spike sorting with noisy labels",
+   "tags": [
+    "neuro"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36844",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Radar-depth fusion sees transparent surfaces cameras miss",
+   "tags": [
+    "radar",
+    "sensor-fusion"
+   ]
+  },
+  {
+   "id": "arxiv:2609.04441",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Kuramoto-style synchronisation stability of neutrino ensembles",
+   "tags": [
+    "synchronisation"
+   ]
+  },
+  {
+   "id": "arxiv:2609.31929",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Newton solver for game equilibria that verifies second-order optimality",
+   "tags": [
+    "equilibrium",
+    "verification"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35263",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Pipeline prefill with prefix reuse",
+   "tags": [
+    "llm-systems"
+   ]
+  },
+  {
+   "id": "arxiv:2609.36878",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "LiDAR intensity reconstruction",
+   "tags": [
+    "robotics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.34370",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Speculative execution runs alongside normal execution as a new parallelism axis",
+   "tags": [
+    "speculative-execution",
+    "latency"
+   ]
+  },
+  {
+   "id": "arxiv:2609.06687",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Threshold-dependent gene drive: a trait spreads only after release crosses an unstable threshold",
+   "tags": [
+    "threshold-dynamics",
+    "population-replacement"
+   ]
+  },
+  {
+   "id": "arxiv:2609.35764",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Reliability-gated fusion of unreliable consumer earbud and insole IMUs for body pose",
+   "tags": [
+    "wearables",
+    "sensor-fusion",
+    "reliability-gating"
+   ]
+  }
+ ]
+}

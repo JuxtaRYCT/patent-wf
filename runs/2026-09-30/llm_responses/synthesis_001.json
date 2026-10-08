@@ -1,0 +1,37 @@
+{
+ "ideas": [
+  {
+   "pair": "X006",
+   "title": "Certified residual control of AI shopping agents: hardware-enforced bound on how far an agent's spending can drift from the user's mandate",
+   "problem": "On-device agentic commerce (chipmaker plus card-network partnerships) lets LLM agents pay. Mandates and limits are checked one transaction at a time, but prompt injection or hallucination can push many individually valid purchases that together drift far from what the user meant.",
+   "mechanism": "The signed user mandate is compiled into a deterministic nominal policy, a planned spending trajectory per category over time. The LLM agent may only propose residual actions relative to that plan. A safety filter inside the device TEE / secure element projects each proposed residual onto the set that keeps a certified ℓ2 (energy) bound on the cumulative deviation between actual and nominal trajectories. The bound comes from an offline stability certificate for the policy, as in residual learning on top of a certified controller. Only the projected action can request an agentic network token. The token carries an attestation of the certificate and the remaining deviation budget, so the issuer can verify compliance without seeing the prompt. Whatever the model outputs, total harm is capped by the certified budget.",
+   "technical_effect": "A model-agnostic, hardware-attested guarantee that an autonomous agent's financial actions stay within a bounded deviation of the mandate, which the issuer can verify at authorisation.",
+   "why_non_obvious": "Agent payment protocols check static per-transaction constraints. Applying control-theoretic residual certificates (stability guarantees around a nominal controller) to cumulative spending, and attesting them into network tokens, draws on a field (vehicle-platoon control) not linked to payments.",
+   "claim_core": "A device comprising a trusted execution environment storing a nominal spending policy derived from a signed mandate and a deviation budget, configured to receive an action proposed by an AI agent, project the action to satisfy a cumulative deviation bound relative to the nominal policy, and request a payment token only for the projected action together with an attestation of the remaining deviation budget.",
+   "keywords": "AI agent payment, agentic commerce, spending mandate, trusted execution environment, safety filter, residual policy, attestation, token",
+   "domain": "payments"
+  },
+  {
+   "pair": "X009",
+   "title": "Body-area motion consensus: authorising wallet or tokenized-deposit payments only when co-worn earbuds, watch and phone agree they share one moving body",
+   "problem": "A phone can be stolen while unlocked, handed over under coercion, or operated by a 'helper'. Device-bound payment credentials then work for the wrong person. Biometric prompts add friction and are also coerced.",
+   "mechanism": "At authorisation, the phone collects 2–4 s IMU windows from enrolled co-worn devices over authenticated BLE: earbud head IMU, watch, and smart insoles if present. A reliability-gated fusion model scores each stream's reliability, dropping biased, drifting or disconnected ones, and tests a body-kinematic consensus hypothesis: gait phase, head-trunk coupling and step timing must be consistent with one body. If consensus holds with enrolled wearables, step-up is skipped. If the phone moves but the wearables are stationary or out of sync (phone snatched, handed over, or operated by another person), the payment is limited, delayed, or sent for confirmation on the wearable.",
+   "technical_effect": "Passive, continuous proof that the payment device is on the enrolled person's body, robust to unreliable consumer sensors.",
+   "why_non_obvious": "Reliability-gated fusion of consumer IMUs comes from pose estimation. Using cross-device kinematic consensus as a payment authorisation factor, rather than one device's gait biometric, is a distinct combination.",
+   "claim_core": "A method comprising: receiving motion data from a payment device and at least one wearable device enrolled to a user; estimating per-stream reliability; evaluating a consistency hypothesis that the devices are carried by a single moving body; and selecting an authorisation outcome for a payment based on the evaluation.",
+   "keywords": "wearable authentication, IMU correlation, co-location, earbuds, gait, continuous authentication, payment authorization, sensor fusion",
+   "domain": "identity"
+  },
+  {
+   "pair": "X010",
+   "title": "Threshold-calibrated decoy mule seeding: capturing laundering networks by pushing instrumented accounts past the network's own adoption threshold",
+   "problem": "Laundering networks (one allegedly moved $6.9B through global banks) route around individual freezes. Closing accounts one by one never reaches the network's structure.",
+   "mechanism": "Under law-enforcement authorisation, a bank consortium exposes instrumented decoy accounts to mule-recruitment channels (job-scam ads, recruiter channels). A threshold population model, adapted from gene-drive replacement dynamics where a trait spreads only after its release fraction crosses an unstable threshold, estimates the decoy share of the active mule pool above which recruiters' preferential reuse of 'reliable' accounts makes flows route predominantly through decoys. Decoys are engineered to be the most reliable: fast, never frozen, high limits. The optimiser schedules releases (count, timing, geography, persona mix) to cross the threshold at minimum cost. Past it, a growing share of laundered value passes through controlled settlement, exposing upstream and downstream nodes, and funds are held for recovery.",
+   "technical_effect": "Coverage of the laundering network becomes a controllable function of release size instead of reactive detection.",
+   "why_non_obvious": "Honeypot accounts are known as one-off stings. Using threshold-dependent population-replacement dynamics to size and schedule decoy releases so that the adversary's own routing preference takes over the network is a non-obvious transfer from genetic pest control.",
+   "claim_core": "A method comprising: estimating, from observed recruitment and routing behaviour of a laundering network, a threshold fraction of instrumented accounts above which routing preferentially selects instrumented accounts; scheduling creation and exposure of instrumented accounts to exceed the threshold; and monitoring flows through the instrumented accounts to identify network nodes and hold funds.",
+   "keywords": "money mule, decoy account, honeypot, money laundering network, mule recruitment, population threshold model, law enforcement",
+   "domain": "regtech"
+  }
+ ]
+}

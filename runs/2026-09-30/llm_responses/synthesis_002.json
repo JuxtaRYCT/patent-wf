@@ -1,0 +1,48 @@
+{
+ "ideas": [
+  {
+   "pair": "X013",
+   "title": "Scam-script phylogenetics: reconstructing the family tree of scam messages, calls and malicious apps to predict and pre-block the next variants",
+   "problem": "Bank anti-scam systems (such as newly launched 'guardian' protections) react to each new lure after victims report it. Scam operators mutate templates constantly (brand swaps, lure swaps, new APK wrappers).",
+   "mechanism": "Scam artefacts are collected from customer reports, telco and SMS gateways, call transcripts, phishing landing pages and APK static features, and embedded into aligned feature sequences. Lineage trees are reconstructed with quartet-based methods that reweight redundant quartets. These scale to millions of samples and tolerate missing features, which pairwise-distance clustering cannot. Ancestral-state reconstruction infers the template at each internal node. Mutation operators observed along branches (entity substitution, URL-shortener rotation, lure-theme shifts, permission-set drift) are learned per clade and applied forward to generate likely descendant variants. The system then pre-emptively deploys detection signatures and messaging-filter rules for those variants and attributes each new sample to an operator clade for coordinated takedown.",
+   "technical_effect": "Lower detection latency for unseen variants, and a clade-level attribution that consolidates many reports into one actionable operator entity.",
+   "why_non_obvious": "Phylogenetics is used for malware family analysis after the fact. Generating predictive signatures from ancestral reconstruction and branch mutation models, across multimodal scam artefacts (text, voice, apps) in banking, is a new use.",
+   "claim_core": "A method comprising: embedding scam artefacts into feature representations; reconstructing a lineage tree using weighted quartet scores; inferring ancestral templates and branch mutation operators; generating predicted descendant variants by applying the operators; and deploying detection rules for the predicted variants before they are observed.",
+   "keywords": "phylogenetic analysis, scam template lineage, phishing kit, malware family, ancestral reconstruction, variant prediction, fraud detection signatures",
+   "domain": "fraud"
+  },
+  {
+   "pair": "X015",
+   "title": "Constraint-aware factor-graph estimation of mobile device compromise for banking apps",
+   "problem": "Malicious apps (fake hospital-appointment apps, adult-content lures) empty accounts by abusing accessibility services, overlays and SMS access. Banking SDK signals are sparse, noisy and often missing, so rule engines misfire both ways.",
+   "mechanism": "The banking SDK observes a sparse set of signals: accessibility-service enablement and event rates, overlay-window presence, notification-listener or SMS-read capability, screen-share state, input-event timing, installed-package risk and OS patch level. A factor graph links hidden compromise-state variables (overlay attack, SMS interception, remote control, benign) to these observations. Hard factors encode OS permission logic, for example that SMS interception is impossible without READ_SMS or notification access, and overlays require SYSTEM_ALERT_WINDOW. Soft factors are learned likelihoods. Neural message passing with hard-constraint projection gives calibrated posteriors even when most observations are missing. These posteriors gate specific flows: SMS-OTP flows are disabled when P(SMS interception) is high, and payee addition when P(remote control) is high.",
+   "technical_effect": "Calibrated, explainable compromise estimates under missing data, which cut false blocks and missed attacks compared with rule lists.",
+   "why_non_obvious": "Hard-constrained factor-graph neural networks come from power-distribution state estimation. Encoding mobile-OS permission semantics as hard factors for fraud risk has no counterpart in mobile threat detection art.",
+   "claim_core": "A method comprising: collecting device observations by a banking application; performing inference on a factor graph linking hidden compromise states to the observations, the graph comprising hard factors encoding operating-system permission constraints and learned soft factors; and restricting a transaction flow according to posterior probabilities of the compromise states.",
+   "keywords": "mobile banking malware, device compromise estimation, factor graph, accessibility service abuse, overlay attack, SMS interception, probabilistic inference, OTP theft",
+   "domain": "fraud"
+  },
+  {
+   "pair": "X016",
+   "title": "Channel-watermarked OTPs with honey-session diversion: proving SMS interception and harvesting mule accounts instead of just blocking",
+   "problem": "Fake apps steal SMS OTPs. Blocking a suspicious login tips the attacker off, and the bank learns nothing about where the money was going.",
+   "mechanism": "Each authentication challenge is issued with a different code per delivery channel (SMS, push, email, voice), all valid for the same session. The code that comes back reveals which channel delivered it. If the SMS-channel code is submitted from a device other than the bound device, or from a known phishing relay, SMS interception is proven. The session is then diverted into a high-fidelity honey session: a sandboxed copy of the account with synthetic balances, where the attacker's actions run against a shadow ledger. Beneficiary accounts they add, device fingerprints and cash-out paths are harvested and shared with the mule-intelligence network, and the real account is locked quietly. In parallel, speculative pre-execution computes the risk of the pending transaction while the user is still entering the code, so honest users see no added latency.",
+   "technical_effect": "Converts an authentication-channel compromise into a positive, attributable signal and into mule-account intelligence without alerting the attacker.",
+   "why_non_obvious": "Transaction-bound OTPs and deception honeypots exist separately. Watermarking the OTP per delivery channel so that compromise of a specific channel is detected on submission, and pairing that with automatic diversion into a shadow-ledger session, is a new combination.",
+   "claim_core": "A method comprising: generating distinct authentication codes for respective delivery channels for a session; receiving a submitted code and identifying its delivery channel; determining channel compromise based on the channel and a submitting device; and in response routing the session to a sandboxed environment backed by a shadow ledger while recording beneficiary and device data.",
+   "keywords": "OTP interception, SMS OTP theft, honeypot session, deception, decoy environment, channel binding, mule account identification, malicious app",
+   "domain": "fraud"
+  },
+  {
+   "pair": "X017",
+   "title": "Robust MPC ledger-convergence controller for sponsor-bank / fintech (BaaS) omnibus accounts",
+   "problem": "After Synapse, regulators are resetting guidance. The core failure was a divergence between fintech sub-ledgers and the bank's FBO (for-benefit-of) omnibus balance that nobody saw until it was too large to close.",
+   "mechanism": "The system models the gap between the omnibus balance and the sum of end-user sub-ledger balances as a dynamical state. Disturbances (pending card settlements, ACH returns, chargebacks, timing mismatches) are bounded by learned envelopes. A robust variable-horizon model-predictive controller recomputes funding transfers, holds and payout throttles every few minutes so that the gap 'lands' on a moving target: zero at each settlement cut-off event, whose timing moves. It keeps a guaranteed tube around the planned trajectory. Each sub-ledger update must carry a Merkle inclusion proof, so the controller's state is verifiable by the bank. If the MPC becomes infeasible, meaning the gap cannot be closed by the next cut-off under worst-case disturbances, the system raises a pre-shortfall alert days before a Synapse-style hole appears.",
+   "technical_effect": "Continuous, verifiable convergence of two independently operated ledgers with a formal early-warning condition (infeasibility) instead of after-the-fact reconciliation.",
+   "why_non_obvious": "Robust variable-horizon MPC for landing on moving targets is a UAV technique. Ledger reconciliation is treated as batch matching, not as closed-loop control with a feasibility certificate.",
+   "claim_core": "A system comprising a state estimator computing a divergence between an omnibus account balance and aggregated verified sub-ledger balances, and a robust model-predictive controller computing funding and hold actions over a variable horizon ending at a settlement event such that the divergence reaches a target within a guaranteed bound, and generating an alert upon infeasibility.",
+   "keywords": "banking as a service, FBO account, ledger reconciliation, sub-ledger, model predictive control, shortfall early warning, sponsor bank",
+   "domain": "regtech"
+  }
+ ]
+}

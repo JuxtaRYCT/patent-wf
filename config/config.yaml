@@ -1,0 +1,306 @@
+# patents-wf pipeline configuration
+# Domain focus: banking & finance. Cross-domain sources feed the "mechanism pool"
+# used for cross-pollination (Approach 1, step 3).
+
+run:
+  lookback_days: 45          # how far back "latest" data goes on each run
+  contact_email: ""          # set for polite-pool access (OpenAlex / Crossref / NCBI)
+
+embedding:
+  model: BAAI/bge-base-en-v1.5
+  batch_size: 64
+
+# ---------------------------------------------------------------- Approach 1a
+arxiv:
+  max_per_query: 300
+  finance_queries:           # arXiv search_query syntax
+    - "cat:q-fin.*"
+    - "all:bank AND (cat:cs.LG OR cat:cs.AI OR cat:cs.CR OR cat:cs.CL)"
+    - "all:payment AND (cat:cs.CR OR cat:cs.LG OR cat:cs.DC)"
+    - "all:fraud AND (cat:cs.LG OR cat:cs.CR OR cat:cs.SI)"
+    - "all:credit AND all:risk AND cat:cs.LG"
+    - "all:\"anti-money laundering\""
+    - "all:stablecoin OR all:CBDC OR all:\"tokenized deposit\""
+    - "all:\"agentic\" AND (all:payment OR all:commerce OR all:finance)"
+  crossdomain_categories:    # "unrelated" fields: mechanism pool
+    - cs.CR
+    - cs.MA
+    - cs.HC
+    - cs.RO
+    - cs.DC
+    - cs.NI
+    - cs.GT
+    - cs.SI
+    - quant-ph
+    - q-bio.PE
+    - q-bio.NC
+    - q-bio.MN
+    - physics.soc-ph
+    - nlin.AO
+    - cond-mat.stat-mech
+    - eess.SP
+    - eess.SY
+    - physics.ao-ph
+  crossdomain_per_category: 80
+
+semantic_scholar:
+  per_query: 100
+  queries:
+    - "banking fraud detection"
+    - "payment fraud graph neural network"
+    - "authorized push payment scam"
+    - "money mule detection"
+    - "anti-money laundering machine learning"
+    - "credit scoring alternative data"
+    - "open banking"
+    - "central bank digital currency"
+    - "stablecoin"
+    - "tokenized deposits"
+    - "deepfake financial fraud"
+    - "LLM agents finance"
+    - "agentic payments"
+    - "post-quantum cryptography banking"
+    - "bank run liquidity"
+    - "financial inclusion digital payments"
+    - "federated learning banking"
+    - "synthetic identity fraud"
+    - "real-time payments"
+    - "explainable credit risk"
+
+pubmed:                      # biology/medicine mechanisms for bisociation
+  per_query: 40
+  queries:
+    - "immune memory anomaly detection"
+    - "quorum sensing bacteria collective decision"
+    - "epidemic contact tracing network intervention"
+    - "swarm intelligence collective behavior"
+    - "circadian rhythm digital biomarker smartphone"
+    - "cognitive decline digital biomarker typing"
+    - "voice biomarker detection"
+    - "horizontal gene transfer network"
+    - "predictive coding brain prediction error"
+    - "mycorrhizal network resource sharing"
+
+crossref:
+  rows: 60
+  queries:
+    - "bank deposit run digital"
+    - "payment system fraud"
+    - "fintech lending"
+
+# ---------------------------------------------------------------- Approach 1b
+google_patents:
+  after_priority: "20230101"
+  num: 100
+  topic_queries:
+    - "fraud detection payment transaction machine learning"
+    - "authorized push payment scam social engineering"
+    - "money mule account detection"
+    - "anti money laundering transaction monitoring graph"
+    - "synthetic identity detection"
+    - "account takeover behavioral biometrics"
+    - "deepfake voice authentication bank"
+    - "AI agent payment authorization"
+    - "stablecoin bank settlement"
+    - "tokenized deposit"
+    - "central bank digital currency offline"
+    - "open banking consent"
+    - "credit scoring cash flow"
+    - "post quantum cryptography financial"
+    - "liquidity risk deposit outflow"
+    - "real time payment request to pay"
+    - "cross border payment routing"
+    - "elder financial exploitation"
+    - "large language model banking customer"
+    - "zero knowledge proof financial"
+    - "federated learning fraud bank"
+    - "merchant chargeback dispute"
+    - "trade finance document verification"
+    - "ATM cash"
+    - "loan underwriting automation"
+    - "know your customer verification"
+    - "sanctions screening name matching"
+    - "insurance claim fraud"
+    - "portfolio rebalancing robo advisor"
+    - "carbon footprint transaction"
+  competitor_assignees:      # competitor filing tracking
+    - "JPMorgan Chase"
+    - "Bank of America"
+    - "Capital One"
+    - "Wells Fargo"
+    - "Visa International"
+    - "Mastercard International"
+    - "American Express"
+    - "PayPal"
+    - "Stripe"
+    - "Coinbase"
+    - "Citibank"
+    - "Toronto-Dominion Bank"
+    - "Royal Bank of Canada"
+    - "Barclays"
+    - "Truist"
+    - "U.S. Bank"
+    - "Block, Inc."
+    - "Infosys"
+    - "Tata Consultancy Services"
+    - "HDFC Bank"
+  competitor_num: 40
+
+# USPTO Patent Public Search (primary patent source; Google Patents used when not throttled)
+ppubs:
+  since: "20240101"          # publication date floor for the prior-art knowledge base
+  per_cpc: 150
+  cpc_queries:                # CPC subgroups that define "banking & finance" prior art
+    G06Q40/02: banking
+    G06Q40/03: credit / lending
+    G06Q40/04: trading / exchange
+    G06Q40/06: asset management
+    G06Q40/08: insurance
+    G06Q20/4016: payment fraud / risk
+    G06Q20/40: payment authorisation
+    G06Q20/38: payment protocols
+    G06Q20/32: mobile payments
+    G06Q20/36: e-wallets
+    G06Q20/06: e-money / digital currency
+    G06Q20/22: payment schemes
+    G06Q20/10: payment architectures
+    G06Q20/12: e-commerce payments
+    G06Q20/02: payment intermediaries / clearing
+    H04L9/50: distributed ledger
+    G06Q20/065: tokens / cryptocurrency
+    G06Q20/405: fraud establishment of credit
+    G06Q30/0185: product / merchant verification
+    G06F21/31: user authentication
+  keyword_queries:            # BRS syntax, abstract/claims text
+    - "(mule).ab."
+    - "(scam OR scammer).ab. AND (payment OR transfer).ab."
+    - "(deepfake OR (synthetic ADJ voice) OR (voice ADJ clone)).ab."
+    - "((ai ADJ agent) OR (autonomous ADJ agent) OR (agentic)).ab. AND (payment OR transaction).ab."
+    - "(stablecoin).ab."
+    - "(tokenized ADJ deposit).ab."
+    - "((post ADJ quantum) OR (quantum ADJ safe) OR (quantum ADJ resistant)).ab. AND (bank OR payment OR financial).ab."
+    - "((zero ADJ knowledge) AND (proof)).ab. AND (financial OR payment OR credit OR bank).ab."
+    - "(liquidity).ab. AND (deposit OR withdrawal OR outflow).ab."
+    - "(elderly OR senior OR dementia OR cognitive).ab. AND (bank OR payment OR financial).ab."
+    - "(coerc OR coercion OR duress).ab. AND (transaction OR payment OR account).ab."
+    - "(epidemic OR epidemiolog OR contagion).ab. AND (fraud OR transaction OR bank).ab."
+    - "(federated ADJ learning).ab. AND (fraud OR bank OR financial).ab."
+    - "(large ADJ language ADJ model).ab. AND (bank OR financial OR payment).ab."
+    - "(cbdc OR (central ADJ bank ADJ digital)).ab."
+    - "(open ADJ banking OR consent).ab. AND (financial ADJ data).ab."
+  per_keyword: 120
+  assignees:                  # competitor tracking (latest publications)
+    - jpmorgan
+    - (bank ADJ america)
+    - (capital ADJ one)
+    - (wells ADJ fargo)
+    - visa
+    - mastercard
+    - (american ADJ express)
+    - paypal
+    - stripe
+    - coinbase
+    - citibank
+    - toronto-dominion
+    - (royal ADJ bank ADJ canada)
+    - (block ADJ inc) OR (square ADJ inc)
+    - truist
+    - (u.s. ADJ bank) OR (us ADJ bancorp)
+    - infosys
+    - (tata ADJ consultancy)
+    - barclays
+    - hsbc
+  per_assignee: 40
+
+# ---------------------------------------------------------------- Approach 1c
+rss:
+  feeds:
+    finextra: https://www.finextra.com/rss/headlines.aspx
+    pymnts: https://www.pymnts.com/feed/
+    financial_brand: https://thefinancialbrand.com/feed/
+    fintech_futures: https://www.fintechfutures.com/feed/
+    banking_dive: https://www.bankingdive.com/feeds/news/
+    payments_dive: https://www.paymentsdive.com/feeds/news/
+    techcrunch_fintech: https://techcrunch.com/category/fintech/feed/
+    coindesk: https://www.coindesk.com/arc/outboundfeeds/rss/
+    fed_press: https://www.federalreserve.gov/feeds/press_all.xml
+    ecb_press: https://www.ecb.europa.eu/rss/press.html
+    bis_all: https://www.bis.org/doclist/all_rss.rss
+    rbi_press: https://www.rbi.org.in/pressreleases_rss.xml
+    fca_news: https://www.fca.org.uk/news/rss.xml
+    boe_news: https://www.bankofengland.co.uk/rss/news
+    fintech_brainfood: https://www.fintechbrainfood.com/feed
+    fintech_business_weekly: https://fintechbusinessweekly.substack.com/feed
+    net_interest: https://www.netinterest.co/feed
+    medianama: https://www.medianama.com/feed/
+    inc42_fintech: https://inc42.com/buzz/fintech/feed/
+  google_news_queries:
+    - "bank fraud AI"
+    - "agentic payments"
+    - "stablecoin bank"
+    - "tokenized deposits"
+    - "deepfake bank scam"
+    - "UPI fraud"
+    - "RBI digital payments"
+    - "open banking rule"
+    - "instant payments fraud"
+    - "post-quantum banking"
+    - "bank patent"
+
+hackernews:
+  queries: [bank, fintech, payments, stablecoin, fraud, "credit card", "open banking"]
+  per_query: 50
+
+github:
+  topics: [fintech, banking, payments, fraud-detection, open-banking, stablecoin, defi, credit-scoring, aml]
+  created_after_days: 90
+  per_topic: 30
+
+# ---------------------------------------------------------------- Approach 2
+scanner:
+  cfpb_window_days: 120
+  cfpb_baseline_days: 365
+  cfpb_narratives_per_issue: 60
+  federal_register_agencies:
+    - consumer-financial-protection-bureau
+    - federal-reserve-system
+    - comptroller-of-the-currency
+    - federal-deposit-insurance-corporation
+    - financial-crimes-enforcement-network
+    - securities-and-exchange-commission
+    - treasury-department
+  federal_register_days: 240
+
+# ---------------------------------------------------------------- Filtration
+novelty:
+  # Relevance gate (added after run-1 finding: pure distance-novelty ranks off-topic noise highest).
+  # finance-pool items must score >= relevance_min against these anchors (bge query mode, max cosine).
+  relevance_min: 0.51
+  crossdomain_min_chars: 400      # mechanism pool: real papers with substantive abstracts only
+  anchors:
+    - bank fraud detection and prevention
+    - payment processing and card transactions
+    - credit risk and lending decisions
+    - anti-money laundering transaction monitoring
+    - deposit accounts and bank liquidity
+    - stablecoins, tokenized deposits and digital currency
+    - securities trading and market microstructure
+    - insurance underwriting and claims
+    - open banking and financial data sharing
+    - identity verification and KYC for financial services
+    - scams and social engineering targeting bank customers
+    - financial regulation and supervision of banks
+    - asset management and portfolio optimization
+    - consumer credit reporting and disputes
+    - cross-border remittances and foreign exchange
+    - financial inclusion and digital payments in emerging markets
+  dense_weight: 0.75
+  lexical_weight: 0.25
+  shortlist_percentile: 80      # items above this novelty percentile go to LLM scoring
+  near_duplicate_threshold: 0.92
+
+synthesis:
+  min_usefulness: 4             # only LLM-scored items with usefulness >= this enter the P / M pools
+  distance_band: [0.55, 0.85]   # percentile band of problem-mechanism distance ("far but bridgeable")
+  pairs: 60
+  mmr_lambda: 0.6

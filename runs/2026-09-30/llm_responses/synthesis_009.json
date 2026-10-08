@@ -1,0 +1,37 @@
+{
+ "ideas": [
+  {
+   "pair": "X055",
+   "title": "Crowd-relayed settlement of offline payments via delay-tolerant store-carry-forward routing",
+   "problem": "Offline digital payments (offline CBDC, UPI Lite-style wallets) carry double-spend risk that grows with the time until settlement. Remote regions (e.g. RBI's push for credit and payments in J&K) can stay offline for days.",
+   "mechanism": "Each offline payment is packaged as an encrypted, signed bundle. Opted-in nearby devices act as carriers and store and forward bundles over BLE or Wi-Fi Direct. Routing is on-demand: a bundle goes to the carriers predicted, from their mobility history, to reach connectivity soonest, rather than flooding to everyone. The first carrier to reach the network submits the bundle. The ledger deduplicates by bundle ID and returns a signed receipt, which pays the carrier a micro-incentive and propagates back as a settlement acknowledgement. The payee's offline wallet can raise its offline limit when earlier bundles are acknowledged.",
+   "technical_effect": "Shorter time-to-settlement and therefore a smaller double-spend window, at low radio cost.",
+   "why_non_obvious": "DTN research targets vehicle warnings and messaging. Using store-carry-forward with delivery-predicted routing as a settlement accelerator with incentive receipts for offline money is new.",
+   "claim_core": "A method comprising: generating a signed encrypted bundle for an offline payment; selecting, from nearby devices, carrier devices based on predicted time-to-connectivity; transferring the bundle to selected carriers; receiving the bundle at a ledger from a first carrier and deduplicating; and issuing a signed receipt enabling carrier compensation and payee limit restoration.",
+   "keywords": "offline payments, delay tolerant networking, store carry forward, mesh relay, offline CBDC, double spending, settlement latency",
+   "domain": "payments"
+  },
+  {
+   "pair": "X056",
+   "title": "Input-pipeline timing fingerprints to detect accessibility-service automation and remote-control malware in mobile banking without extra permissions",
+   "problem": "OTP-stealing and account-draining apps use accessibility services and remote-control tooling to operate the banking app as if they were the user.",
+   "mechanism": "The banking app timestamps each input event through the whole pipeline with high-resolution monotonic clocks: hardware MotionEvent timestamp, app dispatch, the view-hierarchy change, and the next vsync frame. Genuine touches show sensor-noise jitter and a characteristic hardware-to-dispatch latency distribution. Synthetic events injected through accessibility or remote-control frameworks show quantised timestamps, missing hardware noise, extra IPC hop latency and implausible inter-event regularity. A small on-device classifier on these timing features flags automated or remote sessions within a few events and triggers step-up or a block. It needs no special permissions and no data about other apps.",
+   "technical_effect": "Permissionless detection of synthetic input, based on physical timing properties of the input stack.",
+   "why_non_obvious": "Picosecond time-to-digital conversion and calibration loops show that timing is itself a signal. Applying fine-grained input-pipeline latency forensics as a malware discriminator is not done in mobile banking SDKs, which use permission and app scans.",
+   "claim_core": "A method comprising: recording, for input events received by a banking application, timestamps at multiple stages of an input pipeline; computing latency and jitter features; classifying the session as automated or remotely controlled based on the features; and restricting a transaction accordingly.",
+   "keywords": "accessibility service abuse, remote access trojan, synthetic touch detection, input event timing, mobile banking malware, overlay attack",
+   "domain": "fraud"
+  },
+  {
+   "pair": "X057",
+   "title": "Run-safe stablecoin redemption controller with an adversarial reachability certificate published on-chain",
+   "problem": "Stablecoin reserves spread across banks, and one partner bank can be hit by an asset seizure. The GENIUS Act requires redemption at par within 2 business days. Issuers publish point-in-time attestations, not forward-looking guarantees.",
+   "mechanism": "The issuer models redemption demand as an adversary with bounded capability: maximum redemption rate derived from holder concentration, on-chain liquidity, exchange balances and social-momentum signals. It computes the robust invariant set of reserve-liquidation policies that guarantee par redemption within the regulatory window under every admissible demand path, including single-custodian loss scenarios. A controller continuously re-tiers reserves across cash at multiple banks, T-bills and reverse repo to keep the state inside the invariant set. It publishes a machine-verifiable safety margin certificate on-chain; wallets and exchanges can read it and throttle programmatically.",
+   "technical_effect": "A forward-looking, verifiable liquidity guarantee instead of static attestations, with automatic rebalancing against custody concentration.",
+   "why_non_obvious": "Robust geometric safety certificates against manoeuvring obstacles are a robotics tool. Treating redemption demand as an adversarial manoeuvring agent and certifying reserve policies is a non-obvious transfer.",
+   "claim_core": "A method comprising: estimating bounds on a redemption-demand process; computing a set of reserve states from which par redemption within a time window is guaranteed under all demand paths within the bounds; rebalancing reserve assets across custodians to keep the reserve state within the set; and publishing a verifiable certificate of a safety margin.",
+   "keywords": "stablecoin redemption, reserve management, run risk, robust invariant set, proof of reserves, liquidity certificate, GENIUS Act",
+   "domain": "crypto"
+  }
+ ]
+}

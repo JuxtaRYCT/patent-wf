@@ -1,0 +1,287 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2609.32495",
+   "novelty": 8,
+   "usefulness": 8,
+   "mechanism_or_problem": "None of 16 deployed agent frameworks writes a record a third party can verify without trusting the writer; disputes/audits of agent actions lack evidentiary logs",
+   "tags": [
+    "agent-audit",
+    "evidentiary-log",
+    "tamper-evidence",
+    "agentic-disputes"
+   ]
+  },
+  {
+   "id": "arxiv:2609.21291",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Operator-splitting MC for OU stochastic vol",
+   "tags": [
+    "derivatives-pricing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.13961",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Implied variance asymptotics",
+   "tags": [
+    "derivatives-pricing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.14029",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Joint regularisation of returns and covariance vs a reference state",
+   "tags": [
+    "portfolio"
+   ]
+  },
+  {
+   "id": "arxiv:2609.24548",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Affine Volterra covariance processes",
+   "tags": [
+    "stochastic-processes"
+   ]
+  },
+  {
+   "id": "arxiv:2609.26445",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Actuarial model validation toolkit",
+   "tags": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "s2:c9629dc581d3f96447b2afc9dd5f3af2e68dfc1d",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Construction QA contracting",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.26398",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "VaR superadditivity note",
+   "tags": [
+    "risk-measures"
+   ]
+  },
+  {
+   "id": "arxiv:2608.17363",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Signed optimal transport conserves short-term flows across a network with a flatness regulariser",
+   "tags": [
+    "optimal-transport",
+    "flow-conservation",
+    "liquidity-flows"
+   ]
+  },
+  {
+   "id": "s2:a5743f0fc96fdc3185cb14e981b24c8e4b92c9a8",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Survey: US firms not enthusiastic about stablecoins; satisfied with existing rails",
+   "tags": [
+    "stablecoin-adoption"
+   ]
+  },
+  {
+   "id": "s2:03a4abda6bf2b1a1248b6eab4bd5ed7e0c236542",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "SME order system",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.02381",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Free-boundary PIDE for bubbles",
+   "tags": [
+    "math-finance"
+   ]
+  },
+  {
+   "id": "s2:f4b51446c6e2597117ae185a6584c23690a1a5ac",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Workshop booking system",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2608.25877",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Mini-program security: visual UI compliance checks plus network risk scoring detect deceptive in-app services",
+   "tags": [
+    "super-app",
+    "ui-deception",
+    "mini-programs"
+   ]
+  },
+  {
+   "id": "arxiv:2609.08060",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Esports win model",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.05047",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Heston vs local vol integrated variance",
+   "tags": [
+    "derivatives-pricing"
+   ]
+  },
+  {
+   "id": "s2:1e87784a9c0fc52b47849cab73cc4e9b600c8409",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Development bank guarantees",
+   "tags": [
+    "development-finance"
+   ]
+  },
+  {
+   "id": "s2:aa4e957ff2bc8d3f3d927a364bfc196b8b6a0acf",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Annuity rate root finding",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2608.29468",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Convergence rates for stochastic tracking / execution",
+   "tags": [
+    "execution"
+   ]
+  },
+  {
+   "id": "s2:e93f259f9b202d99b3fcc66307f478c435f634b6",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ethiopian banking law",
+   "tags": [
+    "regulation"
+   ]
+  },
+  {
+   "id": "arxiv:2608.23393",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Boosted trees trained directly on Kelly growth loss",
+   "tags": [
+    "portfolio",
+    "ml"
+   ]
+  },
+  {
+   "id": "arxiv:2609.08959",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Variance swap delta",
+   "tags": [
+    "derivatives-pricing"
+   ]
+  },
+  {
+   "id": "s2:9ee80236d26edd0135165558c73de0a4995db3f3",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Cash advance recording",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.07351",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "q-Bass martingale fixed points",
+   "tags": [
+    "math-finance"
+   ]
+  },
+  {
+   "id": "arxiv:2609.29975",
+   "novelty": 7,
+   "usefulness": 7,
+   "mechanism_or_problem": "Pool many payment channels into one reserve: each counterparty locally enforces its share of a global invariant so no draw can exceed the pool",
+   "tags": [
+    "liquidity-pooling",
+    "global-invariant",
+    "local-enforcement",
+    "payment-channels"
+   ]
+  },
+  {
+   "id": "arxiv:2609.17316",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Splash ads trigger on phone motion to redirect users unknowingly: sensor-triggered deceptive UI",
+   "tags": [
+    "ui-deception",
+    "motion-trigger",
+    "mobile-security"
+   ]
+  },
+  {
+   "id": "s2:499f658875e94b33b52eef1d6c25d3614a313ecc",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Rent payment website",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2608.22864",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Exact filter complexity reduction by permutation symmetry",
+   "tags": [
+    "filtering"
+   ]
+  },
+  {
+   "id": "s2:517b8fdfb6eb9970a1c031421ba4261101671045",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Medical procurement reform",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.21271",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Nested clustered optimisation as a Schur-complement bridge",
+   "tags": [
+    "portfolio"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,279 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2609.25452",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "When diversification fails for heavy Levy tails",
+   "tags": [
+    "risk"
+   ]
+  },
+  {
+   "id": "arxiv:2609.27614",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Optimal linear recovery of a low-dimensional dynamic component from noisy high-dimensional series",
+   "tags": [
+    "denoising",
+    "latent-dynamics"
+   ]
+  },
+  {
+   "id": "arxiv:2609.02447",
+   "novelty": 6,
+   "usefulness": 4,
+   "mechanism_or_problem": "Conditions under which impact models admit no price manipulation",
+   "tags": [
+    "market-manipulation"
+   ]
+  },
+  {
+   "id": "s2:572d792b6931c748af7385d3f0fd812f89fc9b4d",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Library system",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37108",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "Efficient frontier via LASSO path",
+   "tags": [
+    "portfolio"
+   ]
+  },
+  {
+   "id": "arxiv:2609.14212",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Normalised IV coordinates",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "arxiv:2608.21506",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Lessons for risk modelling from sparse imperfect data (Durkheim)",
+   "tags": [
+    "model-risk"
+   ]
+  },
+  {
+   "id": "s2:769fc89f5ca99adfc98fb2c393fad71a53bc5170",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Tourism reviews",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2608.30749",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Importance sampling for rare credit-portfolio losses",
+   "tags": [
+    "credit-risk"
+   ]
+  },
+  {
+   "id": "arxiv:2608.30490",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Insignificant results are not evidence of absence",
+   "tags": [
+    "statistics"
+   ]
+  },
+  {
+   "id": "s2:bedc6ec52e245566b613ef8a38dd83f6c586b035",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Haircut distribution under India's insolvency code",
+   "tags": [
+    "insolvency",
+    "india"
+   ]
+  },
+  {
+   "id": "s2:9c82c5f27b98ccaf45de8cea1bfda805d97a5ef3",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Cafe ordering system",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:c9393170b60d5751b394e2b9875c6906eb8dafdb",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Transit integration",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:6d32a1c737351d0e6c644cb4600bf2593da4bf46",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Physician payment transparency",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:da69019f1fa6241db1e84c4c0985e52527901dbc",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "IMF technical assistance on stablecoin regulation gaps",
+   "tags": [
+    "stablecoin-regulation"
+   ]
+  },
+  {
+   "id": "s2:2bd7a0a6562a94c94e14d18ee047db0f03de506a",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Maternal health behaviour",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:e7f285794b0233c50140d7392f80512c3db49679",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Canteen ordering IoT",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.11586",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Skew stickiness ratio",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "s2:ada0c6b78443d5517d67ac14976ea8ccc00143e6",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "B2B web app",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.20224",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Year-end balance-sheet frictions visible in option-implied funding rates",
+   "tags": [
+    "funding",
+    "year-end"
+   ]
+  },
+  {
+   "id": "arxiv:2609.06137",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Unbiased Monte Carlo Greeks at payoff discontinuities",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "arxiv:2609.37741",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Field-theory methods for rough volatility",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "arxiv:2609.12477",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Crowded signal libraries align with top return component",
+   "tags": [
+    "alpha-crowding"
+   ]
+  },
+  {
+   "id": "s2:db3b5a56105c63c7b2c2c75a1e64adcad519f2aa",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Governance of outcome-verified social finance",
+   "tags": [
+    "outcome-finance"
+   ]
+  },
+  {
+   "id": "s2:06039fd13711be614c572cf88399d7e90b9017ed",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Teller reporting system",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.27785",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Lipschitz generators cannot produce heavy tails; semi-discrete OT fixes it",
+   "tags": [
+    "tail-risk",
+    "generative"
+   ]
+  },
+  {
+   "id": "arxiv:2609.30329",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Numeraire reweighting stability",
+   "tags": [
+    "math-finance"
+   ]
+  },
+  {
+   "id": "arxiv:2608.24871",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Parametric insurance where a hazard index replaces loss adjustment",
+   "tags": [
+    "parametric-insurance"
+   ]
+  },
+  {
+   "id": "s2:4af6d589389a8c9211e8e9c9834ba3f2a7632578",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Schedule-cash flow coupling in infrastructure",
+   "tags": [
+    "project-finance"
+   ]
+  },
+  {
+   "id": "s2:26e09d81ff9dd228461e5329da836df705ac3e56",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "India's uninsured missing middle",
+   "tags": [
+    "health-insurance",
+    "india"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+# Cloud alternative to launchd: runs the pipeline daily on GitHub Actions and commits the outputs.
+# Secrets: ANTHROPIC_API_KEY (LLM stages), optional NOTION_*, AIRTABLE_*, MAKE_WEBHOOK_URL, ZAPIER_WEBHOOK_URL.
+name: patents-wf daily
+on:
+  schedule: [{cron: "0 1 * * *"}]   # 01:00 UTC = 06:30 IST
+  workflow_dispatch: {}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+      - run: bash scripts/run_daily.sh
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          AIRTABLE_TABLE: ${{ secrets.AIRTABLE_TABLE }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+      - run: |
+          git config user.name "patents-wf bot" && git config user.email "bot@users.noreply.github.com"
+          git add runs ideas exports data/*.csv 2>/dev/null || true
+          git commit -m "daily run $(date +%F)" || echo "nothing to commit"
+          git push

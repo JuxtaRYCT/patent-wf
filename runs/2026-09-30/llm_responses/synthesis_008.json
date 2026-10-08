@@ -1,0 +1,26 @@
+{
+ "ideas": [
+  {
+   "pair": "X050",
+   "title": "Principal-intent factor graph with evidentiary bundle for agent-initiated payments and dispute resolution",
+   "problem": "When an AI agent buys the wrong item or books the wrong dates, liability between merchant, issuer and agent platform is unresolved. There is no verifiable record of what the user actually intended.",
+   "mechanism": "For each agent-initiated payment, a factor graph over hidden intent variables (item class, budget, deadline, merchant constraints, substitutes allowed) combines noisy observations: the signed natural-language mandate, parsed into constraints; the user's historical approvals and rejections; context such as calendar and location; and the agent's proposed cart. Hard factors enforce explicit mandate constraints and soft factors are learned. The posterior probability that the proposed purchase lies within intent is computed. Low-probability purchases are routed to the user for confirmation. Every payment carries a signed evidentiary bundle with the posterior, the dominant factors and the hashes of the inputs, written in a form an auditor can check without trusting the agent platform's own logs. Dispute adjudication uses this bundle to allocate liability.",
+   "technical_effect": "Machine-verifiable intent compliance scores and tamper-evident evidence for agentic transactions.",
+   "why_non_obvious": "Agent payment protocols carry static mandates. Probabilistic intent inference with hard constraints, plus evidentiary bundles, fills the 'agent mistake' liability gap, which is not addressed by token-based controls.",
+   "claim_core": "A method comprising: receiving a proposed payment from an autonomous agent acting for a principal; performing inference on a factor graph relating hidden intent variables to a signed mandate, historical principal decisions and the proposed payment; routing the payment for confirmation when a posterior intent-compliance probability is below a threshold; and generating a signed evidentiary bundle for dispute resolution.",
+   "keywords": "agentic payments, intent verification, AI agent mistake, mandate, factor graph, dispute evidence, chargeback liability",
+   "domain": "payments"
+  },
+  {
+   "pair": "X051",
+   "title": "Payday-landing controller for earned wage access: advance sizing with a robust no-cycle guarantee",
+   "problem": "Earned wage access (EWA) products are being sued as disguised high-cost loans because users fall into repeat-advance cycles.",
+   "mechanism": "Before offering an advance, the provider runs a robust variable-horizon MPC over the worker's projected balance until payday. Inflows are the remaining earned wages, and outflows are known bills, typical spend and bounded disturbances. The controller computes the largest advance and the fee-free timing that guarantee the balance 'lands' non-negative at payday after repayment, with no second advance needed under worst-case disturbances. The feasibility certificate is stored per advance as ability-to-repay evidence.",
+   "technical_effect": "Advance sizing with a guaranteed no-cycle property under bounded uncertainty.",
+   "why_non_obvious": "Using moving-target MPC for consumer liquidity products is unusual; affordability checks are static.",
+   "claim_core": "A method computing an advance amount by solving a robust model-predictive control problem over a projected account balance trajectory ending at a pay date subject to a terminal non-negativity constraint and a no-repeat-advance constraint under bounded disturbances.",
+   "keywords": "earned wage access, advance sizing, affordability, cash flow forecast, model predictive control, ability to repay",
+   "domain": "credit"
+  }
+ ]
+}
