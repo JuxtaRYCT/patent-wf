@@ -22,6 +22,7 @@
    "kind": "idea",
    "label": "Grid-hum liveness: real-time Electrical Network Frequency (ENF) matching to authenticate voice-confirmed high-value instructions",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Voice clones now pass voice biometrics and human call-backs (a bank wired $108M after a cloned lawyer's voice confirmed the instruction). Every current check analyses the voice itself, which is exactly what generative models imitate.",
    "mechanism": "When a high-value instruction is confirmed on a call, the bank media server isolates the mains-hum component that microphones pick up incidentally (fundamental 50/60 Hz and surviving harmonics 100-180 Hz in wideband/VoIP codecs), tracks its instantaneous frequency with a high-resolution estimator, and derives rate-of-change-of-frequency (RoCoF) features over several simultaneous windows (0.1 s, 1 s, 10 s). It compares these against live phasor-measurement-unit (PMU) grid-frequency data for the caller's claimed grid region over the same timestamps. Grid frequency random-walks unpredictably, so a live call from a powered room in the claimed region correlates, while synthetic TTS/voice-conversion audio carries no hum, a looped or stale hum, or a region-mismatched trajectory. Using multiple windows prevents the short-window grid events (steps) from being averaged away, which is the insight from inertia measurement. The ENF-consistency score is fused as an independent physical factor in the instruction's authorisation.",
@@ -91,6 +92,7 @@
    "kind": "idea",
    "label": "Camera-free RF occupancy sensing at ATMs to detect coercion and 'helper' card-swap fraud without biometric identification",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Distraction and 'helper' frauds at ATMs (a second person watching the PIN, then swapping the card) and coerced withdrawals are common, especially against the elderly. Camera-based fixes create biometric-misidentification risk: people have been wrongly accused of bank fraud from face-recognition matches.",
    "mechanism": "The ATM uses its existing Wi-Fi/BLE radio, or a low-cost 60 GHz radar module, to measure channel-state-information perturbations in a defined zone around the fascia during a session. A lightweight model estimates how many bodies are within 0.8 m, where they are relative to the PIN pad, and how they move (leaning in during PIN entry, lingering after card return, a hand approaching the card slot). The transaction state machine consumes this occupancy stream. If multiple occupancy coincides with PIN entry and a high withdrawal, or a second body approaches during card return, the ATM switches to privacy-PIN mode (a randomised keypad layout shown only at a narrow viewing angle), delays dispensing behind an on-screen prompt, requires in-app confirmation, or raises a silent alert. Only anonymous occupancy traces are retained as evidence, so a person can never be falsely identified from them.",
@@ -155,6 +157,7 @@
    "kind": "idea",
    "label": "Verification-aware payment scheduler using virtual output queues and iterative matching to remove urgency-driven verification bypass",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "Social-engineering scams (such as AI-generated executive messages) exploit cut-off pressure. Instructions awaiting out-of-band verification block FIFO payment queues, and operators under time pressure release them unverified.",
    "mechanism": "The payment hub keeps a virtual queue per (verification resource, risk class) pair instead of one FIFO. Each scheduling slot, an iterative request-grant-accept matcher with rotating round-robin pointers (as in crossbar switch schedulers) allocates scarce verification resources to pending instructions: call-back agents, biometric re-authentication, dual-control approvers. This guarantees bounded wait, no starvation and no head-of-line blocking of clean payments. An instruction whose verification cannot complete before its cut-off is rescheduled deterministically to the next settlement cycle and the customer is told why. The scheduler has no code path that releases an unverified flagged instruction, so urgency cannot accelerate a flagged payment.",
@@ -224,6 +227,7 @@
    "kind": "idea",
    "label": "Cryptographic co-presence receipts from concurrent UWB ranging for card-present, corporate-approval and exculpatory evidence",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "identity",
    "problem": "Remote impersonation (CEO fraud, relay attacks on cards) and false accusations after biometric misidentification both come down to one question: was this person's device physically there? Today there is no verifiable record of presence.",
    "mechanism": "Terminals (ATMs, branch tablets, POS, and office anchors used for treasury approvals) run a concurrent coded ranging protocol with registered phones: binary transmit/listen codes let many phones in a busy lobby range at the same time instead of one after another, using IEEE 802.15.4z scrambled timestamp sequences for secure distance bounding. For each transaction, both secure elements sign a co-presence receipt {terminal id, device key id, distance upper bound, timestamp, transaction hash}. Receipts are used to (a) require the registered device within X m for card-present or cardless cash, which defeats relay and stolen-card use; (b) require approvers' devices near an office anchor for high-value corporate releases; and (c) serve as cryptographic alibi or corroboration in disputes and investigations. Only receipt hashes go into an append-only log, and the owner reveals a receipt with consent.",
@@ -293,6 +297,7 @@
    "kind": "idea",
    "label": "Latent-space equalisation bridge: exchanging scam-risk embeddings between independently trained models of banks, telcos and platforms without retraining or raw data",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Romance and investment scams are visible early on messaging platforms and telco networks, but the bank only sees the final transfer (e.g. 'Mum sent them \u00a3140,000'). Sharing raw conversations or call data is legally impossible, and participants will not co-train one shared model.",
    "mechanism": "Each participant keeps its own, independently trained risk encoder. Using a small set of consented anchor entities that appear across participants (known scam numbers, payees, domains, plus benign controls), the bridge fits a lightweight equaliser for each directed pair (A\u2192B): an orthogonal Procrustes or low-rank map with a nonlinear residual that sends A's latent vectors into B's latent space. At run time A sends only a latent vector for an entity (a phone number, payee account, URL), optionally with differential-privacy noise. B equalises it into its own space and feeds its existing classifier unchanged. The bridge monitors how well the anchors reconstruct; when drift passes a threshold after either side updates its model, it re-fits the equaliser automatically. In practice, a messaging platform's grooming-risk representation of the payee's contact reaches the bank's payment-risk model at the moment of transfer.",
@@ -357,6 +362,7 @@
    "kind": "idea",
    "label": "Living QR: flicker-coded payment codes read by event-based vision sensors to defeat QR swaps, stickers and screenshot replay",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "QR payments dominate India and much of Asia, and QR tampering is a volume fraud: stickers pasted over merchant codes, screenshot replay, fake 'receive money' QRs. A static optical code carries no liveness, and dynamic codes that change every 30 s can still be photographed and relayed.",
    "mechanism": "The payee display renders a standard-looking QR, so ordinary cameras still work, but modulates a subset of modules with an imperceptible high-frequency ternary luminance flicker (+/0/\u2212, 0.5\u20132 kHz). The flicker carries a rolling nonce stream and a MAC bound to the payment request and merchant key. The payer device reads it with an event-based vision sensor (or a high-speed camera mode), which captures polarity events asynchronously and is not limited by frame rate. Verification requires the nonce to be current to within milliseconds and the MAC to match the QR payload. A printed sticker, photograph or screenshot has no flicker channel, and a relayed live stream adds measurable latency, so both fail. The same channel carries larger payloads such as a signed invoice or merchant certificate without dense codes.",
@@ -421,6 +427,7 @@
    "kind": "idea",
    "label": "Certified residual control of AI shopping agents: hardware-enforced bound on how far an agent's spending can drift from the user's mandate",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "On-device agentic commerce (chipmaker plus card-network partnerships) lets LLM agents pay. Mandates and limits are checked one transaction at a time, but prompt injection or hallucination can push many individually valid purchases that together drift far from what the user meant.",
    "mechanism": "The signed user mandate is compiled into a deterministic nominal policy, a planned spending trajectory per category over time. The LLM agent may only propose residual actions relative to that plan. A safety filter inside the device TEE / secure element projects each proposed residual onto the set that keeps a certified \u21132 (energy) bound on the cumulative deviation between actual and nominal trajectories. The bound comes from an offline stability certificate for the policy, as in residual learning on top of a certified controller. Only the projected action can request an agentic network token. The token carries an attestation of the certificate and the remaining deviation budget, so the issuer can verify compliance without seeing the prompt. Whatever the model outputs, total harm is capped by the certified budget.",
@@ -485,6 +492,7 @@
    "kind": "idea",
    "label": "Body-area motion consensus: authorising wallet or tokenized-deposit payments only when co-worn earbuds, watch and phone agree they share one moving body",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "identity",
    "problem": "A phone can be stolen while unlocked, handed over under coercion, or operated by a 'helper'. Device-bound payment credentials then work for the wrong person. Biometric prompts add friction and are also coerced.",
    "mechanism": "At authorisation, the phone collects 2\u20134 s IMU windows from enrolled co-worn devices over authenticated BLE: earbud head IMU, watch, and smart insoles if present. A reliability-gated fusion model scores each stream's reliability, dropping biased, drifting or disconnected ones, and tests a body-kinematic consensus hypothesis: gait phase, head-trunk coupling and step timing must be consistent with one body. If consensus holds with enrolled wearables, step-up is skipped. If the phone moves but the wearables are stationary or out of sync (phone snatched, handed over, or operated by another person), the payment is limited, delayed, or sent for confirmation on the wearable.",
@@ -549,6 +557,7 @@
    "kind": "idea",
    "label": "Threshold-calibrated decoy mule seeding: capturing laundering networks by pushing instrumented accounts past the network's own adoption threshold",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "regtech",
    "problem": "Laundering networks (one allegedly moved $6.9B through global banks) route around individual freezes. Closing accounts one by one never reaches the network's structure.",
    "mechanism": "Under law-enforcement authorisation, a bank consortium exposes instrumented decoy accounts to mule-recruitment channels (job-scam ads, recruiter channels). A threshold population model, adapted from gene-drive replacement dynamics where a trait spreads only after its release fraction crosses an unstable threshold, estimates the decoy share of the active mule pool above which recruiters' preferential reuse of 'reliable' accounts makes flows route predominantly through decoys. Decoys are engineered to be the most reliable: fast, never frozen, high limits. The optimiser schedules releases (count, timing, geography, persona mix) to cross the threshold at minimum cost. Past it, a growing share of laundered value passes through controlled settlement, exposing upstream and downstream nodes, and funds are held for recovery.",
@@ -618,6 +627,7 @@
    "kind": "idea",
    "label": "Scam-script phylogenetics: reconstructing the family tree of scam messages, calls and malicious apps to predict and pre-block the next variants",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Bank anti-scam systems (such as newly launched 'guardian' protections) react to each new lure after victims report it. Scam operators mutate templates constantly (brand swaps, lure swaps, new APK wrappers).",
    "mechanism": "Scam artefacts are collected from customer reports, telco and SMS gateways, call transcripts, phishing landing pages and APK static features, and embedded into aligned feature sequences. Lineage trees are reconstructed with quartet-based methods that reweight redundant quartets. These scale to millions of samples and tolerate missing features, which pairwise-distance clustering cannot. Ancestral-state reconstruction infers the template at each internal node. Mutation operators observed along branches (entity substitution, URL-shortener rotation, lure-theme shifts, permission-set drift) are learned per clade and applied forward to generate likely descendant variants. The system then pre-emptively deploys detection signatures and messaging-filter rules for those variants and attributes each new sample to an operator clade for coordinated takedown.",
@@ -674,6 +684,7 @@
    "kind": "idea",
    "label": "Constraint-aware factor-graph estimation of mobile device compromise for banking apps",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Malicious apps (fake hospital-appointment apps, adult-content lures) empty accounts by abusing accessibility services, overlays and SMS access. Banking SDK signals are sparse, noisy and often missing, so rule engines misfire both ways.",
    "mechanism": "The banking SDK observes a sparse set of signals: accessibility-service enablement and event rates, overlay-window presence, notification-listener or SMS-read capability, screen-share state, input-event timing, installed-package risk and OS patch level. A factor graph links hidden compromise-state variables (overlay attack, SMS interception, remote control, benign) to these observations. Hard factors encode OS permission logic, for example that SMS interception is impossible without READ_SMS or notification access, and overlays require SYSTEM_ALERT_WINDOW. Soft factors are learned likelihoods. Neural message passing with hard-constraint projection gives calibrated posteriors even when most observations are missing. These posteriors gate specific flows: SMS-OTP flows are disabled when P(SMS interception) is high, and payee addition when P(remote control) is high.",
@@ -738,6 +749,7 @@
    "kind": "idea",
    "label": "Channel-watermarked OTPs with honey-session diversion: proving SMS interception and harvesting mule accounts instead of just blocking",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Fake apps steal SMS OTPs. Blocking a suspicious login tips the attacker off, and the bank learns nothing about where the money was going.",
    "mechanism": "Each authentication challenge is issued with a different code per delivery channel (SMS, push, email, voice), all valid for the same session. The code that comes back reveals which channel delivered it. If the SMS-channel code is submitted from a device other than the bound device, or from a known phishing relay, SMS interception is proven. The session is then diverted into a high-fidelity honey session: a sandboxed copy of the account with synthetic balances, where the attacker's actions run against a shadow ledger. Beneficiary accounts they add, device fingerprints and cash-out paths are harvested and shared with the mule-intelligence network, and the real account is locked quietly. In parallel, speculative pre-execution computes the risk of the pending transaction while the user is still entering the code, so honest users see no added latency.",
@@ -786,6 +798,7 @@
    "kind": "idea",
    "label": "Robust MPC ledger-convergence controller for sponsor-bank / fintech (BaaS) omnibus accounts",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "regtech",
    "problem": "After Synapse, regulators are resetting guidance. The core failure was a divergence between fintech sub-ledgers and the bank's FBO (for-benefit-of) omnibus balance that nobody saw until it was too large to close.",
    "mechanism": "The system models the gap between the omnibus balance and the sum of end-user sub-ledger balances as a dynamical state. Disturbances (pending card settlements, ACH returns, chargebacks, timing mismatches) are bounded by learned envelopes. A robust variable-horizon model-predictive controller recomputes funding transfers, holds and payout throttles every few minutes so that the gap 'lands' on a moving target: zero at each settlement cut-off event, whose timing moves. It keeps a guaranteed tube around the planned trajectory. Each sub-ledger update must carry a Merkle inclusion proof, so the controller's state is verifiable by the bank. If the MPC becomes infeasible, meaning the gap cannot be closed by the next cut-off under worst-case disturbances, the system raises a pre-shortfall alert days before a Synapse-style hole appears.",
@@ -842,6 +855,7 @@
    "kind": "idea",
    "label": "Grid-forming liquidity buffer for DLT-to-RTGS settlement bridges (droop-controlled central bank money injection for atomic-settlement bursts)",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "treasury",
    "problem": "Central banks now settle tokenised securities through DLT-RTGS bridges (e.g. the ECB's Pontes). Atomic DvP settlement creates step-like intraday liquidity demands that can gridlock participants.",
    "mechanism": "A buffer agent at the bridge holds pre-positioned central-bank-money tokens and acts like a grid-forming inverter. It sets the reference intraday liquidity 'frequency', the internal price of immediate liquidity, and responds to the rate of change of pending DvP obligations with droop control: each participant's pre-agreed droop coefficient sets how much liquidity it automatically draws or supplies as the frequency deviates. Current-limiting caps per participant stop any single node from destabilising the network. A network energy function with provable dissipation certifies that the system returns to equilibrium after any bounded burst. Injections are collateralised automatically from pledged tokenised assets on the DLT side.",
@@ -903,6 +917,7 @@
    "kind": "idea",
    "label": "Forecast-sized offline mandates for machine and agent payments using physics-informed connectivity forecasts",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "Machine and agent payments (network 'Agent Pay for Machines', first bank agentic transactions) assume connectivity. Vehicles, drones, ships and rural IoT go offline. Over-sized offline allowances create double-spend and fraud exposure; under-sized ones strand the machine.",
    "mechanism": "Before a mission or route, the issuer predicts the timing and length of connectivity gaps along the agent's planned path. The forecast is built from public satellite-constellation geometry, weather attenuation, cellular coverage maps and routing data, using a physics-informed link-state forecaster. The issuer then provisions time-boxed offline credentials (pre-authorised token bundles or offline CBDC value) sized to the expected consumption during each forecast gap plus a risk margin. Each credential expires at the forecast reconnection time plus tolerance and is valid only within the forecast geographic corridor. On reconnection, spend is reconciled and the forecaster is updated with the realised gaps.",
@@ -911,7 +926,7 @@
   },
   {
    "kind": "source",
-   "label": "Mastercard Helps Danske Bank With Denmark-First Agentic Transaction - pymnts.com",
+   "label": "Mastercard Helps Danske Bank With Denmark-First Agentic Transaction - PYMNTS.com",
    "src_kind": "news",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSXFOcVBwdXA5UTJQampuTERNbnROUVVxU1lENUM4VFgtUE5MTVlKSVU4elg2TG11MXhjUU5VWWd2M0lqbXRkNm83M2JQQW02WUZ0cFdjaG45bDJpQ0JBMmxhMGU1cm9RZGtQc2hzdFFIa2hLT1NPdExFdGxLYkxBY3B5b2g2eUVYZkd5MjhRVkRZWTQxQWJ6Zk1wTEtlSE5qNDBld0UwbDQtQ1h5dUU1cVdTM1lWeTVTb1ZBRDVn?oc=5",
    "id": "news:fefcaf910263218b"
@@ -953,6 +968,7 @@
    "kind": "idea",
    "label": "Reachability-certified pre-emptive holds: intercepting stolen funds ahead of the money instead of chasing hops",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Cyber-fraud reporting systems (India's 1930 helpline and CFCFRMS, UK APP reimbursement) place liens hop by hop after the money has moved. Mule layering outruns them within minutes, and the 'golden hour' is lost.",
    "mechanism": "When fraud is reported, the system models the stolen funds as an adversary with bounded manoeuvring capability on the inter-bank payment graph. The bounds are per-rail latency, per-account velocity and limits, new-payee cooling periods, and cash-out points (ATMs, crypto on-ramps, merchant cash-back). From these it computes the forward reachable set of accounts over time. It then solves for the minimum set of accounts to place under short, auto-expiring holds now, such that every reachable cash-out path is covered before the funds could arrive: a capture certificate, analogous to robust safety certificates against manoeuvring obstacles. Hold requests are signed, scoped and time-limited, and are issued to participating banks. Each bank solves its part through a distributed ADMM formulation, so no raw transaction data leaves the bank. Unused holds release automatically.",
@@ -993,6 +1009,7 @@
    "kind": "idea",
    "label": "Proportionality-bounded mass enforcement: compensatory review allocation before automated fraud actions hit hundreds of thousands of people",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "regtech",
    "problem": "Mass automated fraud determinations (760,000 insurance cancellations; people jailed after AI flags) concentrate false positives on particular segments. The error accumulates across segments in the same way apportionment rounding bias accumulates across districts.",
    "mechanism": "Before a batch of automated adverse actions is executed, the system computes for each segment (region, age band, channel, language) the gap between its share of actions and its share of evidence-weighted fraud likelihood. It uses probabilistic seat-vote discrepancy bounds to predict the accumulated disproportionality across all segments. It then allocates a fixed number of 'compensatory' human-review slots or deferred-action slots to over-actioned segments, so that the maximum disproportionality stays under a configured bound, and executes the rest. A signed proportionality certificate is logged for audit and appeal.",
@@ -1001,7 +1018,7 @@
   },
   {
    "kind": "source",
-   "label": "Trump administration cancels insurance for 760,000, alleging fraud - upi.com",
+   "label": "Trump administration cancels insurance for 760,000, alleging fraud - upi",
    "src_kind": "news",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbFBlRkI3VXlOUzAtS3hNcXZjQ2hJVEtSZmFWc1czRDkzVjRhb1RhQ2hLZTA0d2RReGRwaHVYZVN5UndJeXNSU2RPeVlyRFhqdUFidzVUb0FXMVZDZmhOaHZ4WUdvWmpjUEw2eDVEWVlYZXNHOVNkcE5lMmZVZnBfTlRrTnRFWWlDM08xVlVKYkYwbzJE0gGaAUFVX3lxTE5DOTczdnEzS2pVRHpCSUVQZ1R4UEE5RXJYX2Q2QXhwajdLRkYxdFdpNk5PcHBjdVhjVGlRNlRNbXNGNDlOal9VVVJrTEtGSG1pSkprZUtHQnJINnBobEc0UDRjRUxFZm5mTWFscXJrQ24yaGs1ekVzSkNMU1dZaTgwQWFOWTdLa2Fqd2FuVWdZXzE2emlYRFB2Smc?oc=5",
    "id": "news:06c301528ee43296"
@@ -1051,6 +1068,7 @@
    "kind": "idea",
    "label": "Trust-farming-resistant payee reputation: semi-monotone graph centrality that turns scammers' bait payments into a risk signal",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Romance and investment scammers 'groom' victims with small returns and route micro-payments through the payee to build reputation. Graph-based payee-trust scores rise with every added edge, so the grooming makes the scam payee look safer.",
    "mechanism": "The payee-reputation engine uses a centrality measure constrained to be semi-monotone. Edges from clusters with synchronised creation, reciprocal micro-flows or shared devices contribute sub-linearly. Reverse 'bait' edges, where the prospective victim previously received small sums from the payee, are classified as trust-farming, and their contribution is inverted into risk. The trigger at payment time is: the payer received \u22651 small inbound payment from this payee within N weeks, the outbound amount is much larger, and the payee's recent centrality gain comes mostly from bait-like edges. This trigger produces friction and a tailored warning.",
@@ -1086,6 +1104,7 @@
    "kind": "idea",
    "label": "Principal-intent factor graph with evidentiary bundle for agent-initiated payments and dispute resolution",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "When an AI agent buys the wrong item or books the wrong dates, liability between merchant, issuer and agent platform is unresolved. There is no verifiable record of what the user actually intended.",
    "mechanism": "For each agent-initiated payment, a factor graph over hidden intent variables (item class, budget, deadline, merchant constraints, substitutes allowed) combines noisy observations: the signed natural-language mandate, parsed into constraints; the user's historical approvals and rejections; context such as calendar and location; and the agent's proposed cart. Hard factors enforce explicit mandate constraints and soft factors are learned. The posterior probability that the proposed purchase lies within intent is computed. Low-probability purchases are routed to the user for confirmation. Every payment carries a signed evidentiary bundle with the posterior, the dominant factors and the hashes of the inputs, written in a form an auditor can check without trusting the agent platform's own logs. Dispute adjudication uses this bundle to allocate liability.",
@@ -1120,6 +1139,7 @@
    "kind": "idea",
    "label": "Payday-landing controller for earned wage access: advance sizing with a robust no-cycle guarantee",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "credit",
    "problem": "Earned wage access (EWA) products are being sued as disguised high-cost loans because users fall into repeat-advance cycles.",
    "mechanism": "Before offering an advance, the provider runs a robust variable-horizon MPC over the worker's projected balance until payday. Inflows are the remaining earned wages, and outflows are known bills, typical spend and bounded disturbances. The controller computes the largest advance and the fee-free timing that guarantee the balance 'lands' non-negative at payday after repayment, with no second advance needed under worst-case disturbances. The feasibility certificate is stored per advance as ability-to-repay evidence.",
@@ -1166,6 +1186,7 @@
    "kind": "idea",
    "label": "Crowd-relayed settlement of offline payments via delay-tolerant store-carry-forward routing",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "Offline digital payments (offline CBDC, UPI Lite-style wallets) carry double-spend risk that grows with the time until settlement. Remote regions (e.g. RBI's push for credit and payments in J&K) can stay offline for days.",
    "mechanism": "Each offline payment is packaged as an encrypted, signed bundle. Opted-in nearby devices act as carriers and store and forward bundles over BLE or Wi-Fi Direct. Routing is on-demand: a bundle goes to the carriers predicted, from their mobility history, to reach connectivity soonest, rather than flooding to everyone. The first carrier to reach the network submits the bundle. The ledger deduplicates by bundle ID and returns a signed receipt, which pays the carrier a micro-incentive and propagates back as a settlement acknowledgement. The payee's offline wallet can raise its offline limit when earlier bundles are acknowledged.",
@@ -1230,6 +1251,7 @@
    "kind": "idea",
    "label": "Input-pipeline timing fingerprints to detect accessibility-service automation and remote-control malware in mobile banking without extra permissions",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "OTP-stealing and account-draining apps use accessibility services and remote-control tooling to operate the banking app as if they were the user.",
    "mechanism": "The banking app timestamps each input event through the whole pipeline with high-resolution monotonic clocks: hardware MotionEvent timestamp, app dispatch, the view-hierarchy change, and the next vsync frame. Genuine touches show sensor-noise jitter and a characteristic hardware-to-dispatch latency distribution. Synthetic events injected through accessibility or remote-control frameworks show quantised timestamps, missing hardware noise, extra IPC hop latency and implausible inter-event regularity. A small on-device classifier on these timing features flags automated or remote sessions within a few events and triggers step-up or a block. It needs no special permissions and no data about other apps.",
@@ -1294,6 +1316,7 @@
    "kind": "idea",
    "label": "Run-safe stablecoin redemption controller with an adversarial reachability certificate published on-chain",
    "arm": "A1",
+   "run": "2026-09-30",
    "domain": "crypto",
    "problem": "Stablecoin reserves spread across banks, and one partner bank can be hit by an asset seizure. The GENIUS Act requires redemption at par within 2 business days. Issuers publish point-in-time attestations, not forward-looking guarantees.",
    "mechanism": "The issuer models redemption demand as an adversary with bounded capability: maximum redemption rate derived from holder concentration, on-chain liquidity, exchange balances and social-momentum signals. It computes the robust invariant set of reserve-liquidation policies that guarantee par redemption within the regulatory window under every admissible demand path, including single-custodian loss scenarios. A controller continuously re-tiers reserves across cash at multiple banks, T-bills and reverse repo to keep the state inside the invariant set. It publishes a machine-verifiable safety margin certificate on-chain; wallets and exchanges can read it and throttle programmatically.",
@@ -1356,6 +1379,7 @@
    "kind": "idea",
    "label": "Coercion-aware transfer friction",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Authorised push payment (APP) scams: victims are coached live by a scammer on the phone while they make the transfer.",
    "mechanism": "Detect concurrent active voice call, navigation hesitancy, copy-pasted payee details and first-time payee; dynamically insert a cooling-off delay and a callback to a pre-registered trusted contact who must confirm with a safe word.",
@@ -1411,6 +1435,7 @@
    "kind": "idea",
    "label": "Bounded-intent mandates for AI shopping agents",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "AI agents that pay on a user's behalf can overspend or be prompt-injected into paying the wrong merchant.",
    "mechanism": "User signs a machine-verifiable spending policy (merchant category, price ceiling, time window, item class); the network token carries a policy hash and the issuer verifies a policy-compliance proof on every agent-initiated authorisation.",
@@ -1445,6 +1470,7 @@
    "kind": "idea",
    "label": "Critical-slowing-down deposit-run early warning",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Digital bank runs (e.g. SVB 2023) unfold in hours, faster than supervisory liquidity monitoring.",
    "mechanism": "Compute rolling autocorrelation and variance of intraday deposit outflows by segment (early-warning signals of a phase transition), fuse with social-media sentiment velocity, and automatically pre-position collateral at the central bank discount window when the combined index crosses a threshold.",
@@ -1487,6 +1513,7 @@
    "kind": "idea",
    "label": "Zero-knowledge income attestation from bank sessions",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Lenders demand full bank statements, exposing far more data than needed.",
    "mechanism": "zkTLS proof generated over the user's live online-banking session proves 'average monthly income > X for 6 months' without revealing transactions; lender verifies proof against bank's TLS certificate.",
@@ -1537,6 +1564,7 @@
    "kind": "idea",
    "label": "Shelf-life-weighted post-quantum migration planner",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Banks cannot migrate all cryptography to PQC at once; harvest-now-decrypt-later threatens long-lived data.",
    "mechanism": "Network scanner fingerprints TLS/HSM/key usage, tags each flow with the confidentiality shelf-life of the data it carries, and computes a migration order that minimises quantum-exposure = shelf-life x traffic volume x algorithm weakness.",
@@ -1587,6 +1615,7 @@
    "kind": "idea",
    "label": "Mule-network epidemiology (R0 for money mules)",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Money-mule recruitment spreads socially; banks close accounts one at a time.",
    "mechanism": "Estimate a reproduction number for mule recruitment from temporal transaction graphs, identify superspreader recruiter accounts, and prioritise interventions to push R below 1.",
@@ -1621,6 +1650,7 @@
    "kind": "idea",
    "label": "Ultrasonic liveness nonce for voice-channel authentication",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Voice deepfakes defeat call-centre voice biometrics.",
    "mechanism": "During a call the bank app on the customer's registered phone emits an inaudible ultrasonic nonce; the call-centre audio stream must contain the acoustic echo of that nonce, proving a live person co-located with the registered device.",
@@ -1663,6 +1693,7 @@
    "kind": "idea",
    "label": "Sensor-attested programmable escrow for trade finance",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Trade finance relies on paper documents that are easy to forge.",
    "mechanism": "Tokenized deposit escrow releases automatically when IoT sensor attestations (GPS, container seal, temperature) signed by hardware roots of trust satisfy the letter-of-credit conditions.",
@@ -1713,6 +1744,7 @@
    "kind": "idea",
    "label": "Cash-flow-elastic credit line",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Static credit limits mismatch volatile gig-worker income.",
    "mechanism": "Credit limit recomputed daily from account-aggregator cash-flow forecasts with uncertainty bands; limit follows the lower confidence bound.",
@@ -1763,6 +1795,7 @@
    "kind": "idea",
    "label": "Checkout affordability digital twin",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Customers take on purchases/BNPL they cannot afford.",
    "mechanism": "Simulate the customer's next 90 days of balances with the proposed purchase on a financial digital twin and show probability of overdraft before approval.",
@@ -1813,6 +1846,7 @@
    "kind": "idea",
    "label": "SKU-level carbon footprint card",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Card carbon trackers use coarse merchant-category averages.",
    "mechanism": "Parse itemised e-receipts linked to card transactions and compute SKU-level emissions.",
@@ -1863,6 +1897,7 @@
    "kind": "idea",
    "label": "Revocable consent tokens with deletion proofs",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Open banking users cannot verify data was deleted after revoking consent.",
    "mechanism": "User-held consent tokens; data recipients must return a signed deletion attestation anchored in a transparency log upon revocation.",
@@ -1913,6 +1948,7 @@
    "kind": "idea",
    "label": "Cross-chain stablecoin redemption router",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Stablecoin redemption to fiat is fragmented across chains and banks.",
    "mechanism": "Router atomically burns on source chain and settles on instant bank rails, choosing path by liquidity and fees.",
@@ -1963,6 +1999,7 @@
    "kind": "idea",
    "label": "Cognitive-decline signals for elder abuse prevention",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Elderly customers with cognitive decline are exploited financially.",
    "mechanism": "Longitudinal drift in digital-banking interaction patterns (navigation errors, typing speed, repeated actions) flags decline; triggers trusted-contact escalation and lower transfer limits.",
@@ -2013,6 +2050,7 @@
    "kind": "idea",
    "label": "Identity-age inconsistency for synthetic ID detection",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Synthetic identities combine real SSNs with fake details.",
    "mechanism": "Compare age of digital footprint (email, phone, device history) with claimed age and credit-file depth; inconsistency score flags synthetic identity.",
@@ -2063,6 +2101,7 @@
    "kind": "idea",
    "label": "MPC cross-bank payee risk consortium",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Fraud intelligence is siloed across banks.",
    "mechanism": "Secure multi-party computation of payee risk scores across banks without revealing customer data.",
@@ -2113,6 +2152,7 @@
    "kind": "idea",
    "label": "Counterfactual adverse-action notices",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Credit denials must be explained (ECOA/Reg B).",
    "mechanism": "Generate actionable counterfactual explanations with guaranteed feasibility constraints.",
@@ -2163,6 +2203,7 @@
    "kind": "idea",
    "label": "Event-aware ATM cash forecasting",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "ATM cash-outs and idle cash.",
    "mechanism": "Forecast using local event calendars and weather.",
@@ -2213,6 +2254,7 @@
    "kind": "idea",
    "label": "Dispute escrow window for instant payments",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Instant account-to-account payments are irrevocable, fuelling scams.",
    "mechanism": "Optional escrow window where funds are credited but locked, releasable early by payer confirmation or reversed by dispute.",
@@ -2263,6 +2305,7 @@
    "kind": "idea",
    "label": "Bank-backed metering tokens for AI API micro-payments",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "AI agents need to pay per API call.",
    "mechanism": "Prepaid bank-issued metering tokens redeemed per call with batched settlement.",
@@ -2313,6 +2356,7 @@
    "kind": "idea",
    "label": "Biometric-bound offline CBDC wallet",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Offline CBDC risks double spending.",
    "mechanism": "Secure-element monotonic counters and biometric binding; reconciliation on reconnection detects double spend.",
@@ -2347,6 +2391,7 @@
    "kind": "idea",
    "label": "Life-event-triggered KYC refresh",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Periodic KYC refresh is wasteful.",
    "mechanism": "Infer life events from transactions and refresh KYC only when risk-relevant events occur.",
@@ -2389,6 +2434,7 @@
    "kind": "idea",
    "label": "RL-driven financial wellness nudges",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Generic savings nudges are ignored.",
    "mechanism": "Reinforcement learning chooses nudge timing and framing per user.",
@@ -2439,6 +2485,7 @@
    "kind": "idea",
    "label": "Cross-script transliteration graph for sanctions screening",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Name transliteration defeats sanctions screening.",
    "mechanism": "Graph of transliteration variants across scripts used for fuzzy matching.",
@@ -2489,6 +2536,7 @@
    "kind": "idea",
    "label": "Satellite collateral monitoring for loan covenants",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Collateral monitoring is manual.",
    "mechanism": "Satellite imagery change detection on pledged farms/factories.",
@@ -2539,6 +2587,7 @@
    "kind": "idea",
    "label": "Cross-retailer return-fraud linkage",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Serial return fraud spans retailers.",
    "mechanism": "Card-network level linking of refunds across merchants.",
@@ -2581,6 +2630,7 @@
    "kind": "idea",
    "label": "Telco SIM-swap signals for ATO",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "SIM swap enables account takeover.",
    "mechanism": "Query telco network APIs for recent SIM swap before OTP delivery.",
@@ -2631,6 +2681,7 @@
    "kind": "idea",
    "label": "ROSCA participation credit scoring",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Thin-file borrowers lack credit history.",
    "mechanism": "Digitised rotating savings groups produce repayment histories used for credit scoring.",
@@ -2681,6 +2732,7 @@
    "kind": "idea",
    "label": "RTGS gridlock resolution by queue reordering",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Intraday liquidity gridlock.",
    "mechanism": "Optimise payment queue ordering to minimise liquidity needs.",
@@ -2707,6 +2759,7 @@
    "kind": "idea",
    "label": "Pre-emptive chargeback prediction",
    "arm": "A2a",
+   "run": "2026-09-30",
    "domain": "",
    "problem": "Chargebacks cost merchants.",
    "mechanism": "Predict chargeback probability at authorisation and offer proactive refund.",
@@ -2757,6 +2810,7 @@
    "kind": "idea",
    "label": "Unpredictable-quorum confirmation: bank-drawn random co-approvers contacted on bank-initiated channels for out-of-topology treasury instructions",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "A cloned executive voice plus a fake WhatsApp thread moved \u20ac95M overseas. Attackers script the impersonation of one or two known approvers in advance.",
    "mechanism": "For each corporate client the bank learns the instruction topology: who instructs, through which channel, in what approval order, and for which beneficiary classes and geographies. Any instruction whose path through this graph is new (for example a first overseas beneficiary requested by voice or messaging, or an approver skipping their usual channel) is held for a quorum. At confirmation time the bank draws k co-approvers at random from the client's authorised signatory list using a verifiable random function. It contacts them only through bank-initiated channels on enrolled devices (in-app push with passkey signature), never through the channel the instruction came in on. The attacker cannot know in advance whom else to impersonate, and has to compromise several devices in real time. The VRF output is logged so the selection can be audited.",
@@ -2766,7 +2820,7 @@
   {
    "kind": "theme",
    "label": "T14",
-   "id": "theme:T14"
+   "id": "theme:2026-09-30:T14"
   },
   {
    "kind": "prior_art",
@@ -2804,6 +2858,7 @@
    "kind": "idea",
    "label": "Synthesis-toolkit fingerprint exchange: banks share model-attribution fingerprints of voice clones used in attacks, not voiceprints of customers",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "The same criminal voice-cloning toolkits hit bank after bank, but each bank's deepfake detector learns on its own.",
    "mechanism": "When a call is confirmed as a synthetic-voice attack, the bank extracts a model-attribution fingerprint: residual spectral artefacts, vocoder phase signatures and prosody-generation traces that identify the generation pipeline rather than the imitated speaker. It hashes these into locality-sensitive sketches and publishes them to a consortium index. Member banks query live calls against the index in real time. A match means the call was generated with a toolkit already seen in fraud, even if it imitates a different person. Only sketches of attacker artefacts are shared; no customer voiceprints are, which keeps it outside biometric-data restrictions.",
@@ -2838,6 +2893,7 @@
    "kind": "idea",
    "label": "Constraint-level zero-knowledge reserve proofs for GENIUS Act stablecoins (eligibility, maturity \u226493 days, concentration) from signed custodian feeds",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "crypto",
    "problem": "GENIUS Act proposals (Treasury, Fed, FDIC) require 1:1 eligible reserves: deposits, T-bills maturing within 93 days, and qualifying repo. Today's attestations are monthly PDFs, and Merkle proofs of reserves only prove totals.",
    "mechanism": "Custodian banks and the Treasury-bill custodian sign position feeds (CUSIP, maturity, amount; deposit balances per institution). A prover inside the issuer's infrastructure generates a zero-knowledge proof, each block or each hour, that (a) total eligible reserves \u2265 outstanding supply read from the chain; (b) every T-bill in the reserve has remaining maturity \u2264 93 days; (c) no single custodian exceeds the configured concentration share; (d) repo collateral meets its eligibility constraints. It reveals none of the individual positions. The proof and the custodian key commitments are posted on-chain, where wallets, exchanges and supervisors can verify them. A failed constraint triggers automatic mint suspension.",
@@ -2847,7 +2903,7 @@
   {
    "kind": "theme",
    "label": "T15",
-   "id": "theme:T15"
+   "id": "theme:2026-09-30:T15"
   },
   {
    "kind": "prior_art",
@@ -2885,6 +2941,7 @@
    "kind": "idea",
    "label": "Taint-granular freezing for payment stablecoins: encumbering only the traced sanctioned value rather than whole addresses, with court-signed release",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "crypto",
    "problem": "Issuers must be able to freeze and seize, and must meet BSA/sanctions standards. Address-level blacklists freeze innocent downstream holders and push commerce away from stablecoins.",
    "mechanism": "The token contract tracks value lineage with a configurable taint policy (FIFO or haircut) over transfers. When the issuer receives a sanctions or court order for identified inflows, the contract places an encumbrance equal to the traced tainted amount on each current holder, blocking only that amount. It emits verifiable lineage proofs, so the holder can transact their untainted balance normally. Release or seizure requires a threshold signature from the issuer compliance key and a court or agency key. Holders can submit a counter-proof, such as a purchase from a licensed exchange before the listing date, to contest.",
@@ -2935,6 +2992,7 @@
    "kind": "idea",
    "label": "Provable-fairness redemption queue for stablecoins under stress (2-business-day par redemption)",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "crypto",
    "problem": "The GENIUS Act requires timely redemption at par. Under a run, how the redemption queue is ordered becomes contentious, and a first-mover advantage accelerates the run itself.",
    "mechanism": "Redemption requests are committed on-chain with a timestamp and randomness beacon. The issuer processes them in batches whose ordering rule is fixed in advance (pro-rata within time buckets, with small-holder priority up to a cap) and publishes a Merkle proof of each batch's allocation. Holders can verify their queue position and expected settlement time. Because the ordering rule removes the benefit of redeeming seconds earlier inside a bucket, it damps panic dynamics.",
@@ -2961,6 +3019,7 @@
    "kind": "idea",
    "label": "Signed tradeline provenance: turning credit-report dispute investigations into cryptographic record comparison with automatic correction on SLA miss",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "credit",
    "problem": "Credit-reporting disputes are overwhelmed. 'Investigation took more than 30 days' reached 238k complaints in 120 days, growing 1.41\u00d7 in share, and 207k say the investigation did not fix the error. Investigations are code exchanges (e-OSCAR) with no record of source-of-truth.",
    "mechanism": "Each tradeline field a furnisher reports (balance, status, dates, payment history) carries a signed provenance envelope: a hash of the source-system record, the furnisher key, a timestamp and a version. When a consumer disputes a field, the bureau automatically requests the furnisher's signed source record for that version. If the furnisher returns a record whose hash matches and whose content supports the reported value, the dispute is resolved with an evidentiary receipt to the consumer. If it cannot produce a matching signed record within the SLA, the field is suppressed automatically, not merely 'verified'. Mismatches between the reported value and the signed source trigger correction. Status is pushed to the consumer at each step.",
@@ -2970,7 +3029,7 @@
   {
    "kind": "theme",
    "label": "T24",
-   "id": "theme:T24"
+   "id": "theme:2026-09-30:T24"
   },
   {
    "kind": "prior_art",
@@ -3016,6 +3075,7 @@
    "kind": "idea",
    "label": "Mixed-file splitting with consumer-held verifiable credentials for 'information belongs to someone else' disputes",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "credit",
    "problem": "895,197 complaints in 120 days say report information belongs to someone else. Mixed files and synthetic or stolen identities contaminate reports, and bureaus resolve this by fuzzy matching.",
    "mechanism": "A consumer proves identity attributes once, with a device-bound verifiable credential issued by a bank or government ID wallet that includes a stable pseudonymous subject identifier. When disputing, the consumer signs a challenge listing the tradelines they claim. The bureau's entity-resolution engine re-clusters the file under the hard constraint that tradelines explicitly disowned by a VC-authenticated subject cannot co-reside with that subject's identifier. The disowned records are split into a separate candidate entity, which is then matched to other files and flagged for identity-theft review. The consumer receives a signed record of the split.",
@@ -3066,6 +3126,7 @@
    "kind": "idea",
    "label": "Agent-herding detection: flagging scam storefronts by the sudden convergence of many users' AI shopping agents on a new merchant",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "Banks warn that AI shopping bots raise scam and fraud risk. Fake storefronts can be tuned to rank highly in agents' retrieval (agent-SEO, or prompt-injection pages), and one fake merchant can capture thousands of agents at once.",
    "mechanism": "The issuer or network tags agent-initiated authorisations (agentic tokens identify agent platform and instance). It maintains a streaming convergence detector: for each merchant, the rate of distinct user-agents newly transacting, normalised by the merchant's age, category and historical human traffic. Humans discover merchants gradually and diversely; agents that share retrieval pipelines converge sharply. When convergence far exceeds the human baseline for a merchant with thin history, especially from agents of one platform, the network places the merchant on agent-hold: human confirmation is required and settlement is delayed. It also notifies the agent platform with the retrieval signals involved.",
@@ -3075,7 +3136,7 @@
   {
    "kind": "theme",
    "label": "T03",
-   "id": "theme:T03"
+   "id": "theme:2026-09-30:T03"
   },
   {
    "kind": "prior_art",
@@ -3105,6 +3166,7 @@
    "kind": "idea",
    "label": "Network-run red-team canaries: continuous certification of AI shopping agents against prompt injection using honeypot storefronts",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "Issuers cannot inspect agent platforms' robustness, but they carry the fraud liability when agents are manipulated.",
    "mechanism": "The payment network runs synthetic honeypot storefronts and product listings carrying graded prompt-injection payloads, for example hidden instructions to change the shipping address, pay a different merchant, or disclose credentials. Test users' agents of each platform version are routinely directed at them through normal retrieval. Agent behaviour is scored automatically: whether the agent attempted a payment to a canary merchant ID or deviated from the mandate. The resulting robustness score is bound to the agent platform's token-requestor credentials, and issuers scale token scopes and limits to it. A regression immediately narrows scopes network-wide.",
@@ -3123,6 +3185,7 @@
    "kind": "idea",
    "label": "Pass-through deposit-insurance ledger for fintech custodial accounts with instant per-owner coverage proofs",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "regtech",
    "problem": "Post-Synapse, the FDIC's custodial-account recordkeeping proposals and the regulatory resets exist because owners of pooled for-benefit-of balances could not be identified or paid quickly after failure.",
    "mechanism": "Each end-user balance held at a sponsor bank through a fintech is recorded in a per-owner pass-through ledger kept at the bank, not only at the fintech. It is updated from signed fintech sub-ledger deltas with Merkle inclusion proofs and reconciled daily. The ledger computes coverage per ownership category and per insured bank in real time. Each owner can obtain a signed coverage proof (insured amount, bank, category). The FDIC receives a machine-readable pass-through file that allows payout on day 1 after failure.",
@@ -3132,7 +3195,7 @@
   {
    "kind": "theme",
    "label": "T29",
-   "id": "theme:T29"
+   "id": "theme:2026-09-30:T29"
   },
   {
    "kind": "prior_art",
@@ -3178,6 +3241,7 @@
    "kind": "idea",
    "label": "Debt chain-of-title ledger with open-banking proof-of-payment matching to stop collection of debts not owed",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "credit",
    "problem": "41,086 complaints in 120 days about attempts to collect debt not owed, many where the debt had already been paid. Debts are sold repeatedly with broken documentation.",
    "mechanism": "Every debt assignment is recorded as a hash-linked title record containing the balance, payment history digest and the seller's signature. A collector's system must present a valid chain of title from the original creditor before any collection communication is generated. When a consumer disputes, the consumer app pulls payment evidence from their bank through open-banking APIs and matches it to the creditor account by payment reference, amount and date. It then issues a signed proof-of-payment object that the ledger attaches to the debt, and further collection is blocked automatically.",
@@ -3187,7 +3251,7 @@
   {
    "kind": "theme",
    "label": "T10",
-   "id": "theme:T10"
+   "id": "theme:2026-09-30:T10"
   },
   {
    "kind": "prior_art",
@@ -3225,6 +3289,7 @@
    "kind": "idea",
    "label": "Attenuable delegation chains for multi-agent payments: macaroon-style caveats that sub-agents can only narrow, verified by the issuer",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "'Agentic commerce is an authorisation problem.' A user's agent delegates to a travel agent-bot, which delegates to an airline's agent. Today's mandates are single-hop and cannot express how authority narrows along the chain.",
    "mechanism": "The user's bank issues a root capability token for an agent: a chained-HMAC or signature caveat list covering budget, categories, merchants, time window and number of uses. Each agent can derive a child token for a sub-agent by appending caveats. It can only add restrictions, never remove them, and the chain structure proves this. The final agent presents the full caveat chain with the authorisation. The issuer verifies the chain against the root key in constant time per caveat and evaluates all caveats against the transaction. Revoking any link revokes all its descendants, and every hop is visible for dispute attribution.",
@@ -3234,7 +3299,7 @@
   {
    "kind": "theme",
    "label": "T25",
-   "id": "theme:T25"
+   "id": "theme:2026-09-30:T25"
   },
   {
    "kind": "prior_art",
@@ -3256,6 +3321,7 @@
    "kind": "idea",
    "label": "Consumer-signed permissible-purpose tokens for credit report pulls",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "credit",
    "problem": "356k complaints about improper use of reports. Pulls happen without verifiable consumer authorisation, and freezes are blunt on/off switches.",
    "mechanism": "A consumer's wallet issues short-lived pull tokens bound to the requesting lender's identity, the permissible purpose, the product and the time window, signed by a device key. The bureau releases a report only against a valid token, or an explicit statutory exception, which is logged separately. Tokens can be one-time, limited to a soft or hard pull, and revoked. Consumers see a signed access log. Lenders integrate through a redirect or QR flow similar to account-aggregator consent artefacts.",
@@ -3265,7 +3331,7 @@
   {
    "kind": "theme",
    "label": "T07",
-   "id": "theme:T07"
+   "id": "theme:2026-09-30:T07"
   },
   {
    "kind": "prior_art",
@@ -3311,6 +3377,7 @@
    "kind": "idea",
    "label": "Purchase-session binding for UPI: aggregating split payments per merchant session for correct MDR and fewer false fraud flags",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "RBI backs MDR on UPI payments above \u20b92,000, which gives merchants and payers an incentive to split payments. Banks already flag repeated \u20b92,000 payments as suspicious, which hurts legitimate split payments.",
    "mechanism": "A merchant QR or intent carries a session identifier signed by the merchant's PSP, derived from the cart/bill. Payments carrying the same session ID within a window are aggregated at the acquirer for MDR computation, removing the split-to-evade incentive. On the risk side, the payer's PSP treats payments sharing a verified session ID as one purchase, so legitimate splits (limits, multiple sources) are not flagged. Splits without a session ID, to the same payee in a short window, keep full scrutiny.",
@@ -3320,7 +3387,7 @@
   {
    "kind": "theme",
    "label": "T04",
-   "id": "theme:T04"
+   "id": "theme:2026-09-30:T04"
   },
   {
    "kind": "prior_art",
@@ -3366,6 +3433,7 @@
    "kind": "idea",
    "label": "'Digital arrest' coercion-state detector with physically separated release ritual",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "fraud",
    "problem": "Deepfake-backed 'digital arrest' rackets keep victims on long video calls with fake police while they transfer crores. The victim is coerced, so friction inside the app is simply overridden.",
    "mechanism": "The banking app fuses on-device signals (with consent): concurrent long-duration video call, screen sharing active, repeated balance checks, a first-time high-value payee, typing hesitation and copy-paste of beneficiary details. From these it infers a coercion state. In that state the app does not ask 'are you sure?'. It requires a release ritual that the remote coercer cannot supervise and that breaks the call: end the call, then after a mandatory 30-minute gap confirm the transfer at an ATM or branch with the physical card, or have it confirmed by a pre-registered trusted person. Meanwhile the app plays a verified-number callback from the bank's anti-fraud line.",
@@ -3375,7 +3443,7 @@
   {
    "kind": "theme",
    "label": "T16",
-   "id": "theme:T16"
+   "id": "theme:2026-09-30:T16"
   },
   {
    "kind": "prior_art",
@@ -3421,6 +3489,7 @@
    "kind": "idea",
    "label": "Merchant-verifiable signed payment receipts to defeat fake 'frozen-screen' UPI success screens",
    "arm": "A2b",
+   "run": "2026-09-30",
    "domain": "payments",
    "problem": "In the 'frozen-screen' UPI scam, fraudsters show merchants a fake or frozen success screen. Merchants without a soundbox cannot verify that a credit really arrived.",
    "mechanism": "On successful debit, the payer app renders a receipt code: a QR or ultrasonic burst carrying a token signed by the payee's PSP that includes the merchant's session nonce, amount and UTR. The merchant's phone, or a cheap verifier, checks the signature and nonce offline against the merchant PSP's public key. A static or fake screen cannot produce a valid signature for the live nonce.",
@@ -3466,6 +3535,354 @@
    "url": "https://patents.google.com/patent/US20110178884A1/en",
    "owner": "",
    "id": "patent:US20110178884A1"
+  },
+  {
+   "kind": "idea",
+   "label": "Comprehension-verified scam warnings with tamper-evident 'reasonable steps' receipts",
+   "arm": "A1",
+   "run": "2026-10-01",
+   "domain": "fraud",
+   "problem": "Scam-reimbursement regimes (Australia's AFCA scam rules, UK APP reimbursement) judge banks on whether they took reasonable steps, yet banks cannot prove a warning was understood. Research shows standard security notifications fail users with intellectual and developmental disabilities, and such users are over-represented among victims.",
+   "mechanism": "When a payment triggers a scam warning, a rendering engine picks the warning format from the customer's accessibility profile and recent interaction signals: plain-language chunks, pictograms, read-aloud audio, or a step-by-step version. It then asks one comprehension question generated from the specific risk, for example 'Who told you to make this payment?' with three choices including 'someone I met online'. The answer, the response time and the format shown are hashed with the payment digest into a signed warning receipt and appended to a tamper-evident log. A wrong or rushed answer escalates to a human call-back. Receipts are later produced as evidence of reasonable steps in disputes and regulatory reviews.",
+   "novelty_pa": 0.2754,
+   "id": "idea:A1-1001-01"
+  },
+  {
+   "kind": "source",
+   "label": "Banks face an impossible bind in AFCA\u2019s proposed \u2018Scam Rules\u2019 - Banking Day",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVTNONXVkZnZ0UEhfT1M5aGZNUl9FbG8zV2ZwMUxWdGtfRXFXbEFZM3VkLUd3S3lqQkhrdFlpWDFNN3gtSng5N2VvNkxpMjdfb1dQVTdZWlRvQjVERWFaZURySldJT2UxSVFBbGFDQm1fSnk1RkZLZ3BQUGRQV1JIbi11RHU1ZGgtdlJJT2Zn?oc=5",
+   "id": "news:6c09a24e018c4ffd"
+  },
+  {
+   "kind": "source",
+   "label": "\"I'm trying not to get hacked:\" How Adults with Intellectual and Developmental Disabilities Navigate Security and Privac",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.02374",
+   "id": "arxiv:2610.02374"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Beyond Successful Authentication: Reconstructing the Evidentiary Architecture of Payment-fraud Liability under PSD2 in Light of Eurobank Bulgaria and the Pendin",
+   "pa_type": "paper",
+   "url": "https://doi.org/10.2139/ssrn.7426879",
+   "owner": "",
+   "id": "doi:10.2139/ssrn.7426879"
+  },
+  {
+   "kind": "prior_art",
+   "label": "IDENTIFYING AND REMEDIATING SCAM ELECTRONIC MESSAGES",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US20260006044A1/en",
+   "owner": "RANGERS.AI",
+   "id": "patent:US20260006044A1"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Electronic Devices and Corresponding Methods for Presenting Fraud Warnings for Transaction Reversal Requests",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US20250069082A1/en",
+   "owner": "Motorola Mobility LLC",
+   "id": "patent:US20250069082A1"
+  },
+  {
+   "kind": "prior_art",
+   "label": "EXPLAINABLE FRAUD DETECTION ALERTS",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US20260187658A1/en",
+   "owner": "Intuit Inc.",
+   "id": "patent:US20260187658A1"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA",
+   "pa_type": "paper",
+   "url": "https://arxiv.org/abs/2609.15319",
+   "owner": "",
+   "id": "arxiv:2609.15319"
+  },
+  {
+   "kind": "idea",
+   "label": "Payee-label semantics: scam narratives revealed by the names victims are told to give payees",
+   "arm": "A1",
+   "run": "2026-10-01",
+   "domain": "fraud",
+   "problem": "Bank staff stopped a \u00a313,500 scam only because the victim's payees were labelled 'Donald Trump', 'Kim Kardashian' and 'Jennifer Lawrence'. Each payment passed every automated check; the narrative the scammer planted lived only in free-text fields that no model reads.",
+   "mechanism": "At payee creation and payment time, an on-device or server classifier reads the user-entered payee nickname and payment reference and compares them with the confirmation-of-payee legal name. Signals include: the label names a public figure, a celebrity or a government agency; the label suggests an investment, customs fee, release fee or 'unlock' payment; and the semantic distance between the label and the legal name is large. These label features are combined with the cumulative flows to such payees over the session, so a series of individually ordinary payments is caught as one pattern. Hits trigger a narrative-specific warning ('A celebrity will never ask you for money') and a human call-back.",
+   "novelty_pa": 0.3137,
+   "id": "idea:A1-1001-02"
+  },
+  {
+   "kind": "source",
+   "label": "Lloyds Bank staff save man from being conned out of \u00a313,500 - after scam involving sending money to names including 'Don",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOWFh1TlBSVVU5djVpV2JMNWJnb0JzZ1cwZVd5V0xrZUVNQi1fQ3dzeHBPV29CeFBYNUliOG5SbzRuMlNDbGJBNVJiam03WmZHaWlfeG9SX2ZPM2hrWkVJcU9yTHo0S1ZzcUl3bUVFcDdHa1ZCdFRuaGJfZ0dRQ3BIUlo3c0Z4ODI0UHNfMkJYbE94TTVMaWRfR19KZ0cxdUhzR0JhcnZhbzRiWmpqWklWZXV3endXcTFaakFwcFZtSW45QWpGR2l1VXVtYThoMFI3RVREUUZlcVNxQkZWbm0xWVNPNnBtdEVxSGpqMGFpUXRxUDRHemZRQy1UMlRraGhQWmRtRmQ2WVM2LUpRN3JaWmdjMXFPVFpiNkQ4aFdGTUVhYlFvbVpqcTVlTFFuWEN6eXZCVTJHWXhSbnNZaVdz?oc=5",
+   "id": "news:9a1f83320fe7bc8b"
+  },
+  {
+   "kind": "source",
+   "label": "Local Consistency Does Not Guarantee Global Conservation: Auditing Zero-Shot Composition of Airway Flow Operators",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.02056",
+   "id": "arxiv:2610.02056"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Detection, Attribution, Narration: An End-to-End Pipeline for Explainable Money Mule Identification",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/4f3c5bae954aa56824deca156e5c43ff4e203ec2",
+   "owner": "",
+   "id": "arxiv:2607.17586"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Communicating Credit Risk with Large Language Models: Evaluation of Explanations from Standard and Alternative Data-Based Models",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/41c34c292c507e60763a07e042f9b0e18259201e",
+   "owner": "",
+   "id": "arxiv:2608.17715"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Machine Learning for Digital Payment Fraud Detection in Financial Institutions: A Review of Methods, Explainability, and Performance",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/59f88834c6f1898dc23068c99aca2de118a6adfc",
+   "owner": "",
+   "id": "s2:59f88834c6f1898dc23068c99aca2de118a6adfc"
+  },
+  {
+   "kind": "prior_art",
+   "label": "EXPLAINABLE FRAUD DECISIONING SYSTEM LEVERAGING LARGE LANGUAGE MODELS (\"LLMS\") AND INTERPRETABLE NEURAL NETWORKS (\"INNS\")",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US20260245095A1/en",
+   "owner": "Bank of America Corporation",
+   "id": "patent:US20260245095A1"
+  },
+  {
+   "kind": "idea",
+   "label": "Blendshape-residual liveness: detecting real-time deepfake avatars in video KYC from motion that a low-rank face basis cannot express",
+   "arm": "A1",
+   "run": "2026-10-01",
+   "domain": "identity",
+   "problem": "Video-based customer onboarding (India's V-CIP, remote account opening) is attacked with real-time animated avatars. New research shows such avatars can be closely approximated by a small, identity-independent linear blendshape basis, which makes cheap live deepfakes practical.",
+   "mechanism": "During the video call, the system fits a low-rank blendshape model to the tracked face mesh in each frame and measures the residual deformation it cannot explain. Real faces produce persistent non-linear residuals: skin compression, wrinkles, asymmetric micro-expressions. Blendshape-driven avatars leave near-zero residual. The session also issues randomised physical-deformation challenges designed to maximise residual on real faces, such as pressing a finger into the cheek, puffing one cheek or pulling the lower lip. Liveness is scored from the residual energy against the challenge timeline; a low residual under deformation challenges flags a synthetic face.",
+   "novelty_pa": 0.1877,
+   "id": "idea:A1-1001-03"
+  },
+  {
+   "kind": "source",
+   "label": "Fiserv Digital Asset Platform Goes Live with Financial - GlobeNewswire",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQdk85RHJqMDNFLTQyTUpFOXF1ZnJoOFI3dGxVRmFrclRaZTJGRFd5NjcwU09oc0Jsa3BQd3RJRmw0NUNzXzRXTVdUc20tYjdueEtLeXFsNzlaaHkxQUtOYWt2bC1RVTNXMVNpV2x5TU5hbGRXYkxpOHYzbmNqaHo0b0hVR0RrVmJ3RDhJUGpGUzNzMWVfYWx1c0doYkdmZlVRaFI3bE1DcHl4QWQ3UVNaWWQ0OTR1XzZYUlp2WHo1S3ExRk9pNTc2MDFxb040UGczUWpHZm9pUHEya3E2TzFmRG1fNnE4dy11cEMzV1poVUJqelpxWERKQndFdDFHb1BxQ3VXeU5MOHdnRVpvOFg0bkQtTDJUZ0lqcjRXQnBqTUxXQQ?oc=5",
+   "id": "news:1087f10882fca04e"
+  },
+  {
+   "kind": "source",
+   "label": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.02207",
+   "id": "arxiv:2610.02207"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Real-Time Deepfake Recognition",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/87674657f4a9664d97d372cfe1c0f10b25d30731",
+   "owner": "",
+   "id": "s2:87674657f4a9664d97d372cfe1c0f10b25d30731"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Liveness detection based on motion, face, and context cues",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US12300035B1/en",
+   "owner": "Amazon Technologies, Inc.",
+   "id": "patent:US12300035B1"
+  },
+  {
+   "kind": "prior_art",
+   "label": "3D Spatiotemporal Model for Detection of Compressed Deepfake Videos",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/11f5300964aab5cd85dfc9b035f7a8071879c3a9",
+   "owner": "",
+   "id": "s2:11f5300964aab5cd85dfc9b035f7a8071879c3a9"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Detection of Image-Based Deepfake using Deep Transfer Learning Algorithms",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/9dff2804b462f4eb3d3318550ce26ec8257c844f",
+   "owner": "",
+   "id": "s2:9dff2804b462f4eb3d3318550ce26ec8257c844f"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Detecting Deepfake Videos Using Hybrid Machine Learning Models",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/6b8b26374cebd7ef6ff26b151aa5bf9c80c52dca",
+   "owner": "",
+   "id": "s2:6b8b26374cebd7ef6ff26b151aa5bf9c80c52dca"
+  },
+  {
+   "kind": "idea",
+   "label": "Collusion-resistant aggregation of crowd-sourced scam reports for pre-payment payee checks",
+   "arm": "A1",
+   "run": "2026-10-01",
+   "domain": "fraud",
+   "problem": "Pre-payment payee checks increasingly use crowd reports of scam accounts and numbers (national reporting portals, bank-app 'report this payee'). Scammers can poison them in both directions: mass-flagging legitimate competitors, or vouching for their own mules.",
+   "mechanism": "Each report is modelled as a rater-item edge in a bipartite graph. Rater reliability is estimated with peer-assessment integrity methods: agreement with later ground truth (confirmed fraud reports, account closures), detection of collusive rater clusters (synchronised timing, shared devices, reciprocal patterns), and down-weighting of raters whose reports concentrate on a single item. Each payee receives a reliability-weighted scam score with a confidence interval. The payee check returns the score band and confidence instead of a raw report count, and the bank logs which raters' reports were discounted and why.",
+   "novelty_pa": 0.2157,
+   "id": "idea:A1-1001-04"
+  },
+  {
+   "kind": "source",
+   "label": "CBI\u2019s Fratini Passi on Stopping Fraud Before the Money Moves - The Fintech Times",
+   "src_kind": "news",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONkhpVVJteVlkMWZYS1NWeEFJNG0xRVEtWDVtLUhOUGF1bGJjRFg4azJsYWE1ZUFxb1ZmbnpqSVJOazFwZmNLNHRUSk0zandsTmNhX3BiU3NnVk5YejJqZkN5cnVEOHFtWlZkWTRFTHdpSFRSaFFpemRCUjFJUkh0V1N6VmQ0enNtOUt3S2ptdUN1Zw?oc=5",
+   "id": "news:c90fe8517afdbfd4"
+  },
+  {
+   "kind": "source",
+   "label": "Scaling Peer Assessments: An Integrity Report from a Large Engineering Internship",
+   "src_kind": "paper",
+   "url": "https://arxiv.org/abs/2610.01020",
+   "id": "arxiv:2610.01020"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Multisource Fraud Intelligence Using Graph Neural Networks for Merchant, Account, and Transaction Risk Assessment",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/764eb9e9efc690177710684ac9bf0fee3aff0325",
+   "owner": "",
+   "id": "s2:764eb9e9efc690177710684ac9bf0fee3aff0325"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Mechanism for identifying collusive attackers",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US12513168B2/en",
+   "owner": "Nokia Solutions and Networks Oy",
+   "id": "patent:US12513168B2"
+  },
+  {
+   "kind": "prior_art",
+   "label": "A Big Data Framework for Identifying Coordinated Fraud Clusters through Behavioral Pattern Mining",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/ce633f0560e0a56a61892c38e9512cd1f5357bfc",
+   "owner": "",
+   "id": "s2:ce633f0560e0a56a61892c38e9512cd1f5357bfc"
+  },
+  {
+   "kind": "idea",
+   "label": "Exception-only merchant re-KYC for payment aggregators using signed government data trails",
+   "arm": "A2b",
+   "run": "2026-10-01",
+   "domain": "regtech",
+   "problem": "Payment aggregators are asking RBI for more time on merchant re-KYC deadlines. Re-verifying millions of small merchants by documents and video is slow and expensive, although most merchants already leave signed digital trails.",
+   "mechanism": "For each merchant the aggregator automatically gathers digitally signed government and network records: GST e-invoice IRN signatures, GSTR filing status, Udyam registration, settlement-account ownership confirmed through account-aggregator consent, and UPI collection patterns. A rules-plus-model engine compares them with the merchant's onboarding KYC. Consistent, signature-verified merchants are re-KYC'd automatically and receive a signed re-KYC record. Only mismatches (name or PAN drift, a dormant GST registration, a settlement account in a different name, a sudden category change) go to manual or video re-KYC.",
+   "novelty_pa": 0.2711,
+   "id": "idea:A2b-1001-01"
+  },
+  {
+   "kind": "theme",
+   "label": "T01",
+   "id": "theme:2026-10-01:T01"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Methods and systems for identifying a re-routed transaction",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US12725159B2/en",
+   "owner": "MASTERCARD INTERNATIONAL INCORPORATED",
+   "id": "patent:US12725159B2"
+  },
+  {
+   "kind": "prior_art",
+   "label": "System and Method for Authenticating Transactions Through a Mobile Device",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US20120150742A1/en",
+   "owner": "Xtreme Mobility Inc.",
+   "id": "patent:US20120150742A1"
+  },
+  {
+   "kind": "idea",
+   "label": "Recovery-scam shield: protected mode and a signed official recovery channel for people who were just scammed",
+   "arm": "A2b",
+   "run": "2026-10-01",
+   "domain": "fraud",
+   "problem": "'The bigger problem comes after the scam': victims who report fraud are re-targeted by fake 'fund recovery' agents, lawyers and police impersonators asking for processing fees. Modern syndicates move faster than defences, and victims cannot tell genuine recovery contact from a second scam.",
+   "mechanism": "When a customer reports a scam (bank channel, 1930/NCRP or a similar portal), their account enters a time-boxed protected mode. New payees whose label, reference or merchant category matches recovery, legal-fee, tax-clearance or 'release' narratives trigger a hard stop with a call-back. Large transfers to first-time payees get a mandatory delay. Every genuine recovery communication from the bank or partner law-enforcement agency is delivered as a signed message in the bank app's 'official recovery' inbox, with the case ID and the next steps. Any outside contact claiming to be about recovery can be checked in-app against that inbox, and the app states plainly that genuine recovery never asks for fees.",
+   "novelty_pa": 0.3084,
+   "id": "idea:A2b-1001-02"
+  },
+  {
+   "kind": "theme",
+   "label": "T02",
+   "id": "theme:2026-10-01:T02"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Online Financial Fraud in India: A Legal and Criminological Study",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/926e1e4e972143e875d9d59981e5cd562fd24896",
+   "owner": "",
+   "id": "s2:926e1e4e972143e875d9d59981e5cd562fd24896"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Stopping fraud at every step",
+   "pa_type": "paper",
+   "url": "https://doi.org/10.1093/9780198972877.003.0107",
+   "owner": "",
+   "id": "doi:10.1093/9780198972877.003.0107"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Systems and Methods for Detecting Network Rerouting",
+   "pa_type": "patent",
+   "url": "https://patents.google.com/patent/US20250335923A1/en",
+   "owner": "The PNC Financial Services Group, Inc.",
+   "id": "patent:US20250335923A1"
+  },
+  {
+   "kind": "idea",
+   "label": "Member-attributed reserve tranches for multi-issuer shared stablecoins",
+   "arm": "A2b",
+   "run": "2026-10-01",
+   "domain": "crypto",
+   "problem": "A shared stablecoin backed by a consortium (Open USD with Coinbase, Mastercard, Stripe and Visa committing $1B of liquidity) pools reserves contributed and custodied by many members. If one member's custodian fails or is seized, holders cannot see which tokens are affected, and the consortium has no automatic rule for who absorbs the loss.",
+   "mechanism": "Each member's reserve contribution is recorded as a tranche with its own signed custodian attestation feed. A consortium contract maintains the mapping from circulating supply to tranches pro rata, plus an attestation freshness and health score for each tranche. When a tranche's attestation goes stale or fails a check, that member's minting is suspended automatically. Recapitalisation calls are issued to the remaining members under pre-agreed waterfall rules, and a public proof shows that supply is still fully backed by healthy tranches. Redemptions draw from healthy tranches first.",
+   "novelty_pa": 0.2672,
+   "id": "idea:A2b-1001-03"
+  },
+  {
+   "kind": "theme",
+   "label": "T18",
+   "id": "theme:2026-10-01:T18"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Stablecoins as private money: a policy agenda",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/f8438a437b44d2122255f7988f1a22aa7eddace2",
+   "owner": "",
+   "id": "s2:f8438a437b44d2122255f7988f1a22aa7eddace2"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Reserve-backed tokens : A money for the future?",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/32dbafb611b0dfd2476686b6a18aee1b249299ff",
+   "owner": "",
+   "id": "s2:32dbafb611b0dfd2476686b6a18aee1b249299ff"
+  },
+  {
+   "kind": "prior_art",
+   "label": "Deploying Stablecoins for Good: Paths to Shared Prosperity with Blockchain",
+   "pa_type": "paper",
+   "url": "https://www.semanticscholar.org/paper/59200ae2db09394286e9de72baa1eb146352d752",
+   "owner": "",
+   "id": "s2:59200ae2db09394286e9de72baa1eb146352d752"
   }
  ],
  "links": [
@@ -6272,7 +6689,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-01",
-   "target": "theme:T14",
+   "target": "theme:2026-09-30:T14",
    "key": 0
   },
   {
@@ -6325,7 +6742,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-02",
-   "target": "theme:T14",
+   "target": "theme:2026-09-30:T14",
    "key": 0
   },
   {
@@ -6378,7 +6795,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-03",
-   "target": "theme:T15",
+   "target": "theme:2026-09-30:T15",
    "key": 0
   },
   {
@@ -6431,7 +6848,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-04",
-   "target": "theme:T15",
+   "target": "theme:2026-09-30:T15",
    "key": 0
   },
   {
@@ -6484,7 +6901,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-05",
-   "target": "theme:T15",
+   "target": "theme:2026-09-30:T15",
    "key": 0
   },
   {
@@ -6537,7 +6954,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-06",
-   "target": "theme:T24",
+   "target": "theme:2026-09-30:T24",
    "key": 0
   },
   {
@@ -6590,7 +7007,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-07",
-   "target": "theme:T24",
+   "target": "theme:2026-09-30:T24",
    "key": 0
   },
   {
@@ -6643,7 +7060,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-08",
-   "target": "theme:T03",
+   "target": "theme:2026-09-30:T03",
    "key": 0
   },
   {
@@ -6703,7 +7120,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-09",
-   "target": "theme:T03",
+   "target": "theme:2026-09-30:T03",
    "key": 0
   },
   {
@@ -6756,7 +7173,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-10",
-   "target": "theme:T29",
+   "target": "theme:2026-09-30:T29",
    "key": 0
   },
   {
@@ -6809,7 +7226,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-11",
-   "target": "theme:T10",
+   "target": "theme:2026-09-30:T10",
    "key": 0
   },
   {
@@ -6862,7 +7279,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-12",
-   "target": "theme:T25",
+   "target": "theme:2026-09-30:T25",
    "key": 0
   },
   {
@@ -6915,7 +7332,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-13",
-   "target": "theme:T07",
+   "target": "theme:2026-09-30:T07",
    "key": 0
   },
   {
@@ -6968,7 +7385,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-14",
-   "target": "theme:T04",
+   "target": "theme:2026-09-30:T04",
    "key": 0
   },
   {
@@ -7021,7 +7438,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-15",
-   "target": "theme:T16",
+   "target": "theme:2026-09-30:T16",
    "key": 0
   },
   {
@@ -7074,7 +7491,7 @@
   {
    "rel": "ADDRESSES",
    "source": "idea:A2b-16",
-   "target": "theme:T16",
+   "target": "theme:2026-09-30:T16",
    "key": 0
   },
   {
@@ -7110,6 +7527,401 @@
    "sim": 0.6934,
    "source": "idea:A2b-16",
    "target": "patent:US20110178884A1",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1001-01",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1001-01",
+   "target": "domain:fraud",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-01",
+   "target": "news:6c09a24e018c4ffd",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-01",
+   "target": "arxiv:2610.02374",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7246,
+   "source": "idea:A1-1001-01",
+   "target": "doi:10.2139/ssrn.7426879",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7199,
+   "source": "idea:A1-1001-01",
+   "target": "patent:US20260006044A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7126,
+   "source": "idea:A1-1001-01",
+   "target": "patent:US20250069082A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7052,
+   "source": "idea:A1-1001-01",
+   "target": "patent:US20260187658A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7012,
+   "source": "idea:A1-1001-01",
+   "target": "arxiv:2609.15319",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1001-02",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1001-02",
+   "target": "domain:fraud",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-02",
+   "target": "news:9a1f83320fe7bc8b",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-02",
+   "target": "arxiv:2610.02056",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6863,
+   "source": "idea:A1-1001-02",
+   "target": "arxiv:2607.17586",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6769,
+   "source": "idea:A1-1001-02",
+   "target": "arxiv:2608.24127",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6738,
+   "source": "idea:A1-1001-02",
+   "target": "arxiv:2608.17715",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6656,
+   "source": "idea:A1-1001-02",
+   "target": "s2:59f88834c6f1898dc23068c99aca2de118a6adfc",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6651,
+   "source": "idea:A1-1001-02",
+   "target": "patent:US20260245095A1",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1001-03",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1001-03",
+   "target": "domain:identity",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-03",
+   "target": "news:1087f10882fca04e",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-03",
+   "target": "arxiv:2610.02207",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.8123,
+   "source": "idea:A1-1001-03",
+   "target": "s2:87674657f4a9664d97d372cfe1c0f10b25d30731",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.809,
+   "source": "idea:A1-1001-03",
+   "target": "patent:US12300035B1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.8057,
+   "source": "idea:A1-1001-03",
+   "target": "s2:11f5300964aab5cd85dfc9b035f7a8071879c3a9",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7996,
+   "source": "idea:A1-1001-03",
+   "target": "s2:9dff2804b462f4eb3d3318550ce26ec8257c844f",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7994,
+   "source": "idea:A1-1001-03",
+   "target": "s2:6b8b26374cebd7ef6ff26b151aa5bf9c80c52dca",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A1-1001-04",
+   "target": "arm:A1",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A1-1001-04",
+   "target": "domain:fraud",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-04",
+   "target": "news:c90fe8517afdbfd4",
+   "key": 0
+  },
+  {
+   "rel": "DERIVED_FROM",
+   "source": "idea:A1-1001-04",
+   "target": "arxiv:2610.01020",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7843,
+   "source": "idea:A1-1001-04",
+   "target": "patent:US20260212362A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7736,
+   "source": "idea:A1-1001-04",
+   "target": "doi:10.2139/ssrn.7478298",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7723,
+   "source": "idea:A1-1001-04",
+   "target": "s2:764eb9e9efc690177710684ac9bf0fee3aff0325",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7721,
+   "source": "idea:A1-1001-04",
+   "target": "patent:US12513168B2",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7704,
+   "source": "idea:A1-1001-04",
+   "target": "s2:ce633f0560e0a56a61892c38e9512cd1f5357bfc",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A2b-1001-01",
+   "target": "arm:A2b",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A2b-1001-01",
+   "target": "domain:regtech",
+   "key": 0
+  },
+  {
+   "rel": "ADDRESSES",
+   "source": "idea:A2b-1001-01",
+   "target": "theme:2026-10-01:T01",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7289,
+   "source": "idea:A2b-1001-01",
+   "target": "s2:23c7490b635031b1fc5fd493192e786acdeaee2a",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7129,
+   "source": "idea:A2b-1001-01",
+   "target": "patent:US12725159B2",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7059,
+   "source": "idea:A2b-1001-01",
+   "target": "patent:US20140156531A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7033,
+   "source": "idea:A2b-1001-01",
+   "target": "patent:US20120150742A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7027,
+   "source": "idea:A2b-1001-01",
+   "target": "s2:730b996e83ae9924d5b368c828ebe675def30c36",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A2b-1001-02",
+   "target": "arm:A2b",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A2b-1001-02",
+   "target": "domain:fraud",
+   "key": 0
+  },
+  {
+   "rel": "ADDRESSES",
+   "source": "idea:A2b-1001-02",
+   "target": "theme:2026-10-01:T02",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6916,
+   "source": "idea:A2b-1001-02",
+   "target": "patent:US20250069082A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6893,
+   "source": "idea:A2b-1001-02",
+   "target": "s2:926e1e4e972143e875d9d59981e5cd562fd24896",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6838,
+   "source": "idea:A2b-1001-02",
+   "target": "patent:US20260006044A1",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6772,
+   "source": "idea:A2b-1001-02",
+   "target": "doi:10.1093/9780198972877.003.0107",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.6687,
+   "source": "idea:A2b-1001-02",
+   "target": "patent:US20250335923A1",
+   "key": 0
+  },
+  {
+   "rel": "FROM_ARM",
+   "source": "idea:A2b-1001-03",
+   "target": "arm:A2b",
+   "key": 0
+  },
+  {
+   "rel": "IN_DOMAIN",
+   "source": "idea:A2b-1001-03",
+   "target": "domain:crypto",
+   "key": 0
+  },
+  {
+   "rel": "ADDRESSES",
+   "source": "idea:A2b-1001-03",
+   "target": "theme:2026-10-01:T18",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7328,
+   "source": "idea:A2b-1001-03",
+   "target": "s2:f8438a437b44d2122255f7988f1a22aa7eddace2",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7314,
+   "source": "idea:A2b-1001-03",
+   "target": "s2:32dbafb611b0dfd2476686b6a18aee1b249299ff",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7289,
+   "source": "idea:A2b-1001-03",
+   "target": "s2:ab0cd7f404898f818f079d6a5ed2c86288383563",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7277,
+   "source": "idea:A2b-1001-03",
+   "target": "doi:10.2139/ssrn.7117550",
+   "key": 0
+  },
+  {
+   "rel": "SIMILAR_TO",
+   "sim": 0.7266,
+   "source": "idea:A2b-1001-03",
+   "target": "s2:59200ae2db09394286e9de72baa1eb146352d752",
    "key": 0
   }
  ]

@@ -1,0 +1,646 @@
+[
+  {
+    "id": "A1-1001-01",
+    "arm": "A1",
+    "title": "Comprehension-verified scam warnings with tamper-evident 'reasonable steps' receipts",
+    "terms": [
+      "warning",
+      "tamper-evident",
+      "format",
+      "scam",
+      "comprehension",
+      "payment"
+    ],
+    "queries": [
+      "warning AND tamper-evident",
+      "warning AND format",
+      "warning AND scam",
+      "tamper-evident AND format",
+      "tamper-evident AND scam",
+      "(warning OR tamper-evident OR format) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 221,
+    "fetched": 12,
+    "max_sim_patent": 0.7199,
+    "max_sim_paper": 0.7246,
+    "novelty_pa": 0.2754,
+    "closest": [
+      {
+        "id": "doi:10.2139/ssrn.7426879",
+        "type": "paper",
+        "sim": 0.7246,
+        "title": "Beyond Successful Authentication: Reconstructing the Evidentiary Architecture of Payment-fraud Liability under PSD2 in Light of Eurobank Bulgaria and the Pendin",
+        "url": "https://doi.org/10.2139/ssrn.7426879",
+        "who": null
+      },
+      {
+        "id": "patent:US20260006044A1",
+        "type": "patent",
+        "sim": 0.7199,
+        "title": "IDENTIFYING AND REMEDIATING SCAM ELECTRONIC MESSAGES",
+        "url": "https://patents.google.com/patent/US20260006044A1/en",
+        "who": "RANGERS.AI"
+      },
+      {
+        "id": "patent:US20250069082A1",
+        "type": "patent",
+        "sim": 0.7126,
+        "title": "Electronic Devices and Corresponding Methods for Presenting Fraud Warnings for Transaction Reversal Requests",
+        "url": "https://patents.google.com/patent/US20250069082A1/en",
+        "who": "Motorola Mobility LLC"
+      },
+      {
+        "id": "patent:US20260187658A1",
+        "type": "patent",
+        "sim": 0.7052,
+        "title": "EXPLAINABLE FRAUD DETECTION ALERTS",
+        "url": "https://patents.google.com/patent/US20260187658A1/en",
+        "who": "Intuit Inc."
+      },
+      {
+        "id": "arxiv:2609.15319",
+        "type": "paper",
+        "sim": 0.7012,
+        "title": "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA",
+        "url": "https://arxiv.org/abs/2609.15319",
+        "who": null
+      },
+      {
+        "id": "patent:US20210004776A1",
+        "type": "patent",
+        "sim": 0.6997,
+        "title": "TAMPER-EVIDENT VERIFICATION OF AN ARTICLE OF MANUFACTURE",
+        "url": "https://patents.google.com/patent/US20210004776A1/en",
+        "who": "Ballet Global Inc."
+      },
+      {
+        "id": "patent:US12749084B2",
+        "type": "patent",
+        "sim": 0.6988,
+        "title": "Logical validation of devices against fraud and tampering",
+        "url": "https://patents.google.com/patent/US12749084B2/en",
+        "who": "Block, Inc."
+      },
+      {
+        "id": "doi:10.2139/ssrn.6308058",
+        "type": "paper",
+        "sim": 0.6987,
+        "title": "The Consumer Standard of Caution Exception to the UK's Authorised Push Payment Fraud Reimbursement Requirement in the Digital Age",
+        "url": "https://doi.org/10.2139/ssrn.6308058",
+        "who": null
+      }
+    ]
+  },
+  {
+    "id": "A1-1001-02",
+    "arm": "A1",
+    "title": "Payee-label semantics: scam narratives revealed by the names victims are told to give payees",
+    "terms": [
+      "label",
+      "payees",
+      "legal",
+      "user-entered",
+      "celebrity",
+      "names"
+    ],
+    "queries": [
+      "label AND payees",
+      "label AND legal",
+      "label AND user-entered",
+      "payees AND legal",
+      "payees AND user-entered",
+      "(label OR payees OR legal) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 230,
+    "fetched": 9,
+    "max_sim_patent": 0.6651,
+    "max_sim_paper": 0.6863,
+    "novelty_pa": 0.3137,
+    "closest": [
+      {
+        "id": "arxiv:2607.17586",
+        "type": "paper",
+        "sim": 0.6863,
+        "title": "Detection, Attribution, Narration: An End-to-End Pipeline for Explainable Money Mule Identification",
+        "url": "https://www.semanticscholar.org/paper/4f3c5bae954aa56824deca156e5c43ff4e203ec2",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.24127",
+        "type": "paper",
+        "sim": 0.6769,
+        "title": "Anatomy of a Scam Call: What 10,000 real scam and spam calls reveal about how phone scammers operate",
+        "url": "https://www.semanticscholar.org/paper/a024a306f7679b44b523e9c1e3aee0a869583031",
+        "who": null
+      },
+      {
+        "id": "arxiv:2608.17715",
+        "type": "paper",
+        "sim": 0.6738,
+        "title": "Communicating Credit Risk with Large Language Models: Evaluation of Explanations from Standard and Alternative Data-Based Models",
+        "url": "https://www.semanticscholar.org/paper/41c34c292c507e60763a07e042f9b0e18259201e",
+        "who": null
+      },
+      {
+        "id": "s2:59f88834c6f1898dc23068c99aca2de118a6adfc",
+        "type": "paper",
+        "sim": 0.6656,
+        "title": "Machine Learning for Digital Payment Fraud Detection in Financial Institutions: A Review of Methods, Explainability, and Performance",
+        "url": "https://www.semanticscholar.org/paper/59f88834c6f1898dc23068c99aca2de118a6adfc",
+        "who": null
+      },
+      {
+        "id": "patent:US20260245095A1",
+        "type": "patent",
+        "sim": 0.6651,
+        "title": "EXPLAINABLE FRAUD DECISIONING SYSTEM LEVERAGING LARGE LANGUAGE MODELS (\"LLMS\") AND INTERPRETABLE NEURAL NETWORKS (\"INNS\")",
+        "url": "https://patents.google.com/patent/US20260245095A1/en",
+        "who": "Bank of America Corporation"
+      },
+      {
+        "id": "patent:US12718294B1",
+        "type": "patent",
+        "sim": 0.663,
+        "title": "Credit offers based on non-transactional data",
+        "url": "https://patents.google.com/patent/US12718294B1/en",
+        "who": "BLOCK, INC."
+      },
+      {
+        "id": "s2:7e9cf2492059b596f81904cdf9bfd2182df3e22f",
+        "type": "paper",
+        "sim": 0.6624,
+        "title": "Explainable Machine Learning for Risk-Based Transaction Monitoring",
+        "url": "https://www.semanticscholar.org/paper/7e9cf2492059b596f81904cdf9bfd2182df3e22f",
+        "who": null
+      },
+      {
+        "id": "s2:52c4791f32aabb905d94b011083352556c257eaf",
+        "type": "paper",
+        "sim": 0.6622,
+        "title": "The Phantom Borrower: Machine Learning Detection of Synthetic Identities and the Econometrics of Precision-Recall Trade-Offs in Digital Credit Markets",
+        "url": "https://www.semanticscholar.org/paper/52c4791f32aabb905d94b011083352556c257eaf",
+        "who": null
+      }
+    ]
+  },
+  {
+    "id": "A1-1001-03",
+    "arm": "A1",
+    "title": "Blendshape-residual liveness: detecting real-time deepfake avatars in video KYC from motion that a low-rank face basis cannot express",
+    "terms": [
+      "residual",
+      "avatars",
+      "low-rank",
+      "deformation",
+      "challenges",
+      "face"
+    ],
+    "queries": [
+      "residual AND avatars",
+      "residual AND low-rank",
+      "residual AND deformation",
+      "avatars AND low-rank",
+      "avatars AND deformation",
+      "(residual OR avatars OR low-rank) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 239,
+    "fetched": 12,
+    "max_sim_patent": 0.809,
+    "max_sim_paper": 0.8123,
+    "novelty_pa": 0.1877,
+    "closest": [
+      {
+        "id": "s2:87674657f4a9664d97d372cfe1c0f10b25d30731",
+        "type": "paper",
+        "sim": 0.8123,
+        "title": "Real-Time Deepfake Recognition",
+        "url": "https://www.semanticscholar.org/paper/87674657f4a9664d97d372cfe1c0f10b25d30731",
+        "who": null
+      },
+      {
+        "id": "patent:US12300035B1",
+        "type": "patent",
+        "sim": 0.809,
+        "title": "Liveness detection based on motion, face, and context cues",
+        "url": "https://patents.google.com/patent/US12300035B1/en",
+        "who": "Amazon Technologies, Inc."
+      },
+      {
+        "id": "s2:11f5300964aab5cd85dfc9b035f7a8071879c3a9",
+        "type": "paper",
+        "sim": 0.8057,
+        "title": "3D Spatiotemporal Model for Detection of Compressed Deepfake Videos",
+        "url": "https://www.semanticscholar.org/paper/11f5300964aab5cd85dfc9b035f7a8071879c3a9",
+        "who": null
+      },
+      {
+        "id": "s2:9dff2804b462f4eb3d3318550ce26ec8257c844f",
+        "type": "paper",
+        "sim": 0.7996,
+        "title": "Detection of Image-Based Deepfake using Deep Transfer Learning Algorithms",
+        "url": "https://www.semanticscholar.org/paper/9dff2804b462f4eb3d3318550ce26ec8257c844f",
+        "who": null
+      },
+      {
+        "id": "s2:6b8b26374cebd7ef6ff26b151aa5bf9c80c52dca",
+        "type": "paper",
+        "sim": 0.7994,
+        "title": "Detecting Deepfake Videos Using Hybrid Machine Learning Models",
+        "url": "https://www.semanticscholar.org/paper/6b8b26374cebd7ef6ff26b151aa5bf9c80c52dca",
+        "who": null
+      },
+      {
+        "id": "s2:92909be61a18a1318bc2ec8257d79babd2cfb9c5",
+        "type": "paper",
+        "sim": 0.7987,
+        "title": "Towards Explainable Deepfake Detection: A Survey",
+        "url": "https://www.semanticscholar.org/paper/92909be61a18a1318bc2ec8257d79babd2cfb9c5",
+        "who": null
+      },
+      {
+        "id": "s2:105ea9c439a59038f7928cd16e61119fd3ffef9e",
+        "type": "paper",
+        "sim": 0.7979,
+        "title": "Bioinspired Adaptive-Depth Neural Growth for Deepfake Video Forensics: An Entropy-Guided State-Space Framework",
+        "url": "https://www.semanticscholar.org/paper/105ea9c439a59038f7928cd16e61119fd3ffef9e",
+        "who": null
+      },
+      {
+        "id": "s2:2cec6cf8a646ec3fe80deb3ec37bb53218e0570a",
+        "type": "paper",
+        "sim": 0.7955,
+        "title": "A Multi-Layered Framework for Robust Real-Time Fraud Detection Against Deepfake Attacks in Digital Banking",
+        "url": "https://www.semanticscholar.org/paper/2cec6cf8a646ec3fe80deb3ec37bb53218e0570a",
+        "who": null
+      }
+    ]
+  },
+  {
+    "id": "A1-1001-04",
+    "arm": "A1",
+    "title": "Collusion-resistant aggregation of crowd-sourced scam reports for pre-payment payee checks",
+    "terms": [
+      "payee",
+      "reports",
+      "scam",
+      "collusive",
+      "confidence",
+      "score"
+    ],
+    "queries": [
+      "payee AND reports",
+      "payee AND scam",
+      "payee AND collusive",
+      "reports AND scam",
+      "reports AND collusive",
+      "(payee OR reports OR scam) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 201,
+    "fetched": 11,
+    "max_sim_patent": 0.7843,
+    "max_sim_paper": 0.7736,
+    "novelty_pa": 0.2157,
+    "closest": [
+      {
+        "id": "patent:US20260212362A1",
+        "type": "patent",
+        "sim": 0.7843,
+        "title": "SYSTEM AND METHOD FOR REAL-TIME ONLINE REVIEW FRAUD DETECTION USING FRAUD-AWARE SELECTIVE ATTENTION WITH MULTI-TIER VERIFICATION",
+        "url": "https://patents.google.com/patent/US20260212362A1/en",
+        "who": "LEVENTOGLU; ÖNDER"
+      },
+      {
+        "id": "doi:10.2139/ssrn.7478298",
+        "type": "paper",
+        "sim": 0.7736,
+        "title": "BankGuard-CGR: A Conformal Graph-Rule Framework for Fraud and Anti-Money-Laundering Detection in Banking Payment Systems",
+        "url": "https://doi.org/10.2139/ssrn.7478298",
+        "who": null
+      },
+      {
+        "id": "s2:764eb9e9efc690177710684ac9bf0fee3aff0325",
+        "type": "paper",
+        "sim": 0.7723,
+        "title": "Multisource Fraud Intelligence Using Graph Neural Networks for Merchant, Account, and Transaction Risk Assessment",
+        "url": "https://www.semanticscholar.org/paper/764eb9e9efc690177710684ac9bf0fee3aff0325",
+        "who": null
+      },
+      {
+        "id": "patent:US12513168B2",
+        "type": "patent",
+        "sim": 0.7721,
+        "title": "Mechanism for identifying collusive attackers",
+        "url": "https://patents.google.com/patent/US12513168B2/en",
+        "who": "Nokia Solutions and Networks Oy"
+      },
+      {
+        "id": "s2:ce633f0560e0a56a61892c38e9512cd1f5357bfc",
+        "type": "paper",
+        "sim": 0.7704,
+        "title": "A Big Data Framework for Identifying Coordinated Fraud Clusters through Behavioral Pattern Mining",
+        "url": "https://www.semanticscholar.org/paper/ce633f0560e0a56a61892c38e9512cd1f5357bfc",
+        "who": null
+      },
+      {
+        "id": "s2:e3db443b55fbb1960ad2a9005fbe397ff9273a07",
+        "type": "paper",
+        "sim": 0.7689,
+        "title": "Adaptive Graph-Based Risk Scoring for Real-Time Instant Payment Systems",
+        "url": "https://www.semanticscholar.org/paper/e3db443b55fbb1960ad2a9005fbe397ff9273a07",
+        "who": null
+      },
+      {
+        "id": "s2:c4a5fc3540597ea97e41d09dbc736142678d3593",
+        "type": "paper",
+        "sim": 0.7669,
+        "title": "Threshold-Calibrated XGBoost with TreeSHAP Explainability for Fraud Detection in Peer-to-Peer Digital Payments",
+        "url": "https://www.semanticscholar.org/paper/c4a5fc3540597ea97e41d09dbc736142678d3593",
+        "who": null
+      },
+      {
+        "id": "s2:b66446022276f3dc7f8e20d38a818e47cc97a720",
+        "type": "paper",
+        "sim": 0.7664,
+        "title": "AI-Driven Fraud Detection in IoT-Enabled Payment Ecosystems: Challenges, Hybrid Edge-Cloud Framework, and Emerging Trends",
+        "url": "https://www.semanticscholar.org/paper/b66446022276f3dc7f8e20d38a818e47cc97a720",
+        "who": null
+      }
+    ]
+  },
+  {
+    "id": "A2b-1001-01",
+    "arm": "A2b",
+    "title": "Exception-only merchant re-KYC for payment aggregators using signed government data trails",
+    "terms": [
+      "signed",
+      "merchant",
+      "government",
+      "trails",
+      "onboarding",
+      "manual"
+    ],
+    "queries": [
+      "signed AND merchant",
+      "signed AND government",
+      "signed AND trails",
+      "merchant AND government",
+      "merchant AND trails",
+      "(signed OR merchant OR government) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 239,
+    "fetched": 12,
+    "max_sim_patent": 0.7129,
+    "max_sim_paper": 0.7289,
+    "novelty_pa": 0.2711,
+    "closest": [
+      {
+        "id": "s2:23c7490b635031b1fc5fd493192e786acdeaee2a",
+        "type": "paper",
+        "sim": 0.7289,
+        "title": "Instant Fraud Detection Gateway for Secure Digital Transactions",
+        "url": "https://www.semanticscholar.org/paper/23c7490b635031b1fc5fd493192e786acdeaee2a",
+        "who": null
+      },
+      {
+        "id": "patent:US12725159B2",
+        "type": "patent",
+        "sim": 0.7129,
+        "title": "Methods and systems for identifying a re-routed transaction",
+        "url": "https://patents.google.com/patent/US12725159B2/en",
+        "who": "MASTERCARD INTERNATIONAL INCORPORATED"
+      },
+      {
+        "id": "patent:US20140156531A1",
+        "type": "patent",
+        "sim": 0.7059,
+        "title": "System and Method for Authenticating Transactions Through a Mobile Device",
+        "url": "https://patents.google.com/patent/US20140156531A1/en",
+        "who": "SALT Technology Inc."
+      },
+      {
+        "id": "patent:US20120150742A1",
+        "type": "patent",
+        "sim": 0.7033,
+        "title": "System and Method for Authenticating Transactions Through a Mobile Device",
+        "url": "https://patents.google.com/patent/US20120150742A1/en",
+        "who": "Xtreme Mobility Inc."
+      },
+      {
+        "id": "s2:730b996e83ae9924d5b368c828ebe675def30c36",
+        "type": "paper",
+        "sim": 0.7027,
+        "title": "PAYMENT FAILURES AND REVENUE DISRUPTION: ASSESSING THE RELIABILITY GAP IN UPI ADOPTION AMONG INDIA'S INFORMAL VENDORS",
+        "url": "https://www.semanticscholar.org/paper/730b996e83ae9924d5b368c828ebe675def30c36",
+        "who": null
+      },
+      {
+        "id": "patent:US20260228726A1",
+        "type": "patent",
+        "sim": 0.6971,
+        "title": "ENHANCED GUEST CHECKOUT TOKENIZATION",
+        "url": "https://patents.google.com/patent/US20260228726A1/en",
+        "who": "MASTERCARD ASIA/PACIFIC PTE. LTD."
+      },
+      {
+        "id": "patent:US20250335923A1",
+        "type": "patent",
+        "sim": 0.6962,
+        "title": "Systems and Methods for Detecting Network Rerouting",
+        "url": "https://patents.google.com/patent/US20250335923A1/en",
+        "who": "The PNC Financial Services Group, Inc."
+      },
+      {
+        "id": "patent:US20250086642A1",
+        "type": "patent",
+        "sim": 0.6958,
+        "title": "PLATFORM TO SUPPORT MULTIPLE CLIENT ACCESS TO A REAL-TIME PAYMENT RAIL",
+        "url": "https://patents.google.com/patent/US20250086642A1/en",
+        "who": "FIDELITY INFORMATION SERVICES, LLC"
+      }
+    ]
+  },
+  {
+    "id": "A2b-1001-02",
+    "arm": "A2b",
+    "title": "Recovery-scam shield: protected mode and a signed official recovery channel for people who were just scammed",
+    "terms": [
+      "recovery",
+      "genuine",
+      "payees",
+      "scam",
+      "protected",
+      "inbox"
+    ],
+    "queries": [
+      "recovery AND genuine",
+      "recovery AND payees",
+      "recovery AND scam",
+      "genuine AND payees",
+      "genuine AND scam",
+      "(recovery OR genuine OR payees) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 218,
+    "fetched": 7,
+    "max_sim_patent": 0.6916,
+    "max_sim_paper": 0.6893,
+    "novelty_pa": 0.3084,
+    "closest": [
+      {
+        "id": "patent:US20250069082A1",
+        "type": "patent",
+        "sim": 0.6916,
+        "title": "Electronic Devices and Corresponding Methods for Presenting Fraud Warnings for Transaction Reversal Requests",
+        "url": "https://patents.google.com/patent/US20250069082A1/en",
+        "who": "Motorola Mobility LLC"
+      },
+      {
+        "id": "s2:926e1e4e972143e875d9d59981e5cd562fd24896",
+        "type": "paper",
+        "sim": 0.6893,
+        "title": "Online Financial Fraud in India: A Legal and Criminological Study",
+        "url": "https://www.semanticscholar.org/paper/926e1e4e972143e875d9d59981e5cd562fd24896",
+        "who": null
+      },
+      {
+        "id": "patent:US20260006044A1",
+        "type": "patent",
+        "sim": 0.6838,
+        "title": "IDENTIFYING AND REMEDIATING SCAM ELECTRONIC MESSAGES",
+        "url": "https://patents.google.com/patent/US20260006044A1/en",
+        "who": "RANGERS.AI"
+      },
+      {
+        "id": "doi:10.1093/9780198972877.003.0107",
+        "type": "paper",
+        "sim": 0.6772,
+        "title": "Stopping fraud at every step",
+        "url": "https://doi.org/10.1093/9780198972877.003.0107",
+        "who": null
+      },
+      {
+        "id": "patent:US20250335923A1",
+        "type": "patent",
+        "sim": 0.6687,
+        "title": "Systems and Methods for Detecting Network Rerouting",
+        "url": "https://patents.google.com/patent/US20250335923A1/en",
+        "who": "The PNC Financial Services Group, Inc."
+      },
+      {
+        "id": "arxiv:2608.24127",
+        "type": "paper",
+        "sim": 0.6684,
+        "title": "Anatomy of a Scam Call: What 10,000 real scam and spam calls reveal about how phone scammers operate",
+        "url": "https://www.semanticscholar.org/paper/a024a306f7679b44b523e9c1e3aee0a869583031",
+        "who": null
+      },
+      {
+        "id": "patent:US20220141669A1",
+        "type": "patent",
+        "sim": 0.668,
+        "title": "SIM swap scam protection via passive monitoring",
+        "url": "https://patents.google.com/patent/US20220141669A1/en",
+        "who": "EXFO Solutions SAS"
+      },
+      {
+        "id": "patent:US20250200581A1",
+        "type": "patent",
+        "sim": 0.6661,
+        "title": "SYSTEMS AND METHODS FOR FAILED PAYMENT RECOVERY SYSTEMS",
+        "url": "https://patents.google.com/patent/US20250200581A1/en",
+        "who": "Butter Payments, Inc."
+      }
+    ]
+  },
+  {
+    "id": "A2b-1001-03",
+    "arm": "A2b",
+    "title": "Member-attributed reserve tranches for multi-issuer shared stablecoins",
+    "terms": [
+      "consortium",
+      "member",
+      "healthy",
+      "fails",
+      "attestation",
+      "custodian"
+    ],
+    "queries": [
+      "consortium AND member",
+      "consortium AND healthy",
+      "consortium AND fails",
+      "member AND healthy",
+      "member AND fails",
+      "(consortium OR member OR healthy) AND (bank OR banking OR payment OR financial OR transaction OR account OR credit)"
+    ],
+    "uspto_candidates": 234,
+    "fetched": 12,
+    "max_sim_patent": 0.7228,
+    "max_sim_paper": 0.7328,
+    "novelty_pa": 0.2672,
+    "closest": [
+      {
+        "id": "s2:f8438a437b44d2122255f7988f1a22aa7eddace2",
+        "type": "paper",
+        "sim": 0.7328,
+        "title": "Stablecoins as private money: a policy agenda",
+        "url": "https://www.semanticscholar.org/paper/f8438a437b44d2122255f7988f1a22aa7eddace2",
+        "who": null
+      },
+      {
+        "id": "s2:32dbafb611b0dfd2476686b6a18aee1b249299ff",
+        "type": "paper",
+        "sim": 0.7314,
+        "title": "Reserve-backed tokens : A money for the future?",
+        "url": "https://www.semanticscholar.org/paper/32dbafb611b0dfd2476686b6a18aee1b249299ff",
+        "who": null
+      },
+      {
+        "id": "s2:ab0cd7f404898f818f079d6a5ed2c86288383563",
+        "type": "paper",
+        "sim": 0.7289,
+        "title": "Stablecoins as a New Monetary Layer: Market Structure, Reserve Design, and the Competition with Tokenized Deposits",
+        "url": "https://www.semanticscholar.org/paper/ab0cd7f404898f818f079d6a5ed2c86288383563",
+        "who": null
+      },
+      {
+        "id": "doi:10.2139/ssrn.7117550",
+        "type": "paper",
+        "sim": 0.7277,
+        "title": "Bounding a Digital Run: Realized Stablecoin Runs and CBDC Holding Limits for the Digital Euro",
+        "url": "https://doi.org/10.2139/ssrn.7117550",
+        "who": null
+      },
+      {
+        "id": "s2:59200ae2db09394286e9de72baa1eb146352d752",
+        "type": "paper",
+        "sim": 0.7266,
+        "title": "Deploying Stablecoins for Good: Paths to Shared Prosperity with Blockchain",
+        "url": "https://www.semanticscholar.org/paper/59200ae2db09394286e9de72baa1eb146352d752",
+        "who": null
+      },
+      {
+        "id": "patent:US20250069047A1",
+        "type": "patent",
+        "sim": 0.7228,
+        "title": "Stablecoin as a Medium of Exchange on a Blockchain-Based Transaction Network",
+        "url": "https://patents.google.com/patent/US20250069047A1/en",
+        "who": "Ceres Coin LLC"
+      },
+      {
+        "id": "patent:US12597000B2",
+        "type": "patent",
+        "sim": 0.7228,
+        "title": "Stablecoin as a medium of exchange on a blockchain-based transaction network",
+        "url": "https://patents.google.com/patent/US12597000B2/en",
+        "who": "Ceres Coin LLC"
+      },
+      {
+        "id": "patent:US20260236898A1",
+        "type": "patent",
+        "sim": 0.7219,
+        "title": "STABLECOIN AS A MEDIUM OF EXCHANGE ON A BLOCKCHAIN-BASED TRANSACTION NETWORK",
+        "url": "https://patents.google.com/patent/US20260236898A1/en",
+        "who": "Ceres Coin LLC"
+      }
+    ]
+  }
+]

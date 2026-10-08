@@ -1,0 +1,128 @@
+[
+  {
+    "theme": 1,
+    "size": 43,
+    "terms": "rbi, payment, kyc, digital, governor, aggregator, payment aggregator, deputy governor",
+    "new_signals": 7,
+    "new_representatives": [
+      "[news, new] October 2026 Financial Changes: RBI Policy, SBI ATM Rules, UPI MDR, LPG KYC and Tax Updates - Kalkine India",
+      "[news, new] RBI issues final Basel III market risk capital rules for banks; new minimum requirements to kick in from A - The Economic Times",
+      "[news, new] Banks to remain closed for 4 days from today; Check state-wise list of holidays | India News - Hindustan Times",
+      "[news, new] Maharashtra Proposes Capacity-Based Banking for Renewable Open Access - Mercomindia.com",
+      "[news, new] Bangladesh Bank allows cross-border trade settlement in Taka - The Daily Star",
+      "[news, new] Kenya Payment Bill Lets CBK Order Data Sharing - Khusoko"
+    ],
+    "pain": 2.6931471805599454,
+    "pull": 0,
+    "momentum": 0.5813953488372093,
+    "push": 198,
+    "patent_density": 2,
+    "representatives": [
+      "[news] Payment Aggregators Seek RBI Extension For Merchant Re-KYC Deadline - Free Press Journal",
+      "[news] India To Pitch RBI Backed Cross-Border Digital Currencies For BRICS Payments: Report - NDTV",
+      "[news] October 2026 Financial Changes: RBI Policy, SBI ATM Rules, UPI MDR, LPG KYC and Tax Updates - Kalkine India",
+      "[news] India’s FM Urges RBI to Scale Digital Rupee Pilots Amid Tokenisation Push - The Crypto Times",
+      "[news] Scheduled Banks’ Statement of Position in India as on September 15, 2026",
+      "[news] RBI Speeds Up IDPIC Rollout To Combat Digital Payment Frauds, Pilot Running With 8 Banks - IBTimes India",
+      "[news] MDR unlikely to trigger shift back to cash: RBI Deputy Governor S C Murmu - Business Standard",
+      "[news] India Charts The Next Phase Of Its Digital Financial Journey: RBI - Free Press Journal"
+    ],
+    "uspto_hits": 0,
+    "whitespace": 1.0852031813007235,
+    "opportunity": 1.152701002221939
+  },
+  {
+    "theme": 2,
+    "size": 56,
+    "terms": "fraud, ai, global, real, cyber, seon, real time, payment fraud",
+    "new_signals": 10,
+    "new_representatives": [
+      "[news, new] AI Is Being Used to Both Commit and Catch Payment Fraud - Techgenyz",
+      "[news, new] Fighting Fraud in the Age of AI, with SEON’s Tamas Kadar",
+      "[news, new] Modern fraud syndicates move faster than defences can react - News24",
+      "[news, new] How deepfake fraud is testing banks’ defences - The Banker",
+      "[news, new] Payments fraud and compliance: B2B challenges in 2026 - Convera",
+      "[news, new] Fraud Alert: 1 in 8 Faced Cybercrime. The Bigger Problem Comes after the Scam - Moneylife"
+    ],
+    "pain": 53.386294361119894,
+    "pull": 0,
+    "momentum": 0.75,
+    "push": 715,
+    "patent_density": 236,
+    "representatives": [
+      "[news] AI Is Being Used to Both Commit and Catch Payment Fraud - Techgenyz",
+      "[news] How Banks Detect Digital Fraud In Real Time - Tech Build Africa",
+      "[news] Network-Level Fraud Prevention in Banking - Global Banking & Finance Review",
+      "[news] Banking Fraud to Reach 2.2 billion Transactions by 2031, Fuelled by Growing AI-enabled Attacks - globenewswire.com",
+      "[news] AI Deepfake Fraud Raises Liability Stakes for Banks and Business - Bloomberg Law News",
+      "[news] Banks Rethink Identity Checks as AI Fakes Voices and Faces",
+      "[news] Bankers & doctors too victims of digital finance fraud: IIT study - The New Indian Express",
+      "[news] Beyond fraud detection: Why dispute management needs an overhaul"
+    ],
+    "uspto_hits": 199,
+    "whitespace": -1.060770757631681,
+    "opportunity": 0.5705227288631276
+  },
+  {
+    "theme": 29,
+    "size": 26,
+    "terms": "upi, tap, tap pay, pay, rbi, fraud, myupi, payments",
+    "new_signals": 4,
+    "new_representatives": [
+      "[news, new] Cyber Crime & Online Fraud in India: UPI Fraud, Hacking & Digital Arrest - Legal Service India",
+      "[news, new] India Post Scam Alert: Fake Address Update Links Can Steal Bank Details, UPI PIN, Police Warns - LatestLY",
+      "[news, new] BHIM MyUPI payments launched: 9 services users can access at one place, from checking transactions to mana - The Economic Times",
+      "[news, new] UPI Vs Debit Vs Credit Card, Which Payment Method Costs Merchants The Most And Why? - Free Press Journal"
+    ],
+    "pain": 9.693147180559945,
+    "pull": 0,
+    "momentum": 0.6923076923076923,
+    "push": 42,
+    "patent_density": 4,
+    "representatives": [
+      "[news] UPI Tap and Pay: No Interenet Needed, RBI Launches Just ‘Tap and Pay’ Option for Users - timesbull.com",
+      "[news] RBI unveils two new features: UPI gets tap-and-pay, AI support - India Today",
+      "[news] UPI fee row: This app splits payments into Rs 1999 chunks to avoid charges, sparks fraud concerns online - news24online.com",
+      "[news] UPI Without Mobile Internet: RBI Unveils ‘Tap And Pay’, MyUPI For Easier And Safer Digital Payments - The Times of India",
+      "[news] 'Important step': RBI backs new UPI charges, says all transactions remain free for users - Business Today",
+      "[news] UPI vs digital rupee: RBI explores offline e₹ payments using bluetooth and NFC - Upstox",
+      "[news] UPI gets tap-and-pay, AI-powered customer support as RBI unveils two new capabilities at GFF 2026 - bfsi.economictimes.indiatimes.com",
+      "[news] RBI launches UPI tap-to-pay, multi-currency forex on Bharat Connect - Rediff"
+    ],
+    "uspto_hits": 273,
+    "whitespace": -0.17625902639470448,
+    "opportunity": -0.20195628817489042
+  },
+  {
+    "theme": 18,
+    "size": 46,
+    "terms": "stablecoin, coinbase, citi, citi coinbase, stablecoin payments, payments, stablecoins, visa",
+    "new_signals": 9,
+    "new_representatives": [
+      "[news, new] Citigroup Deepens Stablecoin Push With Expanded Coinbase Tie-Up - TradingView",
+      "[news, new] New stablecoin Open USD goes live as Coinbase, Mastercard, Stripe and Visa commit $1 billion to liquidity - CoinDesk",
+      "[news, new] Open Standard's 'shared stablecoin' goes live - American Banker",
+      "[news, new] Stripe linked Open USD stablecoin goes live with Visa, Mastercard as backers - Ledger Insights",
+      "[news, new] Blockchain & Stablecoins are Rebuilding the Payment Stack - The Big Whale",
+      "[news, new] Lloyds and Visa Speed Up Cross-Border Payments With Stablecoin Settlement - PYMNTS.com"
+    ],
+    "pain": 0.0,
+    "pull": 0,
+    "momentum": 0.8260869565217391,
+    "push": 84,
+    "patent_density": 63,
+    "representatives": [
+      "[news] Coinbase, Citi Team Up to Bring Stablecoin Payments to Businesses - Yahoo Finance",
+      "[news] Citi And Coinbase Bring Stablecoin Payments Into Corporate Banking - TradingView",
+      "[news] Citi and Coinbase Move to Bring Stablecoin Payments to Checkout - PaymentsJournal",
+      "[news] Coinbase Deepens Citi Tie-Up to Scale Stablecoin Payments - Yahoo Finance",
+      "[news] Citi and Coinbase to launch bank-grade stablecoin payments - Yahoo Finance",
+      "[news] Citigroup Partners With Coinbase for Stablecoin Payments - barrons.com",
+      "[news] Citi Teams Up With Coinbase to Let Merchants Accept Stablecoins - Bloomberg.com",
+      "[news] Citigroup Deepens Stablecoin Push With Expanded Coinbase Tie-Up - TradingView"
+    ],
+    "uspto_hits": 0,
+    "whitespace": 0.3331703997442412,
+    "opportunity": -0.26953221572322317
+  }
+]

@@ -1,0 +1,43 @@
+"""Operator answers, synthesis packets of run 2026-10-01 (catch-up run, queue mode). 16 pairs -> 4 inventions."""
+import sys; sys.path.insert(0, "scripts/operator")
+from answer import write
+
+I = {
+"X000": [dict(
+    title="Comprehension-verified scam warnings with tamper-evident 'reasonable steps' receipts",
+    problem="Scam-reimbursement regimes (Australia's AFCA scam rules, UK APP reimbursement) judge banks on whether they took reasonable steps, yet banks cannot prove a warning was understood. Research shows standard security notifications fail users with intellectual and developmental disabilities, and such users are over-represented among victims.",
+    mechanism="When a payment triggers a scam warning, a rendering engine picks the warning format from the customer's accessibility profile and recent interaction signals: plain-language chunks, pictograms, read-aloud audio, or a step-by-step version. It then asks one comprehension question generated from the specific risk, for example 'Who told you to make this payment?' with three choices including 'someone I met online'. The answer, the response time and the format shown are hashed with the payment digest into a signed warning receipt and appended to a tamper-evident log. A wrong or rushed answer escalates to a human call-back. Receipts are later produced as evidence of reasonable steps in disputes and regulatory reviews.",
+    technical_effect="Machine-verifiable evidence of warning delivery and comprehension, with adaptive rendering that measurably raises comprehension for cognitively diverse users.",
+    why_non_obvious="Scam warnings are static pop-ups logged as 'shown'. Coupling accessibility-adaptive rendering with a risk-specific comprehension check and a signed evidentiary receipt bound to the payment is not done.",
+    claim_core="A method comprising selecting a warning presentation format based on an accessibility profile of a user, presenting a risk-specific comprehension query before authorising a flagged payment, generating a signed receipt binding the format, the response and a digest of the payment, appending the receipt to a tamper-evident log, and escalating the payment upon an incorrect or below-threshold-time response.",
+    keywords="scam warning, comprehension check, accessibility, vulnerable customers, reasonable steps evidence, tamper-evident log, APP fraud reimbursement",
+    domain="fraud")],
+"X001": [dict(
+    title="Payee-label semantics: scam narratives revealed by the names victims are told to give payees",
+    problem="Bank staff stopped a £13,500 scam only because the victim's payees were labelled 'Donald Trump', 'Kim Kardashian' and 'Jennifer Lawrence'. Each payment passed every automated check; the narrative the scammer planted lived only in free-text fields that no model reads.",
+    mechanism="At payee creation and payment time, an on-device or server classifier reads the user-entered payee nickname and payment reference and compares them with the confirmation-of-payee legal name. Signals include: the label names a public figure, a celebrity or a government agency; the label suggests an investment, customs fee, release fee or 'unlock' payment; and the semantic distance between the label and the legal name is large. These label features are combined with the cumulative flows to such payees over the session, so a series of individually ordinary payments is caught as one pattern. Hits trigger a narrative-specific warning ('A celebrity will never ask you for money') and a human call-back.",
+    technical_effect="A new feature channel (victim-entered free text) that catches scripted scams invisible to amount, payee and device models, with low false positives because legitimate users rarely name payees after celebrities.",
+    why_non_obvious="Confirmation of payee compares the legal name only. Treating the victim's own labels as a scammer-planted signal, and auditing the cumulative composition rather than each payment, is a new use of that data.",
+    claim_core="A method comprising receiving a user-entered label and reference for a payee, classifying the label against a public-figure and scam-narrative lexicon and its semantic distance to a verified legal name of the payee account, aggregating flows to payees with flagged labels over a session, and intervening when the aggregate satisfies a condition.",
+    keywords="payee nickname, payment reference, celebrity impersonation scam, romance scam, confirmation of payee name mismatch, free text NLP, APP fraud",
+    domain="fraud")],
+"X006": [dict(
+    title="Blendshape-residual liveness: detecting real-time deepfake avatars in video KYC from motion that a low-rank face basis cannot express",
+    problem="Video-based customer onboarding (India's V-CIP, remote account opening) is attacked with real-time animated avatars. New research shows such avatars can be closely approximated by a small, identity-independent linear blendshape basis, which makes cheap live deepfakes practical.",
+    mechanism="During the video call, the system fits a low-rank blendshape model to the tracked face mesh in each frame and measures the residual deformation it cannot explain. Real faces produce persistent non-linear residuals: skin compression, wrinkles, asymmetric micro-expressions. Blendshape-driven avatars leave near-zero residual. The session also issues randomised physical-deformation challenges designed to maximise residual on real faces, such as pressing a finger into the cheek, puffing one cheek or pulling the lower lip. Liveness is scored from the residual energy against the challenge timeline; a low residual under deformation challenges flags a synthetic face.",
+    technical_effect="Liveness detection tied to a structural limit of real-time avatar generation instead of to artefacts of one generator, with a measurable residual statistic.",
+    why_non_obvious="The result that real-time avatars collapse onto a linear blendshape basis comes from graphics research aimed at faster rendering. Using that basis inversely, as a detector, together with deformation challenges chosen to maximise the residual, is not in liveness art built on blinks and head turns.",
+    claim_core="A method comprising tracking a face mesh in video frames of a remote identity session, fitting a low-rank blendshape model to each frame, computing residual deformation energy unexplained by the model, presenting physical-deformation challenges, and determining liveness from the residual energy during the challenges.",
+    keywords="deepfake detection, video KYC, V-CIP, liveness, blendshape, real-time avatar, face mesh residual, challenge response",
+    domain="identity")],
+"X007": [dict(
+    title="Collusion-resistant aggregation of crowd-sourced scam reports for pre-payment payee checks",
+    problem="Pre-payment payee checks increasingly use crowd reports of scam accounts and numbers (national reporting portals, bank-app 'report this payee'). Scammers can poison them in both directions: mass-flagging legitimate competitors, or vouching for their own mules.",
+    mechanism="Each report is modelled as a rater-item edge in a bipartite graph. Rater reliability is estimated with peer-assessment integrity methods: agreement with later ground truth (confirmed fraud reports, account closures), detection of collusive rater clusters (synchronised timing, shared devices, reciprocal patterns), and down-weighting of raters whose reports concentrate on a single item. Each payee receives a reliability-weighted scam score with a confidence interval. The payee check returns the score band and confidence instead of a raw report count, and the bank logs which raters' reports were discounted and why.",
+    technical_effect="Crowd scam intelligence that resists poisoning, with calibrated confidence for payment-time decisions.",
+    why_non_obvious="Integrity methods from large-scale peer grading have not been applied to crowd scam reporting, which still uses counts and manual review.",
+    claim_core="A method comprising receiving scam reports linking reporters to payee identifiers, estimating reporter reliability from agreement with confirmed outcomes and detection of collusive reporter clusters, computing a reliability-weighted risk score with confidence for a payee, and returning the score in response to a pre-payment check.",
+    keywords="crowdsourced scam reports, report poisoning, collusion detection, rater reliability, payee check, scam database",
+    domain="fraud")],
+}
+write("2026-10-01", "synthesis", I)

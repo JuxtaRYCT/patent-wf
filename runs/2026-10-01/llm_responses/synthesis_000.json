@@ -1,0 +1,26 @@
+{
+ "ideas": [
+  {
+   "pair": "X000",
+   "title": "Comprehension-verified scam warnings with tamper-evident 'reasonable steps' receipts",
+   "problem": "Scam-reimbursement regimes (Australia's AFCA scam rules, UK APP reimbursement) judge banks on whether they took reasonable steps, yet banks cannot prove a warning was understood. Research shows standard security notifications fail users with intellectual and developmental disabilities, and such users are over-represented among victims.",
+   "mechanism": "When a payment triggers a scam warning, a rendering engine picks the warning format from the customer's accessibility profile and recent interaction signals: plain-language chunks, pictograms, read-aloud audio, or a step-by-step version. It then asks one comprehension question generated from the specific risk, for example 'Who told you to make this payment?' with three choices including 'someone I met online'. The answer, the response time and the format shown are hashed with the payment digest into a signed warning receipt and appended to a tamper-evident log. A wrong or rushed answer escalates to a human call-back. Receipts are later produced as evidence of reasonable steps in disputes and regulatory reviews.",
+   "technical_effect": "Machine-verifiable evidence of warning delivery and comprehension, with adaptive rendering that measurably raises comprehension for cognitively diverse users.",
+   "why_non_obvious": "Scam warnings are static pop-ups logged as 'shown'. Coupling accessibility-adaptive rendering with a risk-specific comprehension check and a signed evidentiary receipt bound to the payment is not done.",
+   "claim_core": "A method comprising selecting a warning presentation format based on an accessibility profile of a user, presenting a risk-specific comprehension query before authorising a flagged payment, generating a signed receipt binding the format, the response and a digest of the payment, appending the receipt to a tamper-evident log, and escalating the payment upon an incorrect or below-threshold-time response.",
+   "keywords": "scam warning, comprehension check, accessibility, vulnerable customers, reasonable steps evidence, tamper-evident log, APP fraud reimbursement",
+   "domain": "fraud"
+  },
+  {
+   "pair": "X001",
+   "title": "Payee-label semantics: scam narratives revealed by the names victims are told to give payees",
+   "problem": "Bank staff stopped a £13,500 scam only because the victim's payees were labelled 'Donald Trump', 'Kim Kardashian' and 'Jennifer Lawrence'. Each payment passed every automated check; the narrative the scammer planted lived only in free-text fields that no model reads.",
+   "mechanism": "At payee creation and payment time, an on-device or server classifier reads the user-entered payee nickname and payment reference and compares them with the confirmation-of-payee legal name. Signals include: the label names a public figure, a celebrity or a government agency; the label suggests an investment, customs fee, release fee or 'unlock' payment; and the semantic distance between the label and the legal name is large. These label features are combined with the cumulative flows to such payees over the session, so a series of individually ordinary payments is caught as one pattern. Hits trigger a narrative-specific warning ('A celebrity will never ask you for money') and a human call-back.",
+   "technical_effect": "A new feature channel (victim-entered free text) that catches scripted scams invisible to amount, payee and device models, with low false positives because legitimate users rarely name payees after celebrities.",
+   "why_non_obvious": "Confirmation of payee compares the legal name only. Treating the victim's own labels as a scammer-planted signal, and auditing the cumulative composition rather than each payment, is a new use of that data.",
+   "claim_core": "A method comprising receiving a user-entered label and reference for a payee, classifying the label against a public-figure and scam-narrative lexicon and its semantic distance to a verified legal name of the payee account, aggregating flows to payees with flagged labels over a session, and intervening when the aggregate satisfies a condition.",
+   "keywords": "payee nickname, payment reference, celebrity impersonation scam, romance scam, confirmation of payee name mismatch, free text NLP, APP fraud",
+   "domain": "fraud"
+  }
+ ]
+}

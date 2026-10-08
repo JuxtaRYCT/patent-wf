@@ -1,0 +1,291 @@
+{
+ "scores": [
+  {
+   "id": "arxiv:2610.01018",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Clock synchronisation from satellite geometry where ground timing is unavailable",
+   "tags": [
+    "timing",
+    "gnss"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01603",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Open-source ultrasound transmit IP",
+   "tags": [
+    "hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01623",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Wearable ultrasound readout bus",
+   "tags": [
+    "hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02562",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Sci-fi diagnostic interface for urban data",
+   "tags": [
+    "visualisation"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01030",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "eLoran terrestrial timing/positioning as a GNSS-independent reference; terrain-driven error mapping",
+   "tags": [
+    "eloran",
+    "resilient-timing",
+    "gnss-spoofing"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01929",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Pulsar spin noise models",
+   "tags": [
+    "astrophysics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.00944",
+   "novelty": 5,
+   "usefulness": 2,
+   "mechanism_or_problem": "Physics-informed regression maps hidden thickness/damage from guided waves",
+   "tags": [
+    "structural-monitoring"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01859",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Local recursive least squares for adaptive fuzzy control",
+   "tags": [
+    "control"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01602",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Reconfigurable wearable ultrasound",
+   "tags": [
+    "hardware"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01020",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Detecting collusion and inflation in large-scale peer assessments",
+   "tags": [
+    "collusion-detection",
+    "peer-rating"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02374",
+   "novelty": 6,
+   "usefulness": 7,
+   "mechanism_or_problem": "Security notifications (login alerts, warnings) fail adults with intellectual disabilities; cognitive accessibility of warnings",
+   "tags": [
+    "accessible-warnings",
+    "vulnerable-users",
+    "security-ux"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01790",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "KPZ growth / dilaton gravity triality",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01997",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Trade-off between selecting the best and keeping suspense in Swiss tournaments",
+   "tags": [
+    "tournament-design"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01507",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Turbulence RG obstruction",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01321",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Control allocation with adaptive augmentation",
+   "tags": [
+    "control"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01432",
+   "novelty": 5,
+   "usefulness": 1,
+   "mechanism_or_problem": "Ab initio phase-field learning",
+   "tags": [
+    "materials"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01797",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Fluctuation-dissipation in rotation",
+   "tags": [
+    "physics"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02151",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Control-barrier-function governor keeps inputs and outputs inside hard limits with proven feasibility",
+   "tags": [
+    "hard-constraints",
+    "governor",
+    "cbf"
+   ]
+  },
+  {
+   "id": "arxiv:2610.00866",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "One Bayesian object explains several distinct failure modes of a localisation signal",
+   "tags": [
+    "failure-modes",
+    "bayesian"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02296",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Line-rate admission control at the exposed edge of a 5G core using in-kernel XDP filtering",
+   "tags": [
+    "line-rate-filtering",
+    "edge-admission",
+    "xdp"
+   ]
+  },
+  {
+   "id": "arxiv:2610.00900",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Dynamic model for bipartite interaction networks with additive and multiplicative effects",
+   "tags": [
+    "bipartite-networks",
+    "customer-merchant"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02506",
+   "novelty": 6,
+   "usefulness": 5,
+   "mechanism_or_problem": "Two competing contagions on a signed graph where edge sign flips the colour that spreads",
+   "tags": [
+    "competing-contagion",
+    "signed-graph"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02446",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Convex-function family for diversity and segregation measures",
+   "tags": [
+    "inequality-metric"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02573",
+   "novelty": 5,
+   "usefulness": 3,
+   "mechanism_or_problem": "Robust control when only the cluster of the true mode is observed",
+   "tags": [
+    "regime-uncertainty",
+    "min-max"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01449",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Fixed-time voltage regulation without impedance knowledge",
+   "tags": [
+    "power-grid"
+   ]
+  },
+  {
+   "id": "arxiv:2610.01659",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Event-chain Monte Carlo sampling",
+   "tags": [
+    "sampling"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02056",
+   "novelty": 6,
+   "usefulness": 6,
+   "mechanism_or_problem": "Independently learned local models that are each consistent need not conserve a global quantity when composed; audit for conservation",
+   "tags": [
+    "conservation-audit",
+    "composition",
+    "local-vs-global"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02118",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Decentralised power-optimal swarm coordination",
+   "tags": [
+    "swarm"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02207",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Real-time animatable avatars from linear blendshapes \u2014 cheap live deepfake video",
+   "tags": [
+    "deepfake-video",
+    "avatars"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02403",
+   "novelty": 4,
+   "usefulness": 1,
+   "mechanism_or_problem": "Quantum RL for base-station energy saving",
+   "tags": [
+    "telecom"
+   ]
+  }
+ ]
+}

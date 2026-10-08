@@ -1,0 +1,286 @@
+{
+ "scores": [
+  {
+   "id": "news:88923a47d68a2e33",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "State bank serving sanctioned-linked firms; correspondent exposure to politically exposed networks",
+   "tags": [
+    "sanctions",
+    "correspondent-risk"
+   ]
+  },
+  {
+   "id": "news:f40e777256b8bbe7",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Energy 'banking' tariff proposal",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "news:256b555b6d74c579",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Investment-scam warnings to savers",
+   "tags": [
+    "scams"
+   ]
+  },
+  {
+   "id": "news:15554df44575b1f2",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Account promotion",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:30c7fbc2260559e6",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Local-currency cross-border trade settlement",
+   "tags": [
+    "cross-border",
+    "local-currency"
+   ]
+  },
+  {
+   "id": "news:0c7503709986a08d",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "CFO fraud exposure survey",
+   "tags": [
+    "fraud"
+   ]
+  },
+  {
+   "id": "news:9a1f83320fe7bc8b",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "Victim paying payees named after celebrities; staff caught it \u2014 payee-name semantics as a scam signal",
+   "tags": [
+    "celebrity-scam",
+    "payee-name",
+    "romance-scam"
+   ]
+  },
+  {
+   "id": "news:a2d253ed875a6b43",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Bank patent mention",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:1087f10882fca04e",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Core processor launches digital-asset platform for banks",
+   "tags": [
+    "bank-crypto",
+    "core-banking"
+   ]
+  },
+  {
+   "id": "news:6c09a24e018c4ffd",
+   "novelty": 4,
+   "usefulness": 6,
+   "mechanism_or_problem": "Australia's proposed scam rules leave banks unable to prove 'reasonable steps' \u2014 evidence gap",
+   "tags": [
+    "scam-liability",
+    "evidence",
+    "australia"
+   ]
+  },
+  {
+   "id": "news:142e4b115b7be8ff",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Credit history article",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:4d0282119ed731e5",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Consumer court makes bank pay fraud victim for service deficiency",
+   "tags": [
+    "liability",
+    "india"
+   ]
+  },
+  {
+   "id": "gh:Sentrello/Sentrello",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Business management suite",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:caf7e0d96cd76902",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Compliance-screening decision gap; AI agents assisting screening decisions",
+   "tags": [
+    "screening",
+    "agents"
+   ]
+  },
+  {
+   "id": "news:51589e1902904889",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Consumer banking rule changes",
+   "tags": [
+    "regulation"
+   ]
+  },
+  {
+   "id": "news:89bd92eb2008c552",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Stablecoins rebuilding payment stack",
+   "tags": [
+    "stablecoins"
+   ]
+  },
+  {
+   "id": "news:9b7317adb57abf91",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "State-owned bank's dollar-backed coin live for 90+ community banks",
+   "tags": [
+    "tokenized-deposits",
+    "community-banks"
+   ]
+  },
+  {
+   "id": "news:38825d01bb7f5e23",
+   "novelty": 4,
+   "usefulness": 5,
+   "mechanism_or_problem": "40 million Americans locked out of open banking connections",
+   "tags": [
+    "open-banking",
+    "access-gap"
+   ]
+  },
+  {
+   "id": "news:f5a049988fcbb6ed",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Fraud vs friction podcast",
+   "tags": [
+    "fraud"
+   ]
+  },
+  {
+   "id": "news:30382ee4571e4432",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Crypto firms seeking federal charters",
+   "tags": [
+    "charters"
+   ]
+  },
+  {
+   "id": "news:9696769c6b5ea8fe",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Account-opening guide",
+   "tags": [
+    "noise"
+   ]
+  },
+  {
+   "id": "news:0276288c1cbc0055",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Tax authority AI fraud detection",
+   "tags": [
+    "tax"
+   ]
+  },
+  {
+   "id": "news:132d3e32cac9d284",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Bank's stablecoin partnership backfired",
+   "tags": [
+    "stablecoins"
+   ]
+  },
+  {
+   "id": "news:c90fe8517afdbfd4",
+   "novelty": 3,
+   "usefulness": 4,
+   "mechanism_or_problem": "Stopping fraud before money moves (payee checks)",
+   "tags": [
+    "pre-payment-check"
+   ]
+  },
+  {
+   "id": "gh:LucasTramonte/Factored-Hackathon-2026-ArabicaAI",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Assistant helps customers identify unrecognised charges before disputing",
+   "tags": [
+    "unrecognised-charges",
+    "friendly-fraud"
+   ]
+  },
+  {
+   "id": "news:ae22292071b25376",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "B2B payments fraud and compliance",
+   "tags": [
+    "b2b-fraud"
+   ]
+  },
+  {
+   "id": "news:eecd43b6901fbbbc",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "Bank rail strategy interview",
+   "tags": [
+    "payments"
+   ]
+  },
+  {
+   "id": "gh:gulshanverse/TrustID-Smart-Identity-Verification-System",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Document verification prototype",
+   "tags": [
+    "kyc"
+   ]
+  },
+  {
+   "id": "news:d226d5308b8dfb87",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Stablecoin reserve rules debate in MiCA review",
+   "tags": [
+    "stablecoin-reserves"
+   ]
+  },
+  {
+   "id": "s2:43d2162972320dfcc5d9806d2914e099edb879b3",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Wage plan model",
+   "tags": [
+    "off-topic"
+   ]
+  }
+ ]
+}

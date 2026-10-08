@@ -1,0 +1,277 @@
+{
+ "scores": [
+  {
+   "id": "s2:895f2034fcd7f7b76a07f46a5fd419efb6fcbb2e",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Data-driven village selection for climate programmes",
+   "tags": [
+    "climate"
+   ]
+  },
+  {
+   "id": "s2:b133a4c944090d7d7eb16575a8e0a3ab77dbe9ec",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Essay on AI in finance",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:d6084e625c4eacc81c19f32e703a047ec7f86139",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Quiet quitting",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:b3cb4f49a2b7350eb4619bd6441908b4ab18d3ef",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Tax documents for accreditation",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:19f691eda3b0d7957389d22c2f5b4b2dd264db1d",
+   "novelty": 3,
+   "usefulness": 2,
+   "mechanism_or_problem": "RTGS as Keynesian clearing union",
+   "tags": [
+    "rtgs"
+   ]
+  },
+  {
+   "id": "s2:18427361ab06138200973f0fd780218d77c02198",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Cumulative fragility predicts farm business exit better than one-period weakness",
+   "tags": [
+    "credit-risk",
+    "agri"
+   ]
+  },
+  {
+   "id": "s2:fe1e76aaa4cdc7e7f7f681093e9af2a0ff5d4e61",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "AI ethics philosophy",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:da93cbba3c0888474c9c30cdfadea7b051fb182a",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "IoT water dispenser with cashless payment",
+   "tags": [
+    "iot-payments"
+   ]
+  },
+  {
+   "id": "s2:71b3389cdb03eec59184064443f9ac28b4cd304d",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "Liquidity effects of an RTGS ISO 20022 migration",
+   "tags": [
+    "rtgs",
+    "iso20022",
+    "liquidity"
+   ]
+  },
+  {
+   "id": "s2:5898516621360d7ec9d58c0242c2a8630c8ab781",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "SME insolvency prediction",
+   "tags": [
+    "credit-risk"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38397",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Generate grounded synthetic user trajectories for testing interfaces",
+   "tags": [
+    "synthetic-users",
+    "testing"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38914",
+   "novelty": 6,
+   "usefulness": 7,
+   "mechanism_or_problem": "Agent evaluation that spends trials on rare high-impact irreversible actions (e.g. payments) rather than uniformly",
+   "tags": [
+    "agent-evaluation",
+    "irreversible-actions",
+    "risk-weighted-testing"
+   ]
+  },
+  {
+   "id": "s2:1fc702965d228d9ee953192c042f47fdfae2a770",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Chatbot order notifications",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:55f16eebf249b57bae71ad37fd95a164fd6691b3",
+   "novelty": 3,
+   "usefulness": 3,
+   "mechanism_or_problem": "Video+audio fusion for fare evasion",
+   "tags": [
+    "sensor-fusion"
+   ]
+  },
+  {
+   "id": "arxiv:2609.39261",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "Decision-focused learning Jacobian rank",
+   "tags": [
+    "ml-theory"
+   ]
+  },
+  {
+   "id": "s2:200a0a2c9a8ae515d0b932e15423ce65fca0f259",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Road contracts",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:b2a1424785d4ef1da4909538918d13f3c343357e",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Juice vending",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "s2:7c3f2eba7fbb606a8beb2be6ed722b445ae7b98b",
+   "novelty": 1,
+   "usefulness": 1,
+   "mechanism_or_problem": "Travel planner",
+   "tags": [
+    "off-topic"
+   ]
+  },
+  {
+   "id": "arxiv:2609.39569",
+   "novelty": 5,
+   "usefulness": 4,
+   "mechanism_or_problem": "Tontine where first death changes household state without pool transfer",
+   "tags": [
+    "tontine",
+    "decumulation"
+   ]
+  },
+  {
+   "id": "s2:5f356e130b6e215ab466f7ed058b77e19f9036c0",
+   "novelty": 4,
+   "usefulness": 4,
+   "mechanism_or_problem": "H-infinity robust control of stablecoin devaluation under stress",
+   "tags": [
+    "stablecoin",
+    "robust-control"
+   ]
+  },
+  {
+   "id": "s2:851c9804c29dbf1d0ae6076517a0507bbbbf6576",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "Monetary policy framework",
+   "tags": [
+    "macro"
+   ]
+  },
+  {
+   "id": "arxiv:2609.38512",
+   "novelty": 5,
+   "usefulness": 5,
+   "mechanism_or_problem": "Benchmark of voice agents doing billing and payments with impatient multi-request callers",
+   "tags": [
+    "voice-agents",
+    "payments",
+    "benchmark"
+   ]
+  },
+  {
+   "id": "arxiv:2610.00951",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Feedback model of negative prices and squeezes",
+   "tags": [
+    "market-microstructure"
+   ]
+  },
+  {
+   "id": "s2:ee58f686827270c90585942181f52dc4c035d055",
+   "novelty": 2,
+   "usefulness": 1,
+   "mechanism_or_problem": "CDS pricing adjustment",
+   "tags": [
+    "derivatives"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02106",
+   "novelty": 3,
+   "usefulness": 1,
+   "mechanism_or_problem": "BSDE densities",
+   "tags": [
+    "math-finance"
+   ]
+  },
+  {
+   "id": "arxiv:2609.39264",
+   "novelty": 4,
+   "usefulness": 2,
+   "mechanism_or_problem": "Fair exchange rate for merging two cryptocurrencies",
+   "tags": [
+    "crypto"
+   ]
+  },
+  {
+   "id": "arxiv:2610.02353",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Shared vs per-user adaptation capacity for personalised LLMs",
+   "tags": [
+    "personalisation"
+   ]
+  },
+  {
+   "id": "s2:4c4a3857738a98ccdc8a7f6367f0a15b4e3ce19b",
+   "novelty": 5,
+   "usefulness": 6,
+   "mechanism_or_problem": "OSINT-based explainable risk check for predatory digital lending apps (permissions, policies)",
+   "tags": [
+    "predatory-loan-apps",
+    "india",
+    "app-risk"
+   ]
+  },
+  {
+   "id": "s2:b2ce73bf3a9918e45d7c3f807d806715baf4b03e",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Stablecoin geopolitics",
+   "tags": [
+    "stablecoins"
+   ]
+  }
+ ]
+}

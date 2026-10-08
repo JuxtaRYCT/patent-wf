@@ -1,0 +1,43 @@
+{
+  "arm": "A2b",
+  "name": "Approach 2 - AI Opportunity Scanner, signal-grounded",
+  "run": "2026-10-01",
+  "ideas": [
+    {
+      "theme": "T01",
+      "title": "Exception-only merchant re-KYC for payment aggregators using signed government data trails",
+      "problem": "Payment aggregators are asking RBI for more time on merchant re-KYC deadlines. Re-verifying millions of small merchants by documents and video is slow and expensive, although most merchants already leave signed digital trails.",
+      "mechanism": "For each merchant the aggregator automatically gathers digitally signed government and network records: GST e-invoice IRN signatures, GSTR filing status, Udyam registration, settlement-account ownership confirmed through account-aggregator consent, and UPI collection patterns. A rules-plus-model engine compares them with the merchant's onboarding KYC. Consistent, signature-verified merchants are re-KYC'd automatically and receive a signed re-KYC record. Only mismatches (name or PAN drift, a dormant GST registration, a settlement account in a different name, a sudden category change) go to manual or video re-KYC.",
+      "technical_effect": "Moves re-KYC from document collection to cryptographic verification of existing signed records, cutting manual workload to the exception set.",
+      "why_non_obvious": "Re-KYC is run as a periodic document exercise. Using the merchant's signed government and network data trail as the primary evidence, with exception routing, is a distinct architecture for the aggregator setting.",
+      "claim_core": "A method comprising retrieving digitally signed records associated with a merchant from government and payment-network sources, verifying the signatures, comparing record attributes with stored onboarding identity attributes, generating a signed re-verification record when consistent, and routing the merchant to manual verification upon an inconsistency.",
+      "keywords": "merchant re-KYC, payment aggregator, GST e-invoice signature, account aggregator, perpetual KYC, RBI",
+      "domain": "regtech",
+      "id": "A2b-1001-01"
+    },
+    {
+      "theme": "T02",
+      "title": "Recovery-scam shield: protected mode and a signed official recovery channel for people who were just scammed",
+      "problem": "'The bigger problem comes after the scam': victims who report fraud are re-targeted by fake 'fund recovery' agents, lawyers and police impersonators asking for processing fees. Modern syndicates move faster than defences, and victims cannot tell genuine recovery contact from a second scam.",
+      "mechanism": "When a customer reports a scam (bank channel, 1930/NCRP or a similar portal), their account enters a time-boxed protected mode. New payees whose label, reference or merchant category matches recovery, legal-fee, tax-clearance or 'release' narratives trigger a hard stop with a call-back. Large transfers to first-time payees get a mandatory delay. Every genuine recovery communication from the bank or partner law-enforcement agency is delivered as a signed message in the bank app's 'official recovery' inbox, with the case ID and the next steps. Any outside contact claiming to be about recovery can be checked in-app against that inbox, and the app states plainly that genuine recovery never asks for fees.",
+      "technical_effect": "Cuts the repeat-victimisation channel with a state change triggered by the fraud report, and gives the victim an authenticated way to tell real contact from impostors.",
+      "why_non_obvious": "Fraud reporting systems end at the report. Treating the report itself as a trigger for a narrative-specific protection state, plus a signed case channel for verification, targets the follow-on recovery-scam cycle that existing controls ignore.",
+      "claim_core": "A method comprising, upon receipt of a fraud report for an account, setting the account to a protected state for a period in which payments to new payees matching recovery-scam narrative features are blocked pending verification, and delivering case communications as digitally signed messages verifiable within an application of the account holder.",
+      "keywords": "recovery scam, repeat victimization, fraud report, protected mode, signed communications, fund recovery fraud, impersonation",
+      "domain": "fraud",
+      "id": "A2b-1001-02"
+    },
+    {
+      "theme": "T18",
+      "title": "Member-attributed reserve tranches for multi-issuer shared stablecoins",
+      "problem": "A shared stablecoin backed by a consortium (Open USD with Coinbase, Mastercard, Stripe and Visa committing $1B of liquidity) pools reserves contributed and custodied by many members. If one member's custodian fails or is seized, holders cannot see which tokens are affected, and the consortium has no automatic rule for who absorbs the loss.",
+      "mechanism": "Each member's reserve contribution is recorded as a tranche with its own signed custodian attestation feed. A consortium contract maintains the mapping from circulating supply to tranches pro rata, plus an attestation freshness and health score for each tranche. When a tranche's attestation goes stale or fails a check, that member's minting is suspended automatically. Recapitalisation calls are issued to the remaining members under pre-agreed waterfall rules, and a public proof shows that supply is still fully backed by healthy tranches. Redemptions draw from healthy tranches first.",
+      "technical_effect": "Isolates single-member custody failures in a pooled reserve in real time, with automatic mint gating and a verifiable full-backing proof.",
+      "why_non_obvious": "Single-issuer reserve attestations and pooled-liquidity agreements exist. Tranche-level attribution with per-member attestation health driving automatic mint suspension and waterfall recapitalisation is specific to the new multi-issuer structure.",
+      "claim_core": "A system maintaining reserve tranches attributed to consortium members of a token, receiving signed custodian attestations per tranche, computing tranche health, suspending minting by a member whose tranche fails a health condition, issuing recapitalisation requests under a waterfall rule, and publishing a proof that circulating supply is covered by healthy tranches.",
+      "keywords": "shared stablecoin, consortium stablecoin, reserve attestation, tranche, mint suspension, custodian failure, proof of reserves",
+      "domain": "crypto",
+      "id": "A2b-1001-03"
+    }
+  ]
+}
