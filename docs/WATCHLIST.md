@@ -17,3 +17,15 @@ These ideas are creative and technically credible but failed the novelty bar, ha
 | A1-02 | Camera-free RF occupancy sensing at ATMs | No direct prior art found, but sensing in banking environments is crowded (Truist, NCR) | Next-in-line filing candidate after the top 8; ATM OEM partner |
 | A1-18 | Trust-farming-resistant payee reputation (reverse bait edges) | Narrow; eligibility medium | Feature inside a payee-risk product |
 | A2b-15 | "Digital arrest" coercion detector with a physically separated release ritual | RBI trusted-person proposals, BioCatch vishing patents are adjacent | Pitch to Indian banks and NPCI as a product; narrow patent possible |
+
+## Added by the daily runs (2026-10-01 to 2026-10-09)
+| ID | Idea | Status | Route |
+|---|---|---|---|
+| A2b-1001-02 | Recovery-scam shield (protected mode + signed recovery channel) | refine | Strong candidate for India (1930 follow-on scams). Claim the report-triggered state change and the signed verification flow |
+| A1-1001-02 | Payee-label semantics (celebrity/narrative payee nicknames) | refine | Cheap, high-value feature. §101 risk, so claim the label-versus-legal-name distance plus the cumulative session audit |
+| A1-1002-01 | Delegation-residue sweep for AI agents and human delegates | refine | Pair with dossier #7 receipts. Safety-reset embodiment |
+| A2b-1006-01 | Read-time coupling detection of LLM attack agents | refine | Narrow to the length-inflation tarpit, or publish defensively |
+| A1-1001-01 | Comprehension-verified scam warnings with signed receipts | refine | Evidence for 'reasonable steps' regimes (AFCA, PSR) |
+| A2b-1001-03 | Member-attributed reserve tranches for shared stablecoins | refine | Watch the Open USD-style consortia |
+| A1-1006-01 | Session-continuity chain for payment-time device continuity | refine | Narrow claim |
+| A1-1005-01 | Identity-transition continuity credentials (KYC after name/gender change) | refine | Socially valuable. Builds on Idemix-style reissue art |

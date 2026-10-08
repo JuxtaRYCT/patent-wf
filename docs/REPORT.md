@@ -50,3 +50,25 @@ Next in line: A1-02 (camera-free RF occupancy sensing at ATMs), A2b-03 + A1-23 m
 3. **Non-US prior-art sweep** (Espacenet, InPASS, CNIPA) for the top 8.
 4. **Turn on the daily job** with an Anthropic API key (`scripts/run_daily.sh`, launchd or GitHub Actions) and set `USPTO_PPUBS_TOKEN` before 2026-11-07.
 5. **Switch the generator to the hybrid design**: A2b chooses problems, A1 supplies mechanisms, stage-2 checks are mandatory.
+
+## Daily runs since the first run (2026-10-01 to 2026-10-09)
+The daily job was not run between 30 Sep and 9 Oct. On 9 Oct the missed days were caught up as **separate daily runs**, each restricted to the data first available on or before its own date (see METHODOLOGY, "Daily runs and catch-up"), followed by the regular run for 9 Oct. One row per day is in `docs/DAILY_LOG.md`, and each day's digest is in `runs/<date>/DIGEST.md`.
+
+| | Value |
+|---|---|
+| New items gathered | 3,385 (papers, news, posts, repos, regulations) + 529 patents |
+| Competitor filings caught on publication day | 138 (Oct 1, 6 and 8 USPTO publication days) |
+| New inventions | 13 (A1 cross-pollination 9, A2b scanner 4) |
+| Verdicts | 0 pursue · 8 refine · 5 already existing |
+| Repeats of earlier ideas | 0 (cross-run similarity check) |
+
+Best new inventions, all "refine":
+- **A2b-1001-02 Recovery-scam shield.** A fraud report puts the account into a protected mode against follow-on "fund recovery" scams, and real recovery contact is delivered through a signed in-app channel.
+- **A1-1001-02 Payee-label semantics.** The nicknames victims are told to give payees ("Kim Kardashian") are read as a scam-narrative signal against the confirmation-of-payee legal name.
+- **A1-1002-01 Delegation-residue sweep.** When an AI agent's or a person's access is revoked, every leftover token, endpoint and data share is probed and attested as gone. It includes a safety-reset embodiment for people leaving coercive relationships.
+- **A2b-1006-01 Read-time coupling.** Detects LLM attack agents (South Korea reported AI agents used against its banks) from how their delay scales with the length of the response they just read. The deep check found agent timing-fingerprinting papers, so this is narrowed to the length-inflation tarpit.
+
+What daily operation taught us:
+- **Daily novelty is thin.** One day of data gives 0–7 credible ideas, and 4 of 9 days gave none. Cross-pollination needs a large enough mechanism pool: on weekends and on the day before arXiv announces papers there was nothing to pair. A **weekly synthesis** over the accumulated week, with daily gathering and filtering, would give better pairs.
+- **The scanner's delta mode works.** It ideated only on themes with fresh signals and skipped the ones already used. Most days the honest answer was "nothing new", and there were no repeated ideas.
+- **The competitor watch earns its keep daily.** On publication day it surfaced JPMorgan's AI-agent identification filing. Checked against dossier #5, that filing covers a different problem.

@@ -1,0 +1,258 @@
+{
+  "signals": {
+    "items": 398,
+    "by_source": {
+      "federal_register": 398
+    }
+  },
+  "news": {
+    "items": 1395,
+    "by_source": {
+      "rss": 1038,
+      "hackernews": 76,
+      "github": 270,
+      "github_trending": 11
+    }
+  },
+  "papers": {
+    "items": 4912,
+    "by_source": {
+      "arxiv": 2659,
+      "semantic_scholar": 1770,
+      "pubmed": 303,
+      "crossref": 180
+    }
+  },
+  "patents": {
+    "items": 1359,
+    "by_source": {
+      "uspto_ppubs": 419,
+      "google_patents": 940
+    }
+  },
+  "elapsed_s": 350,
+  "db_counts": [
+    [
+      "uspto_ppubs",
+      "patent",
+      "prior_art",
+      3528
+    ],
+    [
+      "arxiv",
+      "paper",
+      "crossdomain",
+      3021
+    ],
+    [
+      "semantic_scholar",
+      "paper",
+      "finance",
+      1732
+    ],
+    [
+      "google_patents",
+      "patent",
+      "prior_art",
+      977
+    ],
+    [
+      "arxiv",
+      "paper",
+      "finance",
+      764
+    ],
+    [
+      "uspto_ppubs",
+      "patent",
+      "competitor",
+      653
+    ],
+    [
+      "federal_register",
+      "regulation",
+      "signal",
+      409
+    ],
+    [
+      "pubmed",
+      "paper",
+      "crossdomain",
+      314
+    ],
+    [
+      "github",
+      "repo",
+      "finance",
+      313
+    ],
+    [
+      "rss:gnews:stablecoin bank",
+      "news",
+      "finance",
+      194
+    ],
+    [
+      "crossref",
+      "paper",
+      "finance",
+      189
+    ],
+    [
+      "rss:gnews:agentic payments",
+      "news",
+      "finance",
+      159
+    ],
+    [
+      "rss:gnews:bank fraud AI",
+      "news",
+      "finance",
+      144
+    ],
+    [
+      "rss:gnews:tokenized deposits",
+      "news",
+      "finance",
+      136
+    ],
+    [
+      "rss:gnews:RBI digital payments",
+      "news",
+      "finance",
+      102
+    ],
+    [
+      "rss:gnews:bank patent",
+      "news",
+      "finance",
+      99
+    ],
+    [
+      "hackernews",
+      "post",
+      "finance",
+      92
+    ],
+    [
+      "rss:finextra",
+      "news",
+      "finance",
+      92
+    ],
+    [
+      "rss:gnews:open banking rule",
+      "news",
+      "finance",
+      92
+    ],
+    [
+      "rss:gnews:UPI fraud",
+      "news",
+      "finance",
+      86
+    ],
+    [
+      "rss:gnews:post-quantum banking",
+      "news",
+      "finance",
+      85
+    ],
+    [
+      "rss:gnews:deepfake bank scam",
+      "news",
+      "finance",
+      80
+    ],
+    [
+      "rss:gnews:instant payments fraud",
+      "news",
+      "finance",
+      80
+    ],
+    [
+      "rss:coindesk",
+      "news",
+      "finance",
+      50
+    ],
+    [
+      "github_trending",
+      "repo",
+      "crossdomain",
+      29
+    ],
+    [
+      "rss:ecb_press",
+      "news",
+      "finance",
+      28
+    ],
+    [
+      "rss:techcrunch_fintech",
+      "news",
+      "finance",
+      28
+    ],
+    [
+      "rss:fca_news",
+      "news",
+      "finance",
+      26
+    ],
+    [
+      "rss:boe_news",
+      "news",
+      "finance",
+      25
+    ],
+    [
+      "rss:fed_press",
+      "news",
+      "finance",
+      24
+    ],
+    [
+      "rss:banking_dive",
+      "news",
+      "finance",
+      20
+    ],
+    [
+      "rss:medianama",
+      "news",
+      "finance",
+      20
+    ],
+    [
+      "rss:payments_dive",
+      "news",
+      "finance",
+      20
+    ],
+    [
+      "rss:pymnts",
+      "news",
+      "finance",
+      20
+    ],
+    [
+      "rss:rbi_press",
+      "news",
+      "finance",
+      20
+    ],
+    [
+      "rss:fintech_business_weekly",
+      "news",
+      "finance",
+      14
+    ],
+    [
+      "rss:net_interest",
+      "news",
+      "finance",
+      7
+    ]
+  ]
+}

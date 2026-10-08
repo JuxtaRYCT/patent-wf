@@ -1,0 +1,52 @@
+{
+ "scores": [
+  {
+   "id": "news:971760325ad6a44a",
+   "novelty": 2,
+   "usefulness": 3,
+   "mechanism_or_problem": "Regulator directions restricting a co-operative bank (withdrawal caps)",
+   "tags": [
+    "bank-restrictions",
+    "co-op-banks"
+   ]
+  },
+  {
+   "id": "news:57b30f431e02ddd0",
+   "novelty": 1,
+   "usefulness": 2,
+   "mechanism_or_problem": "Duplicate supervisory directions to another co-operative bank",
+   "tags": [
+    "bank-restrictions"
+   ]
+  },
+  {
+   "id": "news:f1b83b0d80f13b8e",
+   "novelty": 2,
+   "usefulness": 2,
+   "mechanism_or_problem": "Penalty on a co-operative bank",
+   "tags": [
+    "supervision"
+   ]
+  },
+  {
+   "id": "s2:577baefa6f9e1c14a90723eb5b0d8f58f703a37b",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Opponent modelling for dynamic resource trading among UAV edge servers",
+   "tags": [
+    "resource-trading",
+    "opponent-modelling"
+   ]
+  },
+  {
+   "id": "s2:e665ef02c21bca293f95a57da78621df89ad2eb4",
+   "novelty": 4,
+   "usefulness": 3,
+   "mechanism_or_problem": "Incentives for workers whose quality drifts over time",
+   "tags": [
+    "incentives",
+    "non-stationary-quality"
+   ]
+  }
+ ]
+}

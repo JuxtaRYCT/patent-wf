@@ -29,6 +29,7 @@ Detection lead time (hours from first agent transaction to hold, against chargeb
 | Reference | Discloses | Does **not** disclose |
 |---|---|---|
 | Stripe US12597035B2 (merchant fraud via event timing) | ML on API event timing for merchant fraud | Agent-vs-human baselines, convergence of distinct principals' agents |
+| JPMorgan US20260303633A1 'Method and system for identifying AI agents' (published 2026-10-01, found by the daily competitor watch) | Detecting AI agents and LLM processes running *inside* an enterprise system (ports, URLs, scripts, threads, sessions) | Network-level convergence of many principals' external shopping agents on a merchant |
 | Forter US20260052155A1 (agent authentication protocols) | Security requirements per agent operation, reputation of the agent's principal | Network-level merchant convergence signal |
 | Merchant cohort clustering US20240211965A1 | Merchant-level fraud via cohorts | Agentic signal |
 | Industry commentary (MRC, Riskified, Signifyd), Ballerine "agentic detection" | "Monitor transaction spikes", onboarding checks | This specific normalised statistic and response |

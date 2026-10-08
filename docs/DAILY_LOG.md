@@ -12,3 +12,4 @@ One row per run. Each run's full digest is in `runs/<date>/DIGEST.md`. The first
 | 2026-10-06 | catch-up | 635 | 126 | 47 | 94 | 4 | 1 | 1 | 0 | 2 | 0 | A2b-1006-01 Read-time coupling: detecting autonomous LLM attack agents from how their next |
 | 2026-10-07 | catch-up | 445 | 10 | 0 | 78 | 3 | 1 | 0 | 0 | 0 | 1 | A1-1007-01 Attention-bound approvals for agent-proposed payments: the human signature comm |
 | 2026-10-08 | catch-up | 230 | 90 | 24 | 17 | 4 | 0 | 0 | 0 | 0 | 0 |  |
+| 2026-10-09 | daily | 40 | 0 | 0 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |  |

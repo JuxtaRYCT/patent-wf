@@ -7,6 +7,8 @@ This repository implements both approaches from the brief and runs them end to e
 
 Results of the first run (2026-09-30) are in **`docs/REPORT.md`**. An interactive version is `exports/report.html` (open it in a browser). The best inventions, with draft claims and prior-art analysis, are in **`docs/dossiers/`**.
 
+Daily runs since then are logged in **`docs/DAILY_LOG.md`**, with one digest per day in `runs/<date>/DIGEST.md`. Missed days can be caught up with `scripts/backfill.sh FROM TO`.
+
 ## Layout
 
 ```
